@@ -1,7 +1,6 @@
 import Foundation
 
 // https://leetcode.com/problems/count-good-nodes-in-binary-tree/
-// Discuss: https://vk.cc/c3EibC
 
 class Solution {
     func goodNodes(_ root: TreeNode?) -> Int {
