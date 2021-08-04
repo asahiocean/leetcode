@@ -1,5 +1,6 @@
 import Foundation
 
+// 1448. Count Good Nodes in Binary Tree
 // https://leetcode.com/problems/count-good-nodes-in-binary-tree/
 
 class Solution {
@@ -17,6 +18,8 @@ class Solution {
         return dfs(root, max: root.val)
     }
 }
+
+// MARK: - Tests -
 
 import XCTest
 
@@ -39,6 +42,8 @@ class Tests: XCTestCase {
 }
 
 Tests.defaultTestSuite.run()
+
+// MARK: - TreeNode -
 
 public class TreeNode {
     public var val: Int
