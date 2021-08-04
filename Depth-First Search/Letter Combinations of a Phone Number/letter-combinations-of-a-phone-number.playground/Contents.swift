@@ -1,5 +1,6 @@
 import Foundation
 
+// 17. Letter Combinations of a Phone Number
 // https://leetcode.com/problems/letter-combinations-of-a-phone-number
 
 class Solution {
@@ -16,14 +17,12 @@ class Solution {
         for num in digs {
             let chars = matrix[num]!
             if res.isEmpty {
-                chars.forEach({ res.append("\($0)") })
+                chars.forEach{ res.append("\($0)") }
                 continue
             }
             let cur = res; res = [String]()
             chars.forEach({ ch in
-                let externStr = cur.map { (str) -> String in
-                    str + "\(ch)"
-                }
+                let externStr = cur.map { $0 + "\(ch)" }
                 res.append(contentsOf: externStr)
             })
         }
