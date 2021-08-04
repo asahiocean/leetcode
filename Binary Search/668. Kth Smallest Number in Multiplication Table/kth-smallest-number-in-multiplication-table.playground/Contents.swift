@@ -1,5 +1,6 @@
 import Foundation
 
+// 668. Kth Smallest Number in Multiplication Table
 // https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/
 
 class Solution {
@@ -20,14 +21,14 @@ class Solution {
 
 import XCTest
 
-//      Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
+// Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
 
 class Tests: XCTestCase {
     private let s = Solution()
-    func test1() {
+    func test0() {
         XCTAssertEqual(s.findKthNumber(3, 3, 5), 3)
     }
-    func test2() {
+    func test1() {
         XCTAssertEqual(s.findKthNumber(2, 3, 6), 6)
     }
 }
