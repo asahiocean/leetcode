@@ -1,27 +1,49 @@
 import Foundation
 
-// https://leetcode.com/problems/count-good-nodes-in-binary-tree
-// Discuss: https://vk.cc/c3EibC
+// 1448. Count Good Nodes in Binary Tree
+// https://leetcode.com/problems/count-good-nodes-in-binary-tree/
 
 class Solution {
-    private func dfs(_ root: TreeNode?, max num: Int) -> Int {
-        guard let root = root else { return 0 }
-        
-        var count = 0
-        root.val >= num ? count += 1 : nil
-        
-        let m = max(num, root.val)
-        count += dfs(root.left, max: m)
-        count += dfs(root.right, max: m)
-        
-        return count
-    }
-    
     func goodNodes(_ root: TreeNode?) -> Int {
         guard let root = root else { return 0 }
+        func dfs(_ root: TreeNode?, max num: Int) -> Int {
+            guard let root = root else { return 0 }
+            var count = 0
+            root.val >= num ? count += 1 : nil
+            let m = max(num, root.val)
+            count += dfs(root.left, max: m)
+            count += dfs(root.right, max: m)
+            return count
+        }
         return dfs(root, max: root.val)
     }
 }
+
+// MARK: - Tests -
+
+import XCTest
+
+// Executed 3 tests, with 0 failures (0 unexpected) in 0.082 (0.083) seconds
+
+class Tests: XCTestCase {
+    private let s = Solution()
+    func test0() {
+        let tree = TreeNode([3,1,4,3,nil,1,5])
+        XCTAssertEqual(s.goodNodes(tree), 4)
+    }
+    func test1() {
+        let tree = TreeNode([3,3,nil,4,2])
+        XCTAssertEqual(s.goodNodes(tree), 3)
+    }
+    func test2() {
+        let tree = TreeNode([1])
+        XCTAssertEqual(s.goodNodes(tree), 1)
+    }
+}
+
+Tests.defaultTestSuite.run()
+
+// MARK: - TreeNode -
 
 public class TreeNode {
     public var val: Int
@@ -55,28 +77,3 @@ public class TreeNode {
         }
     }
 }
-
-import XCTest
-
-// Executed 3 tests, with 0 failures (0 unexpected) in 0.082 (0.083) seconds
-
-class Tests: XCTestCase {
-    private let s = Solution()
-    
-    func testExample1() {
-        let tree = TreeNode([3,1,4,3,nil,1,5])
-        XCTAssert(s.goodNodes(tree) == 4) // success
-    }
-    
-    func testExample2() {
-        let tree = TreeNode([3,3,nil,4,2])
-        XCTAssert(s.goodNodes(tree) == 3) // success
-    }
-    
-    func testExample3() {
-        let tree = TreeNode([1])
-        XCTAssert(s.goodNodes(tree) == 1) // success
-    }
-}
-
-Tests.defaultTestSuite.run()
