@@ -2,7 +2,6 @@ import Foundation
 
 // 48. Rotate Image
 // https://leetcode.com/problems/rotate-image/
-// Discuss: https://vk.cc/c4e3HY
 
 class Solution {
     func rotate(_ matrix: inout [[Int]]) {
