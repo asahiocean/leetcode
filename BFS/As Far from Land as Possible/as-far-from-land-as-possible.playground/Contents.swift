@@ -19,8 +19,7 @@ class Solution {
             }
         }
         
-        let rowCount = grid.count
-        let colCount = grid[0].count
+        let rowCount = grid.count, colCount = grid[0].count
         while !lands.isEmpty {
             let point: (x: Int, y: Int) = lands.removeFirst()
             for item: (x: Int, y: Int) in [(0,-1),(0,1),(-1,0),(1,0)] {
