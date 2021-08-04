@@ -4,14 +4,14 @@ import Foundation
 
 class Solution {
     func letterCombinations(_ digits: String) -> [String] {
-        let matrix: [Character:[Character]] = ["2":Array<Character>("abc"),
-                                               "3":Array<Character>("def"),
-                                               "4":Array<Character>("ghi"),
-                                               "5":Array<Character>("jkl"),
-                                               "6":Array<Character>("mno"),
-                                               "7":Array<Character>("pqrs"),
-                                               "8":Array<Character>("tuv"),
-                                               "9":Array<Character>("wxyz")]
+        let matrix: [Character:[Character]] = ["2":[Character]("abc"),
+                                               "3":[Character]("def"),
+                                               "4":[Character]("ghi"),
+                                               "5":[Character]("jkl"),
+                                               "6":[Character]("mno"),
+                                               "7":[Character]("pqrs"),
+                                               "8":[Character]("tuv"),
+                                               "9":[Character]("wxyz")]
         var res = [String](), digs = digits.map({Character($0.lowercased())})
         for num in digs {
             let chars = matrix[num]!
