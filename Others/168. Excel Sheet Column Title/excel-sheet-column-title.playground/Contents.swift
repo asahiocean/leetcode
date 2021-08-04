@@ -19,10 +19,9 @@ class Solution {
     }
 }
 
-
 import XCTest
 
-//     Executed 4 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
+// Executed 4 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
 
 class Tests: XCTestCase {
     private let s = Solution()
