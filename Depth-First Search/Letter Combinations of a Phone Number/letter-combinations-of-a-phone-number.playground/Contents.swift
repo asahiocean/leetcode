@@ -5,26 +5,20 @@ import Foundation
 
 class Solution {
     func letterCombinations(_ digits: String) -> [String] {
-        let matrix: [Character:[Character]] = ["2":[Character]("abc"),
-                                               "3":[Character]("def"),
-                                               "4":[Character]("ghi"),
-                                               "5":[Character]("jkl"),
-                                               "6":[Character]("mno"),
-                                               "7":[Character]("pqrs"),
-                                               "8":[Character]("tuv"),
-                                               "9":[Character]("wxyz")]
+        let matrix: [Character:[Character]] = ["2":["a","b","c"],
+                                               "3":["d","e","f"],
+                                               "4":["g","h","i"],
+                                               "5":["j","k","l"],
+                                               "6":["m","n","o"],
+                                               "7":["p","q","r","s"],
+                                               "8":["t","u","v"],
+                                               "9":["w","x","y","z"]]
         var res = [String](), digs = digits.map({Character($0.lowercased())})
         for num in digs {
             let chars = matrix[num]!
-            if res.isEmpty {
-                chars.forEach{ res.append("\($0)") }
-                continue
-            }
+            if res.isEmpty { chars.forEach{ res.append("\($0)") }; continue }
             let cur = res; res = [String]()
-            chars.forEach({ ch in
-                let externStr = cur.map { $0 + "\(ch)" }
-                res.append(contentsOf: externStr)
-            })
+            chars.forEach { ch in res.append(contentsOf: cur.map { $0 + "\(ch)" }) }
         }
         return res
     }
