@@ -20,13 +20,12 @@ class Solution {
         }
         
         let rowCount = grid.count
-        let columnCount = grid[0].count
+        let colCount = grid[0].count
         while !lands.isEmpty {
             let point: (x: Int, y: Int) = lands.removeFirst()
             for item: (x: Int, y: Int) in [(0,-1),(0,1),(-1,0),(1,0)] {
-                let x = point.x + item.x
-                let y = point.y + item.y
-                if x >= 0 && x < rowCount && y >= 0 && y < columnCount && grid[x][y] == -1 {
+                let x = point.x + item.x, y = point.y + item.y
+                if x >= 0 && x < rowCount && y >= 0 && y < colCount && grid[x][y] == -1 {
                     let distance: Int = grid[point.x][point.y] + 1
                     grid[x][y] = distance
                     dist = max(distance,dist)
