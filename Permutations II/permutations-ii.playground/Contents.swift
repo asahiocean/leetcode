@@ -2,7 +2,6 @@ import Foundation
 
 // 47. Permutations II
 // https://leetcode.com/problems/permutations-ii/
-// Discuss: https://vk.cc/c4e3lx
 
 class Solution {
     func permuteUnique(_ nums: [Int]) -> [[Int]] {
