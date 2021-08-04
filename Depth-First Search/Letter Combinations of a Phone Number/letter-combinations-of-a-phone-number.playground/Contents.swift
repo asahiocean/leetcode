@@ -37,15 +37,15 @@ import XCTest
 
 class Tests: XCTestCase {
     private let s = Solution()
-    func test1() {
+    func test0() {
         let res = s.letterCombinations("23")
         XCTAssertEqual(res, ["ad","bd","cd","ae","be","ce","af","bf","cf"])
     }
-    func test2() {
+    func test1() {
         let res = s.letterCombinations("")
         XCTAssertEqual(res, [])
     }
-    func test3() {
+    func test2() {
         let res = s.letterCombinations("2")
         XCTAssertEqual(res, ["a","b","c"])
     }
