@@ -9,11 +9,9 @@ class Solution {
         
         if root.val == 0, root.left == nil, root.right == nil { return nil }
         
-        let left = pruneTree(root.left)
-        let right = pruneTree(root.right)
+        let left = pruneTree(root.left), right = pruneTree(root.right)
         
         if root.val == 0, left == nil, right == nil { return nil }
-        
         (root.left,root.right) = (left,right)
         
         return root
