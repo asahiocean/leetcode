@@ -62,18 +62,15 @@ import XCTest
 
 class Tests: XCTestCase {
     private let s = Solution()
-    
-    func testExample1() {
+    func test0() {
         let tree = TreeNode([3,1,4,3,nil,1,5])
         XCTAssert(s.goodNodes(tree) == 4) // success
     }
-    
-    func testExample2() {
+    func test1() {
         let tree = TreeNode([3,3,nil,4,2])
         XCTAssert(s.goodNodes(tree) == 3) // success
     }
-    
-    func testExample3() {
+    func test2() {
         let tree = TreeNode([1])
         XCTAssert(s.goodNodes(tree) == 1) // success
     }
