@@ -2,7 +2,6 @@ import Foundation
 
 // 42. Trapping Rain Water
 // https://leetcode.com/problems/trapping-rain-water/
-// Discuss: https://vk.cc/c4e16C
 
 class Solution {
     func trap(_ height: [Int]) -> Int {
