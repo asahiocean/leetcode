@@ -1,7 +1,7 @@
 import Foundation
 
+// 4. Median of Two Sorted Arrays
 // https://leetcode.com/problems/median-of-two-sorted-arrays/
-// Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
 
 class Solution {
     func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
@@ -30,38 +30,22 @@ class Solution {
 import XCTest
 
 // Executed 5 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
+
 class Tests: XCTestCase {
     private let s = Solution()
-    
-    func testExaple1() {
-        //  Input: nums1 = [1,3], nums2 = [2]
-        //  Output: 2.00000
-        //  Explanation: merged array = [1,2,3] and median is 2.
+    func test0() {
         XCTAssertEqual(s.findMedianSortedArrays([1,3], [2]), 2.00000)
     }
-    
-    func testExample2() {
-        //  Input: nums1 = [1,2], nums2 = [3,4]
-        //  Output: 2.50000
-        //  Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
+    func test1() {
         XCTAssertEqual(s.findMedianSortedArrays([1,2], [3,4]), 2.50000)
     }
-    
-    func testExample3() {
-        //  Input: nums1 = [0,0], nums2 = [0,0]
-        //  Output: 0.00000
+    func test2() {
         XCTAssertEqual(s.findMedianSortedArrays([0,0], [0,0]), 0.00000)
     }
-    
-    func testExample4() {
-        //  Input: nums1 = [], nums2 = [1]
-        //  Output: 1.00000
+    func test3() {
         XCTAssertEqual(s.findMedianSortedArrays([], [1]), 1.00000)
     }
-    
-    func testExample5() {
-        //  Input: nums1 = [2], nums2 = []
-        //  Output: 2.00000
+    func test4() {
         XCTAssertEqual(s.findMedianSortedArrays([2], []), 2.00000)
     }
 }
