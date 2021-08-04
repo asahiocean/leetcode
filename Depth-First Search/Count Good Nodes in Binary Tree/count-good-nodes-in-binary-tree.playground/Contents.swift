@@ -4,21 +4,17 @@ import Foundation
 // Discuss: https://vk.cc/c3EibC
 
 class Solution {
-    private func dfs(_ root: TreeNode?, max num: Int) -> Int {
-        guard let root = root else { return 0 }
-        
-        var count = 0
-        root.val >= num ? count += 1 : nil
-        
-        let m = max(num, root.val)
-        count += dfs(root.left, max: m)
-        count += dfs(root.right, max: m)
-        
-        return count
-    }
-    
     func goodNodes(_ root: TreeNode?) -> Int {
         guard let root = root else { return 0 }
+        func dfs(_ root: TreeNode?, max num: Int) -> Int {
+            guard let root = root else { return 0 }
+            var count = 0
+            root.val >= num ? count += 1 : nil
+            let m = max(num, root.val)
+            count += dfs(root.left, max: m)
+            count += dfs(root.right, max: m)
+            return count
+        }
         return dfs(root, max: root.val)
     }
 }
