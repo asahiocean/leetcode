@@ -26,7 +26,7 @@ class Solution {
 
 import XCTest
 
-//      Executed 3 tests, with 0 failures (0 unexpected) in 0.117 (0.119) seconds
+// Executed 3 tests, with 0 failures (0 unexpected) in 0.117 (0.119) seconds
 
 class Tests: XCTestCase {
     private let s = Solution()
