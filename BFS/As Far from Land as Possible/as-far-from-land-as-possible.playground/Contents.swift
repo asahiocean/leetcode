@@ -1,6 +1,6 @@
 import Foundation
 
-// https://leetcode.com/problems/as-far-from-land-as-possible
+// https://leetcode.com/problems/as-far-from-land-as-possible/
 
 class Solution {
     func maxDistance(_ grid: [[Int]]) -> Int {
