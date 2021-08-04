@@ -1,8 +1,7 @@
 import Foundation
 
+// 168. Excel Sheet Column Title
 // https://leetcode.com/problems/excel-sheet-column-title/
-
-// Given an integer columnNumber, return its corresponding column title as it appears in an Excel sheet.
 
 class Solution {
     func convertToTitle(_ columnNumber: Int) -> String {
@@ -20,14 +19,25 @@ class Solution {
     }
 }
 
-let solution = Solution()
 
-func tests() {
-    assert(solution.convertToTitle(1) == "A")
-    assert(solution.convertToTitle(28) == "AB")
-    assert(solution.convertToTitle(701) == "ZY")
-    assert(solution.convertToTitle(2147483647) == "FXSHRXW")
-    
+import XCTest
+
+//     Executed 4 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
+
+class Tests: XCTestCase {
+    private let s = Solution()
+    func test0() {
+        XCTAssertEqual(s.convertToTitle(1), "A")
+    }
+    func test1() {
+        XCTAssertEqual(s.convertToTitle(28),"AB")
+    }
+    func test2() {
+        XCTAssertEqual(s.convertToTitle(701),"ZY")
+    }
+    func test3() {
+        XCTAssertEqual(s.convertToTitle(2147483647),"FXSHRXW")
+    }
 }
 
-tests()
+Tests.defaultTestSuite.run()
