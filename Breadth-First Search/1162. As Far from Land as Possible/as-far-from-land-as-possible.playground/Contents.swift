@@ -5,9 +5,8 @@ import Foundation
 
 class Solution {
     func maxDistance(_ grid: [[Int]]) -> Int {
-        var grid = grid
+        var grid = grid, dist = 0
         var lands: [(x: Int, y: Int)] = []
-        var dist = 0
         for (i,r) in grid.enumerated() {
             for (y, item) in r.enumerated() {
                 if item == 1 {
