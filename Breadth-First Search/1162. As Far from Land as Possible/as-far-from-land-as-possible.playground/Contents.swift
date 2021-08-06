@@ -10,7 +10,7 @@ class Solution {
         var dist = 0
         for (i,r) in grid.enumerated() {
             for (y, item) in r.enumerated() {
-                if item == 1{
+                if item == 1 {
                     grid[i][y] = 0
                     lands.append((i,y))
                 } else {
@@ -36,18 +36,18 @@ class Solution {
     }
 }
 
-// MARK: - Tests
+// MARK: - Test Cases -
 
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.370 (0.371) seconds
+// Executed 2 tests, with 0 failures (0 unexpected) in 0.255 (0.257) seconds
 
 class Tests: XCTestCase {
     private let s = Solution()
-    func test1() {
+    func test0() {
         XCTAssertEqual(s.maxDistance([[1,0,1],[0,0,0],[1,0,1]]), 2)
     }
-    func test2() {
+    func test1() {
         XCTAssertEqual(s.maxDistance([[1,0,0],[0,0,0],[0,0,0]]), 4)
     }
 }
