@@ -19,7 +19,7 @@ class Solution {
     }
 }
 
-// MARK: - Tests -
+// MARK: - Test Cases -
 
 import XCTest
 
