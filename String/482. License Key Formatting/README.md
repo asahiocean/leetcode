@@ -1,4 +1,8 @@
-# [482. License Key Formatting](https://leetcode.com/problems/license-key-formatting)
+## [482. License Key Formatting](https://leetcode.com/problems/license-key-formatting)
+
+[Discuss](https://leetcode.com/problems/license-key-formatting/discuss/1323954/Swift%3A-License-Key-Formatting-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>You are given a license key represented as a string <code>s</code> that consists of only alphanumeric characters and dashes. The string is separated into <code>n + 1</code> groups by <code>n</code> dashes. You are also given an integer <code>k</code>.</p>
 
