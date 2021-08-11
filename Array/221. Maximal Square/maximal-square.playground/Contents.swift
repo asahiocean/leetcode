@@ -1,7 +1,7 @@
 import Foundation
 
+// 221. Maximal Square
 // https://leetcode.com/problems/maximal-square/
-// Discuss: https://vk.cc/c3PDpg
 
 class Solution {
     func maximalSquare(_ matrix: [[Character]]) -> Int {
@@ -24,7 +24,7 @@ import XCTest
 // Executed 3 tests, with 0 failures (0 unexpected) in 0.111 (0.113) seconds
 
 class Tests: XCTestCase {
-    let s = Solution()
+    private let s = Solution()
     func test0() {
         let res = s.maximalSquare([["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]])
         XCTAssertEqual(res, 4)
