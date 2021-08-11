@@ -1,8 +1,7 @@
 import Foundation
 
-// Solution at July 6, 2021
+// 498. Diagonal Traverse
 // https://leetcode.com/problems/diagonal-traverse
-// Discuss: https://vk.cc/c3EdMH
 
 class Solution {
     func findDiagonalOrder(_ mat: [[Int]]) -> [Int] {
