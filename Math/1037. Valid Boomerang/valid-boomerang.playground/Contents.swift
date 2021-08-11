@@ -1,10 +1,7 @@
 import Foundation
 
-// Solution at July 6, 2021
-// Runtime: 4 ms, faster than 100.00% of Swift
-
+// 1037. Valid Boomerang
 // https://leetcode.com/problems/valid-boomerang
-// Discuss: https://vk.cc/c3EhFm
 
 class Solution {
     func isBoomerang(_ points: [[Int]]) -> Bool {
