@@ -1,7 +1,7 @@
 import Foundation
 
+// 171. Excel Sheet Column Number
 // https://leetcode.com/problems/excel-sheet-column-number/
-// Discuss: https://vk.cc/c3MX1c
 
 class Solution {
     func titleToNumber(_ columnTitle: String) -> Int {
@@ -14,7 +14,7 @@ import XCTest
 // Executed 4 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
 
 class Tests: XCTestCase {
-    let s = Solution()
+    private let s = Solution()
     func test0() {
         let res = s.titleToNumber("A")
         XCTAssertEqual(res, 1)
