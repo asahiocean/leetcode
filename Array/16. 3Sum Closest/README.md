@@ -1,8 +1,10 @@
 ## [16. 3Sum Closest](https://leetcode.com/problems/3sum-closest/)
 
-### [Open](https://leetcode.com/problems/3sum-closest/) • [Discuss](https://leetcode.com/problems/3sum-closest/discuss/1147500/Swift%3A-3Sum-Closest) • [Solution](https://gist.github.com/asahiocean/9ab8db4edb63f74a77f177fbddee4cde)
+[**Solution**](https://gist.github.com/asahiocean/9ab8db4edb63f74a77f177fbddee4cde) • [Discuss](https://leetcode.com/problems/3sum-closest/discuss/1147500/Swift%3A-3Sum-Closest)
 
-## Description:
+<hr>
+
+### Description:
 
 Given an array ```nums``` of **n** integers and an integer ```target```, find three integers in ```nums``` such that the sum is closest to ```target```. Return the sum of the three integers. You may assume that each input would have exactly one solution.
 
