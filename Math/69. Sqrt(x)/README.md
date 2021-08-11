@@ -1,4 +1,8 @@
-# [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
+## [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
+
+[Discuss](https://leetcode.com/problems/sqrtx/discuss/1329426/Swift%3A-Sqrt(x)-at-1-line-%2B-Test-Cases)
+
+<hr>
 
 <div><p>Given a non-negative integer <code>x</code>,&nbsp;compute and return <em>the square root of</em> <code>x</code>.</p>
 
