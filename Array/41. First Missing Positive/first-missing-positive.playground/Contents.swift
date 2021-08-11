@@ -2,7 +2,6 @@ import Foundation
 
 // 41. First Missing Positive
 // https://leetcode.com/problems/first-missing-positive/
-// Discuss: https://vk.cc/c4abPn
 
 class Solution {
     func firstMissingPositive(_ nums: [Int]) -> Int {
