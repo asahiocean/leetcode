@@ -1,7 +1,7 @@
 import Foundation
 
+// 235. Lowest Common Ancestor of a Binary Search Tree
 // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree
-// Discuss: https://vk.cc/c3HZ35
 
 class Solution {
     func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
@@ -14,6 +14,32 @@ class Solution {
         }
     }
 }
+
+// MARK: - Test Cases -
+
+import XCTest
+
+// Executed 3 tests, with 0 failures (0 unexpected) in 0.148 (0.149) seconds
+
+class Tests: XCTestCase {
+    private let s = Solution()
+    func test0() {
+        let res = s.lowestCommonAncestor(TreeNode([6,2,8,0,4,7,9,nil,nil,3,5]), TreeNode(2), TreeNode(8))
+        XCTAssertEqual(res!.val, 6)
+    }
+    func test1() {
+        let res = s.lowestCommonAncestor(TreeNode([6,2,8,0,4,7,9,nil,nil,3,5]), TreeNode(2), TreeNode(4))
+        XCTAssertEqual(res!.val, 2)
+    }
+    func test2() {
+        let res = s.lowestCommonAncestor(TreeNode([2,1]), TreeNode(2), TreeNode(1))
+        XCTAssertEqual(res!.val, 2)
+    }
+}
+
+Tests.defaultTestSuite.run()
+
+// MARK: - TreeNode -
 
 public class TreeNode {
     public var val: Int
@@ -45,25 +71,3 @@ public class TreeNode {
         }
     }
 }
-
-import XCTest
-
-// Executed 3 tests, with 0 failures (0 unexpected) in 0.148 (0.149) seconds
-
-class Tests: XCTestCase {
-    private let s = Solution()
-    func test1() {
-        let res = s.lowestCommonAncestor(TreeNode([6,2,8,0,4,7,9,nil,nil,3,5]), TreeNode(2), TreeNode(8))
-        XCTAssertEqual(res!.val, 6)
-    }
-    func test2() {
-        let res = s.lowestCommonAncestor(TreeNode([6,2,8,0,4,7,9,nil,nil,3,5]), TreeNode(2), TreeNode(4))
-        XCTAssertEqual(res!.val, 2)
-    }
-    func test3() {
-        let res = s.lowestCommonAncestor(TreeNode([2,1]), TreeNode(2), TreeNode(1))
-        XCTAssertEqual(res!.val, 2)
-    }
-}
-
-Tests.defaultTestSuite.run()
