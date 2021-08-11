@@ -1,4 +1,8 @@
-# [1037. Valid Boomerang](https://leetcode.com/problems/valid-boomerang)
+## [1037. Valid Boomerang](https://leetcode.com/problems/valid-boomerang/)
+
+[Discuss](https://leetcode.com/problems/valid-boomerang/discuss/1318776/Swift%3A-Valid-Boomerang-4-ms-100-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>Given an array <code>points</code> where <code>points[i] = [x<sub>i</sub>, y<sub>i</sub>]</code> represents a point on the <strong>X-Y</strong> plane, return <code>true</code> <em>if these points are a <strong>boomerang</strong></em>.</p>
 
