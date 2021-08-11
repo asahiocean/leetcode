@@ -1,4 +1,8 @@
-# [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
+## [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)
+
+[Discuss](https://leetcode.com/problems/merge-sorted-array/discuss/1329525/Swift%3A-Merge-Sorted-Array-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>You are given two integer arrays <code>nums1</code> and <code>nums2</code>, sorted in <strong>non-decreasing order</strong>, and two integers <code>m</code> and <code>n</code>, representing the number of elements in <code>nums1</code> and <code>nums2</code> respectively.</p>
 
