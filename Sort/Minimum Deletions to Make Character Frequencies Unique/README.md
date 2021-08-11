@@ -1,4 +1,8 @@
-### [1647. Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/)
+## [1647. Minimum Deletions to Make Character Frequencies Unique](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/)
+
+[Discuss](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/discuss/1122198/Swift-solution)
+
+<hr>
 
 A string ```s``` is called **good** if there are no two different characters in ```s``` that have the same **frequency**.
 
@@ -70,6 +74,3 @@ func tests() {
 
 tests()
 ```
-
-
-#### Here is the link to the [discuss](https://leetcode.com/problems/minimum-deletions-to-make-character-frequencies-unique/discuss/1122198/Swift-solution)
