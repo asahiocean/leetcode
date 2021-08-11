@@ -2,7 +2,6 @@ import Foundation
 
 // 37. Sudoku Solver
 // https://leetcode.com/problems/sudoku-solver/
-// Discuss: https://vk.cc/c4a6oY
 
 class Solution {
     func solveSudoku(_ board: inout [[Character]]) {
@@ -13,12 +12,9 @@ class Solution {
     private func helper(_ board: inout [[Character]]) -> Bool {
         func isValid(_ i: Int, _ j: Int, _ num: Character) -> Bool {
             let m = board.count, n = board[0].count
-            // row
-            for x in 0..<n where board[i][x] == num { return false }
-            // col
-            for y in 0..<m where board[y][j] == num { return false }
-            // square
-            for x in i / 3 * 3..<i / 3 * 3 + 3 {
+            for x in 0..<n where board[i][x] == num { return false }    // row
+            for y in 0..<m where board[y][j] == num { return false }    // col
+            for x in i / 3 * 3..<i / 3 * 3 + 3 {                        // square
                 for y in j / 3 * 3..<j / 3 * 3 + 3 where board[x][y] == num { return false }
             }
             return true
