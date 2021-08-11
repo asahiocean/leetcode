@@ -1,4 +1,8 @@
-# [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
+## [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs/)
+
+[Discuss](https://leetcode.com/problems/climbing-stairs/discuss/1329446/Swift%3A-Climbing-Stairs-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>You are climbing a staircase. It takes <code>n</code> steps to reach the top.</p>
 
