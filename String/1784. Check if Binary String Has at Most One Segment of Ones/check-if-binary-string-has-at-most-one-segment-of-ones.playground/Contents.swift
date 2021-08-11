@@ -1,8 +1,7 @@
 import Foundation
 
 // 1784. Check if Binary String Has at Most One Segment of Ones
-// https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones
-// Discuss: https://vk.cc/c3Gct9
+// https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/
 
 class Solution {
     func checkOnesSegment(_ s: String) -> Bool {
@@ -10,17 +9,19 @@ class Solution {
     }
 }
 
+// MARK: - Test Cases -
+
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
+//     Executed 2 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
 
 class Tests: XCTestCase {
     private let s = Solution()
-    func test1() {
+    func test0() {
         let res = s.checkOnesSegment("1001")
         XCTAssertEqual(res, false)
     }
-    func test2() {
+    func test1() {
         let res = s.checkOnesSegment("110")
         XCTAssertEqual(res, true)
     }
