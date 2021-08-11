@@ -1,6 +1,6 @@
 ## 235. Lowest Common Ancestor of a Binary Search Tree
 
-#### [Gist with solution](https://gist.github.com/asahiocean/8aa9e30d3a4123968101e56df5d3b147) • [Open Problem](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) • [Discuss](https://vk.cc/c3HZ35)
+#### [Gist with solution](https://gist.github.com/asahiocean/8aa9e30d3a4123968101e56df5d3b147) • [Open Problem](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree) • [Discuss](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/discuss/1322878/Swift%3A-Lowest-Common-Ancestor-of-a-Binary-Search-Tree-(%2B-Test-Cases))
 
 -------
 
