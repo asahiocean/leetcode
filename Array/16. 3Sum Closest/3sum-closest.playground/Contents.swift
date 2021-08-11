@@ -2,7 +2,6 @@ import Foundation
 
 // 16. 3Sum Closest
 // https://leetcode.com/problems/3sum-closest
-// Discuss: https://vk.cc/c3HTmo
 
 class Solution {
     func threeSumClosest(_ nums: [Int], _ target: Int) -> Int {
@@ -21,6 +20,8 @@ class Solution {
         return res
     }
 }
+
+// MARK: - Test -
 
 import XCTest
 
