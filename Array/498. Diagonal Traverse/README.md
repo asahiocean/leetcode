@@ -1,4 +1,8 @@
-# [498. Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse)
+## [498. Diagonal Traverse](https://leetcode.com/problems/diagonal-traverse)
+
+[Discuss](https://leetcode.com/problems/diagonal-traverse/discuss/1318667/Swift%3A-Diagonal-Traverse-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>Given an <code>m x n</code> matrix <code>mat</code>, return <em>an array of all the elements of the array in a diagonal order</em>.</p>
 
