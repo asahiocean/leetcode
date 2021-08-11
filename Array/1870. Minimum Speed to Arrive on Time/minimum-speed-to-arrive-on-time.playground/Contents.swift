@@ -1,7 +1,7 @@
 import Foundation
 
+// 1870. Minimum Speed to Arrive on Time
 // https://leetcode.com/problems/minimum-speed-to-arrive-on-time/
-// Discuss: https://vk.cc/c3RYQq
 
 class Solution {
     func minSpeedOnTime(_ dist: [Int], _ hour: Double) -> Int {
@@ -26,7 +26,7 @@ import XCTest
 // Executed 3 tests, with 0 failures (0 unexpected) in 0.008 (0.010) seconds
 
 class Tests: XCTestCase {
-    let s = Solution()
+    private let s = Solution()
     func test0() {
         let res = s.minSpeedOnTime([1,3,2], 6)
         XCTAssertEqual(res, 1)
