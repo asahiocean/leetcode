@@ -1,9 +1,12 @@
-# [326. Power of Three](https://leetcode.com/problems/power-of-three)
+## [326. Power of Three](https://leetcode.com/problems/power-of-three)
+
+[Discuss](https://leetcode.com/problems/power-of-three/discuss/1326296/Swift%3A-Power-of-Three-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>Given an integer <code>n</code>, return <em><code>true</code> if it is a power of three. Otherwise, return <code>false</code></em>.</p>
 
 <p>An integer <code>n</code> is a power of three, if there exists an integer <code>x</code> such that <code>n == 3<sup>x</sup></code>.</p>
-
 
 <p><strong>Example 1:</strong></p>
 <pre><strong>Input:</strong> n = 27
@@ -24,6 +27,5 @@
 <ul>
 	<li><code>-2<sup>31</sup> &lt;= n &lt;= 2<sup>31</sup> - 1</code></li>
 </ul>
-
 
 <strong>Follow up:</strong> Could you solve it without loops/recursion?</div>
