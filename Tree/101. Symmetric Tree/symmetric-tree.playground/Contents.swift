@@ -1,7 +1,7 @@
 import Foundation
 
+// 101. Symmetric Tree
 // https://leetcode.com/problems/symmetric-tree
-// Discuss: https://vk.cc/c3IFkY
 
 class Solution {
     func isSymmetric(_ root: TreeNode?) -> Bool {
@@ -14,6 +14,28 @@ class Solution {
         return l?.val == r?.val && check(n.0,n.1) && check(n.1,n.0)
     }
 }
+
+// MARK: - Test Cases -
+
+import XCTest
+
+// Executed 2 tests, with 0 failures (0 unexpected) in 0.065 (0.067) seconds
+
+class Tests: XCTestCase {
+    private let s = Solution()
+    func test1() {
+        let res = s.isSymmetric(.init([1,2,2,3,4,4,3]))
+        XCTAssertEqual(res, true)
+    }
+    func test2() {
+        let res = s.isSymmetric(.init([1,2,2,nil,3,nil,3]))
+        XCTAssertEqual(res, false)
+    }
+}
+
+Tests.defaultTestSuite.run()
+
+// MARK: - TreeNode -
 
 public class TreeNode {
     public var val: Int
@@ -46,21 +68,3 @@ public class TreeNode {
         }
     }
 }
-
-import XCTest
-
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.065 (0.067) seconds
-
-class Tests: XCTestCase {
-    private let s = Solution()
-    func test1() {
-        let res = s.isSymmetric(.init([1,2,2,3,4,4,3]))
-        XCTAssertEqual(res, true)
-    }
-    func test2() {
-        let res = s.isSymmetric(.init([1,2,2,nil,3,nil,3]))
-        XCTAssertEqual(res, false)
-    }
-}
-
-Tests.defaultTestSuite.run()
