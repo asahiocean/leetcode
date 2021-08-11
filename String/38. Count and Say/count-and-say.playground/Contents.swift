@@ -2,7 +2,6 @@ import Foundation
 
 // 38. Count and Say
 // https://leetcode.com/problems/count-and-say/
-// Discuss: https://vk.cc/c4a7lg
 
 class Solution {
     func countAndSay(_ n: Int) -> String {
