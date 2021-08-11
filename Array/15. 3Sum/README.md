@@ -1,8 +1,10 @@
 ## [15. 3Sum](https://leetcode.com/problems/3sum/)
 
-### [Open](https://leetcode.com/problems/3sum/) • [Discuss](https://leetcode.com/problems/3sum/discuss/1144266/Swift%3A-3Sum) • [Solution](https://gist.github.com/asahiocean/ad5b43fc2fefa424cbd627395fd3b157)
+[Solution](https://gist.github.com/asahiocean/ad5b43fc2fefa424cbd627395fd3b157) • [Discuss](https://leetcode.com/problems/3sum/discuss/1144266/Swift%3A-3Sum)
 
-## Description:
+<hr>
+
+### Description:
 
 Given an integer array nums, return all the triplets ```[nums[i], nums[j], nums[k]]``` such that ```i != j```, ```i != k```, and ```j != k```, and ```nums[i] + nums[j] + nums[k] == 0```.
 
