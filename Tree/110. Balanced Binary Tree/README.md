@@ -1,4 +1,8 @@
-# [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)
+## [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree/)
+
+[Discuss](https://leetcode.com/problems/balanced-binary-tree/discuss/1335631/Swift%3A-Balanced-Binary-Tree-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>Given a binary tree, determine if it is height-balanced.</p>
 
