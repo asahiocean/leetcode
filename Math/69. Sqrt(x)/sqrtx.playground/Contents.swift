@@ -1,7 +1,7 @@
 import Foundation
 
+// 69. Sqrt(x)
 // https://leetcode.com/problems/sqrtx/
-// Discuss: https://vk.cc/c3OjBx
 
 class Solution {
     func mySqrt(_ x: Int) -> Int {
@@ -14,7 +14,7 @@ import XCTest
 // Executed 2 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
 
 class Tests: XCTestCase {
-    let s = Solution()
+    private let s = Solution()
     func test0() {
         XCTAssertEqual(s.mySqrt(4), 2)
     }
