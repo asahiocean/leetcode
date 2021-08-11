@@ -1,4 +1,8 @@
-# [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
+## [83. Remove Duplicates from Sorted List](https://leetcode.com/problems/remove-duplicates-from-sorted-list/)
+
+[Discuss](https://leetcode.com/problems/remove-duplicates-from-sorted-list/discuss/1335394/Swift%3A-Remove-Duplicates-from-Sorted-List-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>Given the <code>head</code> of a sorted linked list, <em>delete all duplicates such that each element appears only once</em>. Return <em>the linked list <strong>sorted</strong> as well</em>.</p>
 
