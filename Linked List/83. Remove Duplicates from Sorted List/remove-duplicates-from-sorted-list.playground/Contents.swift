@@ -1,7 +1,7 @@
 import Foundation
 
+// 83. Remove Duplicates from Sorted List
 // https://leetcode.com/problems/remove-duplicates-from-sorted-list/
-// Discuss: https://vk.cc/c3UA4a
 
 class Solution {
     func deleteDuplicates(_ head: ListNode?) -> ListNode? {
@@ -12,6 +12,8 @@ class Solution {
         return head
     }
 }
+
+// MARK: - Test Cases -
 
 import XCTest
 
@@ -32,6 +34,8 @@ class Tests: XCTestCase {
 }
 
 Tests.defaultTestSuite.run()
+
+// MARK: - ListNode -
 
 public class ListNode {
     public var val: Int
