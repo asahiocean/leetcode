@@ -2,7 +2,6 @@ import Foundation
 
 // 32. Longest Valid Parentheses
 // https://leetcode.com/problems/longest-valid-parentheses/
-// Discuss: https://vk.cc/c47dUk
 
 class Solution {
     func longestValidParentheses(_ s: String) -> Int {
@@ -31,7 +30,7 @@ class Solution {
 
 import XCTest
 
-//     Executed 3 tests, with 0 failures (0 unexpected) in 0.013 (0.015) seconds
+// Executed 3 tests, with 0 failures (0 unexpected) in 0.013 (0.015) seconds
 
 class Tests: XCTestCase {
     private let s = Solution()
