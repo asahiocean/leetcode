@@ -2,7 +2,7 @@ import Foundation
 
 // 64. Minimum Path Sum
 // https://leetcode.com/problems/minimum-path-sum/
-// Discuss: https://vk.cc/c4qpOa
+// Discuss: https://leetcode.com/problems/minimum-path-sum/discuss/1369639/Swift%3A-Minimum-Path-Sum-(%2B-Test-Cases)
 
 class Solution {
     func minPathSum(_ grid: [[Int]]) -> Int {
