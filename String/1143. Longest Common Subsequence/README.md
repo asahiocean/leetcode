@@ -1,4 +1,8 @@
-# [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
+## [1143. Longest Common Subsequence](https://leetcode.com/problems/longest-common-subsequence/)
+
+[Discuss](https://leetcode.com/problems/longest-common-subsequence/discuss/1333634/Swift%3A-Longest-Common-Subsequence-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>Given two strings <code>text1</code> and <code>text2</code>, return <em>the length of their longest <strong>common subsequence</strong>. </em>If there is no <strong>common subsequence</strong>, return <code>0</code>.</p>
 

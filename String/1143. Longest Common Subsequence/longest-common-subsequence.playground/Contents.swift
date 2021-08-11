@@ -1,7 +1,7 @@
 import Foundation
 
+// 1143. Longest Common Subsequence
 // https://leetcode.com/problems/longest-common-subsequence/
-// Discuss: https://vk.cc/c3RWeU
 
 class Solution {
     func longestCommonSubsequence(_ text1: String, _ text2: String) -> Int {
