@@ -1,8 +1,11 @@
-# [1784. Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones)
+## [1784. Check if Binary String Has at Most One Segment of Ones](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones)
+
+[Discuss](https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/discuss/1320519/Swift%3A-Check-if-Binary-String-Has-at-Most-One-Segment-of-Ones)
+
+<hr>
 
 <div><p>Given a binary string <code>s</code> <strong>​​​​​without leading zeros</strong>, return <code>true</code>​​​ <em>if </em><code>s</code><em> contains <strong>at most one contiguous segment of ones</strong></em>. Otherwise, return <code>false</code>.</p>
 
-<p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
 
 <pre><strong>Input:</strong> s = "1001"
@@ -15,7 +18,6 @@
 <pre><strong>Input:</strong> s = "110"
 <strong>Output:</strong> true</pre>
 
-<p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
