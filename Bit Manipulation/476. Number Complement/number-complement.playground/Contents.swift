@@ -1,6 +1,7 @@
 import Foundation
 
-// https://leetcode.com/problems/number-complement
+// 476. Number Complement
+// https://leetcode.com/problems/number-complement/
 
 class Solution {
     func findComplement(_ num: Int) -> Int {
@@ -10,16 +11,18 @@ class Solution {
     }
 }
 
+// MARK: - Test Cases -
+
 import XCTest
 
-//      Executed 2 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
+// Executed 2 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
 
 class Tests: XCTestCase {
     private let s = Solution()
-    func test1() {
+    func test0() {
         XCTAssertEqual(s.findComplement(5), 2)
     }
-    func test2() {
+    func test1() {
         XCTAssertEqual(s.findComplement(1), 0)
     }
 }
