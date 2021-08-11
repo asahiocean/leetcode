@@ -1,10 +1,7 @@
 import Foundation
 
-// Runtime: 0 ms
-// Memory Usage: 13.9 MB
-
+// 94. Binary Tree Inorder Traversal
 // https://leetcode.com/problems/binary-tree-inorder-traversal/
-// Discuss: https://vk.cc/c3Ol0B
 
 class Solution {
     func inorderTraversal(_ root: TreeNode?) -> [Int] {
@@ -31,7 +28,7 @@ import XCTest
 // Executed 5 tests, with 0 failures (0 unexpected) in 0.046 (0.048) seconds
 
 class Tests: XCTestCase {
-    let s = Solution()
+    private let s = Solution()
     func test0() {
         let res = s.inorderTraversal(.init([1,nil,2,3]))
         XCTAssertEqual(res, [1,3,2])
