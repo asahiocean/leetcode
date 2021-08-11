@@ -1,17 +1,4 @@
-# [1528. Shuffle String](https://leetcode.com/problems/shuffle-string/)
-
-#### Solution:
-```swift
-class Solution {
-    func restoreString(_ s: String, _ indices: [Int]) -> String {
-        var res = Array<Character>(repeating: "a", count: indices.count)
-        for i in 0 ..< indices.count { res[indices[i]] = Array(s)[i] }
-        return String(res)
-    }
-}
-```
-
-### Description:
+## [1528. Shuffle String](https://leetcode.com/problems/shuffle-string/)
 
 <div><p>Given a string <code>s</code>&nbsp;and an integer array <code>indices</code> of the <strong>same length</strong>.</p>
 
