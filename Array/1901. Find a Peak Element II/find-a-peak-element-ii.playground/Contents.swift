@@ -1,10 +1,7 @@
 import Foundation
 
+// 1901. Find a Peak Element II
 // https://leetcode.com/problems/find-a-peak-element-ii/
-// Discuss: https://vk.cc/c3PFsG
-
-// Runtime: 1960 ms, faster than 100.00%
-// Memory Usage: 17.9 MB, less than 100.00%
 
 class Solution {
     func findPeakGrid(_ mat: [[Int]]) -> [Int] {
