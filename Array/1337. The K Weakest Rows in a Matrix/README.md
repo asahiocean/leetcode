@@ -1,4 +1,8 @@
-# [1337. The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/)
+## [1337. The K Weakest Rows in a Matrix](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/)
+
+[Discuss](https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/discuss/1327467/Swift%3A-The-K-Weakest-Rows-in-a-Matrix-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>You are given an <code>m x n</code> binary matrix <code>mat</code> of <code>1</code>'s (representing soldiers) and <code>0</code>'s (representing civilians). The soldiers are positioned <strong>in front</strong> of the civilians. That is, all the <code>1</code>'s will appear to the <strong>left</strong> of all the <code>0</code>'s in each row.</p>
 
@@ -11,7 +15,6 @@
 
 <p>Return <em>the indices of the </em><code>k</code><em> <strong>weakest</strong> rows in the matrix ordered from weakest to strongest</em>.</p>
 
-<p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
 
 <pre><strong>Input:</strong> mat = 
@@ -50,7 +53,6 @@ The number of soldiers in each row is:
 The rows ordered from weakest to strongest are [0,2,3,1].
 </pre>
 
-<p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
