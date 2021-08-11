@@ -1,4 +1,8 @@
-# [67. Add Binary](https://leetcode.com/problems/add-binary/)
+## [67. Add Binary](https://leetcode.com/problems/add-binary/)
+
+[Discuss](https://leetcode.com/problems/add-binary/discuss/1329387/Swift%3A-Add-Binary-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>Given two binary strings <code>a</code> and <code>b</code>, return <em>their sum as a binary string</em>.</p>
 
