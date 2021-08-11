@@ -1,4 +1,8 @@
-# [1807. Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/)
+## [1807. Evaluate the Bracket Pairs of a String](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/)
+
+[Discuss](https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/discuss/1328505/Swift%3A-Evaluate-the-Bracket-Pairs-of-a-String-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>You are given a string <code>s</code> that contains some bracket pairs, with each pair containing a <strong>non-empty</strong> key.</p>
 
@@ -19,7 +23,6 @@
 
 <p>Return <em>the resulting string after evaluating <strong>all</strong> of the bracket pairs.</em></p>
 
-<p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
 
 <pre><strong>Input:</strong> s = "(name)is(age)yearsold", knowledge = [["name","bob"],["age","two"]]
@@ -50,7 +53,6 @@ Notice that the "a"s not in a bracket pair are not evaluated.
 <pre><strong>Input:</strong> s = "(a)(b)", knowledge = [["a","b"],["b","a"]]
 <strong>Output:</strong> "ba"</pre>
 
-<p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
