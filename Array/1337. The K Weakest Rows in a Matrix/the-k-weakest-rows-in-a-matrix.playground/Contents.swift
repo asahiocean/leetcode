@@ -1,7 +1,7 @@
 import Foundation
 
+// 1337. The K Weakest Rows in a Matrix
 // https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/
-// Discuss: https://vk.cc/c3MWB9
 
 class Solution {
     func kWeakestRows(_ mat: [[Int]], _ k: Int) -> [Int] {
@@ -16,6 +16,8 @@ class Solution {
         return Array(list[0 ..< k])
     }
 }
+
+// MARK: - Test Cases -
 
 import XCTest
 
