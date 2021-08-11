@@ -1,7 +1,7 @@
 import Foundation
 
+// 326. Power of Three
 // https://leetcode.com/problems/power-of-three
-// Discuss: https://vk.cc/c3KRK6
 
 class Solution {
     func isPowerOfThree(_ n: Int) -> Bool {
