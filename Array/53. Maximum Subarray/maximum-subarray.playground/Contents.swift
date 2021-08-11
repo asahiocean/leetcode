@@ -1,7 +1,7 @@
 import Foundation
 
+// 53. Maximum Subarray
 // https://leetcode.com/problems/maximum-subarray/
-// Discuss: https://vk.cc/c3Gh0Q
 
 class Solution {
     func maxSubArray(_ nums: [Int]) -> Int {
@@ -20,15 +20,15 @@ import XCTest
 
 class Tests: XCTestCase {
     private let s = Solution()
-    func test1() {
+    func test0() {
         let res = s.maxSubArray([-2,1,-3,4,-1,2,1,-5,4])
         XCTAssertEqual(res, 6)
     }
-    func test2() {
+    func test1() {
         let res = s.maxSubArray([1])
         XCTAssertEqual(res, 1)
     }
-    func test3() {
+    func test2() {
         let res = s.maxSubArray([5,4,-1,7,8])
         XCTAssertEqual(res, 23)
     }

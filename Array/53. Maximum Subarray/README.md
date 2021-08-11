@@ -1,4 +1,8 @@
-# [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+## [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+
+[Discuss](https://leetcode.com/problems/maximum-subarray/discuss/1320621/Swift%3A-Maximum-Subarray-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>Given an integer array <code>nums</code>, find the contiguous subarray (containing at least one number) which has the largest sum and return <em>its sum</em>.</p>
 
