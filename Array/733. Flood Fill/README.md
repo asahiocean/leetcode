@@ -1,4 +1,8 @@
-# [733. Flood Fill](https://leetcode.com/problems/flood-fill)
+## [733. Flood Fill](https://leetcode.com/problems/flood-fill)
+
+[Discuss](https://leetcode.com/problems/flood-fill/discuss/1323847/Swift%3A-Flood-Fill-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>An image is represented by an <code>m x n</code> integer grid <code>image</code> where <code>image[i][j]</code> represents the pixel value of the image.</p>
 
