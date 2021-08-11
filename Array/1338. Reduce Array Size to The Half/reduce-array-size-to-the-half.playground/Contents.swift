@@ -1,7 +1,7 @@
 import Foundation
 
+// 1338. Reduce Array Size to The Half
 // https://leetcode.com/problems/reduce-array-size-to-the-half/
-// Discuss: https://vk.cc/c3S0ff
 
 class Solution {
     func minSetSize(_ arr: [Int]) -> Int {
