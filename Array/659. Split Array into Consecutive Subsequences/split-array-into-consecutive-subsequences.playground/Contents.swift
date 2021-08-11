@@ -1,8 +1,7 @@
 import Foundation
 
+// 659. Split Array into Consecutive Subsequences
 // https://leetcode.com/problems/split-array-into-consecutive-subsequences
-// Discuss: https://vk.cc/c3E8L9
-// Solution at July 6, 2021
 
 typealias Counter = Dictionary<Int,Int>
 extension Counter {
@@ -43,21 +42,23 @@ class Solution {
     }
 }
 
+// MARK: - Test Cases -
+
 import XCTest
 
 // MARK: Executed 3 tests, with 0 failures (0 unexpected) in 0.146 (0.148) seconds
 
 class Tests: XCTestCase {
     private let s = Solution()
-    func test1() {
+    func test0() {
         let res = s.isPossible([1,2,3,3,4,5])
         XCTAssertEqual(res, true)
     }
-    func test2() {
+    func test1() {
         let res = s.isPossible([1,2,3,3,4,4,5,5])
         XCTAssertEqual(res, true)
     }
-    func test3() {
+    func test2() {
         let res = s.isPossible([1,2,3,4,4,5])
         XCTAssertEqual(res, false)
     }
