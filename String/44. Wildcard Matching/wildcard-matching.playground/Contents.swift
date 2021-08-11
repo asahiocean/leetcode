@@ -2,7 +2,6 @@ import Foundation
 
 // 44. Wildcard Matching
 // https://leetcode.com/problems/wildcard-matching
-// Discuss: https://vk.cc/c4e27x
 
 class Solution {
     func isMatch(_ s: String, _ p: String) -> Bool {
