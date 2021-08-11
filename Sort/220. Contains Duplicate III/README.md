@@ -1,24 +1,4 @@
-# [220. Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)
-
-### Solution:
-```swift
-class Solution {
-    func containsNearbyAlmostDuplicate(_ nums: [Int], _ k: Int, _ t: Int) -> Bool {
-        guard k > 0, nums.count > 1 else { return false }
-        let range = 0 ..< nums.count, ids = [Int](range).sorted{ nums[$0] < nums[$1] }
-        
-        for i in range {
-            for j in (i + 1) ..< nums.count {
-                if (nums[ids[j]] - nums[ids[i]]) > t { break }
-                if abs(ids[j] - ids[i]) <= k { return true }
-            }
-        }
-        return false
-    }
-}
-```
-
-### Description:
+## [220. Contains Duplicate III](https://leetcode.com/problems/contains-duplicate-iii/)
 
 <div><p>Given an integer array <code>nums</code> and two integers <code>k</code> and <code>t</code>, return <code>true</code> if there are <strong>two distinct indices</strong> <code>i</code> and <code>j</code> in the array such that <code>abs(nums[i] - nums[j]) &lt;= t</code> and <code>abs(i - j) &lt;= k</code>.</p>
 
