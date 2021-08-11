@@ -1,7 +1,7 @@
 import Foundation
 
+// 110. Balanced Binary Tree
 // https://leetcode.com/problems/balanced-binary-tree/
-// Discuss: https://vk.cc/c3UOmn
 
 class Solution {
     func isBalanced(_ root: TreeNode?) -> Bool {
@@ -15,6 +15,8 @@ class Solution {
         return (abs(l - r) <= 1)
     }
 }
+
+// MARK: - Test Cases -
 
 import XCTest
 
