@@ -1,7 +1,7 @@
 import Foundation
 
+// 70. Climbing Stairs
 // https://leetcode.com/problems/climbing-stairs/
-// Discuss: https://vk.cc/c3Okf2
 
 class Solution {
     func climbStairs(_ n: Int) -> Int {
