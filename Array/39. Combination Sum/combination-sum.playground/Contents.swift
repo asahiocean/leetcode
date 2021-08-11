@@ -2,7 +2,6 @@ import Foundation
 
 // 39. Combination Sum
 // https://leetcode.com/problems/combination-sum/
-// Discuss: https://vk.cc/c4a92w
 
 class Solution {
     func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]] {
