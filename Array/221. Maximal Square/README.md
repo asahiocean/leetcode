@@ -1,4 +1,8 @@
-# [221. Maximal Square](https://leetcode.com/problems/maximal-square/)
+## [221. Maximal Square](https://leetcode.com/problems/maximal-square/)
+
+[Discuss](https://leetcode.com/problems/maximal-square/discuss/1331540/Swift%3A-Maximal-Square-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>Given an <code>m x n</code> binary <code>matrix</code> filled with <code>0</code>'s and <code>1</code>'s, <em>find the largest square containing only</em> <code>1</code>'s <em>and return its area</em>.</p>
 
