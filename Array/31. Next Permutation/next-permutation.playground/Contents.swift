@@ -2,7 +2,6 @@ import Foundation
 
 // 31. Next Permutation
 // https://leetcode.com/problems/next-permutation/
-// Discuss: https://vk.cc/c47dqh
 
 class Solution {
     func nextPermutation(_ nums: inout [Int]) {
