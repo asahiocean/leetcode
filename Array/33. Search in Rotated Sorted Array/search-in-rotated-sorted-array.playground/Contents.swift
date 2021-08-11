@@ -2,7 +2,6 @@ import Foundation
 
 // 33. Search in Rotated Sorted Array
 // https://leetcode.com/problems/search-in-rotated-sorted-array/
-// Discuss: https://vk.cc/c47enI
 
 class Solution {
     func search(_ nums: [Int], _ target: Int) -> Int {
