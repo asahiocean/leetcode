@@ -1,7 +1,7 @@
 import Foundation
 
+// 67. Add Binary
 // https://leetcode.com/problems/add-binary/
-// Discuss: https://vk.cc/c3Oj5c
 
 class Solution {
     func addBinary(_ a: String, _ b: String) -> String {
@@ -24,7 +24,7 @@ import XCTest
 // Executed 2 tests, with 0 failures (0 unexpected) in 0.034 (0.036) seconds
 
 class Tests: XCTestCase {
-    let s = Solution()
+    private let s = Solution()
     func test0() {
         let res = s.addBinary("11", "1")
         XCTAssertEqual(res, "100")
