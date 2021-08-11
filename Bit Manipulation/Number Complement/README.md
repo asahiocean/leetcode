@@ -1,4 +1,4 @@
-# [476. Number Complement](https://leetcode.com/problems/number-complement)
+# [476. Number Complement](https://leetcode.com/problems/number-complement/)
 
 <div><p>Given a <strong>positive</strong> integer <code>num</code>, output its complement number. The complement strategy is to flip the bits of its binary representation.</p>
 
