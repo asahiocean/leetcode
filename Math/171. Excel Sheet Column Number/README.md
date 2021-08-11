@@ -1,4 +1,8 @@
-# [171. Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)
+## [171. Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number/)
+
+[Discuss](https://leetcode.com/problems/excel-sheet-column-number/discuss/1327476/Swift%3A-Excel-Sheet-Column-Number-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>Given a string <code>columnTitle</code> that represents the column title as appear in an Excel sheet, return <em>its corresponding column number</em>.</p>
 
@@ -14,7 +18,6 @@ AB -&gt; 28
 ...
 </pre>
 
-<p>&nbsp;</p>
 <p><strong>Example 1:</strong></p>
 
 <pre><strong>Input:</strong> columnTitle = "A"
@@ -39,7 +42,6 @@ AB -&gt; 28
 <strong>Output:</strong> 2147483647
 </pre>
 
-<p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
