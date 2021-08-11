@@ -1,7 +1,7 @@
 import Foundation
 
+// 88. Merge Sorted Array
 // https://leetcode.com/problems/merge-sorted-array/
-// Discuss: https://vk.cc/c3OlEM
 
 class Solution {
     func merge(_ nums1: inout [Int], _ m: Int, _ nums2: [Int], _ n: Int) {
@@ -18,7 +18,7 @@ import XCTest
 // Executed 3 tests, with 0 failures (0 unexpected) in 0.040 (0.042) seconds
 
 class Tests: XCTestCase {
-    let s = Solution()
+    private let s = Solution()
     func test0() {
         var nums = [1,2,3,0,0,0]
         s.merge(&nums, 3, [2,5,6], 3)
