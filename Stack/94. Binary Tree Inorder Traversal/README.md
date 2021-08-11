@@ -1,4 +1,8 @@
-# [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+## [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+
+[Discuss](https://leetcode.com/problems/binary-tree-inorder-traversal/discuss/1329494/0-ms-Swift%3A-Binary-Tree-Inorder-Traversal-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>Given the <code>root</code> of a binary tree, return <em>the inorder traversal of its nodes' values</em>.</p>
 
