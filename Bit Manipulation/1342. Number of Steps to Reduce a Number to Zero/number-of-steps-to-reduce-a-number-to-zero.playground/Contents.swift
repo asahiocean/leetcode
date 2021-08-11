@@ -1,6 +1,7 @@
 import Foundation
 
-// https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero
+// 1342. Number of Steps to Reduce a Number to Zero
+// https://leetcode.com/problems/number-of-steps-to-reduce-a-number-to-zero/
 
 class Solution {
     func numberOfSteps(_ num: Int) -> Int {
@@ -20,19 +21,21 @@ class Solution {
     }
 }
 
+// MARK: - Test Cases -
+
 import XCTest
 
-//      Executed 3 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
+// Executed 3 tests, with 0 failures (0 unexpected) in 0.005 (0.006) seconds
 
 class Tests: XCTestCase {
     private let s = Solution()
-    func test1() {
+    func test0() {
         XCTAssertEqual(s.numberOfSteps(14), 6)
     }
-    func test2() {
+    func test1() {
         XCTAssertEqual(s.numberOfSteps(8), 4)
     }
-    func test3() {
+    func test2() {
         XCTAssertEqual(s.numberOfSteps(123), 12)
     }
 }
