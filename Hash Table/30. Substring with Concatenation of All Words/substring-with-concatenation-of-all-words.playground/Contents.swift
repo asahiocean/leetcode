@@ -2,7 +2,6 @@ import Foundation
 
 // 30. Substring with Concatenation of All Words
 // https://leetcode.com/problems/substring-with-concatenation-of-all-words/
-// Discuss: https://vk.cc/c47cH8
 
 class Solution {
     func findSubstring(_ s: String, _ words: [String]) -> [Int] {
