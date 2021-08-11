@@ -1,7 +1,7 @@
 import Foundation
 
+// 1807. Evaluate the Bracket Pairs of a String
 // https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/
-// Discuss: https://vk.cc/c3NLdj
 
 class Solution {
     func evaluate(_ s: String, _ knowledge: [[String]]) -> String {
