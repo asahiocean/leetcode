@@ -1,4 +1,8 @@
-# [1338. Reduce Array Size to The Half](https://leetcode.com/problems/reduce-array-size-to-the-half/)
+## [1338. Reduce Array Size to The Half](https://leetcode.com/problems/reduce-array-size-to-the-half/)
+
+[Discuss](https://leetcode.com/problems/reduce-array-size-to-the-half/discuss/1333711/Swift%3A-Reduce-Array-Size-to-The-Half-(%2B-Test-Cases))
+
+<hr>
 
 <div><p>You are given an integer array <code>arr</code>. You can choose a set of integers and remove all the occurrences of these integers in the array.</p>
 
