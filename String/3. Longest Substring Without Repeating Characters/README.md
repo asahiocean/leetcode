@@ -1,6 +1,6 @@
 ## [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 
-##### [Solution](https://git.io/JEYyT) • [Pastebin](https://pastebin.com/15wExPdq) • [Discuss](https://leetcode.com/problems/longest-substring-without-repeating-characters/discuss/1134880/Swift%3A-Longest-Substring-Without-Repeating-Characters)
+#### [Solution](https://git.io/JEYyT) • [Pastebin](https://pastebin.com/15wExPdq) • [Discuss](https://leetcode.com/problems/longest-substring-without-repeating-characters/discuss/1134880/Swift%3A-Longest-Substring-Without-Repeating-Characters)
 
 ---
 
