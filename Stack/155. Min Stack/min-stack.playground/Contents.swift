@@ -3,7 +3,6 @@ import Foundation
 // 155. Min Stack
 // https://leetcode.com/problems/min-stack/
 
-
 class MinStack {
     private var stack: [Int]
     private var min: Int
