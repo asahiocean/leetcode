@@ -1,6 +1,6 @@
 ### [1. Two Sum](https://leetcode.com/problems/two-sum/)
 
-**[Solution](https://gist.github.com/asahiocean/16df79785a4fb5e906344ea7089ebfa0) • [Pastebin](https://pastebin.com/dmceS55U)**
+**[Solution](https://git.io/JEYEW) • [Pastebin](https://pastebin.com/dmceS55U)**
 
 ---
 
