@@ -1,5 +1,6 @@
 import Foundation
 
+// 1. Two Sum
 // https://leetcode.com/problems/two-sum/
 
 class Solution {
@@ -15,11 +16,26 @@ class Solution {
     }
 }
 
-func tests() {
-    let s = Solution()
-    assert(s.twoSum([2,7,11,15], 9) == [0,1])
-    assert(s.twoSum([3,2,4], 6) == [1,2])
-    assert(s.twoSum([3,3], 6) == [0,1])
+// MARK: - Tests -
+
+import XCTest
+
+//     Executed 3 tests, with 0 failures (0 unexpected) in 0.022 (0.024) seconds
+
+class Tests: XCTestCase {
+    private let s = Solution()
+    func test0() {
+        let res = s.twoSum([2,7,11,15], 9)
+        XCTAssertEqual(res, [0,1])
+    }
+    func test1() {
+        let res = s.twoSum([3,2,4], 6)
+        XCTAssertEqual(res, [1,2])
+    }
+    func test2() {
+        let res = s.twoSum([3,3], 6)
+        XCTAssertEqual(res, [0,1])
+    }
 }
 
-tests()
+Tests.defaultTestSuite.run()
