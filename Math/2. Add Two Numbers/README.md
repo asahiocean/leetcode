@@ -1,6 +1,6 @@
 ## [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
 
-##### [Solution](https://git.io/JEYa7) • [Pastebin](https://pastebin.com/dNbqaHGk) • [Discuss](https://leetcode.com/problems/add-two-numbers/discuss/1128713/Swift%3A-Add-Two-Numbers)
+#### [Solution](https://git.io/JEYa7) • [Pastebin](https://pastebin.com/dNbqaHGk) • [Discuss](https://leetcode.com/problems/add-two-numbers/discuss/1128713/Swift%3A-Add-Two-Numbers)
 
 ---
 
