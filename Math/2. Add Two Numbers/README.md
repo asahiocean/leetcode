@@ -1,17 +1,8 @@
 # [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/)
 
-### Solution:
-```swift
-class Solution {
-    fileprivate var anchor = 0
-    func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-        if l1 == nil && l2 == nil && anchor == 0 { return nil }
-        let sum = (l1?.val ?? 0) + (l2?.val ?? 0) + anchor
-        anchor = sum / 10
-        return .init(sum % 10, addTwoNumbers(l1?.next, l2?.next))
-    }
-}
-```
+###### [Solution](https://git.io/JEYa7) • [Pastebin](https://pastebin.com/dNbqaHGk) • [Discuss](https://leetcode.com/problems/add-two-numbers/discuss/1128713/Swift%3A-Add-Two-Numbers)
+
+---
 
 ### Description:
 
