@@ -17,14 +17,16 @@ class Solution {
     }
 }
 
-// MARK: - Tests -
+// MARK: - Test Cases -
+
+// Result: Executed 4 tests, with 0 failures (0 unexpected) in 0.026 (0.028) seconds
 
 import XCTest
 
-//     Executed 4 tests, with 0 failures (0 unexpected) in 0.026 (0.028) seconds
-
 class Tests: XCTestCase {
+    
     private let s = Solution()
+    
     func test0() {
         let res = s.lengthOfLongestSubstring("abcabcbb")
         XCTAssertEqual(res, 3)
