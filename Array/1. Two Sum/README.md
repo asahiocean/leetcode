@@ -1,6 +1,9 @@
-### [1. Two Sum](https://leetcode.com/problems/two-sum/)
+## Description
 
-**[Solution](https://git.io/JEYEW) • [Pastebin](https://pastebin.com/dmceS55U)**
+<h3>1. Two Sum</h3>
+
+🔗 **URL:** https://leetcode.com/problems/two-sum/
+✅ **Solutions:** [GitHub Gist](https://git.io/JEYEW) • [Pastebin](https://pastebin.com/dmceS55U) • [ControlC](https://controlc.com/e61c2150) • [TextBin](https://textbin.net/jbpbnhoa4f)
 
 ---
 
