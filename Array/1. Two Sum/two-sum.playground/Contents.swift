@@ -20,10 +20,12 @@ class Solution {
 
 import XCTest
 
-//     Executed 3 tests, with 0 failures (0 unexpected) in 0.022 (0.024) seconds
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.022 (0.024) seconds
 
 class Tests: XCTestCase {
+    
     private let s = Solution()
+    
     func test0() {
         let res = s.twoSum([2,7,11,15], 9)
         XCTAssertEqual(res, [0,1])
