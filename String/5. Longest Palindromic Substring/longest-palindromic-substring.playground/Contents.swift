@@ -37,16 +37,20 @@ class Tests: XCTestCase {
     private let s = Solution()
     
     func test0() {
-        XCTAssertEqual(s.longestPalindrome("babad"), "aba")
+        let res = s.longestPalindrome("babad")
+        XCTAssertEqual(res, "aba")
     }
     func test1() {
-        XCTAssertEqual(s.longestPalindrome("cbbd"), "bb")
+        let res = s.longestPalindrome("cbbd")
+        XCTAssertEqual(res, "bb")
     }
     func test2() {
-        XCTAssertEqual(s.longestPalindrome("a"), "a")
+        let res = s.longestPalindrome("a")
+        XCTAssertEqual(res, "a")
     }
     func test3() {
-        XCTAssertEqual(s.longestPalindrome("ac"), "a")
+        let res = s.longestPalindrome("ac")
+        XCTAssertEqual(res, "a")
     }
 }
 
