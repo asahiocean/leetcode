@@ -4,7 +4,7 @@
 
 ✅ **Solutions:** [GitHub Gist]() • [Pastebin]() • [ControlC]() • [TextBin]()
 
-💡 **[Go to discuss on LeetCode]()**
+💡 **[Go to discuss on LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/discuss/1134918/Swift:-Median-of-Two-Sorted-Arrays)**
 
 ---
 
