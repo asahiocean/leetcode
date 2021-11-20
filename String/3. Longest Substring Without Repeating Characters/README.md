@@ -1,8 +1,14 @@
-## [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+## 3. Longest Substring Without Repeating Characters
 
-#### [Solution](https://git.io/JEYyT) • [Pastebin](https://pastebin.com/15wExPdq) • [Discuss](https://leetcode.com/problems/longest-substring-without-repeating-characters/discuss/1134880/Swift%3A-Longest-Substring-Without-Repeating-Characters)
+🔗 **URL:** https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
+✅ **Solutions:** [GitHub Gist](https://git.io/JEYyT) • [Pastebin](https://pastebin.com/15wExPdq) • [ControlC](https://controlc.com/d4c059a9) • [TextBin](https://textbin.net/1a6jkxepzv)
+
+💡 **[Go to discuss on LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/discuss/1134880/Swift%3A-Longest-Substring-Without-Repeating-Characters)**
 
 ---
+
+### Description:
 
 Given a string ```s```, find the length of the **longest substring** without repeating characters.
 
