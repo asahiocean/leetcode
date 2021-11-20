@@ -1,5 +1,6 @@
 import Foundation
 
+// 5. Longest Palindromic Substring
 // https://leetcode.com/problems/longest-palindromic-substring/
 
 class Solution {
@@ -25,12 +26,28 @@ class Solution {
     }
 }
 
-func tests() {
-    let s = Solution()
-    assert(s.longestPalindrome("babad") == "aba")
-    assert(s.longestPalindrome("cbbd") == "bb")
-    assert(s.longestPalindrome("a") == "a")
-    assert(s.longestPalindrome("ac") == "a")
+// MARK: - Test Cases -
+
+// Result: Executed 4 tests, with 0 failures (0 unexpected) in 0.012 (0.014) seconds
+
+import XCTest
+
+class Tests: XCTestCase {
+    
+    private let s = Solution()
+    
+    func test1() {
+        s.longestPalindrome("babad") == "aba"
+    }
+    func test2() {
+        s.longestPalindrome("cbbd") == "bb"
+    }
+    func test3() {
+        s.longestPalindrome("a") == "a"
+    }
+    func test4() {
+        s.longestPalindrome("ac") == "a"
+    }
 }
 
-tests()
+Tests.defaultTestSuite.run()
