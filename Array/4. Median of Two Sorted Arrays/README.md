@@ -2,7 +2,7 @@
 
 🔗 **URL:** https://leetcode.com/problems/median-of-two-sorted-arrays/
 
-✅ **Solutions:** [GitHub Gist]() • [Pastebin]() • [ControlC]() • [TextBin]()
+✅ **Solutions:** [GitHub Gist](https://git.io/J1DkY) • [Pastebin](https://pastebin.com/6LmatwU9) • [ControlC](https://controlc.com/97a6c515) • [TextBin](https://textbin.net/apez7hs8td)
 
 💡 **[Go to discuss on LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/discuss/1134918/Swift:-Median-of-Two-Sorted-Arrays)**
 
