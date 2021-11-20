@@ -1,4 +1,14 @@
-## [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+## 5. Longest Palindromic Substring
+
+🔗 **URL:** https://leetcode.com/problems/longest-palindromic-substring/
+
+✅ **Solutions:** [GitHub Gist](https://git.io/J1DmQ) • [Pastebin](https://pastebin.com/CsthR5UH) • [ControlC](https://controlc.com/08c43813) • [TextBin](https://textbin.net/zvjrey4vzb)
+
+<!-- 💡 **[Go to discuss on LeetCode]()** -->
+
+---
+
+### Description:
 
 Given a string s, return the longest palindromic substring in s.
 
