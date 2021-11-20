@@ -9,7 +9,7 @@ class Solution {
         if l1 == nil && l2 == nil && anchor == 0 { return nil }
         let sum = (l1?.val ?? 0) + (l2?.val ?? 0) + anchor
         anchor = sum / 10
-        return ListNode(sum % 10, addTwoNumbers(l1?.next, l2?.next))
+        return .some(ListNode(sum % 10, addTwoNumbers(l1?.next, l2?.next)))
     }
 }
 
