@@ -4,7 +4,7 @@
 
 ✅ **Solutions:** [GitHub Gist](https://git.io/JEYi7) • [Pastebin](https://pastebin.com/dNbqaHGk) • [ControlC](https://controlc.com/d430a48b) • [TextBin](https://textbin.net/lsxgmlfi4r)
 
-💡 **Discuss:** https://leetcode.com/problems/add-two-numbers/discuss/1128713/Swift%3A-Add-Two-Numbers
+💡 **[Go to discuss on LeetCode](https://leetcode.com/problems/add-two-numbers/discuss/1128713/Swift%3A-Add-Two-Numbers)**
 
 ---
 
