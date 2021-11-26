@@ -1,5 +1,6 @@
 import Foundation
 
+// 6. Zigzag Conversion
 // https://leetcode.com/problems/zigzag-conversion/
 
 class Solution {
@@ -21,23 +22,29 @@ class Solution {
     }
 }
 
+// MARK: - Test Cases -
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
+
 import XCTest
 
-// Executed 3 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
-
 class Tests: XCTestCase {
+    
     private let s = Solution()
     
-    func testExample1() {
-        XCTAssertEqual(s.convert("PAYPALISHIRING", 3), "PAHNAPLSIIGYIR") // success
+    func test0() {
+        let value = s.convert("PAYPALISHIRING", 3)
+        XCTAssertEqual(value, "PAHNAPLSIIGYIR")
     }
     
-    func testExample2() {
-        XCTAssertEqual(s.convert("PAYPALISHIRING", 4), "PINALSIGYAHRPI") // success
+    func test1() {
+        let value = s.convert("PAYPALISHIRING", 4)
+        XCTAssertEqual(value, "PINALSIGYAHRPI")
     }
     
-    func testExample3() {
-        XCTAssertEqual(s.convert("A", 1), "A") // success
+    func test2() {
+        let value = s.convert("A", 1)
+        XCTAssertEqual(value, "A")
     }
 }
 
