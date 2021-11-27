@@ -1,4 +1,11 @@
-## [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/)
+## 7. Reverse Integer
+
+🔗 **URL:** https://leetcode.com/problems/reverse-integer/
+
+✅ **Solutions:** [GitHub Gist](https://git.io/JMGNn) • [Pastebin](https://pastebin.com/Z2ZSQyzp) • [ControlC](https://controlc.com/f5cf3211) • [TextBin](https://textbin.net/7kfihkg3hm)
+
+---
+### Description
 
 <div><p>Given a signed 32-bit integer <code>x</code>, return <code>x</code><em> with its digits reversed</em>. If reversing <code>x</code> causes the value to go outside the signed 32-bit integer range <code>[-2<sup>31</sup>, 2<sup>31</sup> - 1]</code>, then return <code>0</code>.</p>
 
