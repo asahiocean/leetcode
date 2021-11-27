@@ -1,8 +1,10 @@
 # LeetCode
 
 <p align="center">
-  <img src="https://img.shields.io/github/repo-size/asahiocean/LeetCode?style=plastic">
-  <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/asahiocean/LeetCode&left_color=blue&right_color=orange&left_text=views" alt="views">
+  <img src="https://img.shields.io/github/repo-size/asahiocean/LeetCode.svg">
+  <img src="https://img.shields.io/github/commit-activity/y/asahiocean/LeetCode">
+  <img src="https://img.shields.io/github/last-commit/asahiocean/LeetCode">
+  <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/asahiocean/LeetCode&left_text=views">
 </p>
 
 <b>Profile: https://leetcode.com/asahiocean</b><br>
