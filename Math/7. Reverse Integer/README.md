@@ -1,4 +1,4 @@
-## 7. Reverse Integer
+## 7. Reverse Integer <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/asahiocean/LeetCode/tree/main/Math/7.%20Reverse%20Integer&left_color=black&right_color=yellow&left_text=views" alt="views" align="right">
 
 🔗 **URL:** https://leetcode.com/problems/reverse-integer/
 
