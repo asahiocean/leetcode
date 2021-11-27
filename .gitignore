@@ -90,4 +90,7 @@ fastlane/test_output
 iOSInjectionProject/
 
 # Helpers
+_.DS_Store
 .DS_Store
+*/.DS_Store
+**/.DS_Store
