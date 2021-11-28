@@ -1,4 +1,4 @@
-# LeetCode
+<h1>LeetCode<img src="https://git.io/JMC8l" height="44" align="right"></h1>
 
 <p align="center">
   <img src="https://img.shields.io/github/repo-size/asahiocean/LeetCode.svg">
@@ -9,5 +9,3 @@
 
 <b>Profile: https://leetcode.com/asahiocean</b><br>
 <b>Problems Solved: 259</b>
-
-![](https://media.giphy.com/media/JXzZiHkfTKehEldb0m/giphy.gif)
