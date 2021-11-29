@@ -1,4 +1,4 @@
-## 1. Two Sum <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/asahiocean/LeetCode/tree/main/Array/1.%20Two%20Sum&left_color=black&right_color=yellow&left_text=views" alt="views" align="right">
+## 1. Two Sum <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/asahiocean/LeetCode/tree/main/Array/1.%20Two%20Sum&left_text=views" align="right">
 
 🔗 **URL:** https://leetcode.com/problems/two-sum/
 
