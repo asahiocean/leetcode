@@ -1,4 +1,12 @@
-# [6. Zigzag Conversion](https://leetcode.com/problems/zigzag-conversion/)
+## 6. Zigzag Conversion <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/asahiocean/LeetCode/tree/main/String/6.%20Zigzag%20Conversion&left_color=black&right_color=yellow&left_text=views" alt="views" align="right">
+
+🔗 **URL:** https://leetcode.com/problems/zigzag-conversion/
+
+✅ **Solutions:** [GitHub Gist](https://git.io/JMYkm) • [Pastebin](https://pastebin.com/aAXWzFVi) • [ControlC](https://controlc.com/ed5ed1ac) • [TextBin](https://textbin.net/pdfgdkyqsj)
+
+---
+
+### Description
 
 The string ```"PAYPALISHIRING"``` is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
 ```swift

@@ -12,11 +12,11 @@ class Solution {
         
         while c >= 0 {
             if t < 0 || i >= 0 && nums1[i] > nums2[t] {
-                arr[c] = nums1[i];
+                arr[c] = nums1[i]
                 c = c - 1
                 i = i - 1
             } else {
-                arr[c] = nums2[t];
+                arr[c] = nums2[t]
                 c = c - 1
                 t = t - 1
             }
@@ -27,28 +27,36 @@ class Solution {
     }
 }
 
+// MARK: - Test Cases -
+
+// Result: Executed 5 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
+
 import XCTest
 
-// Executed 5 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
-
 class Tests: XCTestCase {
+    
     private let s = Solution()
+    
     func test0() {
-        XCTAssertEqual(s.findMedianSortedArrays([1,3], [2]), 2.00000)
+        let res = s.findMedianSortedArrays([1,3], [2])
+        XCTAssertEqual(res, 2.00000)
     }
     func test1() {
-        XCTAssertEqual(s.findMedianSortedArrays([1,2], [3,4]), 2.50000)
+        let res = s.findMedianSortedArrays([1,2], [3,4])
+        XCTAssertEqual(res, 2.50000)
     }
     func test2() {
-        XCTAssertEqual(s.findMedianSortedArrays([0,0], [0,0]), 0.00000)
+        let res = s.findMedianSortedArrays([0,0], [0,0])
+        XCTAssertEqual(res, 0.00000)
     }
     func test3() {
-        XCTAssertEqual(s.findMedianSortedArrays([], [1]), 1.00000)
+        let res = s.findMedianSortedArrays([], [1])
+        XCTAssertEqual(res, 1.00000)
     }
     func test4() {
-        XCTAssertEqual(s.findMedianSortedArrays([2], []), 2.00000)
+        let res = s.findMedianSortedArrays([2], [])
+        XCTAssertEqual(res, 2.00000)
     }
 }
 
 Tests.defaultTestSuite.run()
-
