@@ -24,9 +24,3 @@
 
 <!-- images & badges -->
 [solved]: .assets/images/checkmark-green.png
-
-<!-- helpers
-Checkmark (github url): https://github.com/asahiocean/LeetCode/blob/main/.assets/images/checkmark-green.svg
-Checkmark (inkscape url): https://media.inkscape.org/media/resources/file/checkmark-green.svg
-Checkmark (tinyurl + inkscape): https://tinyurl.com/mr46hmvt
--->
