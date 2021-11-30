@@ -14,5 +14,5 @@
 
 | Status | Problem | Solution |
 |:------:|:-------:|:--------:|
-| <img src="https://git.io/JMuWl" height="16px"> | [**1. Two Sum**](https://leetcode.com/problems/two-sum/) | [**OPEN**](https://git.io/JMuOd)
+| <img src="https://git.io/JMuWl" height="16px"> | [**1. Two Sum**](https://leetcode.com/problems/two-sum/) | [**OPEN**](https://git.io/JMuOd) |
 </details>
