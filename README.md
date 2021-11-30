@@ -9,3 +9,10 @@
 
 <b>Profile: https://leetcode.com/asahiocean</b><br>
 <b>Problems Solved: 259</b>
+
+<details><summary>Problems 1-100</summary>
+
+| Status | Problem | Solution |
+|:------:|:-------:|:--------:|
+| <img src="https://git.io/JMuWl" height="16px"> | [**1. Two Sum**](https://leetcode.com/problems/two-sum/) | [**OPEN**](https://git.io/JMuOd)
+</details>
