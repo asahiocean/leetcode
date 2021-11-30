@@ -1,11 +1,16 @@
-## 1. Two Sum <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/asahiocean/LeetCode/tree/main/Array/1.%20Two%20Sum&left_text=views" align="right">
+## 1. Two Sum <img src="https://tinyurl.com/yc5ce92u" align="right">
 
-🔗 **URL:** https://leetcode.com/problems/two-sum/
+<p>
+<b>URL:</b> https://leetcode.com/problems/two-sum/
+</p>
 
-✅ **Solutions:** [GitHub Gist](https://git.io/JEYEW) • [Pastebin](https://pastebin.com/dmceS55U) • [ControlC](https://controlc.com/e61c2150) • [TextBin](https://textbin.net/jbpbnhoa4f)
+<p>
+<b>Solutions: </b><a href="https://git.io/JEYEW">GitHub Gist</a> • <a href="https://pastebin.com/dmceS55U">Pastebin</a> • <a href="https://controlc.com/e61c2150">ControlC</a> • <a href="https://textbin.net/jbpbnhoa4f">TextBin</a>
+</p>
 
----
-### Description
+<link rel="shortcut icon" type="image/png" href="/favicon.png">
+
+<h2>Description</h2>
 
 <div><p>Given an array of integers <code>nums</code>&nbsp;and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>
 
@@ -40,3 +45,11 @@
 	<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>
 	<li><strong>Only one valid answer exists.</strong></li>
 </ul>
+
+<p>
+<h3>Topics:</h3>
+<div style="display: inline-block;">
+<a href=""><img src="https://git.io/JMuv0" style="height: 32px;"></a>
+<a href=""><img src="https://git.io/JMuva" style="height: 32px;"></a>
+</div>
+</p>
