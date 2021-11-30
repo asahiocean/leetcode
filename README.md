@@ -15,13 +15,18 @@
 | Status | Problem | Solution |
 |:------:|:-------:|:--------:|
 | ![solved] | [**1. Two Sum**][1] | [**OPEN**][1r] |
+
 </details>
 
 <!-- URLs -->
 [1]: https://leetcode.com/problems/two-sum/
 [1r]: https://git.io/JMuOd
 
+<!-- images & badges -->
+[solved]: .assets/images/checkmark-green.png
+
 <!-- helpers
-Checkmark (full url): https://media.inkscape.org/media/resources/file/checkmark-green.svg
-Checkmark (tinyurl): https://tinyurl.com/mr46hmvt
+Checkmark (github url): https://github.com/asahiocean/LeetCode/blob/main/.assets/images/checkmark-green.svg
+Checkmark (inkscape url): https://media.inkscape.org/media/resources/file/checkmark-green.svg
+Checkmark (tinyurl + inkscape): https://tinyurl.com/mr46hmvt
 -->
