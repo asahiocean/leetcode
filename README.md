@@ -10,17 +10,14 @@
 <b>Profile: https://leetcode.com/asahiocean</b><br>
 <b>Problems Solved: 259</b>
 
-<details><summary>Problems 1-100</summary><br>
+<details><summary>Problems 1 – 100</summary><br>
 
-| Status | Problem | Solution |
-|:------:|:-------:|:--------:|
-| ![solved] | [**1. Two Sum**][1] | [**OPEN**][1r] |
+| Problem | Solution |
+|:--------|:--------:|
+| [**1. Two Sum**][1] | [**OPEN**][1r] |
 
 </details>
 
 <!-- URLs -->
 [1]: https://leetcode.com/problems/two-sum/
 [1r]: https://git.io/JMuOd
-
-<!-- images & badges -->
-[solved]: .assets/images/checkmark-green.png
