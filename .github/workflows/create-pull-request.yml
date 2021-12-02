@@ -1,4 +1,4 @@
-- name: Create Pull Request
+- name: Pull Request
   uses: peter-evans/create-pull-request@v3.11.0
   with:
     # GITHUB_TOKEN or a `repo` scoped Personal Access Token (PAT)
