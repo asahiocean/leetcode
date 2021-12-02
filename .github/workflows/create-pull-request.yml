@@ -1,5 +1,7 @@
-- name: Pull Request
-  uses: peter-evans/create-pull-request@v3.11.0
+- uses: actions/checkout@v2
+# Make changes to pull request here
+- name: Create Pull Request
+  uses: peter-evans/create-pull-request@v3.x.x
   with:
     # GITHUB_TOKEN or a `repo` scoped Personal Access Token (PAT)
     token: ${{ secrets.E6NP46Nd8X }} # optional, default is ${{ github.token }}
