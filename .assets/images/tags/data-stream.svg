@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 900 250" xmlns="http://www.w3.org/2000/svg">
+  <rect width="850" height="225" style="fill: rgb(250, 250, 250);" rx="112.5" ry="112.5" x="25" y="12.5"/>
+  <text style="fill: rgb(84, 110, 122); font-family: Arial, sans-serif; font-size: 120px; white-space: pre;" x="113.21" y="166.419">Data Stream</text>
+</svg>
