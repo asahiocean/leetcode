@@ -1,0 +1,15 @@
+name: Auto approve PR
+
+on:
+  pull_request
+
+jobs:
+  autoapprove:
+    name: Auto approve PR
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto approve
+        uses: hmarr/auto-approve-action@v2.0.0
+        if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
+        with:
+          github-token: ${{ secrets.E6NP46ND8X }}
