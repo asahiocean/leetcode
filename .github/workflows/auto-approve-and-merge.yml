@@ -2,6 +2,10 @@ name: Auto approve and merge PRs by dependabot
 
 on:
   pull_request
+  workflow_dispatch:
+    inputs: pullRequestNumber
+      description: Pull request number to auto-approve
+      required: false
 
 jobs:
   autoapprove:
@@ -13,6 +17,7 @@ jobs:
         if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
         with:
           github-token: ${{ secrets.E6NP46ND8X }}
+          pull-request-number: ${{ github.event.inputs.pullRequestNumber }}
   automerge:
     name: Auto merge after successful checks
     needs: autoapprove
