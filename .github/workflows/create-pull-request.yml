@@ -1,6 +1,4 @@
 - name: Create Pull Request
-  # You may pin to the exact commit or the version.
-  # uses: peter-evans/create-pull-request@67df31e08a133c6a77008b89689677067fef169e
   uses: peter-evans/create-pull-request@v3.11.0
   with:
     # GITHUB_TOKEN or a `repo` scoped Personal Access Token (PAT)
