@@ -1,0 +1,18 @@
+name: Auto merge PR
+
+on:
+  pull_request
+
+jobs:
+  automerge:
+    name: Auto merge after successful checks
+    needs: autoapprove
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto merge
+        uses: pascalgn/automerge-action@135f0bdb927d9807b5446f7ca9ecc2c51de03c4a
+        if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
+        env:
+          GITHUB_TOKEN: ${{ secrets.E6NP46ND8X }}
+          MERGE_LABELS: dependencies
+          MERGE_METHOD: rebase
