@@ -4,7 +4,7 @@
   uses: peter-evans/create-pull-request@v3.11.0
   with:
     # GITHUB_TOKEN or a `repo` scoped Personal Access Token (PAT)
-    token: # optional, default is ${{ github.token }}
+    token: ${{ secrets.E6NP46Nd8X }} # optional, default is ${{ github.token }}
     # Relative path under $GITHUB_WORKSPACE to the repository. Defaults to $GITHUB_WORKSPACE.
 
     path: # optional
