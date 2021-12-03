@@ -1,33 +1,25 @@
 name: TestActionsScript
 'on': push
 jobs:
-  updateAuthor:
+  createPullRequest:
+    name: create-pull-request workflow
     runs-on: ubuntu-latest
     steps:
-      - name: checking out code
-        uses: actions/checkout@v2
-      - name: extract git commit data
-        uses: rlespinasse/git-commit-data-action@
-      - name: Update author info
-        run: 'echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} > AUTHOR'
-      - name: Raise PR
-        uses: peter-evans/create-pull-request@
+      - uses: actions/checkout@v2
+      - name: Create report file
+        run: date +%s > report.txt
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
         with:
-          branch: auto-pr-branch
-          base: main
-          title: demo for auto pr
-          committer: >-
-            ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL
-            }}">
-          author: >-
-            ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL
-            }}">
-          body: This is to show automatic PR creation
           token: '${{ secrets.E6NP46ND8X }}'
-          delete-branch: true
+          commit-message: Add report file
+          title: '[Example] Add report file'
+          body: |
+            This auto PR
+          labels: 'report, automated pr'
   autoapprove:
-    name: Auto Approve a PR by dependabot
-    needs: updateAuthor
+    name: Auto approve PR
+    needs: createPullRequest
     'on': pull_request
     runs-on: ubuntu-latest
     steps:
