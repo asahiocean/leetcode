@@ -1,18 +1,14 @@
 name: Test actions
-
-on:
-  push
+on: push
 jobs:
   createPullRequest:
     name: Create Pull Request
     runs-on: ubuntu-latest
-    steps:
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
-        with:
-          token: ${{ secrets.E6NP46ND8X }}
-          commit-message: Add report file
-          title: '[Example] Add report file'
-          body: >
-            This PR is auto-generated
-          labels: report, automated pr
+    uses: peter-evans/create-pull-request@v3
+    with:
+      token: '${{ secrets.E6NP46ND8X }}'
+      commit-message: Add report file
+      title: '[Example] Add report file'
+      body: |
+        This PR is auto-generated
+      labels: 'report, automated pr'
