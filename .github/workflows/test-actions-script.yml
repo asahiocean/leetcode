@@ -1,5 +1,5 @@
 name: TestActionsScript
-'on': push
+on: push
 jobs:
   createPullRequest:
     name: create-pull-request workflow
@@ -20,7 +20,7 @@ jobs:
   autoapprove:
     name: Auto approve PR
     needs: createPullRequest
-    'on': pull_request
+    on: pull_request
     runs-on: ubuntu-latest
     steps:
       - name: Auto approve
@@ -48,7 +48,7 @@ jobs:
   close-pull-request:
     name: Close Pull Request
     needs: automerge
-    'on':
+    on:
       pull_request_target:
         types:
           - opened
