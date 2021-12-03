@@ -1,20 +1,21 @@
-name: Update AUTHORS
+name: Test actions
+
 on:
   push
 jobs:
-  updateAuthors:
+  createPullRequest:
+    name: Create Pull Request
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - name: Update AUTHORS
-        run: |
-          git log --format='%aN <%aE>%n%cN <%cE>' | sort -u > AUTHORS
+      - name: Create report file
+        run: date +%s > report.txt
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          commit-message: update authors
-          title: Update AUTHORS
-          body: Credit new contributors by updating AUTHORS
-          branch: update-authors
+          token: ${{ secrets.E6NP46ND8X }}
+          commit-message: Add report file
+          title: '[Example] Add report file'
+          body: >
+            This PR is auto-generated
+          labels: report, automated pr
