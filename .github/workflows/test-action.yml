@@ -9,8 +9,8 @@ jobs:
     uses: peter-evans/create-pull-request@v3
     with:
       token: '${{ secrets.E6NP46ND8X }}'
-      commit-message: Add report file
-      title: '[Example] Add report file'
+      commit-message: Create Pull Request
+      title: '[createPullRequest] Create Pull Request'
       body: |
         This PR is auto-generated
       labels: 'report, automated pr'
