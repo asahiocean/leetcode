@@ -1,5 +1,7 @@
 name: Test actions
+
 on: push
+
 jobs:
   createPullRequest:
     name: Create Pull Request
