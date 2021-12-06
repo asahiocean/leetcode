@@ -12,13 +12,17 @@
 
 <details><summary>Problems 1 – 100</summary><br>
 
-| Problem | Solution |
+| **Problem** | **Solution** |
 |:--------|:--------:|
-| [**1. Two Sum**][1] | [**OPEN**][1r] |
+| [1. Two Sum][1] | [**OPEN**][1s] |
+| [2. Add Two Numbers][2] | [**OPEN**][2s] |
 
 </details>
 
 <!-- URLs -->
-[1]: https://leetcode.com/problems/two-sum/
-[1r]: https://git.io/JMuOd
 
+<!-- 1 - 100 -->
+[1]: https://leetcode.com/problems/two-sum/
+[1s]: https://git.io/JMuOd
+[2]: https://leetcode.com/problems/add-two-numbers/
+[2s]: https://git.io/JMxOR
