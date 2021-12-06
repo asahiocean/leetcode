@@ -1,8 +1,7 @@
 # Lines starting with '#' are comments.
 # Each line is a file pattern followed by one or more owners.
 
-# About code owners:
-# https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
+# About code owners: https://git.io/JMAOl
 
 # These users will be the default owners for everything in the repo
 *	@asahiocean
