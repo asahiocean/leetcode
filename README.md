@@ -1,4 +1,4 @@
-<h1>LeetCode<a href="https://leetcode.com/asahiocean"><img src="https://git.io/JMC8l" height="44" align="right"></a></h1>
+<h1>LeetCode<a href="https://leetcode.com/asahiocean"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Leetcode.svg" height="44" align="right"></a></h1>
 
 <p align="center">
   <img src="https://img.shields.io/github/repo-size/asahiocean/LeetCode.svg">
