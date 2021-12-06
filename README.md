@@ -16,6 +16,7 @@
 |:--------|:--------:|
 | [1. Two Sum][1] | [**OPEN**][1s] |
 | [2. Add Two Numbers][2] | [**OPEN**][2s] |
+| [3. Longest Substring Without Repeating Characters][3] | [**OPEN**][3s] |
 
 </details>
 
@@ -26,3 +27,5 @@
 [1s]: https://git.io/JMuOd
 [2]: https://leetcode.com/problems/add-two-numbers/
 [2s]: https://git.io/JMxOR
+[3]: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+[3s]: https://git.io/JMp3q
