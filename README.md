@@ -8,7 +8,7 @@
 </p>
 
 <b>Profile: https://leetcode.com/asahiocean</b><br>
-<b>Problems Solved: 270</b>
+<b>Problems Solved: 271</b>
 
 <details><summary>Problems 1 – 100</summary><br>
 
