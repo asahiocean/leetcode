@@ -17,6 +17,9 @@
 | [1. Two Sum][1] | [**OPEN**][1s] |
 | [2. Add Two Numbers][2] | [**OPEN**][2s] |
 | [3. Longest Substring Without Repeating Characters][3] | [**OPEN**][3s] |
+| [4. Median of Two Sorted Arrays][4] | [**OPEN**][4s] |
+
+  
 
 </details>
 
@@ -29,3 +32,5 @@
 [2s]: https://git.io/JMxOR
 [3]: https://leetcode.com/problems/longest-substring-without-repeating-characters/
 [3s]: https://git.io/JMp3q
+[4]: https://leetcode.com/problems/median-of-two-sorted-arrays/
+[4s]: https://git.io/JDU3A
