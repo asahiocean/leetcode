@@ -9,32 +9,3 @@
 
 <b>Profile: https://leetcode.com/asahiocean</b><br>
 <b>Problems Solved: 271</b>
-
-<details><summary>Problems 1 – 100</summary><br>
-
-| **Problem** | **Solution** |
-|:--------|:--------:|
-| [1. Two Sum][1] | [**OPEN**][1s] |
-| [2. Add Two Numbers][2] | [**OPEN**][2s] |
-| [3. Longest Substring Without Repeating Characters][3] | [**OPEN**][3s] |
-| [4. Median of Two Sorted Arrays][4] | [**OPEN**][4s] |
-| [5. Longest Palindromic Substring][5] | [**OPEN**][5s] |
-| [6. Zigzag Conversion][6] | [**OPEN**][6s] |
-
-</details>
-
-<!-- URLs -->
-
-<!-- 1 - 100 -->
-[1]: https://leetcode.com/problems/two-sum/
-[1s]: https://git.io/JMuOd
-[2]: https://leetcode.com/problems/add-two-numbers/
-[2s]: https://git.io/JMxOR
-[3]: https://leetcode.com/problems/longest-substring-without-repeating-characters/
-[3s]: https://git.io/JMp3q
-[4]: https://leetcode.com/problems/median-of-two-sorted-arrays/
-[4s]: https://git.io/JDU3A
-[5]: https://leetcode.com/problems/longest-palindromic-substring/
-[5s]: https://git.io/JDU8U
-[6]: https://leetcode.com/problems/zigzag-conversion/
-[6s]: https://git.io/JDUBn
