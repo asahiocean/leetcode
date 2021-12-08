@@ -1,4 +1,4 @@
-## 5. Longest Palindromic Substring <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/asahiocean/leetcode/tree/main/1-100/5.%20Longest%20Palindromic%20Substring&left_text=views" alt="views" align="right">
+## 5. Longest Palindromic Substring <img src="https://tinyurl.com/2p9e8wkw" alt="views" align="right">
 
 🔗 **URL:** https://leetcode.com/problems/longest-palindromic-substring/
 
