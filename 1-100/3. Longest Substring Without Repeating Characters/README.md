@@ -1,4 +1,4 @@
-## 3. Longest Substring Without Repeating Characters <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/asahiocean/LeetCode/tree/main/String/3.%20Longest%20Substring%20Without%20Repeating%20Characters&left_color=black&right_color=yellow&left_text=views" alt="views" align="right">
+## 3. Longest Substring Without Repeating Characters <img src="https://tinyurl.com/yckwupmn" alt="views" align="right">
 
 🔗 **URL:** https://leetcode.com/problems/longest-substring-without-repeating-characters/
 

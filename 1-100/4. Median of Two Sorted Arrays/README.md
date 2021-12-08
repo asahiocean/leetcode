@@ -1,4 +1,4 @@
-## 4. Median of Two Sorted Arrays <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/asahiocean/LeetCode/tree/main/Array/4.%20Median%20of%20Two%20Sorted%20Arrays&left_color=black&right_color=yellow&left_text=views" alt="views" align="right">
+## 4. Median of Two Sorted Arrays <img src="https://tinyurl.com/uc26jkuj" alt="views" align="right">
 
 🔗 **URL:** https://leetcode.com/problems/median-of-two-sorted-arrays/
 

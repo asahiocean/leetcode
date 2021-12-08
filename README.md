@@ -1,23 +1,40 @@
-<h1>LeetCode<a href="https://leetcode.com/asahiocean"><img src="https://git.io/JMC8l" height="44" align="right"></a></h1>
+<h1>LeetCode<a href="https://leetcode.com/asahiocean"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Leetcode.svg" height="44" align="right"></a></h1>
 
 <p align="center">
   <img src="https://img.shields.io/github/repo-size/asahiocean/LeetCode.svg">
   <img src="https://img.shields.io/github/commit-activity/y/asahiocean/LeetCode">
   <img src="https://img.shields.io/github/last-commit/asahiocean/LeetCode">
-  <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/asahiocean/LeetCode&left_text=views">
+  <img src="https://tinyurl.com/yckwfb3f">
 </p>
 
 <b>Profile: https://leetcode.com/asahiocean</b><br>
-<b>Problems Solved: 259</b>
+<b>Problems Solved: 271</b>
 
 <details><summary>Problems 1 – 100</summary><br>
 
-| Problem | Solution |
+| **Problem** | **Solution** |
 |:--------|:--------:|
-| [**1. Two Sum**][1] | [**OPEN**][1r] |
+| [1. Two Sum][1] | [**OPEN**][1s] |
+| [2. Add Two Numbers][2] | [**OPEN**][2s] |
+| [3. Longest Substring Without Repeating Characters][3] | [**OPEN**][3s] |
+| [4. Median of Two Sorted Arrays][4] | [**OPEN**][4s] |
+| [5. Longest Palindromic Substring][5] | [**OPEN**][5s] |
+| [6. Zigzag Conversion][6] | [**OPEN**][6s] |
 
 </details>
 
 <!-- URLs -->
+
+<!-- 1 - 100 -->
 [1]: https://leetcode.com/problems/two-sum/
-[1r]: https://git.io/JMuOd
+[1s]: https://git.io/JMuOd
+[2]: https://leetcode.com/problems/add-two-numbers/
+[2s]: https://git.io/JMxOR
+[3]: https://leetcode.com/problems/longest-substring-without-repeating-characters/
+[3s]: https://git.io/JMp3q
+[4]: https://leetcode.com/problems/median-of-two-sorted-arrays/
+[4s]: https://git.io/JDU3A
+[5]: https://leetcode.com/problems/longest-palindromic-substring/
+[5s]: https://git.io/JDU8U
+[6]: https://leetcode.com/problems/zigzag-conversion/
+[6s]: https://git.io/JDUBn
