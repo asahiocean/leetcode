@@ -1,4 +1,4 @@
-## 2. Add Two Numbers <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/asahiocean/LeetCode/tree/main/Math/2.%20Add%20Two%20Numbers&left_color=black&right_color=yellow&left_text=views" alt="views" align="right">
+## 2. Add Two Numbers <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/asahiocean/leetcode/tree/main/1-100/2.%20Add%20Two%20Numbers&left_text=views" alt="views" align="right">
 
 🔗 **URL:** https://leetcode.com/problems/add-two-numbers/
 
