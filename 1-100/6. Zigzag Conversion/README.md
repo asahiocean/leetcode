@@ -1,4 +1,4 @@
-## 6. Zigzag Conversion <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/asahiocean/LeetCode/tree/main/String/6.%20Zigzag%20Conversion&left_color=black&right_color=yellow&left_text=views" alt="views" align="right">
+## 6. Zigzag Conversion <img src="https://visitor-badge.glitch.me/badge?page_id=https://github.com/asahiocean/leetcode/tree/main/1-100/6.%20Zigzag%20Conversion&left_text=views" alt="views" align="right">
 
 🔗 **URL:** https://leetcode.com/problems/zigzag-conversion/
 
