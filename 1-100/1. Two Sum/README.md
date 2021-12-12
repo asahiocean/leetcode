@@ -4,9 +4,27 @@
 <b>URL:</b> https://leetcode.com/problems/two-sum/
 </p>
 
-<p>
-<b>Solutions: </b><a href="https://git.io/JEYEW">GitHub Gist</a> • <a href="https://pastebin.com/dmceS55U">Pastebin</a> • <a href="https://controlc.com/e61c2150">ControlC</a> • <a href="https://textbin.net/jbpbnhoa4f">TextBin</a>
-</p>
+<details>
+<summary><b>Solution</b></summary>
+<br/>
+
+```swift
+class Solution {
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        var dict = [Int:Int]()
+        for (i, num) in nums.enumerated() {
+            if let last = dict[target - num] {
+                return [last, i]
+            }
+            dict[num] = i
+        }
+        return []
+    }
+}
+```
+<h4>More: <a href="https://git.io/JEYEW">[GitHub Gist]</a> • <a href="https://pastebin.com/dmceS55U">[Pastebin]</a> • <a href="https://controlc.com/e61c2150">[ControlC]</a> • <a href="https://textbin.net/jbpbnhoa4f">[TextBin]</a></h4>
+
+</details>
 
 <link rel="shortcut icon" type="image/png" href="/favicon.png">
 
