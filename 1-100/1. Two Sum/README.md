@@ -22,52 +22,51 @@ class Solution {
     }
 }
 ```
-<h4>More: <a href="https://git.io/JEYEW">[GitHub Gist]</a> • <a href="https://pastebin.com/dmceS55U">[Pastebin]</a> • <a href="https://controlc.com/e61c2150">[ControlC]</a> • <a href="https://textbin.net/jbpbnhoa4f">[TextBin]</a></h4>
+<h4>More: <a href="https://git.io/JEYEW">GitHub Gist</a> • <a href="https://pastebin.com/dmceS55U">Pastebin</a> • <a href="https://controlc.com/e61c2150">ControlC</a> • <a href="https://textbin.net/jbpbnhoa4f">TextBin</a></h4>
 
 </details>
 
-<link rel="shortcut icon" type="image/png" href="/favicon.png">
+## Description
 
-<h2>Description</h2>
+Given an array of integers `nums` and an integer `target`, return _indices of the two numbers such that they add up to `target`_.
 
-<div><p>Given an array of integers <code>nums</code>&nbsp;and an integer <code>target</code>, return <em>indices of the two numbers such that they add up to <code>target</code></em>.</p>
+You may assume that each input would have **_exactly_ one solution**, and you may not use the _same_ element twice.
 
-<p>You may assume that each input would have <strong><em>exactly</em> one solution</strong>, and you may not use the <em>same</em> element twice.</p>
+You can return the answer in any order.
 
-<p>You can return the answer in any order.</p>
+**Example 1:**
 
-<p><strong>Example 1:</strong></p>
+```
+Input: nums = [2,7,11,15], target = 9
+Output: [0,1]
+Output: Because nums[0] + nums[1] == 9, we return [0, 1].
+```
 
-<pre><strong>Input:</strong> nums = [2,7,11,15], target = 9
-<strong>Output:</strong> [0,1]
-<strong>Output:</strong> Because nums[0] + nums[1] == 9, we return [0, 1].
-</pre>
+**Example 2:**
 
-<p><strong>Example 2:</strong></p>
+```
+Input: nums = [3,2,4], target = 6
+Output: [1,2]
+```
 
-<pre><strong>Input:</strong> nums = [3,2,4], target = 6
-<strong>Output:</strong> [1,2]
-</pre>
+**Example 3:**
 
-<p><strong>Example 3:</strong></p>
+```
+Input: nums = [3,3], target = 6
+Output: [0,1]
+```
 
-<pre><strong>Input:</strong> nums = [3,3], target = 6
-<strong>Output:</strong> [0,1]
-</pre>
+**Constraints:**
 
-<p><strong>Constraints:</strong></p>
+*   `2 <= nums.length <= 10<sup>4</sup>`
+*   `-10<sup>9</sup> <= nums[i] <= 10<sup>9</sup>`
+*   `-10<sup>9</sup> <= target <= 10<sup>9</sup>`
+*   **Only one valid answer exists.**
 
-<ul>
-	<li><code>2 &lt;= nums.length &lt;= 10<sup>4</sup></code></li>
-	<li><code>-10<sup>9</sup> &lt;= nums[i] &lt;= 10<sup>9</sup></code></li>
-	<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>
-	<li><strong>Only one valid answer exists.</strong></li>
-</ul>
+<!-- 
 
-<p>
-<h3>Topics:</h3>
-<div style="display: inline-block;">
-<a href=""><img src="https://git.io/JMuv0" style="height: 32px;"></a>
-<a href=""><img src="https://git.io/JMuva" style="height: 32px;"></a>
-</div>
-</p>
+### Topics:
+
+<div style="display: inline-block;"><a href="">![](https://git.io/JMuv0)</a> <a href="">![](https://git.io/JMuva)</a></div>
+
+-->
