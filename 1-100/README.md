@@ -9,6 +9,7 @@
 |[5. Longest Palindromic Substring][5]|![5v]|[**OPEN**][5s]|
 |[6. Zigzag Conversion][6]|![6v]|[**OPEN**][6s]|
 |[7. Reverse Integer][7]|![7v]|[**OPEN**][7s]|
+|[8. String to Integer (atoi)][8]|![8v]|[**OPEN**][8s]|
 
 <!-- URLs -->
 <!-- 1 -->
@@ -39,3 +40,7 @@
 [7]: https://leetcode.com/problems/reverse-integer/
 [7v]: https://tinyurl.com/a7rw3km6
 [7s]: https://git.io/JDTZP
+<!-- 8 -->
+[8]: https://leetcode.com/problems/string-to-integer-atoi
+[8v]: https://tinyurl.com/2p8hcb6p
+[8s]: https://git.io/JDcan
