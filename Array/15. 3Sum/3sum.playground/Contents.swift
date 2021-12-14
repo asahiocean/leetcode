@@ -33,12 +33,15 @@ class Solution {
 
 // MARK: - Test Cases -
 
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.029 (0.031) seconds
+
 import XCTest
 
-// Executed 3 tests, with 0 failures (0 unexpected) in 0.029 (0.031) seconds
 
 class Tests: XCTestCase {
+    
     private let s = Solution()
+    
     func test0() {
         let res = s.threeSum([-1,0,1,2,-1,-4])
         XCTAssertEqual(res, [[-1,-1,2],[-1,0,1]])
