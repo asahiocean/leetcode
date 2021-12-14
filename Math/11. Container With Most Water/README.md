@@ -1,22 +1,5 @@
 # [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 
-### Solution:
-```swift
-class Solution {
-    func maxArea(_ height: [Int]) -> Int {
-        guard height.count > 2 else { return min(height[0], height[1]) }
-        
-        var area = 0, l = 0, r = height.count - 1
-        while l < r {
-            let lots = min(height[l],height[r]) * (r - l)
-            area = max(area, lots)
-            if height[l] < height[r] { l += 1 } else { r -= 1 }
-        }
-        return area
-    }
-}
-```
-
 ### Description:
 
 Given n non-negative integers ```a1, a2, ..., an```, where each represents a point at coordinate <code>(i, a<sub>i</sub>)</code>. n vertical lines are drawn such that the two endpoints of the line ```i``` is at <code>(i, a<sub>i</sub>)</code> and ```(i, 0)```. Find two lines, which, together with the x-axis forms a container, such that the container contains the most water.
