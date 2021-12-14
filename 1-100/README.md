@@ -14,6 +14,7 @@
 |✅|[6. Zigzag Conversion][6]|[**OPEN**][6s]|
 |✅|[7. Reverse Integer][7]|[**OPEN**][7s]|
 |✅|[8. String to Integer (atoi)][8]|[**OPEN**][8s]|
+|🛠|[9. Palindrome Number][9] | **SOON** |
 
 <!-- URLs -->
 <!-- 1 -->
@@ -40,3 +41,5 @@
 <!-- 8 -->
 [8]: https://leetcode.com/problems/string-to-integer-atoi
 [8s]: https://git.io/JDcan
+<!-- 9 -->
+[9]: https://leetcode.com/problems/palindrome-number
