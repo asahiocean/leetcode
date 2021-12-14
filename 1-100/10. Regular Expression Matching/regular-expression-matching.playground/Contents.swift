@@ -1,6 +1,7 @@
 import Foundation
 
-// https://leetcode.com/problems/regular-expression-matching
+// 10. Regular Expression Matching
+// https://leetcode.com/problems/regular-expression-matching/
 
 class Solution {
     func isMatch(_ s: String, _ p: String) -> Bool {
@@ -24,19 +25,31 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 5 tests, with 0 failures (0 unexpected) in 0.080 (0.082) seconds
+
 import XCTest
 
-//      Executed 5 tests, with 0 failures (0 unexpected) in 0.080 (0.082) seconds
-
 class Tests: XCTestCase {
+    
     private let s = Solution()
     
-    func testExample1() { XCTAssert(s.isMatch("aa", "a") == false) }
-    func testExample2() { XCTAssert(s.isMatch("aa", "a*") == true) }
-    func testExample3() { XCTAssert(s.isMatch("ab", ".*") == true) }
-    func testExample4() { XCTAssert(s.isMatch("aab", "c*a*b") == true) }
-    func testExample5() { XCTAssert(s.isMatch("mississippi", "mis*is*p*.") == false) }
-    
+    func test0() {
+        XCTAssertEqual(s.isMatch("aa", "a"), false)
+    }
+    func test1() {
+        XCTAssertEqual(s.isMatch("aa", "a*"), true)
+    }
+    func test2() {
+        XCTAssertEqual(s.isMatch("ab", ".*"), true)
+    }
+    func test3() {
+        XCTAssertEqual(s.isMatch("aab", "c*a*b"), true)
+    }
+    func test4() {
+        XCTAssertEqual(s.isMatch("mississippi", "mis*is*p*."), false)
+    }
 }
 
 Tests.defaultTestSuite.run()
