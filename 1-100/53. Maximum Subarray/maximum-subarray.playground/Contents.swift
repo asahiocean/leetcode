@@ -14,12 +14,16 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.007 (0.009) seconds
+
 import XCTest
 
-// Executed 3 tests, with 0 failures (0 unexpected) in 0.007 (0.009) seconds
-
 class Tests: XCTestCase {
+    
     private let s = Solution()
+    
     func test0() {
         let res = s.maxSubArray([-2,1,-3,4,-1,2,1,-5,4])
         XCTAssertEqual(res, 6)
