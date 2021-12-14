@@ -15,6 +15,7 @@
 |✅|[7. Reverse Integer][7]|[**OPEN**][7s]|
 |✅|[8. String to Integer (atoi)][8]|[**OPEN**][8s]|
 |🛠|[9. Palindrome Number][9] | **SOON** |
+|🛠|[10. Regular Expression Matching][10] | **SOON** |
 
 <!-- URLs -->
 <!-- 1 -->
@@ -43,3 +44,5 @@
 [8s]: https://git.io/JDcan
 <!-- 9 -->
 [9]: https://leetcode.com/problems/palindrome-number
+<!-- 10 -->
+[10]: https://leetcode.com/problems/regular-expression-matching
