@@ -1,5 +1,6 @@
 import Foundation
 
+// 11. Container With Most Water
 // https://leetcode.com/problems/container-with-most-water/
 
 class Solution {
@@ -16,20 +17,31 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
+
 import XCTest
 
-// Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
-
 class Tests: XCTestCase {
+    
     private let s = Solution()
     
-    func testExample1() { XCTAssert(s.maxArea([1,8,6,2,5,4,8,3,7]) == 49) } // success
+    func test0() {
+        XCTAssertEqual(s.maxArea([1,8,6,2,5,4,8,3,7]), 49)
+    }
     
-    func testExample2() { XCTAssert(s.maxArea([1,1]) == 1) } // success
+    func test1() {
+        XCTAssertEqual(s.maxArea([1,1]), 1)
+    }
     
-    func testExample3() { XCTAssert(s.maxArea([4,3,2,1,4]) == 16) } // success
+    func test2() {
+        XCTAssertEqual(s.maxArea([4,3,2,1,4]), 16)
+    }
     
-    func testExample4() { XCTAssert(s.maxArea([1,2,1]) == 2) } // success
+    func test3() {
+        XCTAssertEqual(s.maxArea([1,2,1]), 2)
+    }
 }
 
 Tests.defaultTestSuite.run()
