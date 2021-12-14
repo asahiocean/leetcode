@@ -18,6 +18,7 @@
 |🛠|[10. Regular Expression Matching][10] | **SOON** |
 |🛠|[11. Container With Most Water][11] | **SOON** |
 |🛠|[12. Integer to Roman][12] | **SOON** |
+|🛠|[13. Roman to Integer][13] | **SOON** |
 
 <!-- URLs -->
 <!-- 1 -->
@@ -52,3 +53,5 @@
 [11]: https://leetcode.com/problems/container-with-most-water
 <!-- 12 -->
 [12]: https://leetcode.com/problems/integer-to-roman
+<!-- 13 -->
+[13]: https://leetcode.com/problems/roman-to-integer
