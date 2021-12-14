@@ -20,6 +20,7 @@
 |🛠|[12. Integer to Roman][12] | **SOON** |
 |🛠|[13. Roman to Integer][13] | **SOON** |
 |🛠|[14. Longest Common Prefix][14] | **SOON** |
+|🛠|[15. 3Sum][15] | **SOON** |
 
 <!-- URLs -->
 <!-- 1 -->
@@ -58,3 +59,5 @@
 [13]: https://leetcode.com/problems/roman-to-integer
 <!-- 14 -->
 [14]: https://leetcode.com/problems/longest-common-prefix
+<!-- 15 -->
+[15]: https://leetcode.com/problems/3sum
