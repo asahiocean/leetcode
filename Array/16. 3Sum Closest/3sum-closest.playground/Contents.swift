@@ -21,16 +21,18 @@ class Solution {
     }
 }
 
-// MARK: - Test -
+// MARK: - Test cases -
+
+// Result: Executed 1 test, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
 
 import XCTest
 
-// Executed 1 test, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
-
 class Tests: XCTestCase {
+    
     private let s = Solution()
+    
     func test() {
-        XCTAssert(s.threeSumClosest([-1,2,1,-4], 1) == 2) // success
+        XCTAssertEqual(s.threeSumClosest([-1,2,1,-4], 1), 2)
     }
 }
 
