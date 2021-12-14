@@ -9,12 +9,11 @@ class Solution {
         
         while count <= r {
             let n = count + (r - count) / 2
-            switch nums[n] < target {
-            case true:
+            if nums[n] < target {
                 count = n + 1
-            case false where nums[n] > target:
+            } else if nums[n] > target {
                 r = n - 1
-            default:
+            } else {
                 return n
             }
         }
@@ -22,14 +21,16 @@ class Solution {
     }
 }
 
-// MARK: - Test Cases -
+// MARK: - Test cases -
+
+// Result: Executed 5 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
 
 import XCTest
 
-// MARK: Executed 5 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
-
 class Tests: XCTestCase {
+    
     private let s = Solution()
+    
     func test0() {
         let res = s.searchInsert([1,3,5,6],5)
         XCTAssertEqual(res, 2)
