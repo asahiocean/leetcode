@@ -19,6 +19,7 @@
 |🛠|[11. Container With Most Water][11] | **SOON** |
 |🛠|[12. Integer to Roman][12] | **SOON** |
 |🛠|[13. Roman to Integer][13] | **SOON** |
+|🛠|[14. Longest Common Prefix][14] | **SOON** |
 
 <!-- URLs -->
 <!-- 1 -->
@@ -55,3 +56,5 @@
 [12]: https://leetcode.com/problems/integer-to-roman
 <!-- 13 -->
 [13]: https://leetcode.com/problems/roman-to-integer
+<!-- 14 -->
+[14]: https://leetcode.com/problems/longest-common-prefix
