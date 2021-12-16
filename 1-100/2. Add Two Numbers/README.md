@@ -4,9 +4,8 @@
 <summary>
     <img src="https://git.io/JDE5D" height="24" align="left">
     <strong>Solution</strong>
-    <a href="https://leetcode.com/problems/add-two-numbers/discuss/1128713/Swift%3A-Add-Two-Numbers"><img src="https://w.wiki/4YnF" height="24" align="right"></a>
 </summary>
-
+	
 <br/>
 	
 ```swift
@@ -20,8 +19,10 @@ class Solution {
     }
 }	
 ```
-
+	
 **More: [GitHub Gist][gist] • [Pastebin][pb] • [ControlC][cc] • [TextBin][tb]**
+
+**Discuss on [LeetCode][discuss]**
 
 </details>
 
@@ -73,4 +74,4 @@ You may assume the two numbers do not contain any leading zero, except the numbe
 [pb]: https://pastebin.com/dNbqaHGk
 [cc]: https://controlc.com/d430a48b
 [tb]: https://textbin.net/lsxgmlfi4r
-[discuss]: https://leetcode.com/problems/add-two-numbers/discuss/1128713/Swift%3A-Add-Two-Numbers
+[discuss]: https://leetcode.com/problems/add-two-numbers/discuss/1128713
