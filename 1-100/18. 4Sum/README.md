@@ -4,7 +4,7 @@
 
 ## Description:
 
-<div><p>Given an array <code>nums</code> of <code>n</code> integers, return <em>an array of all the <strong>unique</strong> quadruplets</em> <code>[nums[a], nums[b], nums[c], nums[d]]</code> such that:</p>
+Given an array `nums` of `n` integers, return _an array of all the **unique** quadruplets_ `[nums[a], nums[b], nums[c], nums[d]]` such that:
 
 <ul>
 	<li><code>0 &lt;= a, b, c, d&nbsp;&lt; n</code></li>
