@@ -9,7 +9,7 @@
 <br/>
 
 ```swift
-// TO-DO
+// TODO
 ```
     
 </details>
@@ -22,7 +22,7 @@ Given a string containing digits from ```2-9``` inclusive, return all possible l
 
 A mapping of digit to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
 
-![thumb](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Telephone-keypad2.svg/200px-Telephone-keypad2.svg.png)
+![thumb][thumb]
 
 #### Example 1:
 ```swift
@@ -52,4 +52,6 @@ digits[i] is a digit in the range ['2', '9'].
 
 **Source:** https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 
-<!-- -->
+<!-- URLs -->
+
+[thumb]: https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Telephone-keypad2.svg/200px-Telephone-keypad2.svg.png
