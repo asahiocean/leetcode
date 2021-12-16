@@ -1,8 +1,22 @@
 ## 17. Letter Combinations of a Phone Number
 
-#### [Gist with solution](https://gist.github.com/asahiocean/864cf2d1e245dfcb96e014b626254fe5) • [Open problem](https://leetcode.com/problems/letter-combinations-of-a-phone-number)
+<details>
+<summary>
+    <img src="https://git.io/JDE5D" height="24" align="left">
+    <b>Solution</b>
+</summary>
 
--------
+<br/>
+
+```swift
+// TO-DO
+```
+    
+</details>
+
+<p align="center">• • •</p>
+
+## Description
 
 Given a string containing digits from ```2-9``` inclusive, return all possible letter combinations that the number could represent. Return the answer in **any order**.
 
@@ -33,3 +47,9 @@ Output: ["a","b","c"]
 0 <= digits.length <= 4
 digits[i] is a digit in the range ['2', '9'].
 ```
+
+---
+
+**Source:** https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+
+<!-- -->
