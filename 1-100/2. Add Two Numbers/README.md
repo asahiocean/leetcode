@@ -17,7 +17,7 @@ class Solution {
         anchor = sum / 10
         return .some(ListNode(sum % 10, addTwoNumbers(l1?.next, l2?.next)))
     }
-}	
+}
 ```
 	
 **More: [GitHub Gist][gist] • [Pastebin][pb] • [ControlC][cc] • [TextBin][tb]**
