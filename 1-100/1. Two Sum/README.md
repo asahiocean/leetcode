@@ -2,8 +2,8 @@
 
 <details>
 <summary>
-    <strong>Solution</strong>
-    <sub><img src="https://git.io/JDE5D" height="24" hspace="8"></sub>        
+    <img src="https://git.io/JDE5D" height="24" align="left">
+    <b>Solution</b>
 </summary>
 
 <br/>
