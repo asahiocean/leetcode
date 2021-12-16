@@ -1,6 +1,6 @@
-## [18. 4Sum](https://leetcode.com/problems/4sum)
+## 18. 4Sum
 
-### [Open](https://leetcode.com/problems/4sum) • [Discuss](https://leetcode.com/problems/4sum/discuss/1328067/Swift%3A-4Sum-(%2B-Test-Cases)) • [Solution](https://gist.github.com/asahiocean/40a69bd76ad1e38384d1cb63a2c0ba4c)
+### [Discuss](https://leetcode.com/problems/4sum/discuss/1328067/Swift%3A-4Sum-(%2B-Test-Cases)) • [Solution](https://gist.github.com/asahiocean/40a69bd76ad1e38384d1cb63a2c0ba4c)
 
 ## Description:
 
@@ -34,3 +34,9 @@
 	<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>
 </ul>
 </div>
+
+---
+
+**Source:** https://leetcode.com/problems/4sum
+
+<!-- -->
