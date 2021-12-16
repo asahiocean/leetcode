@@ -21,6 +21,21 @@
 |✅|[13. Roman to Integer][13] | [**OPEN**][13s] |
 |✅|[14. Longest Common Prefix][14] | [**OPEN**][14s] |
 |✅|[15. 3Sum][15] | [**OPEN**][15s] |
+|🛠|[16. 3Sum Closest][16] | **SOON** |
+|🛠|[17. Letter Combinations of a Phone N][17] | **SOON** |
+|🛠|[18. 4Sum][18] | **SOON** |
+|🛠|[19. Remove Nth Node From End of List][19] | **SOON** |
+|🛠|[20. Valid Parentheses][20] | **SOON** |
+|🛠|[21. Merge Two Sorted Lists][21] | **SOON** |
+|🛠|[22. Generate Parentheses][21] | **SOON** |
+|🛠|[23. Merge k Sorted Lists][23] | **SOON** |
+|🛠|[24. Swap Nodes in Pairs][24] | **SOON** |
+|🛠|[25. Reverse Nodes in k-Group][25] | **SOON** |
+|🛠|[26. Remove Duplicates from Sorted Array][26] | **SOON** |
+|🛠|[27. Remove Element][27] | **SOON** |
+|🛠|[28. Implement strStr()][28] | **SOON** |
+|🛠|[29. Divide Two Integers][29] | **SOON** |
+|🛠|[30. Substring with Concatenation of All Words][30] | **SOON** |
 
 <!-- URLs -->
 
@@ -83,3 +98,48 @@
 <!-- 15 -->
 [15]: https://leetcode.com/problems/3sum/
 [15s]: ./15.%203Sum
+
+<!-- 16 -->
+[16]: https://leetcode.com/problems/3sum-closest/
+
+<!-- 17 -->
+[17]: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+
+<!-- 18 -->
+[18]: https://leetcode.com/problems/4sum/
+
+<!-- 19 -->
+[19]: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+
+<!-- 20 -->
+[20]: https://leetcode.com/problems/valid-parentheses/
+
+<!-- 21 -->
+[21]: https://leetcode.com/problems/merge-two-sorted-lists/
+
+<!-- 22 -->
+[22]: https://leetcode.com/problems/generate-parentheses/
+
+<!-- 23 -->
+[23]: https://leetcode.com/problems/merge-k-sorted-lists/
+
+<!-- 24 -->
+[24]: https://leetcode.com/problems/swap-nodes-in-pairs/
+
+<!-- 25 -->
+[25]: https://leetcode.com/problems/reverse-nodes-in-k-group/
+
+<!-- 26 -->
+[26]: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+
+<!-- 27 -->
+[27]: https://leetcode.com/problems/remove-element/
+
+<!-- 28 -->
+[28]: https://leetcode.com/problems/implement-strstr/
+
+<!-- 29 -->
+[29]: https://leetcode.com/problems/divide-two-integers/
+
+<!-- 30 -->
+[30]: https://leetcode.com/problems/substring-with-concatenation-of-all-words/

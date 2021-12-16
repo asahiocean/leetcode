@@ -2,8 +2,8 @@
 
 <details>
 <summary>
-    <strong>Solution</strong>
-    <sub><img src="https://git.io/JDE5D" height="24" hspace="8"></sub>        
+    <img src="https://git.io/JDE5D" height="24" align="left">
+    <b>Solution</b>
 </summary>
 
 <br/>
@@ -22,10 +22,14 @@ class Solution {
     }
 }
 ```
-    
-##### More: [GitHub Gist][gist] • [Pastebin][pb] • [ControlC][cc] • [TextBin][tb]
 
+**More: [GitHub Gist][gist] • [Pastebin][pb] • [ControlC][cc] • [TextBin][tb]**
+
+**Discuss on [LeetCode][discuss]**
+    
 </details>
+
+<p align="center">• • •</p>
 
 ## Description
 
@@ -68,3 +72,4 @@ Output: [0,1]
 [pb]: https://pastebin.com/dmceS55U
 [cc]: https://controlc.com/e61c2150
 [tb]: https://textbin.net/jbpbnhoa4f
+[discuss]: https://leetcode.com/problems/two-sum/discuss/1629845
