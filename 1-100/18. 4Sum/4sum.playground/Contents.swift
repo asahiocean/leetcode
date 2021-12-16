@@ -29,12 +29,16 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.030 (0.032) seconds
+
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.032 (0.033) seconds
-
 class Tests: XCTestCase {
+    
     private let s = Solution()
+    
     func test0() {
         XCTAssertEqual(s.fourSum([1,0,-1,0,-2,2], 0), [[1,2,-2,-1],[0,2,-2,0],[0,1,-1,0]])
     }
