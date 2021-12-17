@@ -1,4 +1,4 @@
-## 4. Median of Two Sorted Arrays <img src="https://tinyurl.com/uc26jkuj" alt="views" align="right">
+## 4. Median of Two Sorted Arrays <img src="https://tinyurl.com/uc26jkuj" align="right">
 
 🔗 **URL:** https://leetcode.com/problems/median-of-two-sorted-arrays/
 
