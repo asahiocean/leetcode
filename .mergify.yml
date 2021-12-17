@@ -8,13 +8,3 @@ pull_request_rules:
          message: Automatically approving dependabot
        merge:
          method: merge
-pull_request_rules:
-   - name: Auto merge for me pull requests
-     conditions:
-       - author=asahiocean
-     actions:
-       review:
-         type: APPROVE
-         message: Automatically approving asahiocean
-       merge:
-         method: merge
