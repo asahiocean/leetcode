@@ -6,38 +6,44 @@ An input string is valid if:
 1. Open brackets must be closed by the same type of brackets.
 2. Open brackets must be closed in the correct order.
 
-#### Example 1:
-```swift
+#### Example 1
+
+```
 Input: s = "()"
 Output: true
 ```
 
-#### Example 2:
-```swift
+#### Example 2
+
+```
 Input: s = "()[]{}"
 Output: true
 ```
 
-#### Example 3:
-```swift
+#### Example 3
+
+```
 Input: s = "(]"
 Output: false
 ```
 
-#### Example 4:
-```swift
+#### Example 4
+
+```
 Input: s = "([)]"
 Output: false
 ```
 
-#### Example 5:
-```swift
+#### Example 5
+
+```
 Input: s = "{[]}"
 Output: true
 ```
 
-#### Constraints:
-```swift
+#### Constraints
+
+```
 1 <= s.length <= 104
 s consists of parentheses only '()[]{}'.
 ```
