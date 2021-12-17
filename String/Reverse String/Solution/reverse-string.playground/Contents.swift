@@ -1,5 +1,6 @@
 import Foundation
 
+// 344. Reverse String
 // https://leetcode.com/problems/reverse-string
 
 class Solution {
@@ -9,14 +10,15 @@ class Solution {
 }
 
 func tests() {
-    let s = Solution()
+    
+    let solution = Solution()
     
     var hello: [Character] = ["h","e","l","l","o"]
-    s.reverseString(&hello)
+    solution.reverseString(&hello)
     assert(hello == ["o","l","l","e","h"])
     
     var hannah: [Character] = ["H","a","n","n","a","h"]
-    s.reverseString(&hannah)
+    solution.reverseString(&hannah)
     assert(hannah == ["h","a","n","n","a","H"])
 }
 

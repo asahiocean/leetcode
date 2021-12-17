@@ -1,29 +1,30 @@
-simport Foundation
+import Foundation
 
 // 4. Median of Two Sorted Arrays
 // https://leetcode.com/problems/median-of-two-sorted-arrays/
 
 class Solution {
     func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
-        let n1 = nums1.count, n2 = nums2.count
-        var arr = Array(repeating: 0, count: n1 + n2)
         
-        var i = n1 - 1, t = n2 - 1, c = n1 + n2 - 1
+        let n1count = nums1.count
+        let n2count = nums2.count
+        
+        var array = Array(repeating: 0, count: n1count + n2count)
+        
+        var i = n1count - 1, t = n2count - 1, c = n1count + n2count - 1
         
         while c >= 0 {
             if t < 0 || i >= 0 && nums1[i] > nums2[t] {
-                arr[c] = nums1[i]
-                c = c - 1
+                array[c] = nums1[i]
                 i = i - 1
             } else {
-                arr[c] = nums2[t]
-                c = c - 1
+                array[c] = nums2[t]
                 t = t - 1
             }
+            c = c - 1
         }
-        let x = arr.count / 2
-        guard arr.count % 2 == 0 else { return Double(arr[x]) }
-        return Double(arr[x-1] + arr[x]) / 2
+        let x = array.count / 2
+        return array.count % 2 == 0 ? Double(array[x-1] + array[x]) / 2 : Double(array[x])
     }
 }
 
@@ -42,20 +43,20 @@ class Tests: XCTestCase {
         XCTAssertEqual(value, 2.00000)
     }
     func test1() {
-        let res = solution.findMedianSortedArrays([1,2], [3,4])
-        XCTAssertEqual(res, 2.50000)
+        let value = solution.findMedianSortedArrays([1,2], [3,4])
+        XCTAssertEqual(value, 2.50000)
     }
     func test2() {
-        let res = solution.findMedianSortedArrays([0,0], [0,0])
-        XCTAssertEqual(res, 0.00000)
+        let value = solution.findMedianSortedArrays([0,0], [0,0])
+        XCTAssertEqual(value, 0.00000)
     }
     func test3() {
-        let res = solution.findMedianSortedArrays([], [1])
-        XCTAssertEqual(res, 1.00000)
+        let value = solution.findMedianSortedArrays([], [1])
+        XCTAssertEqual(value, 1.00000)
     }
     func test4() {
-        let res = solution.findMedianSortedArrays([2], [])
-        XCTAssertEqual(res, 2.00000)
+        let value = solution.findMedianSortedArrays([2], [])
+        XCTAssertEqual(value, 2.00000)
     }
 }
 
