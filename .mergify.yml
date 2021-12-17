@@ -1,8 +1,9 @@
 pull_request_rules:
   - name: Auto merge pull requests
     conditions:
-      - author=asahiocean
-      - author=dependabot[bot]
+        - author=asahiocean
+      or:
+        - author=dependabot[bot]
     actions:
       review:
         type: APPROVE
