@@ -8,10 +8,13 @@ class Solution {
         let node = ListNode(0)
         node.next = head
         
-        var prev: ListNode? = node,
-            post: ListNode? = node
+        var prev: ListNode? = node
+        var post: ListNode? = node
         
-        for _ in 0..<n { post = post!.next }
+        for _ in 0..<n {
+            guard let next = post?.next else { continue }
+            post = next
+        }
         
         while post!.next != nil {
             prev = prev!.next
