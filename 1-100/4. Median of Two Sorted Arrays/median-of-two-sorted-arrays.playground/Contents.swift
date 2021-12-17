@@ -38,8 +38,8 @@ class Tests: XCTestCase {
     private let solution = Solution()
     
     func test0() {
-        let res = solution.findMedianSortedArrays([1,3], [2])
-        XCTAssertEqual(res, 2.00000)
+        let value = solution.findMedianSortedArrays([1,3], [2])
+        XCTAssertEqual(value, 2.00000)
     }
     func test1() {
         let res = solution.findMedianSortedArrays([1,2], [3,4])
