@@ -1,6 +1,4 @@
-## 3. Longest Substring Without Repeating Characters <img src="https://tinyurl.com/yckwupmn" alt="views" align="right">
-
-🔗 **URL:** https://leetcode.com/problems/longest-substring-without-repeating-characters/
+## 3. Longest Substring Without Repeating Characters <img src="https://tinyurl.com/yckwupmn" align="right">
 
 ✅ **Solutions:** [GitHub Gist](https://git.io/JEYyT) • [Pastebin](https://pastebin.com/15wExPdq) • [ControlC](https://controlc.com/d4c059a9) • [TextBin](https://textbin.net/1a6jkxepzv)
 
@@ -43,3 +41,6 @@ Output: 0
 0 <= s.length <= 5 * 104
 s consists of English letters, digits, symbols and spaces.
 ```
+
+#
+**Source:** https://leetcode.com/problems/longest-substring-without-repeating-characters/
