@@ -6,38 +6,42 @@ import Foundation
 class Solution {
     func lengthOfLongestSubstring(_ s: String) -> Int {
         var length = 0, chars = [Character]()
-        s.forEach {
-            if chars.contains($0), let fi = chars.firstIndex(of: $0) {
+        for ch in s {
+            if chars.contains(ch), let fi = chars.firstIndex(of: ch) {
                 chars.removeSubrange(0...fi)
             }
-            chars.append($0)
+            chars.append(ch)
             length = max(length, chars.count)
         }
         return length
     }
 }
 
-// MARK: - Test Cases -
+// MARK: - Test cases -
 
-// Result: Executed 4 tests, with 0 failures (0 unexpected) in 0.021 (0.023) seconds
+// Result: Executed 4 tests, with 0 failures (0 unexpected) in 0.014 (0.016) seconds
 
 import XCTest
 
 class Tests: XCTestCase {
     
-    private let s = Solution()
+    private let solution = Solution()
     
     func test0() {
-        XCTAssertEqual(s.lengthOfLongestSubstring("abcabcbb"), 3)
+        let value = solution.lengthOfLongestSubstring("abcabcbb")
+        XCTAssertEqual(value, 3)
     }
     func test1() {
-        XCTAssertEqual(s.lengthOfLongestSubstring("bbbbb"), 1)
+        let value = solution.lengthOfLongestSubstring("bbbbb")
+        XCTAssertEqual(value, 1)
     }
     func test2() {
-        XCTAssertEqual(s.lengthOfLongestSubstring("pwwkew"), 3)
+        let value = solution.lengthOfLongestSubstring("pwwkew")
+        XCTAssertEqual(value, 3)
     }
     func test3() {
-        XCTAssertEqual(s.lengthOfLongestSubstring(""), 0)
+        let value = solution.lengthOfLongestSubstring("")
+        XCTAssertEqual(value, 0)
     }
 }
 
