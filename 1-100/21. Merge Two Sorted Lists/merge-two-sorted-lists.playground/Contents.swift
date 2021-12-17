@@ -1,10 +1,7 @@
 import Foundation
 
+// 21. Merge Two Sorted Lists
 // https://leetcode.com/problems/merge-two-sorted-lists/
-
-/*
- Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.
- */
 
 class Solution {
     func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
@@ -19,39 +16,7 @@ class Solution {
     }
 }
 
-// MARK: - Tests
-
-import XCTest
-
-class Tests: XCTestCase {
-    
-    private let s = Solution()
-    
-    func testExample1() {
-        let l1 = ListNode([1,2,4])
-        let l2 = ListNode([1,3,4])
-        let expected = ListNode([1,1,2,3,4,4])
-        XCTAssertEqual(s.mergeTwoLists(l1, l2), expected) // success
-    }
-    
-    func testExample2() {
-        let l1 = ListNode([])
-        let l2 = ListNode([])
-        let expected = ListNode([])
-        XCTAssertEqual(s.mergeTwoLists(l1, l2), expected) // success
-    }
-    
-    func testExample3() {
-        let l1 = ListNode([])
-        let l2 = ListNode([0])
-        let expected = ListNode([0])
-        XCTAssertEqual(s.mergeTwoLists(l1, l2), expected) // success
-    }
-}
-
-Tests.defaultTestSuite.run()
-
-// MARK: - ListNode Class + Extension
+// MARK: - ListNode -
 
 public class ListNode {
     public var val: Int
@@ -73,8 +38,44 @@ public class ListNode {
     }
 }
 
+// Extension for ListNode
+
 extension ListNode: Equatable {
     public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
         return lhs.val == rhs.val && lhs.next == rhs.next
     }
 }
+
+// MARK: - Tests cases -
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.021 (0.023) seconds
+
+import XCTest
+
+class Tests: XCTestCase {
+    
+    private let solution = Solution()
+    
+    func test0() {
+        let listNode1 = ListNode([1,2,4])
+        let listNode2 = ListNode([1,3,4])
+        let expected = ListNode([1,1,2,3,4,4])
+        XCTAssertEqual(solution.mergeTwoLists(listNode1, listNode2), expected)
+    }
+    
+    func test1() {
+        let listNode1 = ListNode([])
+        let listNode2 = ListNode([])
+        let expected = ListNode([])
+        XCTAssertEqual(solution.mergeTwoLists(listNode1, listNode2), expected)
+    }
+    
+    func test2() {
+        let listNode1 = ListNode([])
+        let listNode2 = ListNode([0])
+        let expected = ListNode([0])
+        XCTAssertEqual(solution.mergeTwoLists(listNode1, listNode2), expected)
+    }
+}
+
+Tests.defaultTestSuite.run()
