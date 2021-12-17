@@ -1,4 +1,4 @@
-import Foundation
+simport Foundation
 
 // 4. Median of Two Sorted Arrays
 // https://leetcode.com/problems/median-of-two-sorted-arrays/
@@ -27,7 +27,7 @@ class Solution {
     }
 }
 
-// MARK: - Test Cases -
+// MARK: - Test cases -
 
 // Result: Executed 5 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
 
@@ -35,26 +35,26 @@ import XCTest
 
 class Tests: XCTestCase {
     
-    private let s = Solution()
+    private let solution = Solution()
     
     func test0() {
-        let res = s.findMedianSortedArrays([1,3], [2])
+        let res = solution.findMedianSortedArrays([1,3], [2])
         XCTAssertEqual(res, 2.00000)
     }
     func test1() {
-        let res = s.findMedianSortedArrays([1,2], [3,4])
+        let res = solution.findMedianSortedArrays([1,2], [3,4])
         XCTAssertEqual(res, 2.50000)
     }
     func test2() {
-        let res = s.findMedianSortedArrays([0,0], [0,0])
+        let res = solution.findMedianSortedArrays([0,0], [0,0])
         XCTAssertEqual(res, 0.00000)
     }
     func test3() {
-        let res = s.findMedianSortedArrays([], [1])
+        let res = solution.findMedianSortedArrays([], [1])
         XCTAssertEqual(res, 1.00000)
     }
     func test4() {
-        let res = s.findMedianSortedArrays([2], [])
+        let res = solution.findMedianSortedArrays([2], [])
         XCTAssertEqual(res, 2.00000)
     }
 }
