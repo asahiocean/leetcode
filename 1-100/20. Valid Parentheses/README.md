@@ -1,4 +1,4 @@
-# [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+# 20. Valid Parentheses
 
 Given a string ```s``` containing just the characters ```'('```, ```')'```, ```'{'```, ```'}'```, ```'['``` and ```']'```, determine if the input string is valid.
 
@@ -47,3 +47,6 @@ Output: true
 1 <= s.length <= 104
 s consists of parentheses only '()[]{}'.
 ```
+
+#
+**Source:** https://leetcode.com/problems/valid-parentheses/
