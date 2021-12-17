@@ -1,7 +1,7 @@
 pull_request_rules:
    - name: Auto merge for Dependabot pull requests
      conditions:
-       - author=dependabot[bot]
+      - author~=^dependabot(|-preview)\[bot\]$
      actions:
        review:
          type: APPROVE
@@ -9,11 +9,11 @@ pull_request_rules:
        merge:
          method: merge
 pull_request_rules:
-  - name: automatic approval pull requests
-    conditions:
-      - author=asahiocean
-    actions:
-      review:
-        type: APPROVE
-       merge:
-         method: merge
+    - name: automatic approval pull requests
+      conditions:
+       - author=asahiocean
+      actions:
+        review:
+          type: APPROVE
+        merge:
+          method: merge
