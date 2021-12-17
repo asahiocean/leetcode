@@ -2,7 +2,7 @@
 
 ✅ **Solutions:** [GitHub Gist](https://git.io/JEYyT) • [Pastebin](https://pastebin.com/15wExPdq) • [ControlC](https://controlc.com/d4c059a9) • [TextBin](https://textbin.net/1a6jkxepzv)
 
-💡 **[Go to discuss on LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/discuss/1134880/Swift%3A-Longest-Substring-Without-Repeating-Characters)**
+💡 **[Go to discuss on LeetCode](https://leetcode.com/problems/longest-substring-without-repeating-characters/discuss/1134880)**
 
 ## Description
 
