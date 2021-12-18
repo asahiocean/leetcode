@@ -1,0 +1,36 @@
+import Foundation
+
+// 27. Remove Element
+// https://leetcode.com/problems/remove-element/
+
+class Solution {
+    func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
+        nums = nums.filter { $0 != val }
+        return nums.count
+    }
+}
+
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
+
+import XCTest
+
+class Tests: XCTestCase {
+    
+    private let solution = Solution()
+    
+    func test0() {
+        var array = [3,2,2,3]
+        solution.removeElement(&array, 3)
+        XCTAssertEqual(array, [2,2])
+    }
+    
+    func test1() {
+        var array = [0,1,2,2,3,0,4,2]
+        solution.removeElement(&array, 2)
+        XCTAssertEqual(array, [0,1,3,0,4])
+    }
+}
+
+Tests.defaultTestSuite.run()
