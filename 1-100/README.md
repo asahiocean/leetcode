@@ -101,45 +101,60 @@
 
 <!-- 16 -->
 [16]: https://leetcode.com/problems/3sum-closest/
+[16s]: ./16.%203Sum%20Closest
 
 <!-- 17 -->
 [17]: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+[17s]: ./17.%20Letter%20Combinations%20of%20a%20Phone%20Number
 
 <!-- 18 -->
 [18]: https://leetcode.com/problems/4sum/
+[18s]: ./18.%204Sum
 
 <!-- 19 -->
 [19]: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+[19s]: ./19.%20Remove%20Nth%20Node%20From%20End%20of%20List
 
 <!-- 20 -->
 [20]: https://leetcode.com/problems/valid-parentheses/
+[20s]: ./20.%20Valid%20Parentheses
 
 <!-- 21 -->
 [21]: https://leetcode.com/problems/merge-two-sorted-lists/
+[21s]: ./21.%20Merge%20Two%20Sorted%20Lists
 
 <!-- 22 -->
 [22]: https://leetcode.com/problems/generate-parentheses/
+[22s]: ./22.%20Generate%20Parentheses
 
 <!-- 23 -->
 [23]: https://leetcode.com/problems/merge-k-sorted-lists/
+[23s]: ./23.%20Merge%20k%20Sorted%20Lists
 
 <!-- 24 -->
 [24]: https://leetcode.com/problems/swap-nodes-in-pairs/
+[24s]: ./24.%20Swap%20Nodes%20in%20Pairs
 
 <!-- 25 -->
 [25]: https://leetcode.com/problems/reverse-nodes-in-k-group/
+[25s]: ./25.%20Reverse%20Nodes%20in%20k-Group
 
 <!-- 26 -->
 [26]: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+[26s]: ./26.%20Remove%20Duplicates%20from%20Sorted%20Array
 
 <!-- 27 -->
 [27]: https://leetcode.com/problems/remove-element/
+[27s]: ./27.%20Remove%20Element
 
 <!-- 28 -->
 [28]: https://leetcode.com/problems/implement-strstr/
+[28s]: ./28.%20Implement%20strStr
 
 <!-- 29 -->
 [29]: https://leetcode.com/problems/divide-two-integers/
+[29s]: ./29.%20Divide%20Two%20Integers
 
 <!-- 30 -->
 [30]: https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+[30s]: ./30.%20Substring%20with%20Concatenation%20of%20All%20Words
