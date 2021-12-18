@@ -1,4 +1,4 @@
-<h1><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Leetcode.svg" height="36" align="left"> LeetCode</h1>
+<h1><sub><img src="https://w.wiki/4YnF" height="40" hspace="10"></sub>LeetCode</h1>
 
 [![](https://tinyurl.com/2p8b36mw)](https://leetcode-badge.vercel.app)
 
