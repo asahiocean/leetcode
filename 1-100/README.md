@@ -35,7 +35,7 @@
 |✅|[27. Remove Element][27] | [**OPEN**][27s] |
 |✅|[28. Implement strStr()][28] | [**OPEN**][28s] |
 |✅|[29. Divide Two Integers][29] | [**OPEN**][29s] |
-|🛠|[30. Substring with Concatenation of All Words][30] | [**OPEN**][30s] |
+|✅|[30. Substring with Concatenation of All Words][30] | [**OPEN**][30s] |
 |🛠|[31. Next Permutation][31]|**SOON**|
 |🛠|[32. Longest Valid Parentheses][32]|**SOON**|
 |🛠|[33. Search in Rotated Sorted Array][33]|**SOON**|
