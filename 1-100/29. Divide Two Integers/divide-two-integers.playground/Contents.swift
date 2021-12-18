@@ -1,5 +1,6 @@
 import Foundation
 
+// 29. Divide Two Integers
 // https://leetcode.com/problems/divide-two-integers/
 
 class Solution {
@@ -28,23 +29,27 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
+
 import XCTest
 
-//      Executed 4 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
-    func testExample1() {
-        XCTAssert(s.divide(10, 3) == 3) // success
+    
+    private let solution = Solution()
+    
+    func test0() {
+        XCTAssertEqual(solution.divide(10, 3), 3)
     }
-    func testExample2() {
-        XCTAssert(s.divide(7, -3) == -2) // success
+    func test1() {
+        XCTAssertEqual(solution.divide(7, -3), -2)
     }
-    func testExample3() {
-        XCTAssert(s.divide(0, -1) == 0) // success
+    func test2() {
+        XCTAssertEqual(solution.divide(0, -1), 0)
     }
-    func testExample4() {
-        XCTAssert(s.divide(1, 1) == 1) // success
+    func test3() {
+        XCTAssertEqual(solution.divide(1, 1), 1)
     }
 }
 
