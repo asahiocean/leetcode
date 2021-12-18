@@ -1,0 +1,11 @@
+name: GitHub Script 
+on:
+  pull_request
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v5
+        with:
+          script: |
+            console.log(`Hello`)
