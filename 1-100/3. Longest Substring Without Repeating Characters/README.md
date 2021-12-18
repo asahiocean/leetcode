@@ -9,7 +9,19 @@
 <br/>
 
 ```swift
-// TO-DO
+class Solution {
+    func lengthOfLongestSubstring(_ s: String) -> Int {
+        var length = 0, chars = [Character]()
+        for ch in s {
+            if chars.contains(ch), let fi = chars.firstIndex(of: ch) {
+                chars.removeSubrange(0...fi)
+            }
+            chars.append(ch)
+            length = max(length, chars.count)
+        }
+        return length
+    }
+}
 ```
 
 **More: [GitHub Gist][gist] • [Pastebin][pb] • [ControlC][cc] • [TextBin][tb]**
