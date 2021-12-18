@@ -1,6 +1,7 @@
 import Foundation
 
-// https://leetcode.com/problems/implement-strstr
+// 28. Implement strStr()
+// https://leetcode.com/problems/implement-strstr/
 
 class Solution {
     func strStr(_ haystack: String, _ needle: String) -> Int {
@@ -19,25 +20,30 @@ class Solution {
     }
 }
 
-// MARK: - Tests
+// MARK: Tests
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
 
 import XCTest
 
-//      Executed 3 tests, with 0 failures (0 unexpected) in 0.267 (0.269) seconds
 
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
+    func test0() {
+        let value = solution.strStr("hello", "ll")
+        XCTAssertEqual(value, 2)
+    }
+    
     func test1() {
-        let res = s.strStr("hello", "ll")
-        XCTAssertEqual(res, 2)
+        let value = solution.strStr("aaaaa", "bba")
+        XCTAssertEqual(value, -1)
     }
+    
     func test2() {
-        let res = s.strStr("aaaaa", "bba")
-        XCTAssertEqual(res, -1)
-    }
-    func test3() {
-        let res = s.strStr("", "")
-        XCTAssertEqual(res, 0)
+        let value = solution.strStr("", "")
+        XCTAssertEqual(value, 0)
     }
 }
 
