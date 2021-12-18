@@ -1,4 +1,4 @@
-# 28. [Implement strStr()](https://leetcode.com/problems/implement-strstr/)
+# [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/)
 
 <p>Return the index of the first occurrence of needle in haystack, or <code>-1</code> if <code>needle</code> is not part of <code>haystack</code>.</p>
 
