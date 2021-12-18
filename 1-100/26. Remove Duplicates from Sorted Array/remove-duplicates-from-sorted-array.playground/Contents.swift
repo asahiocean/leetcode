@@ -1,5 +1,6 @@
 import Foundation
 
+// 26. Remove Duplicates from Sorted Array
 // https://leetcode.com/problems/remove-duplicates-from-sorted-array/
 
 class Solution {
@@ -11,27 +12,25 @@ class Solution {
     }
 }
 
-import XCTest
+// MARK: - Test cases -
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.094 (0.130) seconds
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.094 (0.130) seconds
+
+import XCTest
 
 class Tests: XCTestCase {
     
-    private let s = Solution()
+    private let solution = Solution()
     
-    func testExample1() {
-        // Input: nums = [1,1,2]
-        // Output: 2, nums = [1,2]
-        var input = [1,1,2]
-        s.removeDuplicates(&input)
+    func test0() {
+        var array = [1,1,2]
+        solution.removeDuplicates(&array)
         XCTAssertEqual(2, [1,2].count)
     }
     
-    func testExample2() {
-        // Input: nums = [0,0,1,1,1,2,2,3,3,4]
-        // Output: 5, nums = [0,1,2,3,4]
-        var input = [0,0,1,1,1,2,2,3,3,4]
-        s.removeDuplicates(&input)
+    func test1() {
+        var array = [0,0,1,1,1,2,2,3,3,4]
+        solution.removeDuplicates(&array)
         XCTAssertEqual(5, [0,1,2,3,4].count)
     }
 }
