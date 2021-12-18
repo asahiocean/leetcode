@@ -21,21 +21,41 @@
 |✅|[13. Roman to Integer][13] | [**OPEN**][13s] |
 |✅|[14. Longest Common Prefix][14] | [**OPEN**][14s] |
 |✅|[15. 3Sum][15] | [**OPEN**][15s] |
-|🛠|[16. 3Sum Closest][16] | **SOON** |
-|🛠|[17. Letter Combinations of a Phone N][17] | **SOON** |
-|🛠|[18. 4Sum][18] | **SOON** |
-|🛠|[19. Remove Nth Node From End of List][19] | **SOON** |
-|🛠|[20. Valid Parentheses][20] | **SOON** |
-|🛠|[21. Merge Two Sorted Lists][21] | **SOON** |
-|🛠|[22. Generate Parentheses][21] | **SOON** |
-|🛠|[23. Merge k Sorted Lists][23] | **SOON** |
-|🛠|[24. Swap Nodes in Pairs][24] | **SOON** |
-|🛠|[25. Reverse Nodes in k-Group][25] | **SOON** |
-|🛠|[26. Remove Duplicates from Sorted Array][26] | **SOON** |
-|🛠|[27. Remove Element][27] | **SOON** |
-|🛠|[28. Implement strStr()][28] | **SOON** |
-|🛠|[29. Divide Two Integers][29] | **SOON** |
-|🛠|[30. Substring with Concatenation of All Words][30] | **SOON** |
+|✅|[16. 3Sum Closest][16] | [**OPEN**][16s] |
+|✅|[17. Letter Combinations of a Phone N][17] | [**OPEN**][17s] |
+|✅|[18. 4Sum][18] | [**OPEN**][18s] |
+|✅|[19. Remove Nth Node From End of List][19] | [**OPEN**][19s] |
+|✅|[20. Valid Parentheses][20] | [**OPEN**][20s] |
+|✅|[21. Merge Two Sorted Lists][21] | [**OPEN**][21s] |
+|✅|[22. Generate Parentheses][21] | [**OPEN**][22s] |
+|✅|[23. Merge k Sorted Lists][23] | [**OPEN**][23s] |
+|✅|[24. Swap Nodes in Pairs][24] | [**OPEN**][24s] |
+|✅|[25. Reverse Nodes in k-Group][25] | [**OPEN**][25s] |
+|✅|[26. Remove Duplicates from Sorted Array][26] | [**OPEN**][26s] |
+|✅|[27. Remove Element][27] | [**OPEN**][27s] |
+|✅|[28. Implement strStr()][28] | [**OPEN**][28s] |
+|✅|[29. Divide Two Integers][29] | [**OPEN**][29s] |
+|🛠|[30. Substring with Concatenation of All Words][30] | [**OPEN**][30s] |
+|🛠|[31. Next Permutation][31]|**SOON**|
+|🛠|[32. Longest Valid Parentheses][32]|**SOON**|
+|🛠|[33. Search in Rotated Sorted Array][33]|**SOON**|
+|🛠|[34. Find First and Last Position of Element in Sorted Array][34]|**SOON**|
+|🛠|[35. Search Insert Position][35]|**SOON**|
+|🛠|[36. Valid Sudoku][36]|**SOON**|
+|🛠|[37. Sudoku Solver][37]|**SOON**|
+|🛠|[38. Count and Say][38]|**SOON**|
+|🛠|[39. Combination Sum][39]|**SOON**|
+|🛠|[40. Combination Sum II][40]|**SOON**|
+|🛠|[41. First Missing Positive][41]|**SOON**|
+|🛠|[42. Trapping Rain Water][42]|**SOON**|
+|🛠|[43. Multiply Strings][43]|**SOON**|
+|🛠|[44. Wildcard Matching][44]|**SOON**|
+|🛠|[45. Jump Game II][45]|**SOON**|
+|🛠|[46. Permutations][46]|**SOON**|
+|🛠|[47. Permutations II][47]|**SOON**|
+|🛠|[48. Rotate Image][48]|**SOON**|
+|🛠|[49. Group Anagrams][49]|**SOON**|
+|🛠|[50. Pow(x, n)][50]|**SOON**|
 
 <!-- URLs -->
 
@@ -158,3 +178,63 @@
 <!-- 30 -->
 [30]: https://leetcode.com/problems/substring-with-concatenation-of-all-words/
 [30s]: ./30.%20Substring%20with%20Concatenation%20of%20All%20Words
+
+<!-- 31 -->
+[31]: https://leetcode.com/problems/next-permutation
+
+<!-- 32 -->
+[32]: https://leetcode.com/problems/longest-valid-parentheses
+
+<!-- 33 -->
+[33]: https://leetcode.com/problems/search-in-rotated-sorted-array
+
+<!-- 34 -->
+[34]: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array
+
+<!-- 35 -->
+[35]: https://leetcode.com/problems/search-insert-position
+
+<!-- 36 -->
+[36]: https://leetcode.com/problems/valid-sudoku
+
+<!-- 37 -->
+[37]: https://leetcode.com/problems/sudoku-solver
+
+<!-- 38 -->
+[38]: https://leetcode.com/problems/count-and-say
+
+<!-- 39 -->
+[39]: https://leetcode.com/problems/combination-sum
+
+<!-- 40 -->
+[40]: https://leetcode.com/problems/combination-sum-ii
+
+<!-- 41 -->
+[41]: https://leetcode.com/problems/first-missing-positive
+
+<!-- 42 -->
+[42]: https://leetcode.com/problems/trapping-rain-water
+
+<!-- 43 -->
+[43]: https://leetcode.com/problems/multiply-strings
+
+<!-- 44 -->
+[44]: https://leetcode.com/problems/wildcard-matching
+
+<!-- 45 -->
+[45]: https://leetcode.com/problems/jump-game-ii
+
+<!-- 46 -->
+[46]: https://leetcode.com/problems/permutations
+
+<!-- 47 -->
+[47]: https://leetcode.com/problems/permutations-ii
+
+<!-- 48 -->
+[48]: https://leetcode.com/problems/rotate-image
+
+<!-- 49 -->
+[49]: https://leetcode.com/problems/group-anagrams
+
+<!-- 50 -->
+[50]: https://leetcode.com/problems/powx-n
