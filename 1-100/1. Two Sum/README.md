@@ -23,6 +23,21 @@ class Solution {
 }
 ```
 
+<p>
+<a href="https://gist.github.com/asahiocean/5417d4f858b842d76876aabbe2932031">
+<img src="https://github.com/asahiocean/asahiocean/blob/main/.github/assets/images/words/github_gist.svg" 
+     height="18"
+     align="center"
+     alt="GitHub Gist">
+</a>
+<a href="https://leetcode.com/problems/two-sum/discuss/1629845">
+<img src="https://github.com/asahiocean/leetcode/blob/main/.github/assets/images/svg/discuss/discuss_speech_balloon_fill.svg" 
+     height="28"
+     align="right"
+     alt="LeetCode Discuss">
+</a>
+</p>
+    
 </details>
 
 <p align="center">• • •</p>
@@ -53,19 +68,11 @@ Output: [0,1]
 
 #### Constraints
 
-*   `2 <= nums.length <= 10<sup>4</sup>`
-*   `-10<sup>9</sup> <= nums[i] <= 10<sup>9</sup>`
-*   `-10<sup>9</sup> <= target <= 10<sup>9</sup>`
-*   **Only one valid answer exists.**
+* `2 <= nums.length <= 10<sup>4</sup>`
+* `-10<sup>9</sup> <= nums[i] <= 10<sup>9</sup>`
+* `-10<sup>9</sup> <= target <= 10<sup>9</sup>`
+* **Only one valid answer exists.**
 
 ---
 
 **Source:** https://leetcode.com/problems/two-sum/
-
-<!-- -->
-
-[gist]: https://git.io/JEYEW
-[pb]: https://pastebin.com/dmceS55U
-[cc]: https://controlc.com/e61c2150
-[tb]: https://textbin.net/jbpbnhoa4f
-[lcd]: https://leetcode.com/problems/two-sum/discuss/1629845
