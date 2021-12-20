@@ -1,3 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="2.5 5 20 15">
-  <path d="M9.688 15.898l-3.98-3.98a1 1 0 00-1.415 1.414L8.98 18.02a1 1 0 001.415 0L20.707 7.707a1 1 0 00-1.414-1.414l-9.605 9.605z" fill="#2cbb5d"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+viewBox = "0 0 24 32"
+height  = "24">
+<defs>
+<image
+     id    = "checkmark"
+     y     = "50%"
+     width = "100%"
+     xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjIuNSA1IDIwIDE1Ij48cGF0aCBkPSJtOS42ODggMTUuODk4LTMuOTgtMy45OGExIDEgMCAwIDAtMS40MTUgMS40MTRMOC45OCAxOC4wMmExIDEgMCAwIDAgMS40MTUgMEwyMC43MDcgNy43MDdhMSAxIDAgMCAwLTEuNDE0LTEuNDE0bC05LjYwNSA5LjYwNXoiIGZpbGw9IiMyY2JiNWQiLz48L3N2Zz4="/>
+</defs>
+<use xlink:href="#checkmark"/>
 </svg>
