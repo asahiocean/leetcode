@@ -38,7 +38,7 @@ class Solution {
 ```
 
 <p>
-<a href="GITHUB_GIST_URL">
+<a href="https://gist.github.com/asahiocean/5a9be64420276fa743455659ce530510">
 <img src="https://git.io/JDNlC" alt="GitHub Gist" height="18" align="center">
 </a>
 <a href="https://leetcode.com/problems/median-of-two-sorted-arrays/discuss/1134918">
