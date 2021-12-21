@@ -25,16 +25,10 @@ class Solution {
 
 <p>
 <a href="https://gist.github.com/asahiocean/5417d4f858b842d76876aabbe2932031">
-<img src="https://github.com/asahiocean/asahiocean/blob/main/.github/assets/images/words/github_gist.svg" 
-     height="18"
-     align="center"
-     alt="GitHub Gist">
+<img src="https://git.io/JDNlC" alt="GitHub Gist" height="18" align="center">
 </a>
 <a href="https://leetcode.com/problems/two-sum/discuss/1629845">
-<img src="https://github.com/asahiocean/leetcode/blob/main/.github/assets/images/svg/discuss/discuss_speech_balloon_fill.svg" 
-     height="28"
-     align="right"
-     alt="LeetCode Discuss">
+<img src="https://git.io/JDSVA" alt="LeetCode Discuss" height="28" align="right">
 </a>
 </p>
     
