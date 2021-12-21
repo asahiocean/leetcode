@@ -7,23 +7,24 @@ class Solution {
     func longestPalindrome(_ s: String) -> String {
         guard s.count > 1 else { return s }
         var left = -1, right = -1, max  = 1
-        let ch = [Character](s)
+        let chars = [Character](s)
         let strLenght = s.count
         var dp = [[Bool]](repeating: [Bool](repeating: false, count: strLenght), count: strLenght)
         var index = strLenght - 1
         while index >= 0 {
             for j in index..<strLenght {
-                dp[index][j] = ch[index] == ch[j] && (j - index < 2 || dp[index + 1][j - 1])
+                dp[index][j] = chars[index] == chars[j] && (j - index < 2 || dp[index + 1][j - 1])
                 if dp[index][j] {
                     if j - index + 1 > max {
-                        left = index; right = j
+                        left = index
+                        right = j
                         max = j - index  + 1
                     }
                 }
             }
             index -= 1
         }
-        return left == -1 ? String(ch[0]) : String(ch[left...right])
+        return left == -1 ? String(chars[0]) : String(chars[left...right])
     }
 }
 
