@@ -1,16 +1,37 @@
-## 4. Median of Two Sorted Arrays <img src="https://tinyurl.com/uc26jkuj" align="right">
+## 4. Median of Two Sorted Arrays <img src="https://tinyurl.com/uc26jkuj" align="right" alt="views badge">
 
-🔗 **URL:** https://leetcode.com/problems/median-of-two-sorted-arrays/
+<details>
+<summary>
+    <img src="https://git.io/JDE5D" height="24" align="left" alt="swift">
+    <b>Solution</b>
+</summary>
 
-✅ **Solutions:** [GitHub Gist](https://git.io/J1DkY) • [Pastebin](https://pastebin.com/6LmatwU9) • [ControlC](https://controlc.com/97a6c515) • [TextBin](https://textbin.net/apez7hs8td)
+<br/>
 
-💡 **[Go to discuss on LeetCode](https://leetcode.com/problems/median-of-two-sorted-arrays/discuss/1134918/Swift:-Median-of-Two-Sorted-Arrays)**
+```swift
 
----
+// SOLUTION_SWIFT
+
+```
+
+<p>
+<a href="GITHUB_GIST_URL">
+<img src="https://git.io/JDNlC" alt="GitHub Gist" height="18" align="center">
+</a>
+<a href="https://leetcode.com/problems/median-of-two-sorted-arrays/discuss/1134918">
+<img src="https://git.io/JDSVA" alt="LeetCode Discuss" height="28" align="right">
+</a>
+</p>
+    
+</details>
+
+<p align="center">• • •</p>
 
 ## Description
 
-Given two sorted arrays ```nums1``` and ```nums2``` of size ```m``` and ```n``` respectively, return **the median** of the two sorted arrays.
+Given two sorted arrays `nums1` and `nums2` of size `m` and `n` respectively, return **the median** of the two sorted arrays.
+
+The overall run time complexity should be `O(log (m+n))`.
 
 #### Example 1
 
@@ -59,3 +80,7 @@ nums2.length == n
 1 <= m + n <= 2000
 -106 <= nums1[i], nums2[i] <= 106
 ```
+
+---
+
+**Source:** https://leetcode.com/problems/median-of-two-sorted-arrays/
