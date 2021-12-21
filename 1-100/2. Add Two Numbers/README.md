@@ -1,4 +1,4 @@
-## 2. Add Two Numbers <img src="https://tinyurl.com/yc5ce92u" align="right" alt="views badge">
+## 2. Add Two Numbers <img src="https://tinyurl.com/3kwwk6sc" align="right" alt="views badge">
 
 <details>
 <summary>
