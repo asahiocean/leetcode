@@ -42,7 +42,7 @@ class Solution {
 <a href="https://gist.github.com/asahiocean/b856a0521c5db288e709fde55bd12e50">
 <img src="https://git.io/JDNlC" alt="GitHub Gist" height="18" align="center">
 </a>
-<a href="LEECODE_PROBLEM_DISCUSS_URL">
+<a href="https://leetcode.com/problems/longest-palindromic-substring/discuss/1640332">
 <img src="https://git.io/JDSVA" alt="LeetCode Discuss" height="28" align="right">
 </a>
 </p>
