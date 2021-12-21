@@ -1,8 +1,8 @@
-## 1. Two Sum <img src="https://tinyurl.com/yc5ce92u" align="right">
+## 1. Two Sum <img src="https://tinyurl.com/yc5ce92u" align="right" alt="views badge">
 
 <details>
 <summary>
-    <img src="https://git.io/JDE5D" height="24" align="left">
+    <img src="https://git.io/JDE5D" height="24" align="left" alt="swift">
     <b>Solution</b>
 </summary>
 
