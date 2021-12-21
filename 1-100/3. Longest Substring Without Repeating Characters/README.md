@@ -24,9 +24,14 @@ class Solution {
 }
 ```
 
-**More: [GitHub Gist][gist] • [Pastebin][pb] • [ControlC][cc] • [TextBin][tb]**
-
-**Discuss on [LeetCode][discuss]**
+<p>
+<a href="https://gist.github.com/asahiocean/d4238b12100354cc2381ddace2d16632">
+<img src="https://git.io/JDNlC" alt="GitHub Gist" height="18" align="center">
+</a>
+<a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/discuss/1134880">
+<img src="https://git.io/JDSVA" alt="LeetCode Discuss" height="28" align="right">
+</a>
+</p>
     
 </details>
 
@@ -77,11 +82,3 @@ s consists of English letters, digits, symbols and spaces.
 
 #
 **Source:** https://leetcode.com/problems/longest-substring-without-repeating-characters/
-
-<!-- URLs -->
-
-[gist]: https://git.io/JEYyT
-[pb]: https://pastebin.com/15wExPdq
-[cc]: https://controlc.com/d4c059a9
-[tb]: https://textbin.net/1a6jkxepzv
-[discuss]: https://leetcode.com/problems/longest-substring-without-repeating-characters/discuss/1134880
