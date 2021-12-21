@@ -5,9 +5,9 @@ import Foundation
 
 class Solution {
     func deleteDuplicates(_ head: ListNode?) -> ListNode? {
-        var node = head
-        while let next = node?.next {
-            node!.val == next.val ? (node!.next = next.next) : (node = next)
+        guard var node = head else { return nil }
+        while let next = node.next {
+            node.val == next.val ? (node.next = next.next) : (node = next)
         }
         return head
     }
@@ -15,21 +15,24 @@ class Solution {
 
 // MARK: - Test Cases -
 
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.009 (0.011) seconds
+
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.027 (0.029) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        let res = s.deleteDuplicates(.init([1,1,2]))
+        let value = solution.deleteDuplicates(ListNode([1,1,2]))
         let expected = ListNode([1,2])
-        XCTAssertEqual(res?.val, expected?.val)
+        XCTAssertEqual(value?.val, expected?.val)
     }
+    
     func test1() {
-        let res = s.deleteDuplicates(.init([1,1,2,3,3]))
+        let value = solution.deleteDuplicates(ListNode([1,1,2,3,3]))
         let expected = ListNode([1,2,3])
-        XCTAssertEqual(res?.val, expected?.val)
+        XCTAssertEqual(value?.val, expected?.val)
     }
 }
 
@@ -43,6 +46,8 @@ public class ListNode {
     public init() { self.val = 0; self.next = nil; }
     public init(_ val: Int) { self.val = val; self.next = nil; }
     public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
+    
+    // An additional initializer that can be used to implement nodes from an array
     public init?(_ array: [Int]) {
         guard !array.isEmpty else { return nil }
         self.val = array[0]
