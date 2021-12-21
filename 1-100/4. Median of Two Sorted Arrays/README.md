@@ -10,7 +10,30 @@
 
 ```swift
 
-// SOLUTION_SWIFT
+class Solution {
+    func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
+        
+        let n1count = nums1.count
+        let n2count = nums2.count
+        
+        var array = Array(repeating: 0, count: n1count + n2count)
+        
+        var i = n1count - 1, t = n2count - 1, c = n1count + n2count - 1
+        
+        while c >= 0 {
+            if t < 0 || i >= 0 && nums1[i] > nums2[t] {
+                array[c] = nums1[i]
+                i = i - 1
+            } else {
+                array[c] = nums2[t]
+                t = t - 1
+            }
+            c = c - 1
+        }
+        let x = array.count / 2
+        return array.count % 2 == 0 ? Double(array[x-1] + array[x]) / 2 : Double(array[x])
+    }
+}
 
 ```
 
