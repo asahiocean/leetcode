@@ -1,29 +1,35 @@
-## 2. Add Two Numbers <img src="https://tinyurl.com/3kwwk6sc" alt="views" align="right">
+## 2. Add Two Numbers <img src="https://tinyurl.com/yc5ce92u" align="right" alt="views badge">
 
 <details>
 <summary>
-    <img src="https://git.io/JDE5D" height="24" align="left">
-    <strong>Solution</strong>
+    <img src="https://git.io/JDE5D" height="24" align="left" alt="swift">
+    <b>Solution</b>
 </summary>
-	
+
 <br/>
-	
+
 ```swift
 class Solution {
-    fileprivate var anchor = 0
+    private var anchor = 0
     func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
         if l1 == nil && l2 == nil && anchor == 0 { return nil }
         let sum = (l1?.val ?? 0) + (l2?.val ?? 0) + anchor
         anchor = sum / 10
-        return .some(ListNode(sum % 10, addTwoNumbers(l1?.next, l2?.next)))
+        let node: ListNode? = ListNode(sum % 10, addTwoNumbers(l1?.next, l2?.next))
+        return node
     }
 }
 ```
-	
-**More: [GitHub Gist][gist] • [Pastebin][pb] • [ControlC][cc] • [TextBin][tb]**
 
-**Discuss on [LeetCode][discuss]**
-
+<p>
+<a href="https://gist.github.com/asahiocean/523e9887f86452c7eeed8e0f039850fd">
+<img src="https://git.io/JDNlC" alt="GitHub Gist" height="18" align="center">
+</a>
+<a href="https://leetcode.com/problems/add-two-numbers/discuss/1128713">
+<img src="https://git.io/JDSVA" alt="LeetCode Discuss" height="28" align="right">
+</a>
+</p>
+    
 </details>
 
 <p align="center">• • •</p>
@@ -65,13 +71,7 @@ Output: [8,9,9,9,0,0,0,1]
 * The number of nodes in each linked list is in the range `[1, 100]`.
 * `0 <= Node.val <= 9`
 * It is guaranteed that the list represents a number that does not have leading zeros.
-	
-#
-**Source:** https://leetcode.com/problems/add-two-numbers/
 
-<!-- URL -->
-[gist]: https://git.io/JEYi7
-[pb]: https://pastebin.com/dNbqaHGk
-[cc]: https://controlc.com/d430a48b
-[tb]: https://textbin.net/lsxgmlfi4r
-[discuss]: https://leetcode.com/problems/add-two-numbers/discuss/1128713
+---
+
+**Source:** https://leetcode.com/problems/add-two-numbers/
