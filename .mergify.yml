@@ -17,3 +17,11 @@ pull_request_rules:
           type: APPROVE
         merge:
           method: merge
+pull_request_rules:
+  - name: Add "moved" label
+    conditions:
+      - title=Moved
+    actions:
+      label:
+          add:
+          - moved
