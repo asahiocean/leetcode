@@ -9,14 +9,20 @@ pull_request_rules:
        merge:
          method: merge
 pull_request_rules:
-    - name: automatic approval pull requests
+  - name: Add "moved" label
+    conditions:
+      - head~=^moved/
+    actions:
+      label:
+          add:
+          - moved
+pull_request_rules:
+    - name: Automatic approval PR
       conditions:
        - author=asahiocean
       actions:
-        label:
-            add:
-            - moved
         review:
           type: APPROVE
+          message: Automatically approving
         merge:
           method: merge
