@@ -10,8 +10,6 @@ pull_request_rules:
          method: merge
 pull_request_rules:
   - name: Add "moved" label
-    conditions:
-      - head=*-moved^
     actions:
       label:
           add:
