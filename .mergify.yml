@@ -11,7 +11,7 @@ pull_request_rules:
 pull_request_rules:
   - name: Add "moved" label
     conditions:
-      - head~=^moved/
+      - head~=/*^moved/
     actions:
       label:
           add:
@@ -23,6 +23,5 @@ pull_request_rules:
       actions:
         review:
           type: APPROVE
-          message: Automatically approving
         merge:
           method: merge
