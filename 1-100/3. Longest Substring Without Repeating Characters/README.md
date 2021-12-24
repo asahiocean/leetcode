@@ -46,42 +46,42 @@ Given a string ```s```, find the length of the **longest substring** without rep
 
 #### Example 1
 
-```
-Input: s = "abcabcbb"
-Output: 3
-Explanation: The answer is "abc", with the length of 3.
-```
+<pre>
+<b>Input:</b> s = "abcabcbb"
+<b>Output:</b> 3
+<b>Explanation:</b> The answer is "abc", with the length of 3.
+</pre>
 
 #### Example 2
 
-```
-Input: s = "bbbbb"
-Output: 1
-Explanation: The answer is "b", with the length of 1.
-```
+<pre>
+<b>Input:</b> s = "bbbbb"
+<b>Output:</b> 1
+<b>Explanation:</b> The answer is "b", with the length of 1.
+</pre>
 
 #### Example 3
 
-```
-Input: s = "pwwkew"
-Output: 3
-Explanation: The answer is "wke", with the length of 3.
-Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
-```
+<pre>
+<b>Input:</b> s = "pwwkew"
+<b>Output:</b> 3
+<b>Explanation:</b> The answer is "wke", with the length of 3.
+Notice that the answer must be a substring, <b>"pwke"</b> is a subsequence and not a substring.
+</pre>
 
 #### Example 4
 
-```
-Input: s = ""
-Output: 0
-```
+<pre>
+<b>Input:</b> s = ""
+<b>Output:</b> 0
+</pre>
 
 #### Constraints
 
-```
+<pre>
 0 <= s.length <= 5 * 104
 s consists of English letters, digits, symbols and spaces.
-```
+</pre>
 
 ---
 
