@@ -30,7 +30,7 @@ class Solution {
 ```
 
 <p>
-<a href="GITHUB_GIST_URL">
+<a href="https://gist.github.com/asahiocean/d6e7c30bedaf8679623f9b1bff4a9e56">
 <img src="https://git.io/JDNlC" alt="GitHub Gist" height="18" align="center">
 </a>
 <a href="https://leetcode.com/problems/palindrome-number/discuss/1136330">
