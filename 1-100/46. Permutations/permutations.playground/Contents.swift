@@ -6,19 +6,18 @@ import Foundation
 class Solution {
     func permute(_ nums: [Int]) -> [[Int]] {
         var result = [[Int]](repeating: [], count: 1)
-        nums.forEach { n in
-            var arr = [[Int]]()
-            result.forEach {
-                for i in 0..<$0.count {
-                    var t = $0
-                    t.insert(n, at: i)
-                    arr.append(t)
+        for n in nums {
+            var array = [[Int]]()
+            for var k in result {
+                for i in 0..<k.count {
+                    var val = k
+                    val.insert(n, at: i)
+                    array.append(val)
                 }
-                var t = $0
-                t.append(n)
-                arr.append(t)
+                k.append(n)
+                array.append(k)
             }
-            result = arr
+            result = array
         }
         return result
     }
