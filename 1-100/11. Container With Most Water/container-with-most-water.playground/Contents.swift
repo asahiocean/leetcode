@@ -7,11 +7,15 @@ class Solution {
     func maxArea(_ height: [Int]) -> Int {
         guard height.count > 2 else { return min(height[0], height[1]) }
         
-        var area = 0, l = 0, r = height.count - 1
-        while l < r {
-            let lots = min(height[l],height[r]) * (r - l)
+        var area = 0
+        var left = 0, right = height.count - 1
+        
+        while left < right {
+            let lots = min(height[left],height[right]) * (right - left)
+            
             area = max(area, lots)
-            if height[l] < height[r] { l += 1 } else { r -= 1 }
+            
+            height[left] < height[right] ? (left += 1) : (right -= 1)
         }
         return area
     }
@@ -25,22 +29,26 @@ import XCTest
 
 class Tests: XCTestCase {
     
-    private let s = Solution()
+    private let solution = Solution()
     
     func test0() {
-        XCTAssertEqual(s.maxArea([1,8,6,2,5,4,8,3,7]), 49)
+        let value = solution.maxArea([1,8,6,2,5,4,8,3,7])
+        XCTAssertEqual(value, 49)
     }
     
     func test1() {
-        XCTAssertEqual(s.maxArea([1,1]), 1)
+        let value = solution.maxArea([1,1])
+        XCTAssertEqual(value, 1)
     }
     
     func test2() {
-        XCTAssertEqual(s.maxArea([4,3,2,1,4]), 16)
+        let value = solution.maxArea([4,3,2,1,4])
+        XCTAssertEqual(value, 16)
     }
     
     func test3() {
-        XCTAssertEqual(s.maxArea([1,2,1]), 2)
+        let value = solution.maxArea([1,2,1])
+        XCTAssertEqual(value, 2)
     }
 }
 
