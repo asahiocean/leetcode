@@ -1,4 +1,7 @@
-## 4. Median of Two Sorted Arrays <img src="https://tinyurl.com/uc26jkuj" align="right" alt="views badge">
+<h1>
+4. Median of Two Sorted Arrays
+<img src="https://tinyurl.com/uc26jkuj" align="right" alt="views badge">
+</h1>
 
 <details>
 <summary>
@@ -9,7 +12,6 @@
 <br/>
 
 ```swift
-
 class Solution {
     func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
         
@@ -34,7 +36,6 @@ class Solution {
         return array.count % 2 == 0 ? Double(array[x-1] + array[x]) / 2 : Double(array[x])
     }
 }
-
 ```
 
 <p>
