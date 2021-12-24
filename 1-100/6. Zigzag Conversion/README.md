@@ -1,7 +1,7 @@
-<h2>
+<h1>
 6. Zigzag Conversion
 <img src="https://tinyurl.com/39hvyaxx" align="right" alt="views badge">
-</h2>
+</h1>
 
 <details>
 <summary>
