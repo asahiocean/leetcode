@@ -19,15 +19,29 @@ import XCTest
 
 class Tests: XCTestCase {
     
-    private let s = Solution()
+    private let solution = Solution()
     
-    func test0() { XCTAssert(s.myAtoi("42") == 42) }
-    func test1() { XCTAssert(s.myAtoi("   -42") == -42) }
-    func test2() { XCTAssert(s.myAtoi("4193 with words") == 4193) }
-    func test3() { XCTAssert(s.myAtoi("42") == 42) }
-    func test4() { XCTAssert(s.myAtoi("words and 987") == 0) }
-    func test5() { XCTAssert(s.myAtoi("-91283472332") == -2147483648) }
-    func test6() { XCTAssert(s.myAtoi("  +  413") == 0) }
+    func test0() {
+        XCTAssertEqual(solution.myAtoi("42"), 42)
+    }
+    func test1() {
+        XCTAssertEqual(solution.myAtoi("   -42"), -42)
+    }
+    func test2() {
+        XCTAssertEqual(solution.myAtoi("4193 with words"), 4193)
+    }
+    func test3() {
+        XCTAssertEqual(solution.myAtoi("42"), 42)
+    }
+    func test4() {
+        XCTAssertEqual(solution.myAtoi("words and 987"), 0)
+    }
+    func test5() {
+        XCTAssertEqual(solution.myAtoi("-91283472332"), -2147483648)
+    }
+    func test6() {
+        XCTAssertEqual(solution.myAtoi("  +  413"), 0)
+    }
 }
 
 Tests.defaultTestSuite.run()
