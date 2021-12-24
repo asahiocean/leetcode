@@ -1,0 +1,49 @@
+name: Helper
+on:
+  pull_request:
+    types: opened
+jobs:
+  autolabel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Get branch name
+        id: branch
+        run: echo "BRANCH=$(echo "${{ github.head_ref }}")" >> $GITHUB_ENV
+      - name: Get list of labels
+        id: labels
+        run: |
+          LIST=$(curl -X GET -u ${{ github.actor }}:${{ secrets.QLTVUTH5NF9D4MNF }} \
+          "https://api.github.com/repos/$GITHUB_REPOSITORY/labels" \
+          -H "Content-type: application/json" -k \
+          -H "Accept: application/vnd.github.v3+json" | jq '.[] | .name')
+          echo "LABELS=$(echo $LIST)" >> $GITHUB_ENV
+      - name: Detect label
+        id: label
+        run: |
+          BRANCH=${{ env.BRANCH }}
+          declare -a LABELS=(${{ env.LABELS }})
+          for i in "${LABELS[@]}"
+          do
+             if [[ $BRANCH == *"$i"* ]]; then
+                echo "LABEL=$i" >> $GITHUB_ENV
+             fi
+          done
+      - name: Update branch label
+        id: setting
+        env:
+          GITHUB_TOKEN: ${{ secrets.QLTVUTH5NF9D4MNF }}
+          PR_NUM: ${{ github.event.pull_request.number }}
+        run: |
+          gh pr edit "$PR_NUM" --add-label ${{ env.LABEL }}
+          gh pr edit "$PR_NUM" --add-assignee "@me"
+  automerge:
+      needs: autolabel
+      runs-on: ubuntu-latest
+      steps:
+        - name: Auto merge after review
+          env:
+            PR_URL: ${{github.event.pull_request.html_url}}
+            GITHUB_TOKEN: ${{ secrets.QLTVUTH5NF9D4MNF }}
+          run: |
+            gh pr merge -m "$PR_URL"
