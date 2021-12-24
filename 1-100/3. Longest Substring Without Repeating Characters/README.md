@@ -78,10 +78,8 @@ Notice that the answer must be a substring, <b>"pwke"</b> is a subsequence and n
 
 #### Constraints
 
-<pre>
-0 <= s.length <= 5 * 104
-s consists of English letters, digits, symbols and spaces.
-</pre>
+* ```0 <= s.length <= 5 * 104```
+* ```s``` consists of English letters, digits, symbols and spaces.
 
 ---
 
