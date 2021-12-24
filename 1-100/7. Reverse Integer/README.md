@@ -46,31 +46,31 @@ Given a signed 32-bit integer `x`, return `x` _with its digits reversed_. If rev
 
 #### Example 1
 
-```
-Input: x = 123
-Output: 321
-```
+<pre>
+<b>Input:</b> x = 123
+<b>Output:</b> 321
+</pre>
 
 #### Example 2
 
-```
-Input: x = -123
-Output: -321
-```
+<pre>
+<b>Input:</b> x = -123
+<b>Output:</b> -321
+</pre>
 
 #### Example 3
 
-```
-Input: x = 120
-Output: 21
-```
+<pre>
+<b>Input:</b> x = 120
+<b>Output:</b> 21
+</pre>
 
 #### Example 4
 
-```
-Input: x = 0
-Output: 0
-```
+<pre>
+<b>Input:</b> x = 0
+<b>Output:</b> 0
+</pre>
 
 #### Constraints
 
