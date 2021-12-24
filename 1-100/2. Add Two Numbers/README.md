@@ -1,4 +1,7 @@
-## 2. Add Two Numbers <img src="https://tinyurl.com/3kwwk6sc" align="right" alt="views badge">
+<h1>
+2. Add Two Numbers
+<img src="https://tinyurl.com/3kwwk6sc" align="right" alt="views badge">
+</h1>
 
 <details>
 <summary>
