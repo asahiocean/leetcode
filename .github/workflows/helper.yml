@@ -4,7 +4,7 @@ on:
     types: [submitted]
 jobs:
   autolabel:
-    if: github.event.review.state == 'approved'
+    if: ${{ github.actor }} == asahiocean
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
