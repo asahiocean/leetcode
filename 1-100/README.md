@@ -11,7 +11,7 @@
 | ![OK]  | [7. Reverse Integer][7] | [**OPEN**][7s] |
 | ![OK]  | [8. String to Integer (atoi)][8] | [**OPEN**][8s] |
 | ![OK]  | [9. Palindrome Number][9] | [**OPEN**][9s]  | 
-| ![OK]  | [10. Regular Expression Matching][10]  |  [**OPEN**][10s]  | 
+| ![OK]  | [10. Regular Expression Matching][10] | [**OPEN**][10s]  | 
 | ![OK]  | [11. Container With Most Water][11]  |  [**OPEN**][11s]  | 
 | ![OK]  | [12. Integer to Roman][12]  |  [**OPEN**][12s]  | 
 | ![OK]  | [13. Roman to Integer][13]  |  [**OPEN**][13s]  | 
