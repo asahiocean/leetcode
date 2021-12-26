@@ -2,40 +2,24 @@ name: Helper
 on:
   pull_request:
     types: [created]
-env:
-  TOKEN1: ${{ secrets.QLTVUTH5NF9D4MNF }}
-  TOKEN2: ${{ secrets.FI8T7N8GVDF4YJCC }}
-  PR_URL: ${{ github.event.pull_request.html_url }}
 jobs:
-  autoapprove:
-    runs-on: ubuntu-latest
-    if: github.actor == 'asahiocean' || github.actor == 'dependabot[bot]'
-    steps:
-      - name: Dependabot metadata
-        if: github.actor == 'dependabot[bot]'
-        uses: dependabot/fetch-metadata@v1.1.1
-        with:
-          github-token: "$TOKEN2"
-      - name: Auto approve
-        run:
-          gh auth login --with-token "$TOKEN2"
-          gh pr review --approve "$PR_URL"
-          gh pr merge --auto --merge "$PR_URL"
-          gh pr comment "$PR_URL" --body "/approved"
   autolabel:
-    needs: autoapprove
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Get branch name
+        id: branch
         run: echo "BRANCH=$(echo "${{ github.head_ref }}")" >> $GITHUB_ENV
       - name: Get list of labels
+        id: labels
         run: |
-          LIST=$(curl -X GET -u ${{ github.actor }}:"$TOKEN1" \
+          LIST=$(curl -X GET -u ${{ github.actor }}:${{ secrets.QLTVUTH5NF9D4MNF }} \
           "https://api.github.com/repos/$GITHUB_REPOSITORY/labels" \
           -H "Content-type: application/json" -k \
           -H "Accept: application/vnd.github.v3+json" | jq '.[] | .name')
           echo "LABELS=$(echo $LIST)" >> $GITHUB_ENV
       - name: Detect label
+        id: label
         run: |
           BRANCH=${{ env.BRANCH }}
           declare -a LABELS=(${{ env.LABELS }})
@@ -46,13 +30,22 @@ jobs:
              fi
           done
       - name: Update branch label
+        id: setting
+        env:
+          GITHUB_TOKEN: ${{ secrets.QLTVUTH5NF9D4MNF }}
+          PR_NUM: ${{ github.event.pull_request.number }}
         run: |
-          gh pr edit "$PR_URL" --add-label ${{ env.LABEL }}
-          gh pr edit "$PR_URL" --add-assignee "@me"
-          gh pr edit "$PR_URL" --add-assignee "sergfedotov"
+          gh pr edit "$PR_NUM" --add-label ${{ env.LABEL }}
+          gh pr edit "$PR_NUM" --add-assignee "@me"
+          gh pr edit "$PR_NUM" --add-assignee "sergfedotov"
   automerge:
       needs: autolabel
       runs-on: ubuntu-latest
       steps:
         - name: Auto merge after review
-          run: gh pr merge -m "$PR_URL"
+          env:
+            PR_URL: ${{github.event.pull_request.html_url}}
+            GITHUB_TOKEN: ${{ secrets.QLTVUTH5NF9D4MNF }}
+          run: |
+            gh pr merge -m "$PR_URL"
+            gh pr comment "$PR_URL" --body "/automerge"
