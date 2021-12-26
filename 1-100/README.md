@@ -21,7 +21,7 @@
 | ![OK]  | [17. Letter Combinations of a Phone N][17] | [**OPEN**][17s]  | 
 | ![OK]  | [18. 4Sum][18] | [**OPEN**][18s]  | 
 | ![OK]  | [19. Remove Nth Node From End of List][19] | [**OPEN**][19s]  | 
-| ![OK]  | [20. Valid Parentheses][20]  |  [**OPEN**][20s]  | 
+| ![OK]  | [20. Valid Parentheses][20] | [**OPEN**][20s]  | 
 | ![OK]  | [21. Merge Two Sorted Lists][21]  |  [**OPEN**][21s]  | 
 | ![OK]  | [22. Generate Parentheses][21]  |  [**OPEN**][22s]  | 
 | ![OK]  | [23. Merge k Sorted Lists][23]  |  [**OPEN**][23s]  | 
