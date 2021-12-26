@@ -1,6 +1,7 @@
 <h1><sub><img src="https://w.wiki/4YnF" height="40" hspace="10"></sub>LeetCode</h1>
 
 [![](https://tinyurl.com/2p8b36mw)](https://leetcode-badge.vercel.app)
+![](https://img.shields.io/badge/dynamic/json?style=for-the-badge&labelColor=black&color=%23ffa116&label=Ranking&query=ranking&url=https%3A%2F%2Fleetcode-badge.vercel.app%2Fapi%2Fusers%2Fasahiocean)
 
 ## Repo Details
 ![](https://img.shields.io/github/repo-size/asahiocean/LeetCode.svg)
