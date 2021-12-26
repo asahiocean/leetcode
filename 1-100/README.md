@@ -3,7 +3,7 @@
 | Status | Problem | Solution |
 |:------:|:--------|:--------:|
 | ![OK]  | [1. Two Sum][1] | [**OPEN**][1s] |
-| ![OK]  | [2. Add Two Numbers][2] | [**OPEN**][2s] |
+| ![OK]  | [2. Add Two Numbers][2] | [**OPEN**][2s] | | 
 | ![OK]  | [3. Longest Substring Without Repeating Characters][3] | [**OPEN**][3s] |
 | ![OK]  | [4. Median of Two Sorted Arrays][4] | [**OPEN**][4s] |
 | ![OK]  | [5. Longest Palindromic Substring][5] | [**OPEN**][5s] |
