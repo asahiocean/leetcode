@@ -1,11 +1,28 @@
 name: Auto approve
 on:
-  pull_request_target
+  pull_request
+permissions:
+  pull-requests: write
+env:
+  token: ${{ secrets.FI8T7N8GVDF4YJCC }}
 jobs:
   auto-approve:
     runs-on: ubuntu-latest
     steps:
     - uses: hmarr/auto-approve-action@v2
-      if: github.actor == 'asahiocean' || github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
+      if: github.actor == 'asahiocean'
       with:
-        github-token: "${{ secrets.FI8T7N8GVDF4YJCC }}"
+        github-token: ${{ env.token }}
+  approve-dependabot:
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dependabot metadata
+        uses: dependabot/fetch-metadata@v1.1.1
+        with:
+          github-token: ${{ env.token }}
+      - name: Approve a PR by Dependabot
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{ env.token }}
+        run: gh pr review --approve "$PR_URL"
