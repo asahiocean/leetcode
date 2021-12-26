@@ -20,8 +20,10 @@ jobs:
           github-token: "$TOKEN2"
       - name: Auto approve
         run:
+          gh auth login --with-token "$TOKEN2"
           gh pr review --approve "$PR_URL"
           gh pr merge --auto --merge "$PR_URL"
+          gh pr comment "$PR_URL" --body "/approved"
   autolabel:
     needs: autoapprove
     runs-on: ubuntu-latest
