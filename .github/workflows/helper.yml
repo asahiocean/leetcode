@@ -8,8 +8,8 @@ env:
   PR_URL: ${{ github.event.pull_request.html_url }}
 jobs:
   autoapprove:
-    if: github.actor == 'asahiocean' || github.actor == 'dependabot[bot]'
     runs-on: ubuntu-latest
+    if: github.actor == 'asahiocean' || github.actor == 'dependabot[bot]'
     steps:
       - name: Dependabot metadata
         if: github.actor == 'dependabot[bot]'
