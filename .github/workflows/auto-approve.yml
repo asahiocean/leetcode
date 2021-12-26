@@ -1,0 +1,11 @@
+name: Auto approve
+on:
+  pull_request_target
+jobs:
+  auto-approve:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: hmarr/auto-approve-action@v2
+      if: github.actor == 'asahiocean' || github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
+      with:
+        github-token: "${{ secrets.FI8T7N8GVDF4YJCC }}"
