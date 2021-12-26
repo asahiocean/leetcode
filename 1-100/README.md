@@ -15,23 +15,23 @@
 | ![OK]  | [11. Container With Most Water][11] | [**OPEN**][11s] |
 | ![OK]  | [12. Integer to Roman][12] | [**OPEN**][12s] |
 | ![OK]  | [13. Roman to Integer][13] | [**OPEN**][13s] |
-| ![OK]  | [14. Longest Common Prefix][14] | [**OPEN**][14s] | 
-| ![OK]  | [15. 3Sum][15] | [**OPEN**][15s] | | 
-| ![OK]  | [16. 3Sum Closest][16] | [**OPEN**][16s] | 
-| ![OK]  | [17. Letter Combinations of a Phone N][17] | [**OPEN**][17s] | 
-| ![OK]  | [18. 4Sum][18] | [**OPEN**][18s] | 
-| ![OK]  | [19. Remove Nth Node From End of List][19] | [**OPEN**][19s] | 
-| ![OK]  | [20. Valid Parentheses][20] | [**OPEN**][20s] | 
-| ![OK]  | [21. Merge Two Sorted Lists][21] | [**OPEN**][21s] | 
+| ![OK]  | [14. Longest Common Prefix][14] | [**OPEN**][14s] |
+| ![OK]  | [15. 3Sum][15] | [**OPEN**][15s] | |
+| ![OK]  | [16. 3Sum Closest][16] | [**OPEN**][16s] |
+| ![OK]  | [17. Letter Combinations of a Phone N][17] | [**OPEN**][17s] |
+| ![OK]  | [18. 4Sum][18] | [**OPEN**][18s] |
+| ![OK]  | [19. Remove Nth Node From End of List][19] | [**OPEN**][19s] |
+| ![OK]  | [20. Valid Parentheses][20] | [**OPEN**][20s] |
+| ![OK]  | [21. Merge Two Sorted Lists][21] | [**OPEN**][21s] |
 | ![OK]  | [22. Generate Parentheses][21] | [**OPEN**][22s] |
 | ![OK]  | [23. Merge k Sorted Lists][23] | [**OPEN**][23s] |
 | ![OK]  | [24. Swap Nodes in Pairs][24] | [**OPEN**][24s] |
-| ![OK]  | [25. Reverse Nodes in k-Group][25] | [**OPEN**][25s] | 
-| ![OK]  | [26. Remove Duplicates from Sorted Array][26] | [**OPEN**][26s] | 
-| ![OK]  | [27. Remove Element][27] | [**OPEN**][27s] | 
-| ![OK]  | [28. Implement strStr()][28] | [**OPEN**][28s] | 
-| ![OK]  | [29. Divide Two Integers][29] | [**OPEN**][29s] | 
-| ![OK]  | [30. Substring with Concatenation of All Words][30] | [**OPEN**][30s] | 
+| ![OK]  | [25. Reverse Nodes in k-Group][25] | [**OPEN**][25s] |
+| ![OK]  | [26. Remove Duplicates from Sorted Array][26] | [**OPEN**][26s] |
+| ![OK]  | [27. Remove Element][27] | [**OPEN**][27s] |
+| ![OK]  | [28. Implement strStr()][28] | [**OPEN**][28s] |
+| ![OK]  | [29. Divide Two Integers][29] | [**OPEN**][29s] |
+| ![OK]  | [30. Substring with Concatenation of All Words][30] | [**OPEN**][30s] |
 | ![OK]  |[31. Next Permutation][31]| [**OPEN**][31s] |
 | ![OK]  |[32. Longest Valid Parentheses][32]| [**OPEN**][32s] |
 |🛠|[33. Search in Rotated Sorted Array][33]|**SOON**|
