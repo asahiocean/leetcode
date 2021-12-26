@@ -29,7 +29,7 @@
 | ![OK]  | [25. Reverse Nodes in k-Group][25] | [**OPEN**][25s]  | 
 | ![OK]  | [26. Remove Duplicates from Sorted Array][26] | [**OPEN**][26s]  | 
 | ![OK]  | [27. Remove Element][27] | [**OPEN**][27s]  | 
-| ![OK]  | [28. Implement strStr()][28]  |  [**OPEN**][28s]  | 
+| ![OK]  | [28. Implement strStr()][28] | [**OPEN**][28s]  | 
 | ![OK]  | [29. Divide Two Integers][29]  |  [**OPEN**][29s]  | 
 | ![OK]  | [30. Substring with Concatenation of All Words][30]  |  [**OPEN**][30s]  | 
 | ![OK]  |[31. Next Permutation][31]| [**OPEN**][31s] |
