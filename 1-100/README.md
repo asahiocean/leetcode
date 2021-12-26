@@ -33,7 +33,7 @@
 | ![OK]  | [29. Divide Two Integers][29]  |  [**OPEN**][29s]  | 
 | ![OK]  | [30. Substring with Concatenation of All Words][30]  |  [**OPEN**][30s]  | 
 | ![OK]  |[31. Next Permutation][31]| [**OPEN**][31s] |
-|🛠|[32. Longest Valid Parentheses][32]|**SOON**|
+| ![OK]  |[32. Longest Valid Parentheses][32]| [**OPEN**][32s] |
 |🛠|[33. Search in Rotated Sorted Array][33]|**SOON**|
 |🛠|[34. Find First and Last Position of Element in Sorted Array][34]|**SOON**|
 |🛠|[35. Search Insert Position][35]|**SOON**|
@@ -181,6 +181,7 @@
 
 <!-- 32 -->
 [32]: https://leetcode.com/problems/longest-valid-parentheses
+[32s]: https://github.com/asahiocean/leetcode/tree/main/1-100/32.%20Longest%20Valid%20Parentheses
 
 <!-- 33 -->
 [33]: https://leetcode.com/problems/search-in-rotated-sorted-array
