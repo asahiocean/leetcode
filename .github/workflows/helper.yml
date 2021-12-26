@@ -2,19 +2,35 @@ name: Helper
 on:
   pull_request:
     types: [created]
+permissions:
+  pull-requests: write
 env:
-  TOKEN: ${{ secrets.QLTVUTH5NF9D4MNF }}
-  PR_NUM: ${{ github.event.pull_request.number }}
+  TOKEN1: ${{ secrets.QLTVUTH5NF9D4MNF }}
+  TOKEN2: ${{ secrets.FI8T7N8GVDF4YJCC }}
+  PR_URL: ${{ github.event.pull_request.html_url }}
 jobs:
+  autoapprove:
+    if: github.actor == 'asahiocean' || github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dependabot metadata
+        if: github.actor == 'dependabot[bot]'
+        uses: dependabot/fetch-metadata@v1.1.1
+        with:
+          github-token: "$TOKEN2"
+      - name: Auto approve
+        run:
+          gh pr review --approve "$PR_URL"
+          gh pr merge --auto --merge "$PR_URL"
   autolabel:
-    if: ${{ github.actor }} == asahiocean
+    needs: autoapprove
     runs-on: ubuntu-latest
     steps:
       - name: Get branch name
         run: echo "BRANCH=$(echo "${{ github.head_ref }}")" >> $GITHUB_ENV
       - name: Get list of labels
         run: |
-          LIST=$(curl -X GET -u ${{ github.actor }}:${{ env.TOKEN }} \
+          LIST=$(curl -X GET -u ${{ github.actor }}:"$TOKEN1" \
           "https://api.github.com/repos/$GITHUB_REPOSITORY/labels" \
           -H "Content-type: application/json" -k \
           -H "Accept: application/vnd.github.v3+json" | jq '.[] | .name')
@@ -31,13 +47,12 @@ jobs:
           done
       - name: Update branch label
         run: |
-          gh pr edit "$PR_NUM" --add-label ${{ env.LABEL }}
-          gh pr edit "$PR_NUM" --add-assignee "@me"
-          gh pr edit "$PR_NUM" --add-assignee "sergfedotov"
+          gh pr edit "$PR_URL" --add-label ${{ env.LABEL }}
+          gh pr edit "$PR_URL" --add-assignee "@me"
+          gh pr edit "$PR_URL" --add-assignee "sergfedotov"
   automerge:
       needs: autolabel
       runs-on: ubuntu-latest
       steps:
         - name: Auto merge after review
-          run: |
-            gh pr merge -m "$PR_URL"
+          run: gh pr merge -m "$PR_URL"
