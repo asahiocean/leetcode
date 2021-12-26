@@ -16,7 +16,7 @@
 | ![OK]  | [12. Integer to Roman][12] | [**OPEN**][12s]  | 
 | ![OK]  | [13. Roman to Integer][13] | [**OPEN**][13s]  | 
 | ![OK]  | [14. Longest Common Prefix][14] | [**OPEN**][14s]  | 
-| ![OK]  | [15. 3Sum][15] | [**OPEN**][15s]  | 
+| ![OK]  | [15. 3Sum][15] | [**OPEN**][15s]  |  | 
 | ![OK]  | [16. 3Sum Closest][16] | [**OPEN**][16s]  | 
 | ![OK]  | [17. Letter Combinations of a Phone N][17] | [**OPEN**][17s]  | 
 | ![OK]  | [18. 4Sum][18] | [**OPEN**][18s]  | 
