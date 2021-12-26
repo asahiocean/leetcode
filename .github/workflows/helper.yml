@@ -1,7 +1,7 @@
 name: Helper
 on:
-  pull_request_review:
-    types: [submitted]
+  pull_request:
+    types: [created]
 jobs:
   autolabel:
     if: ${{ github.actor }} == asahiocean
