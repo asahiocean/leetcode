@@ -27,7 +27,7 @@
 | ![OK]  | [23. Merge k Sorted Lists][23] | [**OPEN**][23s]  | 
 | ![OK]  | [24. Swap Nodes in Pairs][24] | [**OPEN**][24s]  | 
 | ![OK]  | [25. Reverse Nodes in k-Group][25] | [**OPEN**][25s]  | 
-| ![OK]  | [26. Remove Duplicates from Sorted Array][26]  |  [**OPEN**][26s]  | 
+| ![OK]  | [26. Remove Duplicates from Sorted Array][26] | [**OPEN**][26s]  | 
 | ![OK]  | [27. Remove Element][27]  |  [**OPEN**][27s]  | 
 | ![OK]  | [28. Implement strStr()][28]  |  [**OPEN**][28s]  | 
 | ![OK]  | [29. Divide Two Integers][29]  |  [**OPEN**][29s]  | 
