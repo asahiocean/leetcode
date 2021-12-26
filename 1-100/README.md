@@ -31,7 +31,7 @@
 | ![OK]  | [27. Remove Element][27] | [**OPEN**][27s]  | 
 | ![OK]  | [28. Implement strStr()][28] | [**OPEN**][28s]  | 
 | ![OK]  | [29. Divide Two Integers][29] | [**OPEN**][29s]  | 
-| ![OK]  | [30. Substring with Concatenation of All Words][30]  |  [**OPEN**][30s]  | 
+| ![OK]  | [30. Substring with Concatenation of All Words][30] | [**OPEN**][30s]  | 
 | ![OK]  |[31. Next Permutation][31]| [**OPEN**][31s] |
 | ![OK]  |[32. Longest Valid Parentheses][32]| [**OPEN**][32s] |
 |🛠|[33. Search in Rotated Sorted Array][33]|**SOON**|
