@@ -2,8 +2,6 @@ name: Helper
 on:
   pull_request:
     types: [created]
-permissions:
-  pull-requests: write
 env:
   TOKEN1: ${{ secrets.QLTVUTH5NF9D4MNF }}
   TOKEN2: ${{ secrets.FI8T7N8GVDF4YJCC }}
