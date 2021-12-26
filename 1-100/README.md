@@ -32,7 +32,7 @@
 | ![OK]  | [28. Implement strStr()][28]  |  [**OPEN**][28s]  | 
 | ![OK]  | [29. Divide Two Integers][29]  |  [**OPEN**][29s]  | 
 | ![OK]  | [30. Substring with Concatenation of All Words][30]  |  [**OPEN**][30s]  | 
-|🛠|[31. Next Permutation][31]|**SOON**|
+| ![OK]  |[31. Next Permutation][31]| [**OPEN**][31s] |
 |🛠|[32. Longest Valid Parentheses][32]|**SOON**|
 |🛠|[33. Search in Rotated Sorted Array][33]|**SOON**|
 |🛠|[34. Find First and Last Position of Element in Sorted Array][34]|**SOON**|
@@ -177,6 +177,7 @@
 
 <!-- 31 -->
 [31]: https://leetcode.com/problems/next-permutation
+[31s]: https://github.com/asahiocean/leetcode/tree/main/1-100/31.%20Next%20Permutation
 
 <!-- 32 -->
 [32]: https://leetcode.com/problems/longest-valid-parentheses
