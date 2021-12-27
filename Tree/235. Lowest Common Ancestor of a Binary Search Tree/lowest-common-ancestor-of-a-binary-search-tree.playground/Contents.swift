@@ -5,9 +5,10 @@ import Foundation
 
 class Solution {
     func lowestCommonAncestor(_ root: TreeNode?, _ p: TreeNode?, _ q: TreeNode?) -> TreeNode? {
-        if let val = root?.val, val > p!.val && val > q!.val {
+        guard let val = root?.val, let p = p, let q = q else { return nil }
+        if val > p.val && val > q.val {
             return lowestCommonAncestor(root?.left, p, q)
-        } else if let val = root?.val, val < p!.val && val < q!.val {
+        } else if val < p.val && val < q.val {
             return lowestCommonAncestor(root?.right, p, q)
         } else {
             return root
