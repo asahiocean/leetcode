@@ -4,13 +4,18 @@ import Foundation
 // https://leetcode.com/problems/integer-to-roman/
 
 class Solution {
+    
     private let decimals = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
     private let numerals = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
+    
     func intToRoman(_ num: Int) -> String {
-        var n = num, result = ""
-        while n > 0 {
-            for (i, d) in decimals.enumerated() where n - d >= 0 {
-                n -= d
+        
+        var num = num
+        var result = ""
+        
+        while num > 0 {
+            for (i, d) in decimals.enumerated() where num - d >= 0 {
+                num -= d
                 result += numerals[i]
                 break
             }
@@ -27,22 +32,22 @@ import XCTest
 
 class Tests: XCTestCase {
     
-    private let s = Solution()
+    private let solution = Solution()
     
     func test0() {
-        XCTAssertEqual(s.intToRoman(3), "III")
+        XCTAssertEqual(solution.intToRoman(3), "III")
     }
     func test1() {
-        XCTAssertEqual(s.intToRoman(4), "IV")
+        XCTAssertEqual(solution.intToRoman(4), "IV")
     }
     func test2() {
-        XCTAssertEqual(s.intToRoman(9), "IX")
+        XCTAssertEqual(solution.intToRoman(9), "IX")
     }
     func test3() {
-        XCTAssertEqual(s.intToRoman(58), "LVIII")
+        XCTAssertEqual(solution.intToRoman(58), "LVIII")
     }
     func test4() {
-        XCTAssertEqual(s.intToRoman(1994), "MCMXCIV")
+        XCTAssertEqual(solution.intToRoman(1994), "MCMXCIV")
     }
 }
 
