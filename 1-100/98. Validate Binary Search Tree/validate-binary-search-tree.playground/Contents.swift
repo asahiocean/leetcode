@@ -12,7 +12,7 @@ class Solution {
             return helper(node.left, min, node.val) && helper(node.right, node.val, max)
         }
         return helper(root, nil, nil)
-    }    
+    }
 }
 
 public class TreeNode {
