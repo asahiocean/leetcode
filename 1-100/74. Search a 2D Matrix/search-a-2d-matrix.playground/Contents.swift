@@ -5,16 +5,19 @@ import Foundation
 
 class Solution {
     func searchMatrix(_ matrix: [[Int]], _ target: Int) -> Bool {
+        
         var nums = [Int]()
         matrix.forEach { nums.append(contentsOf: $0) }
-        guard !nums.isEmpty else { return false }
-        var l = 0, r = nums.count - 1
         
-        while l < r {
-            let mid = l + (r - l) >> 1
+        guard !nums.isEmpty else { return false }
+        
+        var left = 0, right = nums.count - 1
+        
+        while left < right {
+            let mid = left + (right - left) >> 1
             if nums[mid] == target { return true }
-            nums[mid] < target ? (l = mid + 1) : (r = mid)
+            nums[mid] < target ? (left = mid + 1) : (right = mid)
         }
-        return nums[l] == target
+        return nums[left] == target
     }
 }
