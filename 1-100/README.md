@@ -34,13 +34,13 @@
 | ![OK]  | [30. Substring with Concatenation of All Words][30] | [**OPEN**][30s] |
 | ![OK]  |[31. Next Permutation][31]| [**OPEN**][31s] |
 | ![OK]  |[32. Longest Valid Parentheses][32]| [**OPEN**][32s] |
-|🛠|[33. Search in Rotated Sorted Array][33]|**SOON**|
+| ![OK]  |[33. Search in Rotated Sorted Array][33]| [**OPEN**][33s] |
 |🛠|[34. Find First and Last Position of Element in Sorted Array][34]|**SOON**|
-|🛠|[35. Search Insert Position][35]|**SOON**|
+| ![OK]  |[35. Search Insert Position][35]| [**OPEN**][35s] |
 |🛠|[36. Valid Sudoku][36]|**SOON**|
-|🛠|[37. Sudoku Solver][37]|**SOON**|
-|🛠|[38. Count and Say][38]|**SOON**|
-|🛠|[39. Combination Sum][39]|**SOON**|
+| ![OK]  |[37. Sudoku Solver][37]| [**OPEN**][37s] |
+| ![OK]  |[38. Count and Say][38]| [**OPEN**][38s] |
+| ![OK]  |[39. Combination Sum][39]| [**OPEN**][39s] |
 |🛠|[40. Combination Sum II][40]|**SOON**|
 |🛠|[41. First Missing Positive][41]|**SOON**|
 |🛠|[42. Trapping Rain Water][42]|**SOON**|
@@ -177,32 +177,37 @@
 
 <!-- 31 -->
 [31]: https://leetcode.com/problems/next-permutation
-[31s]: https://github.com/asahiocean/leetcode/tree/main/1-100/31.%20Next%20Permutation
+[31s]: ./31.%20Next%20Permutation
 
 <!-- 32 -->
 [32]: https://leetcode.com/problems/longest-valid-parentheses
-[32s]: https://github.com/asahiocean/leetcode/tree/main/1-100/32.%20Longest%20Valid%20Parentheses
+[32s]: ./32.%20Longest%20Valid%20Parentheses
 
 <!-- 33 -->
 [33]: https://leetcode.com/problems/search-in-rotated-sorted-array
+[33s]: ./33.%20Search%20in%20Rotated%20Sorted%20Array
 
 <!-- 34 -->
 [34]: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array
 
 <!-- 35 -->
 [35]: https://leetcode.com/problems/search-insert-position
+[35s]: ./35.%20Search%20Insert%20Position
 
 <!-- 36 -->
 [36]: https://leetcode.com/problems/valid-sudoku
 
 <!-- 37 -->
 [37]: https://leetcode.com/problems/sudoku-solver
+[37s]: ./37.%20Sudoku%20Solver
 
 <!-- 38 -->
 [38]: https://leetcode.com/problems/count-and-say
+[38s]: ./38.%20Count%20and%20Say
 
 <!-- 39 -->
 [39]: https://leetcode.com/problems/combination-sum
+[39s]: ./39.%20Combination%20Sum
 
 <!-- 40 -->
 [40]: https://leetcode.com/problems/combination-sum-ii
