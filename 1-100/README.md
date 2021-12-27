@@ -35,23 +35,23 @@
 | ![OK]  | [31. Next Permutation][31]| [**OPEN**][31s] |
 | ![OK]  | [32. Longest Valid Parentheses][32]| [**OPEN**][32s] |
 | ![OK]  | [33. Search in Rotated Sorted Array][33]| [**OPEN**][33s] |
-|   🛠   | [34. Find First and Last Position of Element in Sorted Array][34]|**SOON**|
+|   🛠   | [34. Find First and Last Position of Element in Sorted Array][34]|  SOON  |
 | ![OK]  | [35. Search Insert Position][35]| [**OPEN**][35s] |
-|   🛠   | [36. Valid Sudoku][36]|**SOON**|
+|   🛠   | [36. Valid Sudoku][36]|  SOON  |
 | ![OK]  | [37. Sudoku Solver][37]| [**OPEN**][37s] |
 | ![OK]  | [38. Count and Say][38]| [**OPEN**][38s] |
 | ![OK]  | [39. Combination Sum][39]| [**OPEN**][39s] |
-|   🛠   | [40. Combination Sum II][40]|**SOON**|
+|   🛠   | [40. Combination Sum II][40]|  SOON  |
 | ![OK]  | [41. First Missing Positive][41] | [**OPEN**][41s] |
 | ![OK]  | [42. Trapping Rain Water][42] | [**OPEN**][42s] |
-|   🛠   | [43. Multiply Strings][43] | [**OPEN**][39s] |
+|   🛠   | [43. Multiply Strings][43] | SOON |
 | ![OK]  | [44. Wildcard Matching][44]| [**OPEN**][44s] |
 | ![OK]  | [45. Jump Game II][45]| [**OPEN**][45s] |
-|   🛠   | [46. Permutations][46]|**SOON**|
-|   🛠   | [47. Permutations II][47]|**SOON**|
-|   🛠   | [48. Rotate Image][48]|**SOON**|
-|   🛠   | [49. Group Anagrams][49]|**SOON**|
-|   🛠   | [50. Pow(x, n)][50]|**SOON**|
+|   🛠   | [46. Permutations][46]|  SOON  |
+|   🛠   | [47. Permutations II][47]|  SOON  |
+|   🛠   | [48. Rotate Image][48]|  SOON  |
+|   🛠   | [49. Group Anagrams][49]|  SOON  |
+|   🛠   | [50. Pow(x, n)][50]|  SOON  |
 
 <!-- URLs -->
 
@@ -222,10 +222,10 @@
 
 <!-- 43 -->
 [43]: https://leetcode.com/problems/multiply-strings
-[43s]: ./44.%20Wildcard%20Matching
 
 <!-- 44 -->
 [44]: https://leetcode.com/problems/wildcard-matching
+[44s]: ./44.%20Wildcard%20Matching
 
 <!-- 45 -->
 [45]: https://leetcode.com/problems/jump-game-ii
