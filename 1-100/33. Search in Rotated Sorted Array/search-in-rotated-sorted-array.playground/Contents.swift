@@ -21,9 +21,11 @@ class Solution {
     }
 }
 
-import XCTest
+// MARK: - Test cases -
 
-// Executed 3 tests, with 0 failures (0 unexpected) in 0.007 (0.010) seconds
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.007 (0.010) seconds
+
+import XCTest
 
 class Tests: XCTestCase {
     
