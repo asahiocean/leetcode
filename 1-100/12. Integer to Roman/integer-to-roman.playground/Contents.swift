@@ -35,19 +35,24 @@ class Tests: XCTestCase {
     private let solution = Solution()
     
     func test0() {
-        XCTAssertEqual(solution.intToRoman(3), "III")
+        let value = solution.intToRoman(3)
+        XCTAssertEqual(value, "III")
     }
     func test1() {
-        XCTAssertEqual(solution.intToRoman(4), "IV")
+        let value = solution.intToRoman(4)
+        XCTAssertEqual(value, "IV")
     }
     func test2() {
-        XCTAssertEqual(solution.intToRoman(9), "IX")
+        let value = solution.intToRoman(9)
+        XCTAssertEqual(value, "IX")
     }
     func test3() {
-        XCTAssertEqual(solution.intToRoman(58), "LVIII")
+        let value = solution.intToRoman(58)
+        XCTAssertEqual(value, "LVIII")
     }
     func test4() {
-        XCTAssertEqual(solution.intToRoman(1994), "MCMXCIV")
+        let value = solution.intToRoman(1994)
+        XCTAssertEqual(value, "MCMXCIV")
     }
 }
 
