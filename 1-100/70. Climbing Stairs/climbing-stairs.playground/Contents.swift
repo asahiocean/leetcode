@@ -7,26 +7,30 @@ class Solution {
     func climbStairs(_ n: Int) -> Int {
         var zero = 1, one = 1, step = 2
         while step <= n {
-            let t = zero + one
+            let temp = zero + one
             zero = one
-            one = t
+            one = temp
             step += 1
         }
         return one
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
+
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        XCTAssertEqual(s.climbStairs(2), 2)
+        XCTAssertEqual(solution.climbStairs(2), 2)
     }
     func test1() {
-        XCTAssertEqual(s.climbStairs(3), 3)
+        XCTAssertEqual(solution.climbStairs(3), 3)
     }
 }
 
