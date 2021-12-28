@@ -49,7 +49,7 @@
 | ![OK]  | [45. Jump Game II][45]| [**OPEN**][45s] |
 | ![OK]  | [46. Permutations][46]|  [**OPEN**][46s]  |
 | ![OK]  | [47. Permutations II][47]|  [**OPEN**][47s]  |
-|   🛠   | [48. Rotate Image][48]|  SOON  |
+| ![OK]  | [48. Rotate Image][48]|  [**OPEN**][48s]  |
 |   🛠   | [49. Group Anagrams][49]|  SOON  |
 |   🛠   | [50. Pow(x, n)][50]|  SOON  |
 
