@@ -249,6 +249,7 @@
 
 <!-- 49 -->
 [49]: https://leetcode.com/problems/group-anagrams
+[49s]: ./49.%20Group%20Anagrams
 
 <!-- 50 -->
 [50]: https://leetcode.com/problems/powx-n
