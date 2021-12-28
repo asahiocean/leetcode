@@ -5,8 +5,8 @@ import Foundation
 
 class Solution {
     func combinationSum2(_ candidates: [Int], _ target: Int) -> [[Int]] {
-        var result = [[Int]](), path = [Int]()
-        dfs(&result, &path, target, candidates.sorted(), 0)
+        var result = [[Int]](), path = [Int](), sorted = candidates.sorted()
+        dfs(&result, &path, target, sorted, 0)
         return result
     }
     
@@ -26,7 +26,6 @@ class Solution {
 
 // Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
 
-
 import XCTest
 
 class Tests: XCTestCase {
@@ -34,12 +33,12 @@ class Tests: XCTestCase {
     private let solution = Solution()
     
     func test0() {
-        let res = solution.combinationSum2([10,1,2,7,6,1,5], 8)
-        XCTAssertEqual(res, [[1,1,6],[1,2,5],[1,7],[2,6]])
+        let value = solution.combinationSum2([10,1,2,7,6,1,5], 8)
+        XCTAssertEqual(value, [[1,1,6],[1,2,5],[1,7],[2,6]])
     }
     func test1() {
-        let res = solution.combinationSum2([2,5,2,1,2], 5)
-        XCTAssertEqual(res, [[1,2,2],[5]])
+        let value = solution.combinationSum2([2,5,2,1,2], 5)
+        XCTAssertEqual(value, [[1,2,2],[5]])
     }
 }
 
