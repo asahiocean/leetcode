@@ -10,30 +10,35 @@ class Solution {
         return result
     }
     
-    private func dfs(_ res: inout [[Int]], _ path: inout [Int], _ t: Int, _ candidates: [Int], _ index: Int) {
-        guard t > 0 else { res.append(Array(path)); return }
+    private func dfs(_ res: inout [[Int]], _ path: inout [Int], _ t: Int, _ cands: [Int], _ i: Int) {
+        guard t > 0 else { res.append(path); return }
         
-        for i in index..<candidates.count where candidates[i] <= t {
-            if i > 0 && candidates[i] == candidates[i-1] && i != index { continue }
-            path.append(candidates[i])
-            dfs(&res, &path, t - candidates[i], candidates, i + 1)
+        for k in i..<cands.count where cands[k] <= t {
+            if k > 0 && cands[k] == cands[k-1] && k != i { continue }
+            path.append(cands[k])
+            dfs(&res, &path, t - cands[k], cands, k + 1)
             path.removeLast()
         }
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
+
+
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
-
 class Tests: XCTestCase {
-    let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        let res = s.combinationSum2([10,1,2,7,6,1,5], 8)
+        let res = solution.combinationSum2([10,1,2,7,6,1,5], 8)
         XCTAssertEqual(res, [[1,1,6],[1,2,5],[1,7],[2,6]])
     }
     func test1() {
-        let res = s.combinationSum2([2,5,2,1,2], 5)
+        let res = solution.combinationSum2([2,5,2,1,2], 5)
         XCTAssertEqual(res, [[1,2,2],[5]])
     }
 }
