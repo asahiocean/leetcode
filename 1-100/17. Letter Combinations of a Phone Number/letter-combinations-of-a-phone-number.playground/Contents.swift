@@ -32,7 +32,7 @@ class Solution {
     }
 }
 
-// MARK: - Test Cases -
+// MARK: - Test cases -
 
 // Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.117 (0.119) seconds
 
@@ -40,19 +40,19 @@ import XCTest
 
 class Tests: XCTestCase {
     
-    private let s = Solution()
+    private let solution = Solution()
     
     func test0() {
-        let res = s.letterCombinations("23")
-        XCTAssertEqual(res, ["ad","bd","cd","ae","be","ce","af","bf","cf"])
+        let value = solution.letterCombinations("23")
+        XCTAssertEqual(value, ["ad","bd","cd","ae","be","ce","af","bf","cf"])
     }
     func test1() {
-        let res = s.letterCombinations("")
-        XCTAssertEqual(res, [])
+        let value = solution.letterCombinations("")
+        XCTAssertEqual(value, [])
     }
     func test2() {
-        let res = s.letterCombinations("2")
-        XCTAssertEqual(res, ["a","b","c"])
+        let value = solution.letterCombinations("2")
+        XCTAssertEqual(value, ["a","b","c"])
     }
 }
 
