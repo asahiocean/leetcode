@@ -1,7 +1,8 @@
 name: Helper
 on:
   pull_request:
-    types: [created]
+    types: 
+      - created
 jobs:
   autolabel:
     runs-on: ubuntu-latest
