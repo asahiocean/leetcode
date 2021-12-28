@@ -6,21 +6,19 @@ import Foundation
 class Solution {
     func deleteDuplicates(_ head: ListNode?) -> ListNode? {
         
-        if head == nil || head!.next == nil { return head }
+        if let headNode = head, headNode.next == nil { return headNode }
         
         let dummy = ListNode(0)
         dummy.next = head
         var node = dummy
         
-        while node.next != nil && node.next!.next != nil {
-            switch node.next!.val == node.next!.next!.val {
-            case true:
-                let val = node.next!.val
-                while node.next != nil && node.next!.val == val {
+        while let nn = node.next, nn.next != nil {
+            if nn.val == nn.next!.val {
+                while node.next != nil && nn.val == node.next!.val {
                     node.next = node.next!.next
                 }
-            default:
-                node = node.next!
+            } else {
+                node = nn
             }
         }
         return dummy.next
