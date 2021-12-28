@@ -52,6 +52,16 @@
 | ![OK]  | [48. Rotate Image][48]                                            | [**OPEN**][48s] |
 | ![OK]  | [49. Group Anagrams][49]                                          | [**OPEN**][49s] |
 | ![OK]  | [50. Pow(x, n)][50]                                               | [**OPEN**][50s] |
+| 🛠     | [51. N-Queens][51]                                                | SOON            |
+| 🛠     | [52. N-Queens II][52]                                             | SOON            |
+| 🛠     | [53. Maximum Subarray][53]                                        | SOON            |
+| 🛠     | [54. Spiral Matrix][54]                                           | SOON            |
+| 🛠     | [55. Jump Game][55]                                               | SOON            |
+| 🛠     | [56. Merge Intervals][56]                                         | SOON            |
+| 🛠     | [57. Insert Interval][57]                                         | SOON            |
+| 🛠     | [58. Length of Last Word][58]                                     | SOON            |
+| 🛠     | [59. Spiral Matrix II][59]                                        | SOON            |
+| 🛠     | [60. Permutation Sequence][60]                                    | SOON            |
 
 <!-- URLs -->
 
@@ -254,6 +264,36 @@
 <!-- 50 -->
 [50]: https://leetcode.com/problems/powx-n
 [50s]: ./50.%20Pow(x%2C%20n)
+
+<!-- 51 -->
+[51]: https://leetcode.com/problems/n-queens
+
+<!-- 52 -->
+[52]: https://leetcode.com/problems/n-queens-ii
+
+<!-- 53 -->
+[53]: https://leetcode.com/problems/maximum-subarray
+
+<!-- 54 -->
+[54]: https://leetcode.com/problems/spiral-matrix
+
+<!-- 55 -->
+[55]: https://leetcode.com/problems/jump-game
+
+<!-- 56 -->
+[56]: https://leetcode.com/problems/merge-intervals
+
+<!-- 57 -->
+[57]: https://leetcode.com/problems/insert-interval
+
+<!-- 58 -->
+[58]: https://leetcode.com/problems/length-of-last-word
+
+<!-- 59 -->
+[59]: https://leetcode.com/problems/spiral-matrix-ii
+
+<!-- 60 -->
+[60]: https://leetcode.com/problems/permutation-sequence
 
 <!-- HELPERS -->
 [OK]: ../.github/assets/images/svg/checkmarks/list.svg
