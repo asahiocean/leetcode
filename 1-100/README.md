@@ -41,7 +41,7 @@
 | ![OK]  | [37. Sudoku Solver][37]| [**OPEN**][37s] |
 | ![OK]  | [38. Count and Say][38]| [**OPEN**][38s] |
 | ![OK]  | [39. Combination Sum][39]| [**OPEN**][39s] |
-|   🛠   | [40. Combination Sum II][40]|  SOON  |
+| ![OK]  | [40. Combination Sum II][40]|  [**OPEN**][40s]  |
 | ![OK]  | [41. First Missing Positive][41] | [**OPEN**][41s] |
 | ![OK]  | [42. Trapping Rain Water][42] | [**OPEN**][42s] |
 |   🛠   | [43. Multiply Strings][43] | SOON |
@@ -213,6 +213,7 @@
 
 <!-- 40 -->
 [40]: https://leetcode.com/problems/combination-sum-ii
+[40s]: ./40.%20Combination%20Sum%20II
 
 <!-- 41 -->
 [41]: https://leetcode.com/problems/first-missing-positive
