@@ -26,22 +26,26 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.011 (0.014) seconds
+
 import XCTest
 
-// Executed 3 tests, with 0 failures (0 unexpected) in 0.011 (0.014) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        let res = s.searchRange([5,7,7,8,8,10], 8)
+        let res = solution.searchRange([5,7,7,8,8,10], 8)
         XCTAssertEqual(res, [3,4])
     }
     func test1() {
-        let res = s.searchRange([5,7,7,8,8,10], 6)
+        let res = solution.searchRange([5,7,7,8,8,10], 6)
         XCTAssertEqual(res, [-1,-1])
     }
     func test2() {
-        let res = s.searchRange([], 0)
+        let res = solution.searchRange([], 0)
         XCTAssertEqual(res, [-1,-1])
     }
 }
