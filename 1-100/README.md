@@ -44,7 +44,7 @@
 | ![OK]  | [40. Combination Sum II][40]|  [**OPEN**][40s]  |
 | ![OK]  | [41. First Missing Positive][41] | [**OPEN**][41s] |
 | ![OK]  | [42. Trapping Rain Water][42] | [**OPEN**][42s] |
-|   🛠   | [43. Multiply Strings][43] | SOON |
+| ![OK]  | [43. Multiply Strings][43] | [**OPEN**][43s] |
 | ![OK]  | [44. Wildcard Matching][44]| [**OPEN**][44s] |
 | ![OK]  | [45. Jump Game II][45]| [**OPEN**][45s] |
 |   🛠   | [46. Permutations][46]|  SOON  |
@@ -225,6 +225,7 @@
 
 <!-- 43 -->
 [43]: https://leetcode.com/problems/multiply-strings
+[43s]: ./43.%20Multiply%20Strings
 
 <!-- 44 -->
 [44]: https://leetcode.com/problems/wildcard-matching
