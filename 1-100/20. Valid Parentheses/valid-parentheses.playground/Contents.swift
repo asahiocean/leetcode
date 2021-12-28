@@ -24,3 +24,28 @@ class Solution {
         return stack.isEmpty
     }
 }
+
+// MARK: - Test cases -
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.012 (0.014) seconds
+
+import XCTest
+
+class Tests: XCTestCase {
+    private let s = Solution()
+    
+    func test0() {
+        let value = s.isValid("()")
+        XCTAssertTrue(value)
+    }
+    func test1() {
+        let value = s.isValid("()[]{}")
+        XCTAssertTrue(value)
+    }
+    func test2() {
+        let value = s.isValid("(]")
+        XCTAssertFalse(value)
+    }
+}
+
+Tests.defaultTestSuite.run()
