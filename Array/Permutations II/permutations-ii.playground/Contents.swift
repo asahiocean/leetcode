@@ -22,19 +22,23 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.095 (0.097) seconds
+
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.095 (0.097) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        let res = s.permuteUnique([1,1,2])
-        XCTAssertEqual(res, [[1,1,2],[1,2,1],[2,1,1]])
+        let value = solution.permuteUnique([1,1,2])
+        XCTAssertEqual(value, [[1,1,2],[1,2,1],[2,1,1]])
     }
     func test1() {
-        let res = s.permuteUnique([1,2,3])
-        XCTAssertEqual(res, [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]])
+        let value = solution.permuteUnique([1,2,3])
+        XCTAssertEqual(value, [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]])
     }
 }
 
