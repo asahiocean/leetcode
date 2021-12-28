@@ -1,31 +1,39 @@
 import Foundation
 
+// 162. Find Peak Element
 // https://leetcode.com/problems/find-peak-element/
 
 class Solution {
     func findPeakElement(_ nums: [Int]) -> Int {
-        var res = 0, n = nums.count - 1
-        while res < n {
-            let m = res + (n-res)/2
-            nums[m] < nums[m+1] ? (res = m+1) : (n = m)
+        var length = Int(nums.indices.last ?? .zero)
+        guard 1 <= length && length <= 1000 else { return 0 }
+        var value = 0
+        while value < length {
+            let mid = value + (length - value) / 2
+            nums[mid] < nums[mid + 1] ? (value = mid + 1) : (length = mid)
         }
-        return res
+        return value
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
+
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
-
 class Tests: XCTestCase {
-    let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        let res = s.findPeakElement([1,2,3,1])
-        XCTAssertEqual(res, 2)
+        let value = solution.findPeakElement([1,2,3,1])
+        XCTAssertEqual(value, 2)
     }
+    
     func test1() {
-        let res = s.findPeakElement([1,2,1,3,5,6,4])
-        XCTAssertEqual(res, 5)
+        let value = solution.findPeakElement([1,2,1,3,5,6,4])
+        XCTAssertEqual(value, 5)
     }
 }
 
