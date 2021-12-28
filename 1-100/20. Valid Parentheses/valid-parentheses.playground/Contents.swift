@@ -32,18 +32,19 @@ class Solution {
 import XCTest
 
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
     
     func test0() {
-        let value = s.isValid("()")
+        let value = solution.isValid("()")
         XCTAssertTrue(value)
     }
     func test1() {
-        let value = s.isValid("()[]{}")
+        let value = solution.isValid("()[]{}")
         XCTAssertTrue(value)
     }
     func test2() {
-        let value = s.isValid("(]")
+        let value = solution.isValid("(]")
         XCTAssertFalse(value)
     }
 }
