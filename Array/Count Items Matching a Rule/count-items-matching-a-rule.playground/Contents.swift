@@ -1,5 +1,6 @@
 import Foundation
 
+// 1773. Count Items Matching a Rule
 // https://leetcode.com/problems/count-items-matching-a-rule/
 
 class Solution {
@@ -9,19 +10,25 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.009 (0.013) seconds
+
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.009 (0.013) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
-    func testExample1() {
+    
+    private let solution = Solution()
+    
+    func test0() {
         let items = [["phone","blue","pixel"],["computer","silver","lenovo"],["phone","gold","iphone"]]
-        XCTAssertEqual(s.countMatches(items, "color", "silver"), 1) // success
+        let matches = solution.countMatches(items, "color", "silver")
+        XCTAssertEqual(matches, 1)
     }
-    func testExample2() {
+    func test1() {
         let items = [["phone","blue","pixel"],["computer","silver","phone"],["phone","gold","iphone"]]
-        XCTAssertEqual(s.countMatches(items, "type", "phone"), 2) // success
+        let matches = solution.countMatches(items, "type", "phone")
+        XCTAssertEqual(matches, 2)
     }
 }
 
