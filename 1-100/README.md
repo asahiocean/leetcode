@@ -1,57 +1,57 @@
 ## 1 - 100 problems
 
-| Status | Problem | Solution |
-|:------:|:--------|:--------:|
-| ![OK]  | [1. Two Sum][1]                                         | [**OPEN**][1s]  |
-| ![OK]  | [2. Add Two Numbers][2]                                 | [**OPEN**][2s]  |
-| ![OK]  | [3. Longest Substring Without Repeating Characters][3]  | [**OPEN**][3s]  |
-| ![OK]  | [4. Median of Two Sorted Arrays][4]                     | [**OPEN**][4s]  |
-| ![OK]  | [5. Longest Palindromic Substring][5]                   | [**OPEN**][5s]  |
-| ![OK]  | [6. Zigzag Conversion][6]                               | [**OPEN**][6s]  |
-| ![OK]  | [7. Reverse Integer][7]                                 | [**OPEN**][7s]  |
-| ![OK]  | [8. String to Integer (atoi)][8]                        | [**OPEN**][8s]  |
-| ![OK]  | [9. Palindrome Number][9]                               | [**OPEN**][9s]  |
-| ![OK]  | [10. Regular Expression Matching][10]                   | [**OPEN**][10s] |
-| ![OK]  | [11. Container With Most Water][11]                     | [**OPEN**][11s] |
-| ![OK]  | [12. Integer to Roman][12]                              | [**OPEN**][12s] |
-| ![OK]  | [13. Roman to Integer][13]                              | [**OPEN**][13s] |
-| ![OK]  | [14. Longest Common Prefix][14]                         | [**OPEN**][14s] |
-| ![OK]  | [15. 3Sum][15]                                          | [**OPEN**][15s] |
-| ![OK]  | [16. 3Sum Closest][16]                                  | [**OPEN**][16s] |
-| ![OK]  | [17. Letter Combinations of a Phone N][17]              | [**OPEN**][17s] |
-| ![OK]  | [18. 4Sum][18]                                          | [**OPEN**][18s] |
-| ![OK]  | [19. Remove Nth Node From End of List][19]              | [**OPEN**][19s] |
-| ![OK]  | [20. Valid Parentheses][20]                             | [**OPEN**][20s] |
-| ![OK]  | [21. Merge Two Sorted Lists][21]                        | [**OPEN**][21s] |
-| ![OK]  | [22. Generate Parentheses][21]                          | [**OPEN**][22s] |
-| ![OK]  | [23. Merge k Sorted Lists][23]                          | [**OPEN**][23s] |
-| ![OK]  | [24. Swap Nodes in Pairs][24]                           | [**OPEN**][24s] |
-| ![OK]  | [25. Reverse Nodes in k-Group][25]                      | [**OPEN**][25s] |
-| ![OK]  | [26. Remove Duplicates from Sorted Array][26]           | [**OPEN**][26s] |
-| ![OK]  | [27. Remove Element][27]                                | [**OPEN**][27s] |
-| ![OK]  | [28. Implement strStr()][28]                            | [**OPEN**][28s] |
-| ![OK]  | [29. Divide Two Integers][29]                           | [**OPEN**][29s] |
-| ![OK]  | [30. Substring with Concatenation of All Words][30]     | [**OPEN**][30s] |
-| ![OK]  | [31. Next Permutation][31]                              | [**OPEN**][31s] |
-| ![OK]  | [32. Longest Valid Parentheses][32]                     | [**OPEN**][32s] |
-| ![OK]  | [33. Search in Rotated Sorted Array][33]                | [**OPEN**][33s] |
-| ![OK]  | [34. Find First and Last Position of Element in Sorted Array][34]| [**OPEN**][34s] |
-| ![OK]  | [35. Search Insert Position][35]| [**OPEN**][35s] |
-| ![OK]  | [36. Valid Sudoku][36]|  [**OPEN**][36s]  |
-| ![OK]  | [37. Sudoku Solver][37]| [**OPEN**][37s] |
-| ![OK]  | [38. Count and Say][38]| [**OPEN**][38s] |
-| ![OK]  | [39. Combination Sum][39]| [**OPEN**][39s] |
-| ![OK]  | [40. Combination Sum II][40]|  [**OPEN**][40s]  |
-| ![OK]  | [41. First Missing Positive][41] | [**OPEN**][41s] |
-| ![OK]  | [42. Trapping Rain Water][42] | [**OPEN**][42s] |
-| ![OK]  | [43. Multiply Strings][43] | [**OPEN**][43s] |
-| ![OK]  | [44. Wildcard Matching][44]| [**OPEN**][44s] |
-| ![OK]  | [45. Jump Game II][45]| [**OPEN**][45s] |
-| ![OK]  | [46. Permutations][46]|  [**OPEN**][46s]  |
-| ![OK]  | [47. Permutations II][47]|  [**OPEN**][47s]  |
-| ![OK]  | [48. Rotate Image][48]|  [**OPEN**][48s]  |
-| ![OK]  | [49. Group Anagrams][49]|  [**OPEN**][49s]  |
-| ![OK]  | [50. Pow(x, n)][50]|  [**OPEN**][50s]  |
+| Status | Problem                                                           | Solution        |
+|:------:|:------------------------------------------------------------------|:---------------:|
+| ![OK]  | [1. Two Sum][1]                                                   | [**OPEN**][1s]  |
+| ![OK]  | [2. Add Two Numbers][2]                                           | [**OPEN**][2s]  |
+| ![OK]  | [3. Longest Substring Without Repeating Characters][3]            | [**OPEN**][3s]  |
+| ![OK]  | [4. Median of Two Sorted Arrays][4]                               | [**OPEN**][4s]  |
+| ![OK]  | [5. Longest Palindromic Substring][5]                             | [**OPEN**][5s]  |
+| ![OK]  | [6. Zigzag Conversion][6]                                         | [**OPEN**][6s]  |
+| ![OK]  | [7. Reverse Integer][7]                                           | [**OPEN**][7s]  |
+| ![OK]  | [8. String to Integer (atoi)][8]                                  | [**OPEN**][8s]  |
+| ![OK]  | [9. Palindrome Number][9]                                         | [**OPEN**][9s]  |
+| ![OK]  | [10. Regular Expression Matching][10]                             | [**OPEN**][10s] |
+| ![OK]  | [11. Container With Most Water][11]                               | [**OPEN**][11s] |
+| ![OK]  | [12. Integer to Roman][12]                                        | [**OPEN**][12s] |
+| ![OK]  | [13. Roman to Integer][13]                                        | [**OPEN**][13s] |
+| ![OK]  | [14. Longest Common Prefix][14]                                   | [**OPEN**][14s] |
+| ![OK]  | [15. 3Sum][15]                                                    | [**OPEN**][15s] |
+| ![OK]  | [16. 3Sum Closest][16]                                            | [**OPEN**][16s] |
+| ![OK]  | [17. Letter Combinations of a Phone N][17]                        | [**OPEN**][17s] |
+| ![OK]  | [18. 4Sum][18]                                                    | [**OPEN**][18s] |
+| ![OK]  | [19. Remove Nth Node From End of List][19]                        | [**OPEN**][19s] |
+| ![OK]  | [20. Valid Parentheses][20]                                       | [**OPEN**][20s] |
+| ![OK]  | [21. Merge Two Sorted Lists][21]                                  | [**OPEN**][21s] |
+| ![OK]  | [22. Generate Parentheses][21]                                    | [**OPEN**][22s] |
+| ![OK]  | [23. Merge k Sorted Lists][23]                                    | [**OPEN**][23s] |
+| ![OK]  | [24. Swap Nodes in Pairs][24]                                     | [**OPEN**][24s] |
+| ![OK]  | [25. Reverse Nodes in k-Group][25]                                | [**OPEN**][25s] |
+| ![OK]  | [26. Remove Duplicates from Sorted Array][26]                     | [**OPEN**][26s] |
+| ![OK]  | [27. Remove Element][27]                                          | [**OPEN**][27s] |
+| ![OK]  | [28. Implement strStr()][28]                                      | [**OPEN**][28s] |
+| ![OK]  | [29. Divide Two Integers][29]                                     | [**OPEN**][29s] |
+| ![OK]  | [30. Substring with Concatenation of All Words][30]               | [**OPEN**][30s] |
+| ![OK]  | [31. Next Permutation][31]                                        | [**OPEN**][31s] |
+| ![OK]  | [32. Longest Valid Parentheses][32]                               | [**OPEN**][32s] |
+| ![OK]  | [33. Search in Rotated Sorted Array][33]                          | [**OPEN**][33s] |
+| ![OK]  | [34. Find First and Last Position of Element in Sorted Array][34] | [**OPEN**][34s] |
+| ![OK]  | [35. Search Insert Position][35]                                  | [**OPEN**][35s] |
+| ![OK]  | [36. Valid Sudoku][36]                                            | [**OPEN**][36s] |
+| ![OK]  | [37. Sudoku Solver][37]                                           | [**OPEN**][37s] |
+| ![OK]  | [38. Count and Say][38]                                           | [**OPEN**][38s] |
+| ![OK]  | [39. Combination Sum][39]                                         | [**OPEN**][39s] |
+| ![OK]  | [40. Combination Sum II][40]                                      | [**OPEN**][40s] |
+| ![OK]  | [41. First Missing Positive][41]                                  | [**OPEN**][41s] |
+| ![OK]  | [42. Trapping Rain Water][42]                                     | [**OPEN**][42s] |
+| ![OK]  | [43. Multiply Strings][43]                                        | [**OPEN**][43s] |
+| ![OK]  | [44. Wildcard Matching][44]                                       | [**OPEN**][44s] |
+| ![OK]  | [45. Jump Game II][45]                                            | [**OPEN**][45s] |
+| ![OK]  | [46. Permutations][46]                                            | [**OPEN**][46s] |
+| ![OK]  | [47. Permutations II][47]                                         | [**OPEN**][47s] |
+| ![OK]  | [48. Rotate Image][48]                                            | [**OPEN**][48s] |
+| ![OK]  | [49. Group Anagrams][49]                                          | [**OPEN**][49s] |
+| ![OK]  | [50. Pow(x, n)][50]                                               | [**OPEN**][50s] |
 
 <!-- URLs -->
 
