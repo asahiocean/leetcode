@@ -1,7 +1,6 @@
 import Foundation
 
 // 119. Pascal's Triangle II
-// Runtime: 0 ms, faster than 100.00%
 // https://leetcode.com/problems/pascals-triangle-ii/
 
 class Solution {
