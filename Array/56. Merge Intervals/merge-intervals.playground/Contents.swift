@@ -5,15 +5,22 @@ import Foundation
 
 class Solution {
     func merge(_ intervals: [[Int]]) -> [[Int]] {
+        
         let sorted = intervals.sorted(by: {$0[0] < $1[0]})
-        var merged = [sorted.first!]
+        guard let first = sorted.first else { return [[Int]]() }
+        
+        var merged = [first]
         
         for current in sorted {
-            let prev = merged.last![0], prevEnd = merged.last![1]
-            let curStart = current[0], curEnd = current[1]
+            guard let last = merged.last else { continue }
             
-            if prevEnd >= curStart {
-                merged[merged.count - 1] = [prev, max(prevEnd, curEnd)]
+            let prev = last[0]
+            let penult = last[1]
+            
+            let start = current[0], end = current[1]
+            
+            if penult >= start {
+                merged[merged.count - 1] = [prev, max(penult, end)]
             } else {
                 merged.append(current)
             }
