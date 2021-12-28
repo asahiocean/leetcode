@@ -241,6 +241,7 @@
 
 <!-- 47 -->
 [47]: https://leetcode.com/problems/permutations-ii
+[47s]: ./47.%20Permutations%20II
 
 <!-- 48 -->
 [48]: https://leetcode.com/problems/rotate-image
