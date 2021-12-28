@@ -197,6 +197,7 @@
 
 <!-- 36 -->
 [36]: https://leetcode.com/problems/valid-sudoku
+[36s]: ./36.%20Valid%20Sudoku
 
 <!-- 37 -->
 [37]: https://leetcode.com/problems/sudoku-solver
