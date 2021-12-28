@@ -5,23 +5,33 @@ import Foundation
 
 class Solution {
     func threeSumClosest(_ nums: [Int], _ target: Int) -> Int {
-        var nums = nums
-        nums.sort()
-        var diff = Int.max, res = 0
-        for i in 0..<nums.count - 2 {
-            var n = i + 1, q = nums.count - 1
+        
+        let sorted = nums.sorted()
+        let length = sorted.count
+        
+        var diff: Int = .max
+        var result = 0
+        
+        for i in 0..<length - 2 {
+            var n = i + 1, q = length - 1
             while n < q {
-                let sum = nums[i] + nums[n] + nums[q]
-                sum > target ? q -= 1 : (n += 1)
-                let val =  abs(sum - target)
-                if val < diff { diff = val; res = sum }
+                let sum = sorted[i] + sorted[n] + sorted[q]
+                
+                sum > target ? (q -= 1) : (n += 1)
+                
+                let value =  abs(sum - target)
+                
+                if value < diff {
+                    diff = value
+                    result = sum
+                }
             }
         }
-        return res
+        return result
     }
 }
 
-// MARK: - Test cases -
+// MARK: - Test case -
 
 // Result: Executed 1 test, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
 
@@ -29,10 +39,11 @@ import XCTest
 
 class Tests: XCTestCase {
     
-    private let s = Solution()
+    private let solution = Solution()
     
     func test() {
-        XCTAssertEqual(s.threeSumClosest([-1,2,1,-4], 1), 2)
+        let value = solution.threeSumClosest([-1,2,1,-4], 1)
+        XCTAssertEqual(value, 2)
     }
 }
 
