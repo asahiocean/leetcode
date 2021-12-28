@@ -245,6 +245,7 @@
 
 <!-- 48 -->
 [48]: https://leetcode.com/problems/rotate-image
+[48s]: ./48.%20Rotate%20Image
 
 <!-- 49 -->
 [49]: https://leetcode.com/problems/group-anagrams
