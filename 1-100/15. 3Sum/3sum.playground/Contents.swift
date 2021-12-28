@@ -6,11 +6,13 @@ import Foundation
 class Solution {
     func threeSum(_ nums: [Int]) -> [[Int]] {
         guard nums.count >= 3 else { return [[Int]]() }
+        
         var result = [[Int]]()
         let nums = nums.sorted()
         
         for i in 0..<nums.count {
             if i > 0 && nums[i] == nums[i-1] { continue }
+            
             let num = 0 - nums[i]
             var n = i + 1, c = nums.count - 1
             
@@ -31,28 +33,27 @@ class Solution {
     }
 }
 
-// MARK: - Test Cases -
+// MARK: - Test cases -
 
 // Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.029 (0.031) seconds
 
 import XCTest
 
-
 class Tests: XCTestCase {
     
-    private let s = Solution()
+    private let solution = Solution()
     
     func test0() {
-        let res = s.threeSum([-1,0,1,2,-1,-4])
-        XCTAssertEqual(res, [[-1,-1,2],[-1,0,1]])
+        let value = solution.threeSum([-1,0,1,2,-1,-4])
+        XCTAssertEqual(value, [[-1,-1,2],[-1,0,1]])
     }
     func test1() {
-        let res = s.threeSum([])
-        XCTAssertEqual(res, [])
+        let value = solution.threeSum([])
+        XCTAssertEqual(value, [])
     }
     func test2() {
-        let res = s.threeSum([0])
-        XCTAssertEqual(res, [])
+        let value = solution.threeSum([0])
+        XCTAssertEqual(value, [])
     }
 }
 
