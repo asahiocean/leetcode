@@ -47,7 +47,7 @@
 | ![OK]  | [43. Multiply Strings][43] | [**OPEN**][43s] |
 | ![OK]  | [44. Wildcard Matching][44]| [**OPEN**][44s] |
 | ![OK]  | [45. Jump Game II][45]| [**OPEN**][45s] |
-|   🛠   | [46. Permutations][46]|  SOON  |
+| ![OK]  | [46. Permutations][46]|  [**OPEN**][46s]  |
 |   🛠   | [47. Permutations II][47]|  SOON  |
 |   🛠   | [48. Rotate Image][48]|  SOON  |
 |   🛠   | [49. Group Anagrams][49]|  SOON  |
@@ -237,6 +237,7 @@
 
 <!-- 46 -->
 [46]: https://leetcode.com/problems/permutations
+[46s]: ./46.%20Permutations
 
 <!-- 47 -->
 [47]: https://leetcode.com/problems/permutations-ii
