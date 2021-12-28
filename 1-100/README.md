@@ -51,7 +51,7 @@
 | ![OK]  | [47. Permutations II][47]|  [**OPEN**][47s]  |
 | ![OK]  | [48. Rotate Image][48]|  [**OPEN**][48s]  |
 | ![OK]  | [49. Group Anagrams][49]|  [**OPEN**][49s]  |
-|   🛠   | [50. Pow(x, n)][50]|  SOON  |
+| ![OK]  | [50. Pow(x, n)][50]|  [**OPEN**][50s]  |
 
 <!-- URLs -->
 
@@ -253,6 +253,7 @@
 
 <!-- 50 -->
 [50]: https://leetcode.com/problems/powx-n
+[50s]: ./50.%20Pow(x%2C%20n)
 
 <!-- HELPERS -->
 [OK]: ../.github/assets/images/svg/checkmarks/list.svg
