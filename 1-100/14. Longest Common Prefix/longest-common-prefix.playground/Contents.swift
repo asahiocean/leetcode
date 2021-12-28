@@ -5,10 +5,12 @@ import Foundation
 
 class Solution {
     func longestCommonPrefix(_ strs: [String]) -> String {
+        
         if strs.isEmpty { return "" }
         var common = strs[0]
-        strs.forEach {
-            while !$0.hasPrefix(common) {
+        
+        for ch in strs {
+            while !ch.hasPrefix(common) {
                 common = String(common.dropLast())
             }
         }
@@ -24,13 +26,15 @@ import XCTest
 
 class Tests: XCTestCase {
     
-    private let s = Solution()
+    private let solution = Solution()
     
     func test0() {
-        XCTAssertEqual(s.longestCommonPrefix(["flower","flow","flight"]), "fl")
+        let value = solution.longestCommonPrefix(["flower","flow","flight"])
+        XCTAssertEqual(value, "fl")
     }
     func test1() {
-        XCTAssertEqual(s.longestCommonPrefix(["dog","racecar","car"]), "")
+        let value = solution.longestCommonPrefix(["dog","racecar","car"])
+        XCTAssertEqual(value, "")
     }
 }
 
