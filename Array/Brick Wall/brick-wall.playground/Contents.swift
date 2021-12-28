@@ -1,5 +1,6 @@
 import Foundation
 
+// 554. Brick Wall
 // https://leetcode.com/problems/brick-wall/
 
 class Solution {
@@ -17,19 +18,23 @@ class Solution {
     }
 }
 
+// MARK: - Test cases
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
+
 import XCTest
 
-//      Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test1() {
-        let result = s.leastBricks([[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]])
-        XCTAssertEqual(result, 2)
+        let value = solution.leastBricks([[1,2,2,1],[3,1,2],[1,3,2],[2,4],[3,1,2],[1,3,1,1]])
+        XCTAssertEqual(value, 2)
     }
     func test2() {
-        let result = s.leastBricks([[1],[1],[1]])
-        XCTAssertEqual(result, 3)
+        let value = solution.leastBricks([[1],[1],[1]])
+        XCTAssertEqual(value, 3)
     }
 }
 
