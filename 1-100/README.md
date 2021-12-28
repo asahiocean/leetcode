@@ -48,7 +48,7 @@
 | ![OK]  | [44. Wildcard Matching][44]| [**OPEN**][44s] |
 | ![OK]  | [45. Jump Game II][45]| [**OPEN**][45s] |
 | ![OK]  | [46. Permutations][46]|  [**OPEN**][46s]  |
-|   🛠   | [47. Permutations II][47]|  SOON  |
+| ![OK]  | [47. Permutations II][47]|  [**OPEN**][47s]  |
 |   🛠   | [48. Rotate Image][48]|  SOON  |
 |   🛠   | [49. Group Anagrams][49]|  SOON  |
 |   🛠   | [50. Pow(x, n)][50]|  SOON  |
