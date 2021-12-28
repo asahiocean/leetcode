@@ -35,7 +35,7 @@
 | ![OK]  | [31. Next Permutation][31]| [**OPEN**][31s] |
 | ![OK]  | [32. Longest Valid Parentheses][32]| [**OPEN**][32s] |
 | ![OK]  | [33. Search in Rotated Sorted Array][33]| [**OPEN**][33s] |
-|   🛠   | [34. Find First and Last Position of Element in Sorted Array][34]|  SOON  |
+| ![OK]  | [34. Find First and Last Position of Element in Sorted Array][34]| [**OPEN**][34s] |
 | ![OK]  | [35. Search Insert Position][35]| [**OPEN**][35s] |
 |   🛠   | [36. Valid Sudoku][36]|  SOON  |
 | ![OK]  | [37. Sudoku Solver][37]| [**OPEN**][37s] |
@@ -189,6 +189,7 @@
 
 <!-- 34 -->
 [34]: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array
+[34s]: ./34.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array
 
 <!-- 35 -->
 [35]: https://leetcode.com/problems/search-insert-position
