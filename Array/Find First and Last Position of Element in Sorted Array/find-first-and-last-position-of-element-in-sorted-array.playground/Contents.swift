@@ -6,22 +6,24 @@ import Foundation
 class Solution {
     func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
         guard !nums.isEmpty else { return [-1, -1] }
-        var result = [-1, -1], l = 0, r = nums.count - 1
         
-        while l < r {
-            let m = l + (r - l) / 2
-            nums[m] < target ? (l = m + 1) : (r = m)
+        var left = 0, right = nums.count - 1
+        var result = [-1,-1]
+        
+        while left < right {
+            let mid = left + (right - left) / 2
+            nums[mid] < target ? (left = mid + 1) : (right = mid)
         }
         
-        guard nums[l] == target else { return result }
-        result[0] = l
+        guard nums[left] == target else { return result }
+        result[0] = left
         
-        r = nums.count - 1
-        while l < r {
-            let m = l + (r - l) / 2 + 1
-            target < nums[m] ? (r = m - 1) : (l = m)
+        right = nums.count - 1
+        while left < right {
+            let mid = left + (right - left) / 2 + 1
+            target < nums[mid] ? (right = mid - 1) : (left = mid)
         }
-        result[1] = l
+        result[1] = left
         return result
     }
 }
