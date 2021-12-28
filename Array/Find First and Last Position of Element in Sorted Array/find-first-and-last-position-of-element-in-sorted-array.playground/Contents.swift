@@ -39,16 +39,16 @@ class Tests: XCTestCase {
     private let solution = Solution()
     
     func test0() {
-        let res = solution.searchRange([5,7,7,8,8,10], 8)
-        XCTAssertEqual(res, [3,4])
+        let value = solution.searchRange([5,7,7,8,8,10], 8)
+        XCTAssertEqual(value, [3,4])
     }
     func test1() {
-        let res = solution.searchRange([5,7,7,8,8,10], 6)
-        XCTAssertEqual(res, [-1,-1])
+        let value = solution.searchRange([5,7,7,8,8,10], 6)
+        XCTAssertEqual(value, [-1,-1])
     }
     func test2() {
-        let res = solution.searchRange([], 0)
-        XCTAssertEqual(res, [-1,-1])
+        let value = solution.searchRange([], 0)
+        XCTAssertEqual(value, [-1,-1])
     }
 }
 
