@@ -37,7 +37,7 @@
 | ![OK]  | [33. Search in Rotated Sorted Array][33]| [**OPEN**][33s] |
 | ![OK]  | [34. Find First and Last Position of Element in Sorted Array][34]| [**OPEN**][34s] |
 | ![OK]  | [35. Search Insert Position][35]| [**OPEN**][35s] |
-|   🛠   | [36. Valid Sudoku][36]|  SOON  |
+| ![OK]  | [36. Valid Sudoku][36]|  [**OPEN**][36s]  |
 | ![OK]  | [37. Sudoku Solver][37]| [**OPEN**][37s] |
 | ![OK]  | [38. Count and Say][38]| [**OPEN**][38s] |
 | ![OK]  | [39. Combination Sum][39]| [**OPEN**][39s] |
