@@ -5,20 +5,34 @@ import Foundation
 
 class Solution {
     func sortColors(_ nums: inout [Int]) {
-        var i = 0, j = nums.count - 1
-        while i <  nums.count &&  nums[i] == 0 { i += 1 }
-        if i == nums.count { return }
-        while j >= 0 && nums[j] == 2 { j -= 1 }
-        if j == -1 { return }
-        var k = i
-        while k <= j {
-            if nums[k] == 0 {
-                nums.swapAt(i, k)
-                i += 1; k += 1
-            } else if nums[k] == 2 {
-                nums.swapAt(j, k); j -= 1
+        
+        var length = Int(nums.indices.last ?? 0)
+        var index = 0
+        
+        while index < length && nums[index] == 0 {
+            index += 1
+        }
+        
+        guard index != length else { return }
+        
+        while length >= 0 && nums[length] == 2 {
+            length -= 1
+        }
+        
+        guard length != -1 else { return }
+        
+        var value = index
+        
+        while value <= length {
+            if nums[value] == 0 {
+                nums.swapAt(index, value)
+                index += 1
+                value += 1
+            } else if nums[value] == 2 {
+                nums.swapAt(length, value)
+                length -= 1
             } else {
-                k += 1
+                value += 1
             }
         }
     }
