@@ -1,7 +1,13 @@
 name: Helper
 on:
+  issue_comment:
+    types: [created, edited]
   pull_request_review_comment:
-    types: [created]
+    types: [created, edited]
+  pull_request_review:
+    types: [submitted, edited, dismissed]
+  issues:
+    types: [opened, closed]
 jobs:
   autolabel:
     runs-on: ubuntu-latest
