@@ -1,5 +1,6 @@
 import Foundation
 
+// 860. Lemonade Change
 // https://leetcode.com/problems/lemonade-change/
 
 class Solution {
@@ -14,8 +15,7 @@ class Solution {
                 if five < 1 { return false }
                 five -= 1
             case 20:
-                if five < 1 { return false }
-                if ten < 1, five < 3 { return false }
+                if five < 1 || ten < 1, five < 3 { return false }
                 ten >= 1 ? (ten -= 1, five -= 1) : ((five -= 3),())
             default: break
             }
@@ -24,23 +24,31 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 4 tests, with 0 failures (0 unexpected) in 0.008 (0.010) seconds
+
 import XCTest
 
-// Executed 4 tests, with 0 failures (0 unexpected) in 0.008 (0.010) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
+    func test0() {
+        let value = solution.lemonadeChange([5,5,5,10,20])
+        XCTAssertEqual(value, true)
+    }
     func test1() {
-        XCTAssertEqual(s.lemonadeChange([5,5,5,10,20]), true)
+        let value = solution.lemonadeChange([5,5,10])
+        XCTAssertEqual(value, true)
     }
     func test2() {
-        XCTAssertEqual(s.lemonadeChange([5,5,10]), true)
+        let value = solution.lemonadeChange([10,10])
+        XCTAssertEqual(value, false)
     }
     func test3() {
-        XCTAssertEqual(s.lemonadeChange([10,10]), false)
-    }
-    func test4() {
-        XCTAssertEqual(s.lemonadeChange([5,5,10,10,20]), false)
+        let value = solution.lemonadeChange([5,5,10,10,20])
+        XCTAssertEqual(value, false)
     }
 }
 
