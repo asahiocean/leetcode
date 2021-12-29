@@ -5,16 +5,17 @@ import Foundation
 
 class Solution {
     func rotate(_ matrix: inout [[Int]]) {
-        (0..<matrix.count).forEach {
-            for n in $0..<matrix.count {
-                let tmp = matrix[$0][n]
-                matrix[$0][n] = matrix[n][$0]
-                matrix[n][$0] = tmp
+        let length = matrix.count
+        for i in 0..<length {
+            for n in i..<length {
+                let tmp = matrix[i][n]
+                matrix[i][n] = matrix[n][i]
+                matrix[n][i] = tmp
             }
-            for n in 0..<(matrix.count / 2) {
-                let tmp = matrix[$0][n], l = matrix.count
-                matrix[$0][n] = matrix[$0][l - 1 - n]
-                matrix[$0][l - 1 - n] = tmp
+            for n in 0..<(length / 2) {
+                let tmp = matrix[i][n], l = length
+                matrix[i][n] = matrix[i][l - 1 - n]
+                matrix[i][l - 1 - n] = tmp
             }
         }
     }
