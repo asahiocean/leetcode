@@ -5,27 +5,30 @@ import Foundation
 
 class Solution {
     func threeSum(_ nums: [Int]) -> [[Int]] {
-        guard nums.count >= 3 else { return [[Int]]() }
         
         var result = [[Int]]()
         let nums = nums.sorted()
+        let length = nums.count
         
-        for i in 0..<nums.count {
+        guard length >= 3 else { return result }
+        
+        for i in 0..<length {
             if i > 0 && nums[i] == nums[i-1] { continue }
             
             let num = 0 - nums[i]
-            var n = i + 1, c = nums.count - 1
+            var a = i + 1, b = length - 1
             
-            while n < c {
-                let nn = nums[n], nc = nums[c]
-                let sum = nn + nc
+            while a < b {
+                let numA = nums[a], numB = nums[b]
+                let sum = numA + numB
                 if sum == num {
-                    result.append([nums[i], nn, nc])
-                    n += 1; c -= 1;
-                    while n < c && nums[n] == nums[n-1] { n += 1 }
-                    while n < c && nums[c] == nums[c+1] { c -= 1 }
+                    result.append([nums[i], numA, numB])
+                    a += 1
+                    b -= 1
+                    while a < b && nums[a] == nums[a-1] { a += 1 }
+                    while a < b && nums[b] == nums[b+1] { b -= 1 }
                 } else {
-                    sum > num ? c -= 1 : (n += 1)
+                    sum > num ? b -= 1 : (a += 1)
                 }
             }
         }
