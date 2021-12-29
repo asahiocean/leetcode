@@ -1,6 +1,7 @@
 name: Helper
 on:
-  pull_request
+  pull_request_review_comment:
+    types: [created]
 jobs:
   autolabel:
     runs-on: ubuntu-latest
