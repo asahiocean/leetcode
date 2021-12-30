@@ -35,19 +35,23 @@ class Solution {
     }
 }
 
-// MARK: - Test Cases -
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.255 (0.257) seconds
 
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.255 (0.257) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        XCTAssertEqual(s.maxDistance([[1,0,1],[0,0,0],[1,0,1]]), 2)
+        let value = solution.maxDistance([[1,0,1],[0,0,0],[1,0,1]])
+        XCTAssertEqual(value, 2)
     }
     func test1() {
-        XCTAssertEqual(s.maxDistance([[1,0,0],[0,0,0],[0,0,0]]), 4)
+        let value = solution.maxDistance([[1,0,0],[0,0,0],[0,0,0]])
+        XCTAssertEqual(value, 4)
     }
 }
 
