@@ -18,31 +18,35 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 5 tests, with 0 failures (0 unexpected) in 0.089 (0.092) seconds
+
 import XCTest
 
-// Executed 5 tests, with 0 failures (0 unexpected) in 0.089 (0.092) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        let res = s.minSetSize([3,3,3,3,5,5,5,2,2,7])
-        XCTAssertEqual(res, 2)
+        let value = solution.minSetSize([3,3,3,3,5,5,5,2,2,7])
+        XCTAssertEqual(value, 2)
     }
     func test1() {
-        let res = s.minSetSize([7,7,7,7,7,7])
-        XCTAssertEqual(res, 1)
+        let value = solution.minSetSize([7,7,7,7,7,7])
+        XCTAssertEqual(value, 1)
     }
     func test2() {
-        let res = s.minSetSize([1,9])
-        XCTAssertEqual(res, 1)
+        let value = solution.minSetSize([1,9])
+        XCTAssertEqual(value, 1)
     }
     func test3() {
-        let res = s.minSetSize([1000,1000,3,7])
-        XCTAssertEqual(res, 1)
+        let value = solution.minSetSize([1000,1000,3,7])
+        XCTAssertEqual(value, 1)
     }
     func test4() {
-        let res = s.minSetSize([1,2,3,4,5,6,7,8,9,10])
-        XCTAssertEqual(res, 5)
+        let value = solution.minSetSize([1,2,3,4,5,6,7,8,9,10])
+        XCTAssertEqual(value, 5)
     }
 }
 
