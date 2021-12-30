@@ -19,19 +19,23 @@ class Solution {
     }
 }
 
-// MARK: - Test Cases -
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
 
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        XCTAssertEqual(s.findKthNumber(3, 3, 5), 3)
+        let value = solution.findKthNumber(3, 3, 5)
+        XCTAssertEqual(value, 3)
     }
     func test1() {
-        XCTAssertEqual(s.findKthNumber(2, 3, 6), 6)
+        let value = solution.findKthNumber(2, 3, 6)
+        XCTAssertEqual(value, 6)
     }
 }
 
