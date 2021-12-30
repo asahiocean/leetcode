@@ -17,21 +17,30 @@ class Solution {
     }
 }
 
-// MARK: - Test Cases -
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.008 (0.010) seconds
 
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.008 (0.010) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        let res = s.kWeakestRows([[1,1,0,0,0],[1,1,1,1,0],[1,0,0,0,0],[1,1,0,0,0],[1,1,1,1,1]], 3)
-        XCTAssertEqual(res, [2,0,3])
+        let value = solution.kWeakestRows([[1,1,0,0,0],
+                                           [1,1,1,1,0],
+                                           [1,0,0,0,0],
+                                           [1,1,0,0,0],
+                                           [1,1,1,1,1]], 3)
+        XCTAssertEqual(value, [2,0,3])
     }
     func test1() {
-        let res = s.kWeakestRows([[1,0,0,0],[1,1,1,1],[1,0,0,0],[1,0,0,0]], 2)
-        XCTAssertEqual(res, [0,2])
+        let value = solution.kWeakestRows([[1,0,0,0],
+                                           [1,1,1,1],
+                                           [1,0,0,0],
+                                           [1,0,0,0]], 2)
+        XCTAssertEqual(value, [0,2])
     }
 }
 
