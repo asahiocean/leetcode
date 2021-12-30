@@ -1,5 +1,8 @@
 import Foundation
 
+// 1313. Decompress Run-Length Encoded List
+// https://leetcode.com/problems/decompress-run-length-encoded-list/
+
 class Solution {
     func decompressRLElist(_ nums: [Int]) -> [Int] {
         var res = [Int]()
@@ -10,17 +13,23 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.007 (0.009) seconds
+
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.007 (0.009) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func testExample1() {
-        XCTAssert(s.decompressRLElist([1,2,3,4]) == [2,4,4,4]) // success
+        let value = solution.decompressRLElist([1,2,3,4])
+        XCTAssertEqual(value, [2,4,4,4])
     }
     func testExample2() {
-        XCTAssert(s.decompressRLElist([1,1,2,3]) == [1,3,3]) // success
+        let value = solution.decompressRLElist([1,1,2,3])
+        XCTAssertEqual(value, [1,3,3])
     }
 }
 
