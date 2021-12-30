@@ -13,17 +13,21 @@ class Solution {
 
 // MARK: - Test Cases -
 
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
+
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        XCTAssertEqual(s.findComplement(5), 2)
+        let value = solution.findComplement(5)
+        XCTAssertEqual(value, 2)
     }
     func test1() {
-        XCTAssertEqual(s.findComplement(1), 0)
+        let value = solution.findComplement(1)
+        XCTAssertEqual(value, 0)
     }
 }
 
