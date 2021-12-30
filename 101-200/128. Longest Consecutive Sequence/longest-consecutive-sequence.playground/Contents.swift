@@ -1,10 +1,7 @@
 import Foundation
 
+// 128. Longest Consecutive Sequence
 // https://leetcode.com/problems/longest-consecutive-sequence/
-
-// Given an unsorted array of integers nums, return the length of the longest consecutive elements sequence.
-
-// MARK: - Solution
 
 class Solution {
     func longestConsecutive(_ nums: [Int]) -> Int {
@@ -26,19 +23,24 @@ class Solution {
     }
 }
 
-// MARK: - Tests
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.008 (0.010) seconds
 
 import XCTest
 
 class Tests: XCTestCase {
-    private let s = Solution()
     
-    func testExample1() {
-        XCTAssertEqual(s.longestConsecutive([100,4,200,1,3,2]), 4) // good
+    private let solution = Solution()
+    
+    func test0() {
+        let value = solution.longestConsecutive([100,4,200,1,3,2])
+        XCTAssertEqual(value, 4)
     }
     
-    func testExample2() {
-        XCTAssertEqual(s.longestConsecutive([0,3,7,2,5,8,4,6,0,1]), 9) // good
+    func test1() {
+        let value = solution.longestConsecutive([0,3,7,2,5,8,4,6,0,1])
+        XCTAssertEqual(value, 9)
     }
 }
 
