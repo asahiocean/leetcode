@@ -5,11 +5,11 @@ import Foundation
 
 class Solution {
     func decompressRLElist(_ nums: [Int]) -> [Int] {
-        var res = [Int]()
+        var values = [Int]()
         for i in 0..<(nums.count/2) {
-            for _ in 1...nums[2*i] { res.append(nums[2*i+1]) }
+            for _ in 1...nums[2*i] { values.append(nums[2*i+1]) }
         }
-        return res
+        return values
     }
 }
 
@@ -23,11 +23,11 @@ class Tests: XCTestCase {
     
     private let solution = Solution()
     
-    func testExample1() {
+    func test0() {
         let value = solution.decompressRLElist([1,2,3,4])
         XCTAssertEqual(value, [2,4,4,4])
     }
-    func testExample2() {
+    func test1() {
         let value = solution.decompressRLElist([1,1,2,3])
         XCTAssertEqual(value, [1,3,3])
     }
