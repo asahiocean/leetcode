@@ -1,5 +1,6 @@
 import Foundation
 
+// 1365. How Many Numbers Are Smaller Than the Current Number
 // https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 
 class Solution {
@@ -18,20 +19,29 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.057 (0.058) seconds
+
 import XCTest
 
-// Executed 3 tests, with 0 failures (0 unexpected) in 0.097 (0.098) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
-    func testExample1() {
-        XCTAssertEqual(s.smallerNumbersThanCurrent([8,1,2,2,3]), [4,0,1,1,3]) // success
+    
+    private let solution = Solution()
+    
+    func test0() {
+        let value = solution.smallerNumbersThanCurrent([8,1,2,2,3])
+        XCTAssertEqual(value, [4,0,1,1,3])
     }
-    func testExample2() {
-        XCTAssertEqual(s.smallerNumbersThanCurrent([6,5,4,8]), [2,1,0,3]) // success
+    
+    func test1() {
+        let value = solution.smallerNumbersThanCurrent([6,5,4,8])
+        XCTAssertEqual(value, [2,1,0,3])
     }
-    func testExample3() {
-        XCTAssertEqual(s.smallerNumbersThanCurrent([7,7,7,7]), [0,0,0,0]) // success
+    
+    func test2() {
+        let value = solution.smallerNumbersThanCurrent([7,7,7,7])
+        XCTAssertEqual(value, [0,0,0,0])
     }
 }
 
