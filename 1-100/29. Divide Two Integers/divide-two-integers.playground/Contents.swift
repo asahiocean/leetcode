@@ -40,16 +40,20 @@ class Tests: XCTestCase {
     private let solution = Solution()
     
     func test0() {
-        XCTAssertEqual(solution.divide(10, 3), 3)
+        let value = solution.divide(10, 3)
+        XCTAssertEqual(value, 3)
     }
     func test1() {
-        XCTAssertEqual(solution.divide(7, -3), -2)
+        let value = solution.divide(7, -3)
+        XCTAssertEqual(value, -2)
     }
     func test2() {
-        XCTAssertEqual(solution.divide(0, -1), 0)
+        let value = solution.divide(0, -1)
+        XCTAssertEqual(value, 0)
     }
     func test3() {
-        XCTAssertEqual(solution.divide(1, 1), 1)
+        let value = solution.divide(1, 1)
+        XCTAssertEqual(value, 1)
     }
 }
 

@@ -19,7 +19,7 @@ class Solution {
         let node = ListNode(0)
         var curr = ListNode(sorted[0])
         node.next = curr
-
+        
         for n in sorted.dropFirst() {
             let tmp: ListNode? = ListNode(n)
             curr.next = tmp
@@ -28,6 +28,8 @@ class Solution {
         return node.next
     }
 }
+
+// MARK: - ListNode -
 
 public class ListNode {
     public var val: Int

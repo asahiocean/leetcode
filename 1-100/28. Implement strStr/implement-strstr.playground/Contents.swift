@@ -6,6 +6,7 @@ import Foundation
 class Solution {
     func strStr(_ haystack: String, _ needle: String) -> Int {
         let nc = needle.count, hc = haystack.count
+        
         if nc == 0 || haystack == needle { return 0 }
         
         guard hc >= nc else { return -1 }
@@ -20,12 +21,11 @@ class Solution {
     }
 }
 
-// MARK: Tests
+// MARK: - Test cases -
 
 // Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.006 (0.007) seconds
 
 import XCTest
-
 
 class Tests: XCTestCase {
     
