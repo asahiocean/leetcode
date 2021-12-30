@@ -26,11 +26,21 @@ class Tests: XCTestCase {
     
     private let solution = Solution()
     
+    /// There are two ways to climb to the top.
+    /// 1. 1 step + 1 step
+    /// 2. 2 steps
     func test0() {
-        XCTAssertEqual(solution.climbStairs(2), 2)
+        let value = solution.climbStairs(2)
+        XCTAssertEqual(value, 2)
     }
+    
+    /// There are three ways to climb to the top.
+    /// 1. 1 step + 1 step + 1 step
+    /// 2. 1 step + 2 steps
+    /// 3. 2 steps + 1 step
     func test1() {
-        XCTAssertEqual(solution.climbStairs(3), 3)
+        let value = solution.climbStairs(3)
+        XCTAssertEqual(value, 3)
     }
 }
 
