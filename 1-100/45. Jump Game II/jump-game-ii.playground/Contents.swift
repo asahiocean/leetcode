@@ -25,6 +25,7 @@ class Tests: XCTestCase {
     
     private let solution = Solution()
     
+    /// The minimum number of jumps to reach the last index is 2. Jump 1 step from index 0 to 1, then 3 steps to the last index.
     func test0() {
         let value = solution.jump([2,3,1,1,4])
         XCTAssertEqual(value, 2)
