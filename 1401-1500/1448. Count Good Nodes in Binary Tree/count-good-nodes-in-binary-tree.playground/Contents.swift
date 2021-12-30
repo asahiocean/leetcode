@@ -19,25 +19,27 @@ class Solution {
     }
 }
 
-// MARK: - Test Cases -
+// MARK: - Test cases -
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.082 (0.083) seconds
 
 import XCTest
 
-// Executed 3 tests, with 0 failures (0 unexpected) in 0.082 (0.083) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        let tree = TreeNode([3,1,4,3,nil,1,5])
-        XCTAssertEqual(s.goodNodes(tree), 4)
+        let value = solution.goodNodes(TreeNode([3,1,4,3,nil,1,5]))
+        XCTAssertEqual(value, 4)
     }
     func test1() {
-        let tree = TreeNode([3,3,nil,4,2])
-        XCTAssertEqual(s.goodNodes(tree), 3)
+        let value = solution.goodNodes(TreeNode([3,3,nil,4,2]))
+        XCTAssertEqual(value, 3)
     }
     func test2() {
-        let tree = TreeNode([1])
-        XCTAssertEqual(s.goodNodes(tree), 1)
+        let value = solution.goodNodes(TreeNode([1]))
+        XCTAssertEqual(value, 1)
     }
 }
 
