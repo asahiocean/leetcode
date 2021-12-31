@@ -41,3 +41,31 @@ class Solution {
         return true
     }
 }
+
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.029 (0.031) seconds
+
+import XCTest
+
+class Tests: XCTestCase {
+    
+    private let solution = Solution()
+    
+    /// The substring with start index = 0 is "cba", which is an anagram of "abc".
+    /// The substring with start index = 6 is "bac", which is an anagram of "abc".
+    func test0() {
+        let value = solution.findAnagrams("cbaebabacd", "abc")
+        XCTAssertEqual(value, [0,6])
+    }
+    
+    /// The substring with start index = 0 is "ab", which is an anagram of "ab".
+    /// The substring with start index = 1 is "ba", which is an anagram of "ab".
+    /// The substring with start index = 2 is "ab", which is an anagram of "ab".
+    func test1() {
+        let value = solution.findAnagrams("abab", "ab")
+        XCTAssertEqual(value, [0,1,2])
+    }
+}
+
+Tests.defaultTestSuite.run()
