@@ -5,17 +5,44 @@ import Foundation
 
 class Solution {
     func maxProduct(_ nums: [Int]) -> Int {
-        var (fmin,fmax,value) = (nums[0],nums[0],nums[0])
+        
+        var value = nums[0]
+        var fmin = value
+        var fmax = value
+        
         for i in 1..<nums.count {
-            let a = fmax * nums[i], b = fmin * nums[i]
-            (fmax,fmin) = (max(a,b,nums[i]),min(a,b,nums[i]))
+            let num = nums[i]
+            let vals = [fmax * num, fmin * num, num]
+            if let max = vals.max() { fmax = max }
+            if let min = vals.min() { fmin = min }
             value = max(value, fmax)
         }
+        
         return value
     }
 }
 
-// MARK: - Details -
+// MARK: - Test cases -
 
-// Runtime: ~16 ms
-// Memory Usage: ~14.3 MB
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.021 (0.023) seconds
+
+import XCTest
+
+class Tests: XCTestCase {
+    
+    private let solution = Solution()
+    
+    /// [2,3] has the largest product 6.
+    func test0() {
+        let value = solution.maxProduct([2,3,-2,4])
+        XCTAssertEqual(value, 6)
+    }
+    
+    /// The result cannot be 2, because [-2,-1] is not a subarray.
+    func test1() {
+        let value = solution.maxProduct([-2,0,-1])
+        XCTAssertEqual(value, 0)
+    }
+}
+
+Tests.defaultTestSuite.run()
