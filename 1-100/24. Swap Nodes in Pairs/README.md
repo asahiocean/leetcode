@@ -1,6 +1,6 @@
 <h1>
 24. Swap Nodes in Pairs
-<img src="VISITOR_BADGE_URL" align="right" alt="views badge">
+<img src="https://tinyurl.com/mrbj2ndh" align="right" alt="views badge">
 </h1>
 
 <details>
