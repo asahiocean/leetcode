@@ -9,27 +9,31 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 4 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
+
 import XCTest
 
-// Executed 4 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        let res = s.titleToNumber("A")
-        XCTAssertEqual(res, 1)
+        let value = solution.titleToNumber("A")
+        XCTAssertEqual(value, 1)
     }
     func test1() {
-        let res = s.titleToNumber("AB")
-        XCTAssertEqual(res, 28)
+        let value = solution.titleToNumber("AB")
+        XCTAssertEqual(value, 28)
     }
     func test2() {
-        let res = s.titleToNumber("ZY")
-        XCTAssertEqual(res, 701)
+        let value = solution.titleToNumber("ZY")
+        XCTAssertEqual(value, 701)
     }
     func test3() {
-        let res = s.titleToNumber("FXSHRXW")
-        XCTAssertEqual(res, 2147483647)
+        let value = solution.titleToNumber("FXSHRXW")
+        XCTAssertEqual(value, 2147483647)
     }
 }
 
