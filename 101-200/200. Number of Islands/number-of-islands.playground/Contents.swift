@@ -6,16 +6,19 @@ import Foundation
 class Solution {
     func numIslands(_ grid: [[Character]]) -> Int {
         
-        var value = 0, n = grid[0].count, m = grid.count
+        var value = 0
         
-        guard m > 0 && n > 0 else { return 0 }
+        let len_M = grid.count,
+            len_N = grid[0].count
+        
+        guard len_M > 0 && len_N > 0 else { return value }
         
         var grid: [[Character]] = grid
         
-        for i in 0..<m {
-            for j in 0..<n where "\(grid[i][j])" == "1" {
+        for i in 0..<len_M {
+            for j in 0..<len_N where "\(grid[i][j])" == "1" {
                 value += 1
-                dfs(&grid, m, n, i, j)
+                dfs(&grid, len_M, len_N, i, j)
             }
         }
         return value
@@ -23,7 +26,7 @@ class Solution {
     
     private func dfs(_ grid: inout [[Character]], _ m: Int, _ n: Int, _ i: Int, _ t: Int) {
         guard i >= 0 && i < m && t >= 0 && t < n && "\(grid[i][t])" == "1" else { return }
-        grid[i][t] = Character("0")
+        grid[i][t] = "0"
         dfs(&grid, m, n, i + 1, t)
         dfs(&grid, m, n, i - 1, t)
         dfs(&grid, m, n, i, t + 1)
