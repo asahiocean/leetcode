@@ -15,17 +15,23 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
+
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.004 (0.006) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        XCTAssertEqual(s.maxProfit([7,1,5,3,6,4]), 5)
+        let value = solution.maxProfit([7,1,5,3,6,4])
+        XCTAssertEqual(value, 5)
     }
     func test1() {
-        XCTAssertEqual(s.maxProfit([7,6,4,3,1]), 0)
+        let value = solution.maxProfit([7,6,4,3,1])
+        XCTAssertEqual(value, 0)
     }
 }
 
