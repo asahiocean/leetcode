@@ -8,7 +8,7 @@ class Solution {
         guard !isConnected.isEmpty else { return 0 }
         
         let count = isConnected.count
-        var visited = Array(repeating: false, count: count)
+        var visited = [Bool](repeating: false, count: count)
         var provinces = 0
         
         for n in 0..<count {
