@@ -27,3 +27,34 @@ class Solution {
         return true
     }
 }
+
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.010 (0.012) seconds
+
+import XCTest
+
+class Tests: XCTestCase {
+    
+    private let solution = Solution()
+    
+    func test0() {
+        var board: [[Character]] = [["X","X","X","X"],
+                                    ["X","O","O","X"],
+                                    ["X","X","O","X"],
+                                    ["X","O","X","X"]]
+        solution.solve(&board)
+        XCTAssertEqual(board, [["X","X","X","X"],
+                               ["X","X","X","X"],
+                               ["X","X","X","X"],
+                               ["X","O","X","X"]])
+    }
+    
+    func test1() {
+        var board: [[Character]] = [["X"]]
+        solution.solve(&board)
+        XCTAssertEqual(board, [["X"]])
+    }
+}
+
+Tests.defaultTestSuite.run()
