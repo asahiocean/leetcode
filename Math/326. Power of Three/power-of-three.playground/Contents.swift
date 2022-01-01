@@ -1,7 +1,7 @@
 import Foundation
 
 // 326. Power of Three
-// https://leetcode.com/problems/power-of-three
+// https://leetcode.com/problems/power-of-three/
 
 class Solution {
     func isPowerOfThree(_ n: Int) -> Bool {
@@ -13,23 +13,31 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 4 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
+
 import XCTest
 
-// Executed 4 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        XCTAssertEqual(s.isPowerOfThree(27), true)
+        let value = solution.isPowerOfThree(27)
+        XCTAssertEqual(value, true)
     }
     func test1() {
-        XCTAssertEqual(s.isPowerOfThree(0), false)
+        let value = solution.isPowerOfThree(0)
+        XCTAssertEqual(value, false)
     }
     func test2() {
-        XCTAssertEqual(s.isPowerOfThree(9), true)
+        let value = solution.isPowerOfThree(9)
+        XCTAssertEqual(value, true)
     }
     func test3() {
-        XCTAssertEqual(s.isPowerOfThree(45), false)
+        let value = solution.isPowerOfThree(45)
+        XCTAssertEqual(value, false)
     }
 }
 
