@@ -16,6 +16,34 @@ class Solution {
     }
 }
 
+// MARK: - Tests cases -
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.021 (0.023) seconds
+
+import XCTest
+
+class Tests: XCTestCase {
+    
+    private let solution = Solution()
+    
+    func test0() {
+        let value = solution.mergeTwoLists(ListNode([1,2,4]), ListNode([1,3,4]))
+        XCTAssertEqual(value, ListNode([1,1,2,3,4,4]))
+    }
+    
+    func test1() {
+        let value = solution.mergeTwoLists(ListNode([]), ListNode([]))
+        XCTAssertEqual(value, ListNode([]))
+    }
+    
+    func test2() {
+        let value = solution.mergeTwoLists(ListNode([]), ListNode([0]))
+        XCTAssertEqual(value, ListNode([0]))
+    }
+}
+
+Tests.defaultTestSuite.run()
+
 // MARK: - ListNode -
 
 public class ListNode {
@@ -45,37 +73,3 @@ extension ListNode: Equatable {
         return lhs.val == rhs.val && lhs.next == rhs.next
     }
 }
-
-// MARK: - Tests cases -
-
-// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.021 (0.023) seconds
-
-import XCTest
-
-class Tests: XCTestCase {
-    
-    private let solution = Solution()
-    
-    func test0() {
-        let listNode1 = ListNode([1,2,4])
-        let listNode2 = ListNode([1,3,4])
-        let expected = ListNode([1,1,2,3,4,4])
-        XCTAssertEqual(solution.mergeTwoLists(listNode1, listNode2), expected)
-    }
-    
-    func test1() {
-        let listNode1 = ListNode([])
-        let listNode2 = ListNode([])
-        let expected = ListNode([])
-        XCTAssertEqual(solution.mergeTwoLists(listNode1, listNode2), expected)
-    }
-    
-    func test2() {
-        let listNode1 = ListNode([])
-        let listNode2 = ListNode([0])
-        let expected = ListNode([0])
-        XCTAssertEqual(solution.mergeTwoLists(listNode1, listNode2), expected)
-    }
-}
-
-Tests.defaultTestSuite.run()
