@@ -5,13 +5,15 @@ import Foundation
 
 class Solution {
     func convertToTitle(_ columnNumber: Int) -> String {
-        guard columnNumber > 0 else { return "" }
+        
         var string = ""
+        guard columnNumber > 0 else { return string }
+        
         var num = columnNumber
-        let a = Int("A".unicodeScalars.first!.value)
-        while num > 0 {
+        
+        while num > 0, let unicode = "A".unicodeScalars.first {
             num -= 1
-            let char = UnicodeScalar(a + num % 26)!
+            let char = UnicodeScalar(Int(unicode.value) + (num % 26))!
             string = String(char) + string
             num = num / 26
         }
@@ -19,23 +21,31 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 4 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
+
 import XCTest
 
-// Executed 4 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        XCTAssertEqual(s.convertToTitle(1), "A")
+        let value = solution.convertToTitle(1)
+        XCTAssertEqual(value, "A")
     }
     func test1() {
-        XCTAssertEqual(s.convertToTitle(28),"AB")
+        let value = solution.convertToTitle(28)
+        XCTAssertEqual(value, "AB")
     }
     func test2() {
-        XCTAssertEqual(s.convertToTitle(701),"ZY")
+        let value = solution.convertToTitle(701)
+        XCTAssertEqual(value, "ZY")
     }
     func test3() {
-        XCTAssertEqual(s.convertToTitle(2147483647),"FXSHRXW")
+        let value = solution.convertToTitle(2147483647)
+        XCTAssertEqual(value, "FXSHRXW")
     }
 }
 
