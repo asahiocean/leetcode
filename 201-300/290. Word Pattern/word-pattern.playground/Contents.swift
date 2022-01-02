@@ -6,13 +6,13 @@ import Foundation
 class Solution {
     func wordPattern(_ pattern: String, _ s: String) -> Bool {
         
-        let chars = Array<Character>(pattern)
+        let chars = [Character](pattern)
         let words  = s.components(separatedBy: " ")
         
         if chars.count != words.count { return false }
         
-        var chMap: Dictionary<Character,String> = [:]
-        var sMap: Dictionary<String,Character> = [:]
+        var chMap: [Character:String] = [:]
+        var sMap: [String:Character] = [:]
         
         for i in 0..<chars.count {
             
