@@ -8,8 +8,8 @@ class Solution {
         guard let root = root, let sub = subRoot else { return root == nil && subRoot == nil }
         return isEqual(root, sub) || isSubtree(root.left, sub) || isSubtree(root.right, sub)
     }
-    private func isEqual(_ treeL: TreeNode?, _ treeR: TreeNode?) -> Bool {
-        guard let treeL = treeL, let treeR = treeR else { return treeL == nil && treeR == nil }
+    private func isEqual(_ l: TreeNode?, _ r: TreeNode?) -> Bool {
+        guard let treeL = l, let treeR = r else { return l == nil && r == nil }
         return treeL.val == treeR.val && isEqual(treeL.left, treeR.left) && isEqual(treeL.right, treeR.right)
     }
 }
