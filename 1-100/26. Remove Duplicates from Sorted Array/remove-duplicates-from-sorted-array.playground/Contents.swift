@@ -5,16 +5,20 @@ import Foundation
 
 class Solution {
     func removeDuplicates(_ nums: inout [Int]) -> Int {
-        var result: [Int: Int] = [:]
-        nums.map { result[$0] = $0 }
-        nums = result.map { $0.key }.sorted{ $1 > $0}
-        return nums.count
+        let len = nums.count
+        guard len > 1 else { return len }
+        var idx = 0
+        for n in nums where n != nums[idx] {
+            idx += 1
+            nums[idx] = n
+        }
+        return idx + 1
     }
 }
 
 // MARK: - Test cases -
 
-// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.094 (0.130) seconds
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.008 (0.010) seconds
 
 import XCTest
 
@@ -22,12 +26,16 @@ class Tests: XCTestCase {
     
     private let solution = Solution()
     
+    /// Your function should return k = 2, with the first two elements of nums being 1 and 2 respectively.
+    /// It does not matter what you leave beyond the returned k (hence they are underscores).
     func test0() {
         var array = [1,1,2]
         solution.removeDuplicates(&array)
         XCTAssertEqual(2, [1,2].count)
     }
     
+    /// Your function should return k = 5, with the first five elements of nums being 0, 1, 2, 3, and 4 respectively.
+    /// It does not matter what you leave beyond the returned k (hence they are underscores).
     func test1() {
         var array = [0,0,1,1,1,2,2,3,3,4]
         solution.removeDuplicates(&array)
