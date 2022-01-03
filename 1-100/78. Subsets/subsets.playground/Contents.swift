@@ -18,3 +18,26 @@ class Solution {
         return result
     }
 }
+
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.014 (0.016) seconds
+
+import XCTest
+
+class Tests: XCTestCase {
+    
+    private let solution = Solution()
+    
+    func test0() {
+        let value = solution.subsets([1,2,3])
+        XCTAssertEqual(value, [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]])
+    }
+    
+    func test1() {
+        let value = solution.subsets([0])
+        XCTAssertEqual(value, [[],[0]])
+    }
+}
+
+Tests.defaultTestSuite.run()
