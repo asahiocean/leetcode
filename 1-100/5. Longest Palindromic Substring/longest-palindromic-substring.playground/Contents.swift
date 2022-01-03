@@ -6,23 +6,25 @@ import Foundation
 class Solution {
     func longestPalindrome(_ s: String) -> String {
         guard s.count > 1 else { return s }
-        var left = -1, right = -1, max  = 1
+        
+        var left = -1, right = -1, max = 1
+        
         let chars = [Character](s)
-        let strLenght = s.count
-        var dp = [[Bool]](repeating: [Bool](repeating: false, count: strLenght), count: strLenght)
-        var index = strLenght - 1
-        while index >= 0 {
-            for j in index..<strLenght {
-                dp[index][j] = chars[index] == chars[j] && (j - index < 2 || dp[index + 1][j - 1])
-                if dp[index][j] {
-                    if j - index + 1 > max {
-                        left = index
-                        right = j
-                        max = j - index  + 1
-                    }
+        let slen = s.count
+        
+        var dp = [[Bool]](repeating: [Bool](repeating: false, count: slen), count: slen)
+        var idx = slen - 1
+        
+        while idx >= 0 {
+            for j in idx..<slen {
+                dp[idx][j] = chars[idx] == chars[j] && (j - idx < 2 || dp[idx + 1][j - 1])
+                if dp[idx][j], j - idx + 1 > max {
+                    left = idx
+                    right = j
+                    max = j - idx + 1
                 }
             }
-            index -= 1
+            idx -= 1
         }
         return left == -1 ? String(chars[0]) : String(chars[left...right])
     }
@@ -38,21 +40,22 @@ class Tests: XCTestCase {
     
     private let solution = Solution()
     
+    /// "aba" is also a valid answer.
     func test0() {
-        let res = solution.longestPalindrome("babad")
-        XCTAssertEqual(res, "aba")
+        let value = solution.longestPalindrome("babad")
+        XCTAssertEqual(value, "aba")
     }
     func test1() {
-        let res = solution.longestPalindrome("cbbd")
-        XCTAssertEqual(res, "bb")
+        let value = solution.longestPalindrome("cbbd")
+        XCTAssertEqual(value, "bb")
     }
     func test2() {
-        let res = solution.longestPalindrome("a")
-        XCTAssertEqual(res, "a")
+        let value = solution.longestPalindrome("a")
+        XCTAssertEqual(value, "a")
     }
     func test3() {
-        let res = solution.longestPalindrome("ac")
-        XCTAssertEqual(res, "a")
+        let value = solution.longestPalindrome("ac")
+        XCTAssertEqual(value, "a")
     }
 }
 
