@@ -34,12 +34,12 @@ class Tests: XCTestCase {
         }
     }
     func test1() {
-        let val = solution.groupAnagrams([""])
-        XCTAssertEqual(val, [[""]])
+        let value = solution.groupAnagrams([""])
+        XCTAssertEqual(value, [[""]])
     }
     func test2() {
-        let val = solution.groupAnagrams(["a"])
-        XCTAssertEqual(val, [["a"]])
+        let value = solution.groupAnagrams(["a"])
+        XCTAssertEqual(value, [["a"]])
     }
 }
 
