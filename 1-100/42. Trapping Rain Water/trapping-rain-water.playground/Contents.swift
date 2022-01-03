@@ -5,33 +5,44 @@ import Foundation
 
 class Solution {
     func trap(_ height: [Int]) -> Int {
-        var stack = [Int](), result = 0
-        height.indices.forEach {
-            while !stack.isEmpty && height[$0] > height[stack.last!] {
+        
+        var stack: [Int] = [], result = 0
+        
+        for i in height.indices {
+            let hidx = height[i]
+            
+            while !(stack.isEmpty), let last = stack.last, hidx > height[last] {
                 let top = stack.removeLast()
-                guard !stack.isEmpty else { break }
-                let l = stack.last!
-                result += ($0-l-1) * (min(height[$0], height[l]) - height[top])
+                if !(stack.isEmpty), let last = stack.last {
+                    let diff = min(hidx, height[last]) - height[top]
+                    result += (i - last - 1) * diff
+                } else { break }
             }
-            stack.append($0)
+            stack.append(i)
         }
+        
         return result
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.024 (0.026) seconds
+
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.024 (0.026) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        let res = s.trap([0,1,0,2,1,0,1,3,2,1,2,1])
-        XCTAssertEqual(res, 6)
+        let value = solution.trap([0,1,0,2,1,0,1,3,2,1,2,1])
+        XCTAssertEqual(value, 6)
     }
+    
     func test1() {
-        let res = s.trap([4,2,0,3,2,5])
-        XCTAssertEqual(res, 9)
+        let value = solution.trap([4,2,0,3,2,5])
+        XCTAssertEqual(value, 9)
     }
 }
 
