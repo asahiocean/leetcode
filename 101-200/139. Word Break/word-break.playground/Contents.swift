@@ -1,47 +1,51 @@
 import Foundation
 
-// https://leetcode.com/problems/word-break
+// 139. Word Break
+// https://leetcode.com/problems/word-break/
 
 class Solution {
     func wordBreak(_ s: String, _ wordDict: [String]) -> Bool {
-        let l = s.count, set = Set<String>(wordDict)
-        let maxWL = set.reduce(0, { max($0, $1.count) })
+        
+        let len = s.count, wdset = Set(wordDict)
+        
+        let maxWL = wdset.reduce(0, { max($0, $1.count) })
         let chars = [Character](s)
         
-        var dp: [Bool] = Array(repeating: false, count: l + 1)
+        var dp = [Bool](repeating: false, count: len + 1)
         dp[0] = true
         
-        for k in 0..<s.count {
-            if !dp[k] { continue }
-            for i in k+1...(min(l, k+1+maxWL)) {
-                let sub = String(Array(chars[k..<i]))
-                if set.contains(sub) { dp[i] = true }
+        for k in 0..<len where dp[k] {
+            let nxtK = k + 1
+            for i in nxtK...(min(len, nxtK + maxWL)) where wdset.contains(String(chars[k..<i])) {
+                dp[i] = true
             }
         }
         
-        return dp[l]
+        return dp[len]
     }
 }
 
-// MARK: - Tests
+// MARK: - Test cases -
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.026 (0.029) seconds
 
 import XCTest
 
-//      Executed 3 tests, with 0 failures (0 unexpected) in 0.407 (0.409) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
+    func test0() {
+        let value = solution.wordBreak("leetcode", ["leet","code"])
+        XCTAssertEqual(value, true)
+    }
     func test1() {
-        let res = s.wordBreak("leetcode", ["leet","code"])
-        XCTAssertEqual(res, true)
+        let value = solution.wordBreak("applepenapple", ["apple","pen"])
+        XCTAssertEqual(value, true)
     }
     func test2() {
-        let res = s.wordBreak("applepenapple", ["apple","pen"])
-        XCTAssertEqual(res, true)
-    }
-    func test3() {
-        let res = s.wordBreak("catsandog", ["cats","dog","sand","and","cat"])
-        XCTAssertEqual(res, false)
+        let value = solution.wordBreak("catsandog", ["cats","dog","sand","and","cat"])
+        XCTAssertEqual(value, false)
     }
 }
 
