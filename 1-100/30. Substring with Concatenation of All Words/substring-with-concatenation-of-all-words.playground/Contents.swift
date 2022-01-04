@@ -24,20 +24,20 @@ class Solution {
         for i in 0..<size {
             var val = i
             while val <= (lenS - count) {
-                var r = (val + count)
+                var diff = (val + count)
                 var dict = [[Character]:Int]()
                 var equal: Bool = true
-                while val < r {
-                    let temp: [Character] = chars[(r - size)..<r].map({$0})
+                while val < diff {
+                    let temp: [Character] = chars[(diff - size)..<diff].map({$0})
                     dict[temp] = (dict[temp] ?? 0) + 1
                     if let char = dict[temp], char > (wordDict[temp] ?? 0) {
                         equal = false
                         break
                     }
-                    r -= size
+                    diff -= size
                 }
                 if dict == wordDict { result.append(val) }
-                if equal { val += size } else { val = r }
+                if equal { val += size } else { val = diff }
             }
         }
         return result
@@ -46,7 +46,7 @@ class Solution {
 
 // MARK: - Test cases -
 
-// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.157 (0.160) seconds
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.050 (0.052) seconds
 
 import XCTest
 
