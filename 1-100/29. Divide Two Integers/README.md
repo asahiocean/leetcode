@@ -1,8 +1,16 @@
-# [29. Divide Two Integers](https://leetcode.com/problems/divide-two-integers/)
+<h1>
+29. Divide Two Integers
+<img src="https://tinyurl.com/4ebs5dcx" align="right" alt="views badge">
+</h1>
 
-[Discuss](https://leetcode.com/problems/divide-two-integers/discuss/1163652/Swift%3A-Divide-Two-Integers)
+<details>
+<summary>
+    <img src="https://git.io/JDE5D" height="24" align="left" alt="swift">
+    <b>Solution</b>
+</summary>
 
-### Solution:
+<br/>
+
 ```swift
 class Solution {
     func divide(_ dividend: Int, _ divisor: Int) -> Int {
@@ -31,48 +39,50 @@ class Solution {
 }
 ```
 
-### Description:
+<p>
+<a href="https://gist.github.com/asahiocean/4469f699f72c2fff864db436f99407a8">
+<img src="https://git.io/JDNlC" alt="GitHub Gist" height="18" align="center">
+</a>
+<a href="https://leetcode.com/problems/divide-two-integers/discuss/1163652/">
+<img src="https://git.io/JDSVA" alt="LeetCode Discuss" height="28" align="right">
+</a>
+</p>
+    
+</details>
 
-<div><p>Given two integers <code>dividend</code> and <code>divisor</code>, divide two integers without using multiplication, division, and mod operator.</p>
+<p align="center">• • •</p>
 
-<p>Return the quotient after dividing <code>dividend</code> by <code>divisor</code>.</p>
+## Description
 
-<p>The integer division should truncate toward zero, which means losing its fractional part. For example, <code>truncate(8.345) = 8</code> and <code>truncate(-2.7335) = -2</code>.</p>
+Given two integers `dividend` and `divisor`, divide two integers **without** using multiplication, division, and mod operator.
 
-<p><strong>Note: </strong>Assume we are dealing with an environment that could only store integers within the <strong>32-bit</strong> signed integer range: <code>[−2<sup>31</sup>, 2<sup>31</sup> − 1]</code>. For this problem, assume that your function <strong>returns </strong><code>2<sup>31</sup> − 1</code><strong> when the division result overflows</strong>.</p>
+The integer division should truncate toward zero, which means losing its fractional part. For example, `8.345` would be truncated to `8`, and `-2.7335` would be truncated to `-2`.
 
-<p>&nbsp;</p>
-<p><strong>Example 1:</strong></p>
+Return _the **quotient** after dividing_ `dividend` _by_ `divisor`.
 
-<pre><strong>Input:</strong> dividend = 10, divisor = 3
-<strong>Output:</strong> 3
-<strong>Explanation:</strong> 10/3 = truncate(3.33333..) = 3.
+**Note:** Assume we are dealing with an environment that could only store integers within the **32-bit** signed integer range: <code>[−2<sup>31</sup>, 2<sup>31</sup> − 1]</code>. For this problem, if the quotient is **strictly greater than** <code>2<sup>31</sup> - 1</code>, then return <code>2<sup>31</sup> - 1</code>, and if the quotient is **strictly less than** <code>-2<sup>31</sup></code>, then return <code>-2<sup>31</sup></code>.
+
+#### Example 1
+
+<pre>
+<b>Input:</b> dividend = 10, divisor = 3
+<b>Output:</b> 3
+<b>Explanation:</b> 10/3 = 3.33333.. which is truncated to 3.
 </pre>
 
-<p><strong>Example 2:</strong></p>
+#### Example 2
 
-<pre><strong>Input:</strong> dividend = 7, divisor = -3
-<strong>Output:</strong> -2
-<strong>Explanation:</strong> 7/-3 = truncate(-2.33333..) = -2.
+<pre>
+<b>Input:</b> dividend = 7, divisor = -3
+<b>Output:</b> -2
+<b>Explanation:</b> 7/-3 = -2.33333.. which is truncated to -2.
 </pre>
 
-<p><strong>Example 3:</strong></p>
+#### Constraints
 
-<pre><strong>Input:</strong> dividend = 0, divisor = 1
-<strong>Output:</strong> 0
-</pre>
+* <code>-2<sup>31</sup> <= dividend, divisor <= 2<sup>31</sup> - 1</code>
+* `divisor != 0`
 
-<p><strong>Example 4:</strong></p>
+---
 
-<pre><strong>Input:</strong> dividend = 1, divisor = 1
-<strong>Output:</strong> 1
-</pre>
-
-<p>&nbsp;</p>
-<p><strong>Constraints:</strong></p>
-
-<ul>
-	<li><code>-2<sup>31</sup> &lt;= dividend, divisor &lt;= 2<sup>31</sup> - 1</code></li>
-	<li><code>divisor != 0</code></li>
-</ul>
-</div>
+**Source:** https://leetcode.com/problems/divide-two-integers/
