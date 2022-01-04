@@ -10,14 +10,14 @@ class Solution {
         return uniques
     }
     
-    private func dfs(_ candidates: [Int], _ t: Int, _ index: Int, _ uniques: inout [[Int]], _ comb: inout [Int]) {
+    private func dfs(_ cands: [Int], _ t: Int, _ idx: Int, _ uniq: inout [[Int]], _ comb: inout [Int]) {
         guard t > 0 else {
-            uniques.append(comb)
+            uniq.append(comb)
             return
         }
-        for i in index..<candidates.count where candidates[i] <= t {
-            comb.append(candidates[i])
-            dfs(candidates, t - candidates[i], i, &uniques, &comb)
+        for i in idx..<cands.count where cands[i] <= t {
+            comb.append(cands[i])
+            dfs(cands, t - cands[i], i, &uniq, &comb)
             comb.removeLast()
         }
     }
