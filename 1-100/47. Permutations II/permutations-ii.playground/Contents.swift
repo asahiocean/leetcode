@@ -5,9 +5,10 @@ import Foundation
 
 class Solution {
     func permuteUnique(_ nums: [Int]) -> [[Int]] {
-        var res = [[Int]](), path = [Int](), visited = [Bool](repeating: false, count: nums.count)
-        dfs(&res, &path, nums.sorted(by: <), &visited)
-        return res
+        var path = [Int](), result = [[Int]]()
+        var visited = [Bool](repeating: false, count: nums.count)
+        dfs(&result, &path, nums.sorted(by: <), &visited)
+        return result
     }
     private func dfs(_ res: inout [[Int]], _ path: inout [Int], _ nums: [Int], _ visited: inout [Bool]) {
         guard path.count != nums.count else { res.append(path); return }

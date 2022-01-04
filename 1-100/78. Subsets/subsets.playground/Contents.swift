@@ -5,16 +5,18 @@ import Foundation
 
 class Solution {
     func subsets(_ nums: [Int]) -> [[Int]] {
-        guard nums.count > 0 else { return [[]] }
-        
         var result: [[Int]] = [[]]
-        nums.forEach({
+        
+        guard nums.count > 0 else { return result }
+        
+        for n in nums {
             for i in stride(from: 0, to: result.count, by: 1) {
                 var subset = result[i]
-                subset.append($0)
+                subset.append(n)
                 result.append(subset)
             }
-        })
+        }
+        
         return result
     }
 }
