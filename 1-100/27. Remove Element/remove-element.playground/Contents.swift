@@ -20,12 +20,17 @@ class Tests: XCTestCase {
     
     private let solution = Solution()
     
+    /// Your function should return k = 2, with the first two elements of nums being 2.
+    /// It does not matter what you leave beyond the returned k (hence they are underscores).
     func test0() {
         var array = [3,2,2,3]
         solution.removeElement(&array, 3)
         XCTAssertEqual(array, [2,2])
     }
     
+    /// Your function should return k = 5, with the first five elements of nums containing 0, 0, 1, 3, and 4.
+    /// Note that the five elements can be returned in any order.
+    /// It does not matter what you leave beyond the returned k (hence they are underscores).
     func test1() {
         var array = [0,1,2,2,3,0,4,2]
         solution.removeElement(&array, 2)
