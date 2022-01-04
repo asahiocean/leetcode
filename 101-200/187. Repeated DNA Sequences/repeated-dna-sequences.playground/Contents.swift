@@ -4,11 +4,13 @@ import Foundation
 // https://leetcode.com/problems/repeated-dna-sequences/
 
 class Solution {
+    private let limit: Int = 10
     func findRepeatedDnaSequences(_ s: String) -> [String] {
-        guard s.count > 10 else { return [] }
+        
+        guard s.count > limit else { return [] }
         
         let ssi = s.startIndex, valid: Set<Character> = ["A", "C", "G", "T"]
-        var str = String(s[ssi...s.index(ssi, offsetBy: 9)].filter{ valid.contains($0) })
+        var str = String(s[ssi...s.index(ssi, offsetBy: limit - 1)].filter{ valid.contains($0) })
         
         var result: [String] = []
         
@@ -17,7 +19,7 @@ class Solution {
         
         let chars = [Character](s)
         
-        for i in 10..<s.count {
+        for i in limit..<s.count {
             str.removeFirst()
             str.append(chars[i])
             
