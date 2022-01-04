@@ -7,10 +7,10 @@ class Solution {
     func findSubstring(_ s: String, _ words: [String]) -> [Int] {
         guard !(s.isEmpty) || !(words.isEmpty) else { return [] }
         
-        let n = s.count, chars = Array(s)
-        let size = words[0].count, length = words.count * size
+        let lenS = s.count, chars = Array(s)
+        let size = words[0].count, count = words.count * size
         
-        guard n >= length else { return [] }
+        guard lenS >= count else { return [] }
         
         var wordDict = [[Character]:Int]()
         
@@ -23,8 +23,8 @@ class Solution {
         
         for i in 0..<size {
             var val = i
-            while val <= (n - length) {
-                var r = (val + length)
+            while val <= (lenS - count) {
+                var r = (val + count)
                 var dict = [[Character]:Int]()
                 var equal: Bool = true
                 while val < r {
