@@ -39,18 +39,23 @@ class Tests: XCTestCase {
     
     private let solution = Solution()
     
+    /// 10/3 = 3.33333.. which is truncated to 3.
     func test0() {
         let value = solution.divide(10, 3)
         XCTAssertEqual(value, 3)
     }
+    
+    /// 7/-3 = -2.33333.. which is truncated to -2.
     func test1() {
         let value = solution.divide(7, -3)
         XCTAssertEqual(value, -2)
     }
+    
     func test2() {
         let value = solution.divide(0, -1)
         XCTAssertEqual(value, 0)
     }
+    
     func test3() {
         let value = solution.divide(1, 1)
         XCTAssertEqual(value, 1)
