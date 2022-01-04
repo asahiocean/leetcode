@@ -10,13 +10,13 @@ class Solution {
         return result
     }
     
-    private func dfs(_ res: inout [[Int]], _ path: inout [Int], _ t: Int, _ cands: [Int], _ i: Int) {
-        guard t > 0 else { res.append(path); return }
+    private func dfs(_ res: inout [[Int]], _ path: inout [Int], _ trg: Int, _ cands: [Int], _ idx: Int) {
+        guard trg > 0 else { res.append(path); return }
         
-        for k in i..<cands.count where cands[k] <= t {
-            if k > 0 && cands[k] == cands[k-1] && k != i { continue }
+        for k in idx..<cands.count where cands[k] <= trg {
+            if k > 0 && cands[k] == cands[k-1] && k != idx { continue }
             path.append(cands[k])
-            dfs(&res, &path, t - cands[k], cands, k + 1)
+            dfs(&res, &path, trg - cands[k], cands, k + 1)
             path.removeLast()
         }
     }
