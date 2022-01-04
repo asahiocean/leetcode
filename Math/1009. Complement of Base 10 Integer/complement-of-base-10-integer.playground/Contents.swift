@@ -5,7 +5,7 @@ import Foundation
 
 class Solution {
     func bitwiseComplement(_ n: Int) -> Int {
-        var s = 1
+        var s: Int = 1
         while s < n { s = (s << 1) | 1 }
         return s - n
     }
