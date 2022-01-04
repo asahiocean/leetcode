@@ -1,29 +1,85 @@
-# [28. Implement strStr()](https://leetcode.com/problems/implement-strstr/)
+<h1>
+28. Implement strStr()
+<img src="https://tinyurl.com/yc77s5yh" align="right" alt="views badge">
+</h1>
 
-<p>Return the index of the first occurrence of needle in haystack, or <code>-1</code> if <code>needle</code> is not part of <code>haystack</code>.</p>
+<details>
+<summary>
+    <img src="https://git.io/JDE5D" height="24" align="left" alt="swift">
+    <b>Solution</b>
+</summary>
 
-<p><strong>Clarification:</strong></p>
+<br/>
 
-<p>What should we return when <code>needle</code> is an empty string? This is a great question to ask during an interview.</p>
+```swift
+class Solution {
+    func strStr(_ haystack: String, _ needle: String) -> Int {
+        let nc = needle.count, hc = haystack.count
+        
+        if nc == 0 || haystack == needle { return 0 }
+        
+        guard hc >= nc else { return -1 }
+        
+        var hsi = haystack.startIndex
+        for i in 0...(hc-nc) {
+            let end = haystack.index(hsi, offsetBy: nc)
+            if haystack[hsi..<end] == needle { return i }
+            hsi = haystack.index(hsi, offsetBy: 1)
+        }
+        return -1
+    }
+}
+```
 
-<p>For the purpose of this problem, we will return 0 when <code>needle</code> is an empty string. This is consistent to C's&nbsp;<a href="http://www.cplusplus.com/reference/cstring/strstr/" target="_blank">strstr()</a> and Java's&nbsp;<a href="https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#indexOf(java.lang.String)" target="_blank">indexOf()</a>.</p>
+<p>
+<a href="https://gist.github.com/asahiocean/94dd5f3a0c3e51f1f3d83510edd1d856">
+<img src="https://git.io/JDNlC" alt="GitHub Gist" height="18" align="center">
+</a>
+<a href="https://leetcode.com/problems/implement-strstr/discuss/1656830/">
+<img src="https://git.io/JDSVA" alt="LeetCode Discuss" height="28" align="right">
+</a>
+</p>
+    
+</details>
 
+<p align="center">• • •</p>
 
-<p><strong>Example 1:</strong></p>
-<pre><strong>Input:</strong> haystack = "hello", needle = "ll"
-<strong>Output:</strong> 2
-</pre><p><strong>Example 2:</strong></p>
-<pre><strong>Input:</strong> haystack = "aaaaa", needle = "bba"
-<strong>Output:</strong> -1
-</pre><p><strong>Example 3:</strong></p>
-<pre><strong>Input:</strong> haystack = "", needle = ""
-<strong>Output:</strong> 0
+## Description
+
+Return the index of the first occurrence of needle in haystack, or `-1` if `needle` is not part of `haystack`.
+
+**Clarification:**
+
+What should we return when `needle` is an empty string? This is a great question to ask during an interview.
+
+For the purpose of this problem, we will return 0 when `needle` is an empty string. This is consistent to C's [strstr()](http://www.cplusplus.com/reference/cstring/strstr/) and Java's [indexOf()](https://docs.oracle.com/javase/7/docs/api/java/lang/String.html#indexOf(java.lang.String)).
+
+#### Example 1
+
+<pre>
+<b>Input:</b> haystack = "hello", needle = "ll"
+<b>Output:</b> 2
 </pre>
 
-<p><strong>Constraints:</strong></p>
+#### Example 2
 
-<ul>
-	<li><code>0 &lt;= haystack.length, needle.length &lt;= 5 * 10<sup>4</sup></code></li>
-	<li><code>haystack</code> and&nbsp;<code>needle</code> consist of only lower-case English characters.</li>
-</ul>
-</div>
+<pre>
+<b>Input:</b> haystack = "aaaaa", needle = "bba"
+<b>Output:</b> -1
+</pre>
+
+#### Example 3
+
+<pre>
+<b>Input:</b> haystack = "", needle = ""
+<b>Output:</b> 0
+</pre>
+
+#### Constraints
+
+* <code>0 <= haystack.length, needle.length <= 5 * 10<sup>4</sup></code>
+* `haystack` and `needle` consist of only lower-case English characters.
+
+---
+
+**Source:** https://leetcode.com/problems/implement-strstr/
