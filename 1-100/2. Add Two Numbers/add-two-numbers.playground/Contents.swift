@@ -52,25 +52,20 @@ class Tests: XCTestCase {
     
     private let solution = Solution()
     
+    /// 342 + 465 = 807.
     func test0() {
-        let list1 = ListNode([2,4,3])
-        let list2 = ListNode([5,6,4])
-        let expected = ListNode([7,0,8])
-        XCTAssertEqual(solution.addTwoNumbers(list1, list2), expected)
+        let value = solution.addTwoNumbers(ListNode([2,4,3]), ListNode([5,6,4]))
+        XCTAssertEqual(value, ListNode([7,0,8]))
     }
     
     func test1() {
-        let list1 = ListNode([0])
-        let list2 = ListNode([0])
-        let expected = ListNode([0])
-        XCTAssertEqual(solution.addTwoNumbers(list1, list2), expected)
+        let value = solution.addTwoNumbers(ListNode([0]), ListNode([0]))
+        XCTAssertEqual(value, ListNode([0]))
     }
     
     func test2() {
-        let list1 = ListNode([9, 9, 9, 9, 9, 9, 9])
-        let list2 = ListNode([9, 9, 9, 9])
-        let expected = ListNode([8, 9, 9, 9, 0, 0, 0, 1])
-        XCTAssertEqual(solution.addTwoNumbers(list1, list2), expected)
+        let value = solution.addTwoNumbers(ListNode([9,9,9,9,9,9,9]), ListNode([9,9,9,9]))
+        XCTAssertEqual(value, ListNode([8,9,9,9,0,0,0,1]))
     }
 }
 
