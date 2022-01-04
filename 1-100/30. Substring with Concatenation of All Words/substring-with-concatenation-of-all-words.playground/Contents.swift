@@ -48,13 +48,14 @@ class Solution {
 
 // Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.157 (0.160) seconds
 
-
 import XCTest
 
 class Tests: XCTestCase {
     
     private let solution = Solution()
     
+    /// Substrings starting at index 0 and 9 are "barfoo" and "foobar" respectively.
+    /// The output order does not matter, returning [9,0] is fine too.
     func test0() {
         let value = solution.findSubstring("barfoothefoobarman", ["foo","bar"])
         XCTAssertEqual(value, [0,9])
