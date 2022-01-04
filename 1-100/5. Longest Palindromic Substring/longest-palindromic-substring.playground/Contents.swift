@@ -10,13 +10,13 @@ class Solution {
         var left = -1, right = -1, max = 1
         
         let chars = [Character](s)
-        let slen = s.count
+        let lnS = s.count
         
-        var dp = [[Bool]](repeating: [Bool](repeating: false, count: slen), count: slen)
-        var idx = slen - 1
+        var dp = [[Bool]](repeating: [Bool](repeating: false, count: lnS), count: lnS)
+        var idx = lnS - 1
         
         while idx >= 0 {
-            for j in idx..<slen {
+            for j in idx..<lnS {
                 dp[idx][j] = chars[idx] == chars[j] && (j - idx < 2 || dp[idx + 1][j - 1])
                 if dp[idx][j], j - idx + 1 > max {
                     left = idx
