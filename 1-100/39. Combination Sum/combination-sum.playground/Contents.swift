@@ -25,7 +25,7 @@ class Solution {
 
 // MARK: - Test cases -
 
-// Result: Executed 5 tests, with 0 failures (0 unexpected) in 0.113 (0.115) seconds
+// Result: Executed 5 tests, with 0 failures (0 unexpected) in 0.039 (0.041) seconds
 
 import XCTest
 
