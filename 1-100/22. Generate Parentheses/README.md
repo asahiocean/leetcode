@@ -26,8 +26,6 @@ class Solution {
                 }
             }
         }
-        map[n] = result
-        
         return result
     }
 }
