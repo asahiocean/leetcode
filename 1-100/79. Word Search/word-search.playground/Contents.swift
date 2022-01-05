@@ -5,43 +5,66 @@ import Foundation
 
 class Solution {
     func exist(_ board: [[Character]], _ word: String) -> Bool {
-        var ans = false
-        let rowLength = board.count, colLength = board[0].count
-        var visited = [[Bool]](repeating: [Bool](repeating: false, count: board[0].count), count: board.count)
-        let dx = [0,0,-1,1], dy = [-1,1,0,0]
+        var result = false
+        let lenB = board.count, lenW = word.count, rows = lenB, cols = board[0].count
+        var visited = [[Bool]](repeating: [Bool](repeating: false, count: cols), count: lenB)
         
         let chars = [Character](word)
         
-        func searchChar(x: Int,y: Int,charIndex: Int) {
-            guard charIndex < word.count else {
-                ans = true
-                return
-            }
+        func searchChar(x: Int, y: Int, _ idx: Int) {
+            guard idx < lenW else { result = true; return }
             
-            guard !ans else { return }
+            guard !(result) else { return }
             visited[x][y] = true
             
             for i in 0...3 {
-                let nextX = x + dx[i], nextY = y + dy[i]
+                let nxtX = x + [0,0,-1,1][i], nxtY = y + [-1,1,0,0][i]
                 
-                if nextX >= 0 && nextX < rowLength &&
-                    nextY >= 0 && nextY < colLength &&
-                    !visited[nextX][nextY] && board[nextX][nextY] == chars[charIndex]
+                if nxtX >= 0 && nxtX < rows && nxtY >= 0 && nxtY < cols &&
+                    !visited[nxtX][nxtY] && board[nxtX][nxtY] == chars[idx]
                 {
-                    searchChar(x: nextX, y: nextY, charIndex: charIndex + 1)
+                    searchChar(x: nxtX, y: nxtY, idx + 1)
                 }
             }
             visited[x][y] = false
         }
         
-        for i in 0..<board.count {
-            for j in 0..<board[0].count where board[i][j] == word.first {
-                if word.count == 1 { return true }
-                
-                searchChar(x: i, y: j, charIndex: 1)
-                if ans { return true }
+        for x in 0..<lenB {
+            for y in 0..<cols where board[x][y] == word.first {
+                if lenW == 1 { return true }
+                searchChar(x: x, y: y, 1)
+                if result { return true }
             }
         }
+        
         return false
     }
 }
+
+// MARK: - Test cases -
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.045 (0.047) seconds
+
+import XCTest
+
+class Tests: XCTestCase {
+    
+    private let solution = Solution()
+    
+    func test0() {
+        let value = solution.exist([["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], "ABCCED")
+        XCTAssertEqual(value, true)
+    }
+    
+    func test1() {
+        let value = solution.exist([["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], "SEE")
+        XCTAssertEqual(value, true)
+    }
+    
+    func test2() {
+        let value = solution.exist([["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], "ABCB")
+        XCTAssertEqual(value, false)
+    }
+}
+
+Tests.defaultTestSuite.run()
