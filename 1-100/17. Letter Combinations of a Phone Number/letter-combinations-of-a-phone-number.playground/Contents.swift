@@ -13,11 +13,11 @@ class Solution {
                                                    "8":["t","u","v"],
                                                    "9":["w","x","y","z"]]
     func letterCombinations(_ digits: String) -> [String] {
-        var result = [String](), digs = digits.map({Character($0.lowercased())})
-        for num in digs {
-            guard let chars = matrix[num] else { break }
+        var digs = digits.map { Character($0.lowercased()) }, result: [String] = []
+        for n in digs {
+            guard let chars = matrix[n] else { break }
             guard !(result.isEmpty) else {
-                chars.forEach({ result.append("\($0)") })
+                chars.forEach { result.append("\($0)") }
                 continue
             }
             
@@ -34,7 +34,7 @@ class Solution {
 
 // MARK: - Test cases -
 
-// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.117 (0.119) seconds
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.078 (0.080) seconds
 
 import XCTest
 
