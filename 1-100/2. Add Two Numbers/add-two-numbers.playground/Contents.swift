@@ -14,34 +14,6 @@ class Solution {
     }
 }
 
-public class ListNode {
-    public var val: Int
-    public var next: ListNode?
-    public init() { self.val = 0; self.next = nil; }
-    public init(_ val: Int) { self.val = val; self.next = nil; }
-    public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
-    
-    // An additional initializer that can be used to implement nodes from an array
-    public init?(_ array: [Int]) {
-        guard !array.isEmpty else { return nil }
-        self.val = array[0]
-        var prev: ListNode = self
-        for i in 1..<array.count {
-            let new = ListNode(array[i])
-            prev.next = new
-            prev = new
-        }
-    }
-}
-
-// Extension for ListNode
-
-extension ListNode: Equatable {
-    public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
-        return lhs.val == rhs.val && lhs.next == rhs.next
-    }
-}
-
 // MARK: - Test cases -
 
 // Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.033 (0.035) seconds
@@ -70,3 +42,33 @@ class Tests: XCTestCase {
 }
 
 Tests.defaultTestSuite.run()
+
+// MARK: - ListNode -
+
+public class ListNode {
+    public var val: Int
+    public var next: ListNode?
+    public init() { self.val = 0; self.next = nil; }
+    public init(_ val: Int) { self.val = val; self.next = nil; }
+    public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
+    
+    // An additional initializer that can be used to implement nodes from an array
+    public init?(_ array: [Int]) {
+        guard !array.isEmpty else { return nil }
+        self.val = array[0]
+        var prev: ListNode = self
+        for i in 1..<array.count {
+            let new = ListNode(array[i])
+            prev.next = new
+            prev = new
+        }
+    }
+}
+
+// Extension for ListNode
+
+extension ListNode: Equatable {
+    public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
+        return lhs.val == rhs.val && lhs.next == rhs.next
+    }
+}
