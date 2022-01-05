@@ -22,11 +22,11 @@ class Solution {
                                                    "8":["t","u","v"],
                                                    "9":["w","x","y","z"]]
     func letterCombinations(_ digits: String) -> [String] {
-        var result = [String](), digs = digits.map({Character($0.lowercased())})
-        for num in digs {
-            guard let chars = matrix[num] else { break }
+        var result: [String] = []
+        for ch in digits.map({ Character($0.lowercased()) }) {
+            guard let chars = matrix[ch] else { break }
             guard !(result.isEmpty) else {
-                chars.forEach({ result.append("\($0)") })
+                chars.forEach { result.append("\($0)") }
                 continue
             }
             

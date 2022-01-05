@@ -16,10 +16,8 @@ class Solution {
     func generateParenthesis(_ n: Int) -> [String] {
         guard n > 0 else { return [""] }
         
-        var map = [Int:[String]]()
+        var map: [Int:[String]] = [:], result: [String] = []
         if let parentheses = map[n] { return parentheses }
-        
-        var result = [String]()
         
         for i in 0..<n {
             for l in generateParenthesis(i) {
