@@ -5,18 +5,17 @@ import Foundation
 
 class Solution {
     func combinationSum2(_ candidates: [Int], _ target: Int) -> [[Int]] {
-        var result = [[Int]](), path = [Int](), sorted = candidates.sorted()
-        dfs(&result, &path, target, sorted, 0)
+        var path: [Int] = [], result: [[Int]] = []
+        dfs(&result, &path, candidates.sorted(), target)
         return result
     }
     
-    private func dfs(_ res: inout [[Int]], _ path: inout [Int], _ trg: Int, _ cands: [Int], _ idx: Int) {
-        guard trg > 0 else { res.append(path); return }
-        
-        for k in idx..<cands.count where cands[k] <= trg {
+    private func dfs(_ res: inout [[Int]], _ path: inout [Int], _ cands: [Int], _ t: Int, _ idx: Int = 0) {
+        guard t > 0 else { res.append(path); return }
+        for k in idx..<cands.count where cands[k] <= t {
             if k > 0 && cands[k] == cands[k-1] && k != idx { continue }
             path.append(cands[k])
-            dfs(&res, &path, trg - cands[k], cands, k + 1)
+            dfs(&res, &path, cands, t - cands[k], k + 1)
             path.removeLast()
         }
     }
@@ -34,7 +33,10 @@ class Tests: XCTestCase {
     
     func test0() {
         let value = solution.combinationSum2([10,1,2,7,6,1,5], 8)
-        XCTAssertEqual(value, [[1,1,6],[1,2,5],[1,7],[2,6]])
+        XCTAssertEqual(value, [[1,1,6],
+                               [1,2,5],
+                               [1,7],
+                               [2,6]])
     }
     func test1() {
         let value = solution.combinationSum2([2,5,2,1,2], 5)
