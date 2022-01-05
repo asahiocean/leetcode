@@ -5,19 +5,16 @@ import Foundation
 
 class Solution {
     func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]] {
-        var combination = [Int](), uniques = [[Int]]()
-        dfs(candidates.sorted(), target, 0, &uniques, &combination)
-        return uniques
+        var comb: [Int] = [], uniqs: [[Int]] = []
+        dfs(&uniqs, &comb, candidates.sorted(), target, 0)
+        return uniqs
     }
     
-    private func dfs(_ cands: [Int], _ t: Int, _ idx: Int, _ uniq: inout [[Int]], _ comb: inout [Int]) {
-        guard t > 0 else {
-            uniq.append(comb)
-            return
-        }
+    private func dfs(_ uniq: inout [[Int]], _ comb: inout [Int], _ cands: [Int], _ t: Int, _ idx: Int) {
+        guard t > 0 else { uniq.append(comb); return }
         for i in idx..<cands.count where cands[i] <= t {
             comb.append(cands[i])
-            dfs(cands, t - cands[i], i, &uniq, &comb)
+            dfs(&uniq, &comb, cands, t - cands[i], i)
             comb.removeLast()
         }
     }
@@ -33,6 +30,9 @@ class Tests: XCTestCase {
     
     private let solution = Solution()
     
+    /// 2 and 3 are candidates, and 2 + 2 + 3 = 7. Note that 2 can be used multiple times.
+    /// 7 is a candidate, and 7 = 7.
+    /// These are the only two combinations.
     func test0() {
         let value = solution.combinationSum([2,3,6,7], 7)
         XCTAssertEqual(value, [[2,2,3],[7]])
