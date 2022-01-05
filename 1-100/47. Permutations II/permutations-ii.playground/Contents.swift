@@ -5,7 +5,7 @@ import Foundation
 
 class Solution {
     func permuteUnique(_ nums: [Int]) -> [[Int]] {
-        var path = [Int](), result = [[Int]]()
+        var path: [Int] = [], result: [[Int]] = []
         var visited = [Bool](repeating: false, count: nums.count)
         dfs(&result, &path, nums.sorted(by: <), &visited)
         return result
@@ -25,7 +25,7 @@ class Solution {
 
 // MARK: - Test cases -
 
-// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.095 (0.097) seconds
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.045 (0.047) seconds
 
 import XCTest
 
