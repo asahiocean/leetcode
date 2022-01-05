@@ -6,15 +6,15 @@ import Foundation
 class Solution {
     func numDecodings(_ s: String) -> Int {
         
-        let arrS = Array<Character>(s)
-        var dp = Array(repeating: 0, count: arrS.count + 1)
+        let arrS = [Character](s), len = arrS.count
+        var dp: [Int] = [Int](repeating: 0, count: len + 1)
         dp[0] = 1
         
-        for i in 1...arrS.count {
+        for i in 1...len {
             if arrS[i-1] != "0" { dp[i] += dp[i-1] }
             if i > 1 && isValid(arrS, i - 2, i - 1) { dp[i] += dp[i-2] }
         }
-        return dp[arrS.count]
+        return dp[len]
     }
     
     private func isValid(_ chars: [Character], _ s: Int, _ e: Int) -> Bool {
