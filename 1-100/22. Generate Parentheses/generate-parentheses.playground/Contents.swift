@@ -17,15 +17,13 @@ class Solution {
                 }
             }
         }
-        map[n] = result
-        
         return result
     }
 }
 
 // MARK: - Test cases -
 
-// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.018 (0.019) seconds
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.009 (0.011) seconds
 
 import XCTest
 
