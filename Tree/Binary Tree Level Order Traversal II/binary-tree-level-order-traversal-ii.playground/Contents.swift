@@ -1,18 +1,12 @@
 import Foundation
 
+// 107. Binary Tree Level Order Traversal II
 // https://leetcode.com/problems/binary-tree-level-order-traversal-ii/
-
-/*
- Given the root of a binary tree, return the bottom-up level order traversal of its nodes' values.
- (i.e., from left to right, level by level from leaf to root).
- */
-
-//MARK: - Solution
 
 class Solution {
     func levelOrderBottom(_ root: TreeNode?) -> [[Int]] {
         guard let node = root else { return [] }
-        var result = [[Int]](), tree = [node]
+        var tree = [node], result: [[Int]] = []
         while !tree.isEmpty {
             result.insert(tree.map { $0.val }, at: 0)
             tree = tree.flatMap { [$0.left, $0.right] }.compactMap{ $0 }
@@ -21,27 +15,27 @@ class Solution {
     }
 }
 
-// MARK: - Tests
+// MARK: - Test cases -
 
 import XCTest
 
 class Tests: XCTestCase {
     
-    private let s = Solution()
+    private let solution = Solution()
     
-    func testExample1() {
-        let tree = TreeNode([3,9,20,nil,nil,15,7])
-        XCTAssertEqual(s.levelOrderBottom(tree), [[15,7],[9,20],[3]]) // good
+    func test0() {
+        let value = solution.levelOrderBottom(TreeNode([3,9,20,nil,nil,15,7]))
+        XCTAssertEqual(value, [[15,7],[9,20],[3]])
     }
     
-    func testExample2() {
-        let tree = TreeNode([1])
-        XCTAssertEqual(s.levelOrderBottom(tree), [[1]]) // good
+    func test1() {
+        let value = solution.levelOrderBottom(TreeNode([1]))
+        XCTAssertEqual(value, [[1]])
     }
     
-    func testExample3() {
-        let tree = TreeNode([])
-        XCTAssertEqual(s.levelOrderBottom(tree), []) // good
+    func test2() {
+        let value = solution.levelOrderBottom(TreeNode([]))
+        XCTAssertEqual(value, [])
     }
 }
 
