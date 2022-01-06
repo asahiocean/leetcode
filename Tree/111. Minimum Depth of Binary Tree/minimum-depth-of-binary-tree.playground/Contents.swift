@@ -1,34 +1,40 @@
 import Foundation
 
+// 111. Minimum Depth of Binary Tree
 // https://leetcode.com/problems/minimum-depth-of-binary-tree/
 
 class Solution {
-    private func helper(_ node: TreeNode, _ level: Int, _ next: inout Int) {
-        if node.left == nil, node.right == nil { next = min(level, next); return }
-        if let left = node.left, level < next { helper(left, level + 1, &next) }
-        if let right = node.right, level < next { helper(right, level + 1, &next) }
-    }
     func minDepth(_ root: TreeNode?) -> Int {
         guard let root = root else { return 0 }
         var value = Int.max
         helper(root, 1, &value)
         return value
     }
+    private func helper(_ node: TreeNode, _ level: Int, _ next: inout Int) {
+        if node.left == nil, node.right == nil { next = min(level, next); return }
+        if let left = node.left, level < next { helper(left, level + 1, &next) }
+        if let right = node.right, level < next { helper(right, level + 1, &next) }
+    }
 }
+
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.038 (0.040) seconds
 
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.038 (0.040) seconds
-
 class Tests: XCTestCase {
-    let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        let res = s.minDepth(.init([3,9,20,nil,nil,15,7]))
-        XCTAssertEqual(res, 2)
+        let value = solution.minDepth(TreeNode([3,9,20,nil,nil,15,7]))
+        XCTAssertEqual(value, 2)
     }
+    
     func test1() {
-        let res = s.minDepth(.init([2,nil,3,nil,4,nil,5,nil,6]))
-        XCTAssertEqual(res, 5)
+        let value = solution.minDepth(TreeNode([2,nil,3,nil,4,nil,5,nil,6]))
+        XCTAssertEqual(value, 5)
     }
 }
 
