@@ -1,15 +1,16 @@
 import Foundation
 
-// https://leetcode.com/problems/recover-binary-search-tree
+// 99. Recover Binary Search Tree
+// https://leetcode.com/problems/recover-binary-search-tree/
 
 class Solution {
     var left: TreeNode?, right: TreeNode?, prev: TreeNode?
     func recoverTree(_ root: TreeNode?) {
         bfs(root)
-        if let l = left, let r = right {
-            let temp = l.val
-            l.val = r.val
-            r.val = temp
+        if let left = left, let right = right {
+            let tempL = left.val
+            left.val = right.val
+            right.val = tempL
         }
     }
     private func bfs(_ node: TreeNode?) {
@@ -18,34 +19,33 @@ class Solution {
         if left == nil, let prev = prev, prev.val > node.val {
             left = prev
         }
-        if left != nil {
-            if right == nil {
-                right = node
-            } else if node.val < right!.val {
-                right = node
-            }
+        if left != nil, right == nil || node.val < right!.val {
+            right = node
         }
         prev = node
         bfs(node.right)
     }
 }
 
-// MARK: - Tests
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.054 (0.056) seconds
 
 import XCTest
 
-//      Executed 2 tests, with 0 failures (0 unexpected) in 0.561 (0.563) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test1() {
         let tree = TreeNode([1,3,nil,nil,2])
-        s.recoverTree(tree)
+        solution.recoverTree(tree)
         XCTAssertEqual(tree, TreeNode([3,1,nil,nil,2]))
     }
+    
     func test2() {
         let tree = TreeNode([3,1,4,nil,nil,2])
-        s.recoverTree(tree)
+        solution.recoverTree(tree)
         XCTAssertEqual(tree, TreeNode([2,1,4,nil,nil,3]))
     }
 }
