@@ -1,6 +1,7 @@
 import Foundation
 
-// https://leetcode.com/problems/find-mode-in-binary-search-tree
+// 501. Find Mode in Binary Search Tree
+// https://leetcode.com/problems/find-mode-in-binary-search-tree/
 
 class Solution {
     func findMode(_ root: TreeNode?) -> [Int] {
@@ -18,6 +19,31 @@ class Solution {
         updateNode(node.right, values: &values)
     }
 }
+
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.067 (0.068) seconds
+
+import XCTest
+
+class Tests: XCTestCase {
+    
+    private let solution = Solution()
+    
+    func test1() {
+        let value = solution.findMode(TreeNode([1,nil,2,2]))
+        XCTAssertEqual(value, [2])
+    }
+    
+    func test2() {
+        let value = solution.findMode(TreeNode([0]))
+        XCTAssertEqual(value, [0])
+    }
+}
+
+Tests.defaultTestSuite.run()
+
+// MARK: - TreeNode -
 
 public class TreeNode {
     public var val: Int
@@ -50,21 +76,3 @@ public class TreeNode {
         }
     }
 }
-
-// MARK: - Tests
-
-import XCTest
-
-//      Executed 2 tests, with 0 failures (0 unexpected) in 0.529 (0.531) seconds
-
-class Tests: XCTestCase {
-    private let s = Solution()
-    func test1() {
-        XCTAssertEqual(s.findMode(.init([1,nil,2,2])), [2])
-    }
-    func test2() {
-        XCTAssertEqual(s.findMode(.init([0])), [0])
-    }
-}
-
-Tests.defaultTestSuite.run()
