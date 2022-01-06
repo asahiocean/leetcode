@@ -19,3 +19,31 @@ class Solution {
         return lastRow
     }
 }
+
+// MARK: - Test cases -
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.018 (0.020) seconds
+
+import XCTest
+
+class Tests: XCTestCase {
+    
+    private let solution = Solution()
+    
+    func test0() {
+        let value = solution.getRow(3)
+        XCTAssertEqual(value, [1,3,3,1])
+    }
+    
+    func test1() {
+        let value = solution.getRow(0)
+        XCTAssertEqual(value, [1])
+    }
+    
+    func test2() {
+        let value = solution.getRow(1)
+        XCTAssertEqual(value, [1,1])
+    }
+}
+
+Tests.defaultTestSuite.run()
