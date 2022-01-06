@@ -1,5 +1,6 @@
 import Foundation
 
+// 124. Binary Tree Maximum Path Sum
 // https://leetcode.com/problems/binary-tree-maximum-path-sum/
 
 class Solution {
@@ -17,23 +18,29 @@ class Solution {
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.067 (0.069) seconds
+
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.387 (0.389) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
-    func test1() {
-        let tree = TreeNode([1,2,3])
-        XCTAssertEqual(s.maxPathSum(tree), 6)
+    
+    private let solution = Solution()
+    
+    func test0() {
+        let value = solution.maxPathSum(TreeNode([1,2,3]))
+        XCTAssertEqual(value, 6)
     }
-    func test2() {
-        let tree = TreeNode([-10,9,20,nil,nil,15,7])
-        XCTAssertEqual(s.maxPathSum(tree), 42)
+    func test1() {
+        let value = solution.maxPathSum(TreeNode([-10,9,20,nil,nil,15,7]))
+        XCTAssertEqual(value, 42)
     }
 }
 
 Tests.defaultTestSuite.run()
+
+// MARK: - TreeNode -
 
 public class TreeNode {
     public var val: Int
