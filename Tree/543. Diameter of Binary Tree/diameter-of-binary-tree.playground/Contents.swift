@@ -1,17 +1,18 @@
-import UIKit
+import Foundation
 
-// https://leetcode.com/problems/diameter-of-binary-tree
+// 543. Diameter of Binary Tree
+// https://leetcode.com/problems/diameter-of-binary-tree/
 
 class Solution {
     func diameterOfBinaryTree(_ root: TreeNode?) -> Int {
         @discardableResult
         func helper(_ node: TreeNode?, _ diameter: inout Int) -> Int {
             guard let root = node else { return 0 }
-            var lh = 0, rh = 0
-            if let l = root.left { lh += 1 + helper(l, &diameter) }
-            if let r = root.right { rh += 1 + helper(r, &diameter) }
-            diameter = max(diameter, (lh + rh))
-            return max(lh, rh)
+            var leftH = 0, rightH = 0
+            if let left = root.left { leftH += 1 + helper(left, &diameter) }
+            if let right = root.right { rightH += 1 + helper(right, &diameter) }
+            diameter = max(diameter, (leftH + rightH))
+            return max(leftH, rightH)
         }
         var diameter: Int = 0
         helper(root, &diameter)
@@ -19,25 +20,30 @@ class Solution {
     }
 }
 
-// MARK: - Tests
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.063 (0.065) seconds
 
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.332 (0.334) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
-    func test1() {
-        XCTAssertEqual(s.diameterOfBinaryTree(.init([1,2,3,4,5])), 3)
+    
+    private let solution = Solution()
+    
+    func test0() {
+        let value = solution.diameterOfBinaryTree(.init([1,2,3,4,5]))
+        XCTAssertEqual(value, 3)
     }
-    func test2() {
-        XCTAssertEqual(s.diameterOfBinaryTree(.init([1,2])), 1)
+    
+    func test1() {
+        let value = solution.diameterOfBinaryTree(.init([1,2]))
+        XCTAssertEqual(value, 1)
     }
 }
 
 Tests.defaultTestSuite.run()
 
-// MARK: - TreeNode
+// MARK: - TreeNode -
 
 public class TreeNode {
     public var val: Int
