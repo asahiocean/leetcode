@@ -1,6 +1,7 @@
 import Foundation
 
-// https://leetcode.com/problems/path-sum-ii
+// 113. Path Sum II
+// https://leetcode.com/problems/path-sum-ii/
 
 class Solution {
     func pathSum(_ root: TreeNode?, _ targetSum: Int) -> [[Int]] {
@@ -17,28 +18,33 @@ class Solution {
             return cPaths
         }
         let val = sum - root.val
-        let left = findPath(root.left, val, cpath, paths)
-        let right = findPath(root.right, val, cpath, paths)
-        return left + right
+        return findPath(root.left, val, cpath, paths) + findPath(root.right, val, cpath, paths)
     }
 }
 
-// MARK: - Test Cases
+// MARK: - Test cases -
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.067 (0.069) seconds
 
 import XCTest
 
-//      Executed 3 tests, with 0 failures (0 unexpected) in 0.339 (0.341) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
+    func test0() {
+        let value = solution.pathSum(TreeNode([5,4,8,11,nil,13,4,7,2,nil,nil,5,1]), 22)
+        XCTAssertEqual(value, [[5,4,11,2],[5,8,4,5]])
+    }
+    
     func test1() {
-        XCTAssertEqual(s.pathSum(.init([5,4,8,11,nil,13,4,7,2,nil,nil,5,1]), 22), [[5,4,11,2],[5,8,4,5]])
+        let value = solution.pathSum(TreeNode([1,2,3]), 5)
+        XCTAssertEqual(value, [])
     }
+    
     func test2() {
-        XCTAssertEqual(s.pathSum(.init([1,2,3]), 5), [])
-    }
-    func test3() {
-        XCTAssertEqual(s.pathSum(.init([1,2]), 0), [])
+        let value = solution.pathSum(TreeNode([1,2]), 0)
+        XCTAssertEqual(value, [])
     }
 }
 
