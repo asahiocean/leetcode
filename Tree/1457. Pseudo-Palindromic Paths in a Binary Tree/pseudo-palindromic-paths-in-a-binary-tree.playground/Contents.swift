@@ -1,58 +1,62 @@
 import Foundation
 
-// https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree
+// 1457. Pseudo-Palindromic Paths in a Binary Tree
+// https://leetcode.com/problems/pseudo-palindromic-paths-in-a-binary-tree/
 
 class Solution {
     func pseudoPalindromicPaths (_ root: TreeNode?) -> Int {
-        return calculate(root, Set())
+        return calculate(root)
     }
     
-    private func calculate(_ node: TreeNode?, _ set: Set<Int>) -> Int {
+    private func calculate(_ node: TreeNode?, _ set: Set<Int> = []) -> Int {
         guard let node = node else { return 0 }
-        var newSet = set
-        if set.contains(node.val) {
-            newSet.remove(node.val)
-        } else {
-            newSet.insert(node.val)
-        }
+        let val = node.val
+        var setCopy = set
+        
+        if set.contains(val) { setCopy.remove(val) } else { setCopy.insert(val) }
+        
         switch (node.left, node.right) {
         case let (left?,right?):
-            return calculate(left, newSet) + calculate(right, newSet)
+            return calculate(left, setCopy) + calculate(right, setCopy)
         case let (left?, nil):
-            return calculate(left, newSet)
+            return calculate(left, setCopy)
         case let (nil, right?):
-            return calculate(right, newSet)
+            return calculate(right, setCopy)
         case (nil, nil):
-            return newSet.count <= 1 ? 1 : 0
+            return setCopy.count <= 1 ? 1 : 0
         }
     }
 }
 
-// MARK: - Tests
+// MARK: - Test cases -
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.052 (0.054) seconds
 
 import XCTest
 
-// Executed 3 tests, with 0 failures (0 unexpected) in 0.347 (0.349) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test1() {
-        let tree = TreeNode([2,3,1,3,1,nil,1])
-        XCTAssertEqual(s.pseudoPalindromicPaths(tree), 2)
+        let value = solution.pseudoPalindromicPaths(TreeNode([2,3,1,3,1,nil,1]))
+        XCTAssertEqual(value, 2)
     }
+    
     func test2() {
-        let tree = TreeNode([2,1,1,1,3,nil,nil,nil,nil,nil,1])
-        XCTAssertEqual(s.pseudoPalindromicPaths(tree), 1)
+        let value = solution.pseudoPalindromicPaths(TreeNode([2,1,1,1,3,nil,nil,nil,nil,nil,1]))
+        XCTAssertEqual(value, 1)
     }
+    
     func test3() {
-        let tree = TreeNode([9])
-        XCTAssertEqual(s.pseudoPalindromicPaths(tree), 1)
+        let value = solution.pseudoPalindromicPaths(TreeNode([9]))
+        XCTAssertEqual(value, 1)
     }
 }
 
 Tests.defaultTestSuite.run()
 
-// MARK: - TreeNode
+// MARK: - TreeNode -
 
 public class TreeNode {
     public var val: Int
