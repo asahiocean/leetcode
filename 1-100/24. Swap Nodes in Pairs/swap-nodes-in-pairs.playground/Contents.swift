@@ -8,8 +8,8 @@ class Solution {
         
         var head = head, node = head, pre: ListNode?
         
-        while node != nil && node!.next != nil {
-            let cur = node!.next!, tmp = cur.next
+        while node != nil, let next = node!.next {
+            let cur = next, tmp = cur.next
             
             pre == nil ? (head = cur) : (pre!.next = cur)
             
