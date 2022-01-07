@@ -5,10 +5,10 @@ import Foundation
 
 class Solution {
     func canJump(_ nums: [Int]) -> Bool {
-        var indexMax = nums[0]
+        var idxMax = nums[0]
         for (i, v) in nums.enumerated() {
-            if i > indexMax { return false }
-            indexMax = max(indexMax, i + v)
+            if i > idxMax { return false }
+            idxMax = max(idxMax, i + v)
         }
         return true
     }
