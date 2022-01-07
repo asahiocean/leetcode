@@ -29,11 +29,7 @@ class MyLinkedList {
     func addAtIndex(_ index: Int, _ val: Int) {
         if index < 0 || index > count { return }
         count += 1
-        if index == count {
-            items.append(val)
-        } else {
-            items.insert(val, at: index)
-        }
+        index == count ? items.append(val) : items.insert(val, at: index)
     }
     
     func deleteAtIndex(_ index: Int) {
@@ -42,7 +38,6 @@ class MyLinkedList {
         items.remove(at: index)
     }
 }
-
 
 /**
  * Your MyLinkedList object will be instantiated and called as such:
