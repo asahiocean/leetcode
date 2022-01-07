@@ -5,21 +5,19 @@ import Foundation
 
 class Solution {
     func rob(_ nums: [Int]) -> Int {
-        guard nums.count != 0 else { return 0 }
-        guard nums.count != 1 else { return nums[0] }
-        return max(helper(nums, 0, nums.count - 2), helper(nums, 1, nums.count - 1))
+        let cnt = nums.count
+        guard cnt != 1 else { return cnt != 0 ? nums[0] : 0 }
+        return max(helper(nums, 0, cnt - 2), helper(nums, 1, cnt - 1))
     }
     
     private func helper(_ nums: [Int], _ start: Int, _ end: Int) -> Int {
-        if start > end { return 0 }
-        
-        var prev = 0, curr = 0, value = 0
-        
+        var pre = 0, cur = 0, val = 0
+        if start > end { return val }
         for i in start...end {
-            value = max(prev + nums[i], curr)
-            (curr, prev) = (value, curr)
+            val = max(pre + nums[i], cur)
+            (cur, pre) = (val, cur)
         }
-        return value
+        return val
     }
 }
 
