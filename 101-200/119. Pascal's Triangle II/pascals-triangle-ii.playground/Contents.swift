@@ -5,19 +5,20 @@ import Foundation
 
 class Solution {
     func getRow(_ rowIndex: Int) -> [Int] {
-        let index = rowIndex + 1
-        guard index > 2 else { return [Int](repeating: 1, count: index) }
-        var lastRow = [Int](repeating: 1, count: 2)
-        for i in 3...index {
-            var row = [Int](repeating: 1, count: i)
-            for n in 1...i/2 {
-                row[n] = lastRow[n-1] + lastRow[n]
+        let idx = rowIndex + 1
+        guard idx > 2 else { return fill(idx) }
+        var lastRow = fill(2)
+        for i in 3...idx {
+            var row = fill(i)
+            for n in 1...(i / 2) {
+                row[n] = lastRow[n - 1] + lastRow[n]
                 row[i - n - 1] = row[n]
             }
             lastRow = row
         }
         return lastRow
     }
+    private let fill: (Int) -> [Int] = { [Int](repeating: 1, count: $0) }
 }
 
 // MARK: - Test cases -
