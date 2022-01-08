@@ -1,72 +1,71 @@
 import Foundation
 
+// 472. Concatenated Words
 // https://leetcode.com/problems/concatenated-words
 
 class Solution {
+    
+    internal class Node {
+        var child: [Character:Node] = [:]
+        var isWord: Bool = false
+    }
+    
+    private let trie = Node()
+    
     func findAllConcatenatedWordsInADict(_ words: [String]) -> [String] {
-        guard words.count > 2 else { return [] }
-        
-        var res = [String](), map = [Int:Set<String>]()
-        
-        words.forEach({
-            if !$0.isEmpty {
-                if map[$0.count] == nil { map[$0.count] = [] }
-                map[$0.count]?.insert($0)
-            }
-        })
-        
-        let minWordKeys = map.keys.min()!, maxWordKeys = map.keys.max()!
-        let targetLength = minWordKeys << 1
-        
-        func dfs(_ totalCount: Int, word: [Character]) -> Bool {
-            guard word.count >= minWordKeys else { return false }
-            if word.count >= minWordKeys && word.count <= maxWordKeys {
-                if let strs = map[word.count] {
-                    if strs.contains(String(word)) && totalCount != 0 {
-                        return true
-                    }
-                }
-            }
-            guard word.count >= targetLength else { return false }
-            
-            var length = minWordKeys
-            while length <= min(maxWordKeys, word.count) {
-                if word.count - length < minWordKeys { break }
-                let left = String(word[0..<length])
-                if let strs = map[length], strs.contains(left) {
-                    var temp = word
-                    temp.removeFirst(length)
-                    if dfs(totalCount + 1, word: temp) { return true }
-                }
-                length += 1
-            }
-            return false
+        var value: [String] = []
+        for word in words.sorted(by: { $0.count < $1.count }) where word.count != 0 {
+            let array = Array(word)
+            dfs(array, 0) ? value.append(word) : insert(array)
         }
-        
-        for index in 0..<words.count {
-            if words[index].count >= targetLength && dfs(0, word: [Character](words[index])) {
-                res.append(words[index])
-            }
+        return value
+    }
+    
+    private func dfs(_ chars: [Character], _ idx: Int) -> Bool {
+        let len = chars.count
+        if idx == len { return true }
+        var node = trie
+        for i in idx..<len {
+            guard let child = node.child[chars[i]] else { return false }
+            node = child
+            if node.isWord && dfs(chars, i + 1) { return true }
         }
-        return res
+        return false
+    }
+    
+    private func insert(_ chars: [Character]) {
+        var node = trie
+        for c in chars {
+            if node.child[c] == nil {
+                node.child[c] = Node()
+            }
+            node = node.child[c]!
+        }
+        node.isWord = true
     }
 }
 
-// MARK: - Tests
+
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.619 (0.621) seconds
 
 import XCTest
 
-//      Executed 2 tests, with 0 failures (0 unexpected) in 0.619 (0.621) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test1() {
         let words = ["cat","cats","catsdogcats","dog","dogcatsdog","hippopotamuses","rat","ratcatdogcat"]
-        XCTAssertEqual(s.findAllConcatenatedWordsInADict(words), ["catsdogcats","dogcatsdog","ratcatdogcat"])
+        let value = solution.findAllConcatenatedWordsInADict(words)
+        XCTAssertEqual(value, ["catsdogcats","dogcatsdog","ratcatdogcat"])
     }
+    
     func test2() {
         let words = ["cat","dog","catdog"]
-        XCTAssertEqual(s.findAllConcatenatedWordsInADict(words), ["catdog"])
+        let value = solution.findAllConcatenatedWordsInADict(words)
+        XCTAssertEqual(value, ["catdog"])
     }
 }
 
