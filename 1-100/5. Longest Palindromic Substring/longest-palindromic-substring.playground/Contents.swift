@@ -5,15 +5,14 @@ import Foundation
 
 class Solution {
     func longestPalindrome(_ s: String) -> String {
-        guard s.count > 1 else { return s }
-        
-        var left = -1, right = -1, max = 1
+        let lnS = s.count
+        guard lnS > 1 else { return s }
         
         let chars = [Character](s)
-        let lnS = s.count
+        
+        var idx = lnS - 1, left = -1, right = -1, max = 1
         
         var dp = [[Bool]](repeating: [Bool](repeating: false, count: lnS), count: lnS)
-        var idx = lnS - 1
         
         while idx >= 0 {
             for j in idx..<lnS {
@@ -45,14 +44,17 @@ class Tests: XCTestCase {
         let value = solution.longestPalindrome("babad")
         XCTAssertEqual(value, "aba")
     }
+    
     func test1() {
         let value = solution.longestPalindrome("cbbd")
         XCTAssertEqual(value, "bb")
     }
+    
     func test2() {
         let value = solution.longestPalindrome("a")
         XCTAssertEqual(value, "a")
     }
+    
     func test3() {
         let value = solution.longestPalindrome("ac")
         XCTAssertEqual(value, "a")
