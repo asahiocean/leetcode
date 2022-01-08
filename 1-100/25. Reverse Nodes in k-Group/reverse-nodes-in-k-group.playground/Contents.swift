@@ -9,6 +9,7 @@ class Solution {
         node.next = head
         
         var prev = node
+        
         while prev.next != nil {
             var tail: ListNode? = prev
             for _ in 1...k { tail = tail?.next }
