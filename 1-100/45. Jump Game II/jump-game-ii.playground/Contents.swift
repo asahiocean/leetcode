@@ -5,9 +5,9 @@ import Foundation
 
 class Solution {
     func jump(_ nums: [Int]) -> Int {
-        guard 1 <= nums.count && nums.count <= Int(10e4) else { return 0 }
+        let count = nums.count
         var step = 0, end = 0, maxPos = 0
-        for i in 0..<nums.count - 1 {
+        for i in 0..<(count - 1) where 1 <= count && count <= Int(10e4) {
             maxPos = max(maxPos, i + nums[i])
             if i == end { end = maxPos; step += 1 }
         }
