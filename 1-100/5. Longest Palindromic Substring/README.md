@@ -14,24 +14,25 @@
 ```swift
 class Solution {
     func longestPalindrome(_ s: String) -> String {
-        guard s.count > 1 else { return s }
-        var left = -1, right = -1, max  = 1
+        let lnS = s.count
+        guard lnS > 1 else { return s }
+        
         let chars = [Character](s)
-        let strLenght = s.count
-        var dp = [[Bool]](repeating: [Bool](repeating: false, count: strLenght), count: strLenght)
-        var index = strLenght - 1
-        while index >= 0 {
-            for j in index..<strLenght {
-                dp[index][j] = chars[index] == chars[j] && (j - index < 2 || dp[index + 1][j - 1])
-                if dp[index][j] {
-                    if j - index + 1 > max {
-                        left = index
-                        right = j
-                        max = j - index  + 1
-                    }
+        
+        var idx = lnS - 1, left = -1, right = -1, max = 1
+        
+        var dp = [[Bool]](repeating: [Bool](repeating: false, count: lnS), count: lnS)
+        
+        while idx >= 0 {
+            for j in idx..<lnS {
+                dp[idx][j] = chars[idx] == chars[j] && (j - idx < 2 || dp[idx + 1][j - 1])
+                if dp[idx][j], j - idx + 1 > max {
+                    left = idx
+                    right = j
+                    max = j - idx + 1
                 }
             }
-            index -= 1
+            idx -= 1
         }
         return left == -1 ? String(chars[0]) : String(chars[left...right])
     }
