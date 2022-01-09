@@ -1,14 +1,5 @@
 # [1108. Defanging an IP Address](https://leetcode.com/problems/defanging-an-ip-address/)
 
-### Solution:
-```swift
-class Solution {
-    func defangIPaddr(_ address: String) -> String {
-        return address.components(separatedBy: ".").joined(separator: "[.]")
-    }
-}
-```
-
 ### Description:
 
 <div><p>Given a valid (IPv4) IP <code>address</code>, return a defanged version of that IP address.</p>
