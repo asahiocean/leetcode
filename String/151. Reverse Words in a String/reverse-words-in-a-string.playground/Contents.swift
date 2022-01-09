@@ -25,11 +25,13 @@ class Tests: XCTestCase {
         XCTAssertEqual(value, "blue is sky the")
     }
     
+    // Your reversed string should not contain leading or trailing spaces.
     func test1() {
         let value = solution.reverseWords("  hello world  ")
         XCTAssertEqual(value, "world hello")
     }
     
+    // You need to reduce multiple spaces between two words to a single space in the reversed string.
     func test2() {
         let value = solution.reverseWords("a good   example")
         XCTAssertEqual(value, "example good a")
