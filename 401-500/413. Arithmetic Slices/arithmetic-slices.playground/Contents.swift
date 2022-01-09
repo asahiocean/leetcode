@@ -7,12 +7,11 @@ class Solution {
     func numberOfArithmeticSlices(_ nums: [Int]) -> Int {
         
         let len = nums.count
-        
-        guard len > 2 else { return 0 }
-        
         var value = 0
+        guard len > 2 else { return value }
         
         var dp = [[Bool]](repeating: [Bool](repeating: false, count: len), count: len)
+        
         for i in 1..<len - 1 where 2 * nums[i] == nums[i - 1] + nums[i + 1] {
             dp[i - 1][i + 1] = true
             value += 1
