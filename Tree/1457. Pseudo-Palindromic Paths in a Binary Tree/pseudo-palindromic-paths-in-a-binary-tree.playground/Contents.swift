@@ -89,11 +89,3 @@ public class TreeNode {
         }
     }
 }
-
-// To pass the tests
-
-extension TreeNode: Equatable {
-    public static func == (lhs: TreeNode, rhs: TreeNode) -> Bool {
-        return lhs.left == rhs.left && lhs.right == rhs.right && lhs.val == rhs.val
-    }
-}
