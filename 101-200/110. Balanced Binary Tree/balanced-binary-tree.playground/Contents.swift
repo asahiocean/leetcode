@@ -16,25 +16,29 @@ class Solution {
     }
 }
 
-// MARK: - Test Cases -
+// MARK: - Test cases -
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.052 (0.054) seconds
 
 import XCTest
 
-// Executed 3 tests, with 0 failures (0 unexpected) in 0.052 (0.054) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        let res = s.isBalanced(.init([3,9,20,nil,nil,15,7]))
-        XCTAssertEqual(res, true)
+        let value = solution.isBalanced(TreeNode([3,9,20,nil,nil,15,7]))
+        XCTAssertEqual(value, true)
     }
+    
     func test1() {
-        let res = s.isBalanced(.init([1,2,2,3,3,nil,nil,4,4]))
-        XCTAssertEqual(res, false)
+        let value = solution.isBalanced(TreeNode([1,2,2,3,3,nil,nil,4,4]))
+        XCTAssertEqual(value, false)
     }
+    
     func test2() {
-        let res = s.isBalanced(.init([]))
-        XCTAssertEqual(res, true)
+        let value = solution.isBalanced(TreeNode([]))
+        XCTAssertEqual(value, true)
     }
 }
 
@@ -53,6 +57,7 @@ public class TreeNode {
         self.left = left
         self.right = right
     }
+    
     public init?(_ array: [Int?]) {
         var values = array
         guard !values.isEmpty, let head = values.removeFirst() else { return nil }
