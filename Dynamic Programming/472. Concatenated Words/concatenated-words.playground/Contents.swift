@@ -1,7 +1,7 @@
 import Foundation
 
 // 472. Concatenated Words
-// https://leetcode.com/problems/concatenated-words
+// https://leetcode.com/problems/concatenated-words/
 
 class Solution {
     
