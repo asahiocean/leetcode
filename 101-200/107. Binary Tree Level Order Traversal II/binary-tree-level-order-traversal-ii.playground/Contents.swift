@@ -17,6 +17,8 @@ class Solution {
 
 // MARK: - Test cases -
 
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.032 (0.034) seconds
+
 import XCTest
 
 class Tests: XCTestCase {
@@ -41,7 +43,7 @@ class Tests: XCTestCase {
 
 Tests.defaultTestSuite.run()
 
-// MARK: - TreeNode Class
+// MARK: - TreeNode -
 
 public class TreeNode {
     public var val: Int
