@@ -6,32 +6,32 @@ import Foundation
 class Solution {
     func minRemoveToMakeValid(_ s: String) -> String {
         
-        let length = s.count, chars = [Character](s)
+        let len = s.count, chars = [Character](s)
         
-        var leftParentheses: [Int] = []
-        var charsLeft = [Bool](repeating: true, count: length)
+        var parentheses: [Int] = []
+        var leftChars = [Bool](repeating: true, count: len)
         var value = ""
         
-        for i in 0..<length {
-            if chars[i] == "(" {
-                leftParentheses.append(i)
-            } else if chars[i] == ")" {
-                if leftParentheses.isEmpty {
-                    charsLeft[i]  = false
+        for i in 0..<len {
+            switch chars[i] {
+            case "(":
+                parentheses.append(i)
+            case ")":
+                if parentheses.isEmpty {
+                    leftChars[i]  = false
                 } else {
-                    leftParentheses.popLast()
+                    parentheses.popLast()
                 }
+            default:
+                break
             }
         }
-        
-        for i in 0..<leftParentheses.count {
-            charsLeft[leftParentheses[i]] = false
+        for i in 0..<parentheses.count {
+            leftChars[parentheses[i]] = false
         }
-        
-        for i in 0..<chars.count where charsLeft[i] {
+        for i in 0..<chars.count where leftChars[i] {
             value.append(chars[i])
         }
-        
         return value
     }
 }
