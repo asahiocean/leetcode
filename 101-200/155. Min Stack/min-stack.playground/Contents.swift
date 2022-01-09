@@ -7,10 +7,9 @@ class MinStack {
     private var stack: [Int]
     private var min: Int
     
-    /** initialize your data structure here. */
     init() {
-        self.stack = Array<Int>()
-        self.min = Int.max
+        self.stack = []
+        self.min = .max
     }
     
     func push(_ val: Int) {
