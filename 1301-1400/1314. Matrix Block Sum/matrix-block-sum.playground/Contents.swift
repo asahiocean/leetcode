@@ -10,7 +10,7 @@ class Solution {
         var val = [[Int]](repeating: [Int](repeating: 0, count: cols), count: rows)
         for r in 1...rows {
             for c in 1...cols {
-                pre[r][c] = pre[r - 1][c] + pre[r][c - 1] - pre[r - 1][c - 1] + mat[r - 1][c - 1]
+                pre[r][c] = pre[r-1][c] + pre[r][c-1] - pre[r-1][c-1] + mat[r-1][c-1]
             }
         }
         for r in 1...rows {
@@ -19,7 +19,7 @@ class Solution {
                     ly = max(1, c - k),
                     rx = min(rows, r + k),
                     ry = min(cols, c + k)
-                val[r - 1][c - 1] = pre[rx][ry] + pre[lx - 1][ly - 1] - pre[rx][ly - 1] - pre[lx - 1][ry]
+                val[r-1][c-1] = pre[rx][ry] + pre[lx-1][ly-1] - pre[rx][ly-1] - pre[lx-1][ry]
             }
         }
         return val
