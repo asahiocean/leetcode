@@ -5,10 +5,10 @@ import Foundation
 
 class Solution {
     func uniquePathsWithObstacles(_ obstacleGrid: [[Int]]) -> Int {
-        let m = obstacleGrid.count, n = obstacleGrid[0].count
-        guard m > 0, n > 0 else { return 0 }
-        var dp = Array(repeating: Array(repeating: -1, count: n), count: m)
-        return helper(m - 1, n - 1, &dp, obstacleGrid)
+        let cols = obstacleGrid.count, rows = obstacleGrid[0].count
+        guard cols > 0, rows > 0 else { return 0 }
+        var dp = [[Int]](repeating: [Int](repeating: -1, count: rows), count: cols)
+        return helper(cols - 1, rows - 1, &dp, obstacleGrid)
     }
     
     private func helper(_ m: Int, _ n: Int, _ dp: inout [[Int]], _ grid: [[Int]]) -> Int {
@@ -20,19 +20,28 @@ class Solution {
     }
 }
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.007 (0.008) seconds
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.007 (0.008) seconds
 
 import XCTest
 
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
+    // There is one obstacle in the middle of the 3x3 grid above.
+    // There are two ways to reach the bottom-right corner:
+    // 1. Right -> Right -> Down -> Down
+    // 2. Down -> Down -> Right -> Right
     func test0() {
-        let res = s.uniquePathsWithObstacles([[0,0,0],[0,1,0],[0,0,0]])
-        XCTAssertEqual(res, 2)
+        let value = solution.uniquePathsWithObstacles([[0,0,0],[0,1,0],[0,0,0]])
+        XCTAssertEqual(value, 2)
     }
+    
     func test1() {
-        let res = s.uniquePathsWithObstacles([[0,1],[0,0]])
-        XCTAssertEqual(res, 1)
+        let value = solution.uniquePathsWithObstacles([[0,1],[0,0]])
+        XCTAssertEqual(value, 1)
     }
 }
 
