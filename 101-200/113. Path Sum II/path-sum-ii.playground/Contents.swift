@@ -63,6 +63,7 @@ public class TreeNode {
         self.left = left
         self.right = right
     }
+    
     // Making an additional initializer from an array of integers
     public init?(_ array: [Int?]) {
         var values = array
