@@ -6,22 +6,22 @@ import Foundation
 class Solution {
     func wordBreak(_ s: String, _ wordDict: [String]) -> Bool {
         
-        let lnS = s.count, wdset = Set(wordDict)
+        let len = s.count, wdset = Set(wordDict)
         
         let maxWL = wdset.reduce(0, { max($0, $1.count) })
         let chars = [Character](s)
         
-        var dp = [Bool](repeating: false, count: lnS + 1)
+        var dp = [Bool](repeating: false, count: len + 1)
         dp[0] = true
         
-        for k in 0..<lnS where dp[k] {
+        for k in 0..<len where dp[k] {
             let nxtK = k + 1
-            for i in nxtK...(min(lnS, nxtK + maxWL)) where wdset.contains(String(chars[k..<i])) {
+            for i in nxtK...(min(len, nxtK + maxWL)) where wdset.contains(String(chars[k..<i])) {
                 dp[i] = true
             }
         }
         
-        return dp[lnS]
+        return dp[len]
     }
 }
 
