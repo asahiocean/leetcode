@@ -6,12 +6,12 @@ import Foundation
 class Solution {
     func addBinary(_ a: String, _ b: String) -> String {
         let arrA = Array(a), lenA = arrA.count, arrB = Array(b), lenB = arrB.count
-        var result = "", carry = 0, i = (lenA - 1), j = (lenB - 1)
+        var result = "", carry = 0, val1 = lenA - 1, val2 = lenB - 1
         
-        while i >= 0 || j >= 0 || carry > 0 {
+        while val1 >= 0 || val2 >= 0 || carry > 0 {
             var sum = carry
-            i >= 0 ? (sum += Int("\(arrA[i])")!, i -= 1) : nil
-            j >= 0 ? (sum += Int("\(arrB[j])")!, j -= 1) : nil
+            val1 >= 0 ? (sum += Int("\(arrA[val1])")!, val1 -= 1) : nil
+            val2 >= 0 ? (sum += Int("\(arrB[val2])")!, val2 -= 1) : nil
             result = "\(sum % 2)" + result
             carry = sum / 2
         }
