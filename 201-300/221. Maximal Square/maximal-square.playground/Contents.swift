@@ -5,17 +5,17 @@ import Foundation
 
 class Solution {
     func maximalSquare(_ matrix: [[Character]]) -> Int {
-        guard !matrix.isEmpty else { return 0 }
-        var length = 0
-        let row = matrix.count, col = matrix[0].count
-        var dp = [[Int]](repeating: [Int](repeating: 0, count: col+1), count: row+1)
-        for x in 1...row {
-            for y in 1...col where matrix[x-1][y-1] == "1" {
-                dp[x][y] = min(dp[x-1][y], dp[x][y-1], dp[x-1][y-1]) + 1
-                length = max(dp[x][y], length)
+        let rows = matrix.count, cols = matrix[0].count
+        guard rows > 0 else { return 0 }
+        var len = 0
+        var grid = [[Int]](repeating: [Int](repeating: 0, count: cols+1), count: rows+1)
+        for r in 1...rows {
+            for c in 1...cols where matrix[r-1][c-1] == "1" {
+                grid[r][c] = min(grid[r-1][c], grid[r][c-1], grid[r-1][c-1]) + 1
+                len = max(grid[r][c], len)
             }
         }
-        return length * length
+        return (len * len)
     }
 }
 
