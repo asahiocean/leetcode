@@ -7,12 +7,12 @@ class Solution {
     func sortedArrayToBST(_ nums: [Int]) -> TreeNode? {
         return helper(0, nums.count - 1, nums)
     }
-    private func helper(_ l: Int, _ r: Int, _ input: [Int]) -> TreeNode? {
-        guard l <= r else { return nil }
-        let mid = (l + r)/2
+    private func helper(_ lhs: Int, _ rhs: Int, _ input: [Int]) -> TreeNode? {
+        guard lhs <= rhs else { return nil }
+        let mid = (lhs + rhs)/2
         let root = TreeNode(input[mid])
-        root.left = helper(l,mid - 1, input)
-        root.right = helper(mid + 1, r, input)
+        root.left = helper(lhs,mid - 1, input)
+        root.right = helper(mid + 1, rhs, input)
         return root
     }
 }
