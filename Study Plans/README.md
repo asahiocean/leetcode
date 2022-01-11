@@ -36,18 +36,19 @@ In mathematics and computer science, an algorithm is defined as a process or set
 </ul>
 
 <h2>Day 2 ・ Two Pointers</h2>
-  
-<h4>
+ 
+<ul>
+<li>
 <a href="../901-1000/977/">Solution</a>
- – 
+– 
 <a href="https://leetcode.com/problems/squares-of-a-sorted-array/">977. Squares of a Sorted Array</a>
-</h4>
-
-<h4>
+</li>
+<li>
 <a href="../101-200/189/">Solution</a>
- – 
+– 
 <a href="https://leetcode.com/problems/rotate-array/">189. Rotate Array</a>
-</h4>
+</li>
+</ul>
   
 <h2>Day 3 ・ Two Pointers</h2>
   
