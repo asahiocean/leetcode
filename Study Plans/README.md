@@ -94,15 +94,15 @@ In mathematics and computer science, an algorithm is defined as a process or set
 <h2>Day 6 ・ Sliding Window</h2>
       
 <h4>
-<a href="">Solution</a>
+<a href="../1-100/3/">Solution</a>
  – 
-<a href="">3. Longest Substring Without Repeating Characters</a>
+<a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">3. Longest Substring Without Repeating Characters</a>
 </h4>
 
 <h4>
-<a href="">Solution</a>
+<a href="../501-600/567/">Solution</a>
  – 
-<a href="">567. Permutation in String</a>
+<a href="https://leetcode.com/problems/permutation-in-string/">567. Permutation in String</a>
 </h4>
 
 <h2>Day 7 ・ Breadth-First Search / Depth-First Search</h2>
