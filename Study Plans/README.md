@@ -81,156 +81,164 @@ In mathematics and computer science, an algorithm is defined as a process or set
 </ul>
 
 <h2>Day 5 ・ Two Pointers</h2>
-      
-<h4>
-<a href="../801-900/876/">Solution</a>
- – 
-<a href="https://leetcode.com/problems/middle-of-the-linked-list/">876. Middle of the Linked List</a>
-</h4>
 
-<h4>
+<ul>
+<li>
+<a href="../801-900/876/">Solution</a>
+– 
+<a href="https://leetcode.com/problems/middle-of-the-linked-list/">876. Middle of the Linked List</a>
+</li>
+<li>
 <a href="../1-100/19/">Solution</a>
- – 
+– 
 <a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/">19. Remove Nth Node From End of List</a>
-</h4>
+</li>
+</ul>
 
 <h2>Day 6 ・ Sliding Window</h2>
-      
-<h4>
-<a href="../1-100/3/">Solution</a>
- – 
-<a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">3. Longest Substring Without Repeating Characters</a>
-</h4>
 
-<h4>
+<ul>
+<li>
+<a href="../1-100/3/">Solution</a>
+– 
+<a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">3. Longest Substring Without Repeating Characters</a>
+</li>
+<li>
 <a href="../501-600/567/">Solution</a>
- – 
+– 
 <a href="https://leetcode.com/problems/permutation-in-string/">567. Permutation in String</a>
-</h4>
+</li>
+</ul>
 
 <h2>Day 7 ・ Breadth-First Search / Depth-First Search</h2>
-      
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">733. Flood Fill</a>
-</h4>
 
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">695. Max Area of Island</a>
-</h4>
+<ul>
+<li>
+<a href="../701-800/733/">Solution</a>
+– 
+<a href="https://leetcode.com/problems/flood-fill/">733. Flood Fill</a>
+</li>
+<li>
+<a href="../601-700/695/">Solution</a>
+– 
+<a href="https://leetcode.com/problems/max-area-of-island/">695. Max Area of Island</a>
+</li>
+</ul>
 
 <h2>Day 8 ・ Breadth-First Search / Depth-First Search</h2>
-      
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">617. Merge Two Binary Trees</a>
-</h4>
 
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">116. Populating Next Right Pointers in Each Node</a>
-</h4>
+<ul>
+<li>
+<a href="../601-700/617/">Solution</a>
+– 
+<a href="https://leetcode.com/problems/merge-two-binary-trees/">617. Merge Two Binary Trees</a>
+</li>
+<li>
+<a href="../101-200/116/">Solution</a>
+– 
+<a href="https://leetcode.com/problems/populating-next-right-pointers-in-each-node/">116. Populating Next Right Pointers in Each Node</a>
+</li>
+</ul>
 
 <h2>Day 9 ・ Breadth-First Search / Depth-First Search</h2>
-      
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">542. 01 Matrix</a>
-</h4>
 
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">994. Rotting Oranges</a>
-</h4>
+<ul>
+<li>
+<a href="../***-***/***/">Solution</a>
+– 
+<a href="PROBLEM_URL">542. 01 Matrix</a>
+</li>
+<li>
+<a href="../***-***/***/">Solution</a>
+– 
+<a href="PROBLEM_URL">994. Rotting Oranges</a>
+</li>
+</ul>
 
 <h2>Day 10 ・ Recursion / Backtracking</h2>
-      
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">21. Merge Two Sorted Lists</a>
-</h4>
 
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">206. Reverse Linked List</a>
-</h4>
+<ul>
+<li>
+<a href="../***-***/***/">Solution</a>
+– 
+<a href="PROBLEM_URL">21. Merge Two Sorted Lists</a>
+</li>
+<li>
+<a href="../***-***/***/">Solution</a>
+– 
+<a href="PROBLEM_URL">206. Reverse Linked List</a>
+</li>
+</ul>
 
 <h2>Day 11 ・ Recursion / Backtracking</h2>
-      
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">77. Combinations</a>
-</h4>
 
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">46. Permutations</a>
-</h4>
-    
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">784. Letter Case Permutation</a>
-</h4>
+<ul>
+<li>
+<a href="../***-***/***/">Solution</a>
+– 
+<a href="PROBLEM_URL">77. Combinations</a>
+</li>
+<li>
+<a href="../***-***/***/">Solution</a>
+– 
+<a href="PROBLEM_URL">46. Permutations</a>
+</li>
+<li>
+<a href="../***-***/***/">Solution</a>
+– 
+<a href="PROBLEM_URL">784. Letter Case Permutation</a>
+</li>
+</ul>
 
 <h2>Day 12 ・ Dynamic Programming</h2>
-        
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">70. Climbing Stairs</a>
-</h4>
 
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">198. House Robber</a>
-</h4>
-    
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">120. Triangle</a>
-</h4>
+<ul>
+<li>
+<a href="../***-***/***/">Solution</a>
+– 
+<a href="PROBLEM_URL">70. Climbing Stairs</a>
+</li>
+<li>
+<a href="../***-***/***/">Solution</a>
+– 
+<a href="PROBLEM_URL">198. House Robber</a>
+</li>
+<li>
+<a href="../***-***/***/">Solution</a>
+– 
+<a href="PROBLEM_URL">120. Triangle</a>
+</li>
+</ul>
 
 <h2>Day 13 ・ Bit Manipulation</h2>
-          
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">231. Power of Two</a>
-</h4>
 
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">191. Number of 1 Bits</a>
-</h4>
+<ul>
+<li>
+<a href="../***-***/***/">Solution</a>
+– 
+<a href="PROBLEM_URL">231. Power of Two</a>
+</li>
+<li>
+<a href="../***-***/***/">Solution</a>
+– 
+<a href="PROBLEM_URL">191. Number of 1 Bits</a>
+</li>
+</ul>
 
 <h2>Day 14 ・ Bit Manipulation</h2>
-          
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">190. Reverse Bits</a>
-</h4>
 
-<h4>
-<a href="">Solution</a>
- – 
-<a href="">136. Single Number</a>
-</h4>
+<ul>
+<li>
+<a href="../***-***/***/">Solution</a>
+– 
+<a href="PROBLEM_URL">190. Reverse Bits</a>
+</li>
+<li>
+<a href="../***-***/***/">Solution</a>
+– 
+<a href="PROBLEM_URL">136. Single Number</a>
+</li>
+</ul>
   
 <hr>
 
