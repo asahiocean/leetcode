@@ -1,5 +1,11 @@
 # Mock Assessments
 
+**Solution for Mock Assessments**
+
+**URL: https://leetcode.com/assessment/**
+
+---
+
 ## Random Set - Online Assessment
 
 Problem: [27. Remove Element][27]
