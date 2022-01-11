@@ -66,15 +66,15 @@ In mathematics and computer science, an algorithm is defined as a process or set
 <h2>Day 4 ・ Two Pointers</h2>
     
 <h4>
-<a href="">Solution</a>
+<a href="../301-400/344/">Solution</a>
  – 
-<a href="">344. Reverse String</a>
+<a href="https://leetcode.com/problems/reverse-string/">344. Reverse String</a>
 </h4>
 
 <h4>
-<a href="">Solution</a>
+<a href="../501-600/557/">Solution</a>
  – 
-<a href="">557. Reverse Words in a String III</a>
+<a href="https://leetcode.com/problems/reverse-words-in-a-string-iii/">557. Reverse Words in a String III</a>
 </h4>
 
 <h2>Day 5 ・ Two Pointers</h2>
