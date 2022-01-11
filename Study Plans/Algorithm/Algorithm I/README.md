@@ -4,11 +4,12 @@ In mathematics and computer science, an algorithm is defined as a process or set
 
 ## Day 1 - Binary Search
 
-| Status | Problem | Solution |
-|---|---|---|
-|  | 704. Binary Search |  |
-|  | 278. First Bad Version |  |
-|  | 35. Search Insert Position |  |
+### **[704. Binary Search][704]**
+*  **[Solution][704s]**
+
+###  **278. First Bad Version**
+
+### **35. Search Insert Position**
 
 ## Day 2 - Two Pointers
 
@@ -108,3 +109,9 @@ In mathematics and computer science, an algorithm is defined as a process or set
 ### Source:
 
 **https://leetcode.com/study-plan/algorithm**
+
+<!-- URL -->
+
+<!-- Day 1 -->
+[704]: https://leetcode.com/problems/binary-search/
+[704s]: ../701-800/704/
