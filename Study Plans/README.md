@@ -52,15 +52,15 @@ In mathematics and computer science, an algorithm is defined as a process or set
 <h2>Day 3 ・ Two Pointers</h2>
   
 <h4>
-<a href="">Solution</a>
+<a href="../201-300/283/">Solution</a>
  – 
-<a href="">283. Move Zeroes</a>
+<a href="https://leetcode.com/problems/move-zeroes/">283. Move Zeroes</a>
 </h4>
 
 <h4>
-<a href="">Solution</a>
+<a href="../101-200/167/">Solution</a>
  – 
-<a href="">167. Two Sum II - Input Array Is Sorted</a>
+<a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/">167. Two Sum II - Input Array Is Sorted</a>
 </h4>
 
 <h2>Day 4 ・ Two Pointers</h2>
