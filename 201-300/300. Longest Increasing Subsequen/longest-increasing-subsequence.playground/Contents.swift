@@ -11,15 +11,16 @@ class Solution {
         
         for i in 1..<nums.count {
             var lhs = 0, rhs = ends.count
+            let num = nums[i]
             
             while lhs < rhs {
                 let mid = (rhs - lhs) / 2 + lhs
-                ends[mid] < nums[i] ? (lhs = mid + 1) : (rhs = mid)
+                ends[mid] < num ? (lhs = mid + 1) : (rhs = mid)
             }
             if rhs >= ends.count {
-                ends.append(nums[i])
+                ends.append(num)
             } else {
-                ends[rhs] = nums[i]
+                ends[rhs] = num
             }
         }
         return ends.count
