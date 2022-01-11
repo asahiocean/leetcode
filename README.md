@@ -4,16 +4,31 @@
 ![](https://tinyurl.com/489jesv9 "Ranking")
 
 ## Repo Details
-![](https://img.shields.io/github/repo-size/asahiocean/LeetCode.svg)
-![](https://img.shields.io/github/commit-activity/y/asahiocean/LeetCode)
-![](https://img.shields.io/github/last-commit/asahiocean/LeetCode)
-![](https://tinyurl.com/yckwfb3f)
+![][repo-size]
+![][commit-activity]
+![][last-commit]
+![][views]
 
 ### Code Quality
-<div>
-<img src="https://codefactor.io/repository/github/asahiocean/leetcode/badge" alt="codefactor"/>
-<img src="https://api.codeclimate.com/v1/badges/c2f0ea6714081f391fa9/maintainability" alt="codeclimate"/>
-<img src="https://codebeat.co/badges/6570fe78-4c97-45ad-9066-e8f8d2369e57" alt="codebeat"/>
-<br>
-<img src="https://api.codiga.io/project/30443/score/svg" alt="codiga-score"> <img src="https://api.codiga.io/project/30443/status/svg" alt="codiga-grade">
-</div>
+![][codefactor]
+![][codeclimate]
+![][codebeat]
+
+![][codiga-score]
+![][codiga-grade]
+
+<!-- URL -->
+
+<!-- Repo Details -->
+[repo-size]: https://img.shields.io/github/repo-size/asahiocean/LeetCode.svg
+[commit-activity]: https://img.shields.io/github/commit-activity/y/asahiocean/LeetCode
+[last-commit]: https://img.shields.io/github/last-commit/asahiocean/LeetCode
+[views]: https://tinyurl.com/yckwfb3f
+
+<!-- Code Quality -->
+[codefactor]: https://codefactor.io/repository/github/asahiocean/leetcode/badge
+[codeclimate]: https://api.codeclimate.com/v1/badges/c2f0ea6714081f391fa9/maintainability
+[codebeat]: https://codebeat.co/badges/6570fe78-4c97-45ad-9066-e8f8d2369e57
+
+[codiga-score]: https://api.codiga.io/project/30443/score/svg
+[codiga-grade]: https://api.codiga.io/project/30443/status/svg
