@@ -3,6 +3,13 @@
 [![](https://tinyurl.com/2p8b36mw "Solved")](https://leetcode-badge.vercel.app)
 ![](https://tinyurl.com/489jesv9 "Ranking")
 
+<p align="center">• • •</p>
+
+### • [Study Plans][study-plans]
+### • [Mock Assessments][mock-assessments]
+
+<p align="center">• • •</p>
+
 ## Repo Details
 ![][repo-size]
 ![][commit-activity]
@@ -18,6 +25,9 @@
 ![][codiga-grade]
 
 <!-- URL -->
+
+[study-plans]: ./Study%20Plans
+[mock-assessments]: ./Mock%20Assessment
 
 <!-- Repo Details -->
 [repo-size]: https://img.shields.io/github/repo-size/asahiocean/LeetCode.svg
