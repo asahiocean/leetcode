@@ -12,13 +12,14 @@ class Solution {
         guard let root = root else { return paths }
         var cpath = path
         cpath.append(root.val)
-        if root.left == nil && root.right == nil && root.val == sum {
+        let left = root.left, right = root.right, val = root.val
+        if left == nil && right == nil && val == sum {
             var cPaths = paths
             cPaths.append(cpath)
             return cPaths
         }
-        let val = sum - root.val
-        return findPath(root.left, val, cpath, paths) + findPath(root.right, val, cpath, paths)
+        let diff = sum - val
+        return findPath(left, diff, cpath, paths) + findPath(right, diff, cpath, paths)
     }
 }
 
