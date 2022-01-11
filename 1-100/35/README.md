@@ -1,6 +1,6 @@
 <h1>
 35. Search Insert Position
-<img src="VISITOR_BADGE_URL" align="right" alt="views badge">
+<img src="https://tinyurl.com/2xr9aumc" align="right" alt="views badge">
 </h1>
 
 <details>
@@ -12,9 +12,23 @@
 <br/>
 
 ```swift
-
-// SOLUTION_SWIFT
-
+class Solution {
+    func searchInsert(_ nums: [Int], _ target: Int) -> Int {
+        var count = 0, r = (nums.count - 1)
+        
+        while count <= r {
+            let n = count + (r - count) / 2
+            if nums[n] < target {
+                count = n + 1
+            } else if nums[n] > target {
+                r = n - 1
+            } else {
+                return n
+            }
+        }
+        return count
+    }
+}
 ```
 
 <p>
@@ -30,40 +44,50 @@
 
 <p align="center">• • •</p>
 
-## Description
+<h2>Description</h2>
 
 Given a sorted array of distinct integers and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.
 
 You must write an algorithm with `O(log n)` runtime complexity.
 
-#### Example 1
+<h4>Example 1</h4>
 
 <pre>
-<b>Input:<b> nums = [1,3,5,6], target = 5
-<b>Output:<b> 2
+<b>Input:</b> nums = [1,3,5,6], target = 5
+<b>Output:</b> 2
 </pre>
 
-#### Example 2
+<h4>Example 2</h4>
 
 <pre>
-<b>Input:<b> nums = [1,3,5,6], target = 2
-<b>Output:<b> 1
+<b>Input:</b> nums = [1,3,5,6], target = 2
+<b>Output:</b> 1
 </pre>
 
-#### Example 3
+<h4>Example 3</h4>
 
 <pre>
-<b>Input:<b> nums = [1,3,5,6], target = 7
-<b>Output:<b> 4
+<b>Input:</b> nums = [1,3,5,6], target = 7
+<b>Output:</b> 4
 </pre>
 
-#### Constraints
+<h4>Constraints</h4>
 
-* <code>1 <= nums.length <= 10<sup>4</sup></code>
-* <code>-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup></code>
-* <code>nums</code> contains <b>distinct<b> values sorted in <b>ascending<b> order.
-* <code>-10<sup>4</sup> <= target <= 10<sup>4</sup></code>
+<ul>
+<li>
+    <code>1 <= nums.length <= 10<sup>4</sup></code>
+</li>
+<li>
+    <code>-10<sup>4</sup> <= nums[i] <= 10<sup>4</sup></code>
+</li>
+<li>
+    <code>nums</code> contains <b>distinct</b> values sorted in <b>ascending</b> order.
+</li>
+<li>
+    <code>-10<sup>4</sup> <= target <= 10<sup>4</sup></code>
+</li>
+</ul>
 
 ---
 
-<b>Source:<b> https://leetcode.com/problems/search-insert-position/
+<b>Source:</b> https://leetcode.com/problems/search-insert-position/
