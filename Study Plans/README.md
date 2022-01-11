@@ -80,15 +80,15 @@ In mathematics and computer science, an algorithm is defined as a process or set
 <h2>Day 5 ・ Two Pointers</h2>
       
 <h4>
-<a href="">Solution</a>
+<a href="../801-900/876/">Solution</a>
  – 
-<a href="">876. Middle of the Linked List</a>
+<a href="https://leetcode.com/problems/middle-of-the-linked-list/">876. Middle of the Linked List</a>
 </h4>
 
 <h4>
-<a href="">Solution</a>
+<a href="../1-100/19/">Solution</a>
  – 
-<a href="">19. Remove Nth Node From End of List</a>
+<a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/">19. Remove Nth Node From End of List</a>
 </h4>
 
 <h2>Day 6 ・ Sliding Window</h2>
