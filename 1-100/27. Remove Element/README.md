@@ -20,6 +20,18 @@ class Solution {
 }
 ```
 
+---
+    
+```swift
+class Solution {
+    func removeElement(_ nums: inout [Int], _ val: Int) -> Int {
+        let filtered = nums.filter({ $0 != val })
+        nums = filtered
+        return filtered.count
+    }
+}    
+```
+
 <p>
 <a href="https://gist.github.com/asahiocean/4ebb33d184627e51be46e5328bcc8154">
 <img src="https://git.io/JDNlC" alt="GitHub Gist" height="18" align="center">
