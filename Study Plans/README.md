@@ -19,19 +19,19 @@ In mathematics and computer science, an algorithm is defined as a process or set
 
 <h4>
 <a href="../701-800/704/">Solution</a>
--
+ – 
 <a href="https://leetcode.com/problems/binary-search/">704. Binary Search</a>
 </h4>
 
 <h4>
 <a href="../201-300/278/">Solution</a>
--
+ – 
 <a href="https://leetcode.com/problems/first-bad-version/">278. First Bad Version</a>
 </h4>
 
 <h4>
 <a href="../1-100/35/">Solution</a>
--
+ – 
 <a href="https://leetcode.com/problems/search-insert-position/">35. Search Insert Position</a>
 </h4>
   
