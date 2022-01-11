@@ -1,6 +1,6 @@
 <h1>
 35. Search Insert Position
-<img src="VISITOR_BADGE_URL" align="right" alt="views badge">
+<img src="https://tinyurl.com/2xr9aumc" align="right" alt="views badge">
 </h1>
 
 <details>
