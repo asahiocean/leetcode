@@ -17,25 +17,220 @@ In mathematics and computer science, an algorithm is defined as a process or set
 
 <h2>Day 1 - Binary Search</h2>
 
-<h3>
-<a href="https://leetcode.com/problems/binary-search/">704. Binary Search</a>
-<h3>
-
 <h4>
 <a href="../701-800/704/">Solution</a>
+•
+<a href="https://leetcode.com/problems/binary-search/">704. Binary Search</a>
 </h4>
 
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+  
 <h2>Day 2 - Two Pointers</h2>
+  
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+  
 <h2>Day 3 - Two Pointers</h2>
+  
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
 <h2>Day 4 - Two Pointers</h2>
+    
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
 <h2>Day 5 - Two Pointers</h2>
+      
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
 <h2>Day 6 - Sliding Window</h2>
+      
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
 <h2>Day 7 - Breadth-First Search / Depth-First Search</h2>
+      
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
 <h2>Day 8 - Breadth-First Search / Depth-First Search</h2>
+      
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
 <h2>Day 9 - Breadth-First Search / Depth-First Search</h2>
+      
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
 <h2>Day 10 - Recursion / Backtracking</h2>
+      
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
 <h2>Day 11 - Recursion / Backtracking</h2>
+      
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+    
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
 <h2>Day 12 - Dynamic Programming</h2>
+        
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+    
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
 <h2>Day 13 - Bit Manipulation</h2>
+          
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
 <h2>Day 14 - Bit Manipulation</h2>
+          
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+
+<h4>
+<a href="">Solution</a>
+•
+<a href=""></a>
+</h4>
+  
+<hr>
+
+<h4>Source: https://leetcode.com/study-plan/algorithm</h4>
+
 </details>
