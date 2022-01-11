@@ -1,7 +1,7 @@
 import Foundation
 
 // 35. Search Insert Position
-// https://leetcode.com/problems/search-insert-position
+// https://leetcode.com/problems/search-insert-position/
 
 class Solution {
     func searchInsert(_ nums: [Int], _ target: Int) -> Int {
