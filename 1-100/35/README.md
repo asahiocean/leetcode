@@ -39,22 +39,22 @@ You must write an algorithm with `O(log n)` runtime complexity.
 #### Example 1
 
 <pre>
-<b>Input:<b> nums = [1,3,5,6], target = 5
-<b>Output:<b> 2
+<b>Input:</b> nums = [1,3,5,6], target = 5
+<b>Output:</b> 2
 </pre>
 
 #### Example 2
 
 <pre>
-<b>Input:<b> nums = [1,3,5,6], target = 2
-<b>Output:<b> 1
+<b>Input:</b> nums = [1,3,5,6], target = 2
+<b>Output:</b> 1
 </pre>
 
 #### Example 3
 
 <pre>
-<b>Input:<b> nums = [1,3,5,6], target = 7
-<b>Output:<b> 4
+<b>Input:</b> nums = [1,3,5,6], target = 7
+<b>Output:</b> 4
 </pre>
 
 #### Constraints
@@ -66,4 +66,4 @@ You must write an algorithm with `O(log n)` runtime complexity.
 
 ---
 
-<b>Source:<b> https://leetcode.com/problems/search-insert-position/
+<b>Source:</b> https://leetcode.com/problems/search-insert-position/
