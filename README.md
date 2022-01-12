@@ -5,8 +5,8 @@
 
 <p align="center">• • •</p>
 
-### • [Study Plans][study-plans]
-### • [Mock Assessments][mock-assessments]
+### 📚 [Study Plans][study-plans]
+### 🥇 [Mock Assessments][mock-assessments]
 
 <p align="center">• • •</p>
 
