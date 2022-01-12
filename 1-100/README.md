@@ -75,7 +75,7 @@
 
 <!-- 3 -->
 [3]: https://leetcode.com/problems/longest-substring-without-repeating-characters/
-[3s]: ./3.%20Longest%20Substring%20Without%20Repeating%20Characters
+[3s]: ./3
 
 <!-- 4 -->
 [4]: https://leetcode.com/problems/median-of-two-sorted-arrays/
@@ -83,7 +83,7 @@
 
 <!-- 5 -->
 [5]: https://leetcode.com/problems/longest-palindromic-substring/
-[5s]: ./5.%20Longest%20Palindromic%20Substring
+[5s]: ./5
 
 <!-- 6 -->
 [6]: https://leetcode.com/problems/zigzag-conversion/
@@ -203,7 +203,7 @@
 
 <!-- 35 -->
 [35]: https://leetcode.com/problems/search-insert-position
-[35s]: ./35.%20Search%20Insert%20Position
+[35s]: ./35
 
 <!-- 36 -->
 [36]: https://leetcode.com/problems/valid-sudoku
