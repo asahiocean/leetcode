@@ -203,7 +203,7 @@
 
 <!-- 35 -->
 [35]: https://leetcode.com/problems/search-insert-position
-[35s]: ./35.%20Search%20Insert%20Position
+[35s]: ./35
 
 <!-- 36 -->
 [36]: https://leetcode.com/problems/valid-sudoku
