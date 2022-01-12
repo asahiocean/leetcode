@@ -56,3 +56,34 @@ class Solution {
         return oranges.isEmpty ? neededTime : -1
     }
 }
+
+// MARK: - Test cases -
+
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.024 (0.026) seconds
+
+import XCTest
+
+class Tests: XCTestCase {
+    
+    private let solution = Solution()
+    
+    func test0() {
+        let value = solution.orangesRotting([[2,1,1],[1,1,0],[0,1,1]])
+        XCTAssertEqual(value, 4)
+    }
+    
+    // The orange in the bottom left corner (row 2, column 0) is never rotten,
+    // because rotting only happens 4-directionally.
+    func test1() {
+        let value = solution.orangesRotting([[2,1,1],[0,1,1],[1,0,1]])
+        XCTAssertEqual(value, -1)
+    }
+    
+    // Since there are already no fresh oranges at minute 0, the answer is just 0.
+    func test2() {
+        let value = solution.orangesRotting([[0,2]])
+        XCTAssertEqual(value, 0)
+    }
+}
+
+Tests.defaultTestSuite.run()
