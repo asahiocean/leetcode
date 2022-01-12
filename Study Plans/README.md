@@ -144,12 +144,12 @@ In mathematics and computer science, an algorithm is defined as a process or set
 <li>
 <a href="../501-600/542/">Solution</a>
 – 
-<a href="PROBLEM_URL">542. 01 Matrix</a>
+<a href="https://leetcode.com/problems/01-matrix/">542. 01 Matrix</a>
 </li>
 <li>
 <a href="../901-1000/994/">Solution</a>
 – 
-<a href="PROBLEM_URL">994. Rotting Oranges</a>
+<a href="https://leetcode.com/problems/rotting-oranges/">994. Rotting Oranges</a>
 </li>
 </ul>
 
@@ -159,12 +159,12 @@ In mathematics and computer science, an algorithm is defined as a process or set
 <li>
 <a href="../1-100/21/">Solution</a>
 – 
-<a href="PROBLEM_URL">21. Merge Two Sorted Lists</a>
+<a href="https://leetcode.com/problems/merge-two-sorted-lists/">21. Merge Two Sorted Lists</a>
 </li>
 <li>
 <a href="../201-300/206/">Solution</a>
 – 
-<a href="PROBLEM_URL">206. Reverse Linked List</a>
+<a href="https://leetcode.com/problems/reverse-linked-list/">206. Reverse Linked List</a>
 </li>
 </ul>
 
@@ -174,17 +174,17 @@ In mathematics and computer science, an algorithm is defined as a process or set
 <li>
 <a href="../1-100/77/">Solution</a>
 – 
-<a href="PROBLEM_URL">77. Combinations</a>
+<a href="https://leetcode.com/problems/combinations/">77. Combinations</a>
 </li>
 <li>
 <a href="../1-100/46/">Solution</a>
 – 
-<a href="PROBLEM_URL">46. Permutations</a>
+<a href="https://leetcode.com/problems/permutations/">46. Permutations</a>
 </li>
 <li>
 <a href="../701-800/784/">Solution</a>
 – 
-<a href="PROBLEM_URL">784. Letter Case Permutation</a>
+<a href="https://leetcode.com/problems/letter-case-permutation/">784. Letter Case Permutation</a>
 </li>
 </ul>
 
@@ -194,17 +194,17 @@ In mathematics and computer science, an algorithm is defined as a process or set
 <li>
 <a href="../1-100/70/">Solution</a>
 – 
-<a href="PROBLEM_URL">70. Climbing Stairs</a>
+<a href="https://leetcode.com/problems/climbing-stairs/">70. Climbing Stairs</a>
 </li>
 <li>
 <a href="../101-200/198/">Solution</a>
 – 
-<a href="PROBLEM_URL">198. House Robber</a>
+<a href="https://leetcode.com/problems/house-robber/">198. House Robber</a>
 </li>
 <li>
 <a href="../101-200/120/">Solution</a>
 – 
-<a href="PROBLEM_URL">120. Triangle</a>
+<a href="https://leetcode.com/problems/triangle/">120. Triangle</a>
 </li>
 </ul>
 
@@ -214,12 +214,12 @@ In mathematics and computer science, an algorithm is defined as a process or set
 <li>
 <a href="../201-300/231/">Solution</a>
 – 
-<a href="PROBLEM_URL">231. Power of Two</a>
+<a href="https://leetcode.com/problems/power-of-two/">231. Power of Two</a>
 </li>
 <li>
 <a href="../101-200/191/">Solution</a>
 – 
-<a href="PROBLEM_URL">191. Number of 1 Bits</a>
+<a href="https://leetcode.com/problems/number-of-1-bits/">191. Number of 1 Bits</a>
 </li>
 </ul>
 
@@ -229,12 +229,12 @@ In mathematics and computer science, an algorithm is defined as a process or set
 <li>
 <a href="../101-200/190/">Solution</a>
 – 
-<a href="PROBLEM_URL">190. Reverse Bits</a>
+<a href="https://leetcode.com/problems/reverse-bits/">190. Reverse Bits</a>
 </li>
 <li>
 <a href="../101-200/136/">Solution</a>
 – 
-<a href="PROBLEM_URL">136. Single Number</a>
+<a href="https://leetcode.com/problems/single-number/">136. Single Number</a>
 </li>
 </ul>
   
