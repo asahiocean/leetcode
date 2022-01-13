@@ -1,4 +1,4 @@
-## [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+# 121. Best Time to Buy and Sell Stock
 
 ### [Open](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) • [Discuss](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/discuss/1370459/) • [Solution](https://gist.github.com/asahiocean/71a547a3d7a379a5005772a84890f2d1)
 
