@@ -26,6 +26,7 @@ class Tests: XCTestCase {
     
     private let solution = Solution()
     
+    // Because nums[0] + nums[1] == 9, we return [0, 1].
     func test0() {
         let value = solution.twoSum([2,7,11,15], 9)
         XCTAssertEqual(value, [0,1])
