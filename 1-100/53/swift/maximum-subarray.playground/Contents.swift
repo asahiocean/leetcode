@@ -5,12 +5,12 @@ import Foundation
 
 class Solution {
     func maxSubArray(_ nums: [Int]) -> Int {
-        var curSum = nums[0], maxSum = nums[0]
+        var sumCur = nums[0], sumMax = sumCur
         for i in 1..<nums.count {
-            curSum = max(nums[i], curSum + nums[i])
-            maxSum = max(maxSum, curSum)
+            sumCur = max(nums[i], sumCur + nums[i])
+            sumMax = max(sumCur, sumMax)
         }
-        return maxSum
+        return sumMax
     }
 }
 
@@ -29,10 +29,12 @@ class Tests: XCTestCase {
         let value = solution.maxSubArray([-2,1,-3,4,-1,2,1,-5,4])
         XCTAssertEqual(value, 6)
     }
+    
     func test1() {
         let value = solution.maxSubArray([1])
         XCTAssertEqual(value, 1)
     }
+    
     func test2() {
         let value = solution.maxSubArray([5,4,-1,7,8])
         XCTAssertEqual(value, 23)
