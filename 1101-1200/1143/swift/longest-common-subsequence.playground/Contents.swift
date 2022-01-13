@@ -28,7 +28,7 @@ class Solution {
 
 // MARK: - Test cases -
 
-// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.048 (0.050) seconds
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.022 (0.024) seconds
 
 import XCTest
 
@@ -36,16 +36,19 @@ class Tests: XCTestCase {
     
     private let solution = Solution()
     
+    // The longest common subsequence is "ace" and its length is 3.
     func test0() {
         let value = solution.longestCommonSubsequence("abcde", "ace")
         XCTAssertEqual(value, 3)
     }
     
+    // The longest common subsequence is "abc" and its length is 3.
     func test1() {
         let value = solution.longestCommonSubsequence("abc", "abc")
         XCTAssertEqual(value, 3)
     }
     
+    // There is no such common subsequence, so the result is 0.
     func test2() {
         let value = solution.longestCommonSubsequence("abc", "def")
         XCTAssertEqual(value, 0)
