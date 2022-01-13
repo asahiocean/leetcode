@@ -265,12 +265,12 @@ During the computer programming process, identifying and using the appropriate d
 <li>
 <a href="">Solution</a>
 – 
-<a href="">217. Contains Duplicate</a>
+<a href="https://leetcode.com/problems/contains-duplicate/">217. Contains Duplicate</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">53. Maximum Subarray</a>
+<a href="https://leetcode.com/problems/maximum-subarray/">53. Maximum Subarray</a>
 </li>
 </ul>
 
@@ -285,7 +285,7 @@ During the computer programming process, identifying and using the appropriate d
 <li>
 <a href="">Solution</a>
 – 
-<a href="">88. Merge Sorted Array</a>
+<a href="https://leetcode.com/problems/merge-sorted-array/">88. Merge Sorted Array</a>
 </li>
 </ul>
 
@@ -295,12 +295,12 @@ During the computer programming process, identifying and using the appropriate d
 <li>
 <a href="">Solution</a>
 – 
-<a href="">350. Intersection of Two Arrays II</a>
+<a href="https://leetcode.com/problems/intersection-of-two-arrays-ii/">350. Intersection of Two Arrays II</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">121. Best Time to Buy and Sell Stock</a>
+<a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/">121. Best Time to Buy and Sell Stock</a>
 </li>
 </ul>
 
@@ -310,12 +310,12 @@ During the computer programming process, identifying and using the appropriate d
 <li>
 <a href="">Solution</a>
 – 
-<a href="">566. Reshape the Matrix</a>
+<a href="https://leetcode.com/problems/reshape-the-matrix/">566. Reshape the Matrix</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">118. Pascal's Triangle</a>
+<a href="https://leetcode.com/problems/pascals-triangle/">118. Pascal's Triangle</a>
 </li>
 </ul>
 
@@ -325,12 +325,12 @@ During the computer programming process, identifying and using the appropriate d
 <li>
 <a href="">Solution</a>
 – 
-<a href="">36. Valid Sudoku</a>
+<a href="https://leetcode.com/problems/valid-sudoku/">36. Valid Sudoku</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">74. Search a 2D Matrix</a>
+<a href="https://leetcode.com/problems/search-a-2d-matrix/">74. Search a 2D Matrix</a>
 </li>
 </ul>
 
@@ -340,17 +340,17 @@ During the computer programming process, identifying and using the appropriate d
 <li>
 <a href="">Solution</a>
 – 
-<a href="">387. First Unique Character in a String</a>
+<a href="https://leetcode.com/problems/first-unique-character-in-a-string/">387. First Unique Character in a String</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">383. Ransom Note</a>
+<a href="https://leetcode.com/problems/ransom-note/">383. Ransom Note</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">242. Valid Anagram</a>
+<a href="https://leetcode.com/problems/valid-anagram/">242. Valid Anagram</a>
 </li>
 </ul>
 
@@ -360,17 +360,17 @@ During the computer programming process, identifying and using the appropriate d
 <li>
 <a href="">Solution</a>
 – 
-<a href="">141. Linked List Cycle</a>
+<a href="https://leetcode.com/problems/linked-list-cycle/">141. Linked List Cycle</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">21. Merge Two Sorted Lists</a>
+<a href="https://leetcode.com/problems/merge-two-sorted-lists/">21. Merge Two Sorted Lists</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">203. Remove Linked List Elements</a>
+<a href="https://leetcode.com/problems/remove-linked-list-elements/">203. Remove Linked List Elements</a>
 </li>
 </ul>
 
@@ -380,12 +380,12 @@ During the computer programming process, identifying and using the appropriate d
 <li>
 <a href="">Solution</a>
 – 
-<a href="">206. Reverse Linked List</a>
+<a href="https://leetcode.com/problems/reverse-linked-list/">206. Reverse Linked List</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">83. Remove Duplicates from Sorted List</a>
+<a href="https://leetcode.com/problems/remove-duplicates-from-sorted-list/">83. Remove Duplicates from Sorted List</a>
 </li>
 </ul>
 
@@ -395,12 +395,12 @@ During the computer programming process, identifying and using the appropriate d
 <li>
 <a href="">Solution</a>
 – 
-<a href="">20. Valid Parentheses</a>
+<a href="https://leetcode.com/problems/valid-parentheses/">20. Valid Parentheses</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">232. Implement Queue using Stacks</a>
+<a href="https://leetcode.com/problems/implement-queue-using-stacks/">232. Implement Queue using Stacks</a>
 </li>
 </ul>
 
@@ -410,17 +410,17 @@ During the computer programming process, identifying and using the appropriate d
 <li>
 <a href="">Solution</a>
 – 
-<a href="">144. Binary Tree Preorder Traversal</a>
+<a href="https://leetcode.com/problems/binary-tree-preorder-traversal/">144. Binary Tree Preorder Traversal</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">94. Binary Tree Inorder Traversal</a>
+<a href="https://leetcode.com/problems/binary-tree-inorder-traversal/">94. Binary Tree Inorder Traversal</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">145. Binary Tree Postorder Traversal</a>
+<a href="https://leetcode.com/problems/binary-tree-postorder-traversal/">145. Binary Tree Postorder Traversal</a>
 </li>
 </ul>
 
@@ -430,17 +430,17 @@ During the computer programming process, identifying and using the appropriate d
 <li>
 <a href="">Solution</a>
 – 
-<a href="">102. Binary Tree Level Order Traversal</a>
+<a href="https://leetcode.com/problems/binary-tree-level-order-traversal/">102. Binary Tree Level Order Traversal</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">104. Maximum Depth of Binary Tree</a>
+<a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/">104. Maximum Depth of Binary Tree</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">101. Symmetric Tree</a>
+<a href="https://leetcode.com/problems/symmetric-tree/">101. Symmetric Tree</a>
 </li>
 </ul>
 
@@ -450,12 +450,12 @@ During the computer programming process, identifying and using the appropriate d
 <li>
 <a href="">Solution</a>
 – 
-<a href="">226. Invert Binary Tree</a>
+<a href="https://leetcode.com/problems/invert-binary-tree/">226. Invert Binary Tree</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">112. Path Sum</a>
+<a href="https://leetcode.com/problems/path-sum/">112. Path Sum</a>
 </li>
 </ul>
 
@@ -465,12 +465,12 @@ During the computer programming process, identifying and using the appropriate d
 <li>
 <a href="">Solution</a>
 – 
-<a href="">700. Search in a Binary Search Tree</a>
+<a href="https://leetcode.com/problems/search-in-a-binary-search-tree/">700. Search in a Binary Search Tree</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">701. Insert into a Binary Search Tree</a>
+<a href="https://leetcode.com/problems/insert-into-a-binary-search-tree/">701. Insert into a Binary Search Tree</a>
 </li>
 </ul>
 
@@ -480,17 +480,17 @@ During the computer programming process, identifying and using the appropriate d
 <li>
 <a href="">Solution</a>
 – 
-<a href="">98. Validate Binary Search Tree</a>
+<a href="https://leetcode.com/problems/validate-binary-search-tree/">98. Validate Binary Search Tree</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">653. Two Sum IV ・ Input is a BST</a>
+<a href="https://leetcode.com/problems/two-sum-iv-input-is-a-bst/">653. Two Sum IV ・ Input is a BST</a>
 </li>
 <li>
 <a href="">Solution</a>
 – 
-<a href="">235. Lowest Common Ancestor of a Binary Search Tree</a>
+<a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/">235. Lowest Common Ancestor of a Binary Search Tree</a>
 </li>
 </ul>
 </details>
