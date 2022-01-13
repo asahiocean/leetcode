@@ -1,6 +1,6 @@
 <h1>
 1. Two Sum
-<img src="https://tinyurl.com/yc5ce92u" align="right" alt="views badge">
+<img src="https://tinyurl.com/2p898fxp" align="right" alt="views badge">
 </h1>
 
 <details>
