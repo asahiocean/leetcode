@@ -19,7 +19,7 @@ class Solution {
 
 // MARK: - Test cases -
 
-// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.148 (0.149) seconds
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.062 (0.064) seconds
 
 import XCTest
 
@@ -28,18 +28,18 @@ class Tests: XCTestCase {
     private let solution = Solution()
     
     func test0() {
-        let value = solution.lowestCommonAncestor(TreeNode([6,2,8,0,4,7,9,nil,nil,3,5]), TreeNode(2), TreeNode(8))
-        XCTAssertEqual(value!.val, 6)
+        let tree = solution.lowestCommonAncestor(TreeNode([6,2,8,0,4,7,9,nil,nil,3,5]), TreeNode(2), TreeNode(8))
+        XCTAssertEqual(tree!.val, 6)
     }
     
     func test1() {
-        let value = solution.lowestCommonAncestor(TreeNode([6,2,8,0,4,7,9,nil,nil,3,5]), TreeNode(2), TreeNode(4))
-        XCTAssertEqual(value!.val, 2)
+        let tree = solution.lowestCommonAncestor(TreeNode([6,2,8,0,4,7,9,nil,nil,3,5]), TreeNode(2), TreeNode(4))
+        XCTAssertEqual(tree!.val, 2)
     }
     
     func test2() {
-        let value = solution.lowestCommonAncestor(TreeNode([2,1]), TreeNode(2), TreeNode(1))
-        XCTAssertEqual(value!.val, 2)
+        let tree = solution.lowestCommonAncestor(TreeNode([2,1]), TreeNode(2), TreeNode(1))
+        XCTAssertEqual(tree!.val, 2)
     }
 }
 
