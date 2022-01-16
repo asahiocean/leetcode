@@ -4,41 +4,44 @@ import Foundation
 // https://leetcode.com/problems/max-points-on-a-line/
 
 class Solution {
-    
-    private struct Point { let x: Int, y: Int }
-    
     func maxPoints(_ points: [[Int]]) -> Int {
-        let count = points.count
-        guard count >= 1 && count <= 300 else { return count }
+        let len = points.count
+        guard len >= 3 else { return len }
         
-        let points: [Point] = points.map({ Point(x: $0[0], y: $0[1]) })
-        let sort = points.sorted { $0.x == $1.x ? ($0.y < $1.y) : ($0.x < $1.x) }
+        var result = 0
         
-        var value = 0
-        
-        for idxStart in 0..<count {
+        for i in 0..<len {
             
-            let start = sort[idxStart]
-            var idxEnd = idxStart + 1
+            var rep = 0
+            var dict: [String:Int] = [:]
+            var maxP = 0
             
-            while idxEnd < count {
-                let dx = sort[idxEnd].x - start.x
-                let dy = sort[idxEnd].y - start.y
+            for j in i + 1 ..< len {
                 
-                var pointsCount = [dx,dy].count
+                var valX = points[j][0] - points[i][0]
+                var valY = points[j][1] - points[i][1]
                 
-                var idx = idxEnd + 1
-                while idx < count {
-                    if (sort[idx].x - start.x) * dy == (sort[idx].y - start.y) * dx {
-                        pointsCount += 1
-                    }
-                    idx += 1
+                if valX == 0 && valY == 0 {
+                    rep += 1
+                    continue
                 }
-                value = max(value, pointsCount)
-                idxEnd += 1
+                
+                let gcdVal = gcd(valX, valY)
+                valX /= gcdVal
+                valY /= gcdVal
+                
+                let keyP = "\(valX)-\(valY)"
+                dict[keyP, default: 0] += 1
+                maxP = max(maxP, dict[keyP]!)
             }
+            result = max(result, maxP + rep + 1)
         }
-        return value
+        return result
+    }
+    
+    private func gcd(_ x: Int, _ y: Int) -> Int {
+        if y == 0 { return x }
+        return gcd(y, x % y)
     }
 }
 
