@@ -6,23 +6,23 @@ import Foundation
 class Solution {
     func wordPattern(_ pattern: String, _ s: String) -> Bool {
         
-        let chars = [Character](pattern)
-        let words  = s.components(separatedBy: " ")
+        let chars = [Character](pattern), lenChars = chars.count
+        let words = s.components(separatedBy: " "), lenWord = words.count
         
-        if chars.count != words.count { return false }
+        guard lenChars == lenWord else { return false }
         
         var chMap: [Character:String] = [:]
         var sMap: [String:Character] = [:]
         
-        for i in 0..<chars.count {
+        for i in 0..<lenChars {
             
-            let ch = chars[i]
+            let char = chars[i]
             let word = words[i]
             
-            if chMap[ch] == nil { chMap[ch] = word }
-            if sMap[word] == nil { sMap[word] = ch }
+            if chMap[char] == nil { chMap[char] = word }
+            if sMap[word] == nil { sMap[word] = char }
             
-            if sMap[word] != ch || chMap[ch] != word {
+            if sMap[word] != char || chMap[char] != word {
                 return false
             }
         }
