@@ -79,31 +79,31 @@
 
 <!-- 4 -->
 [4]: https://leetcode.com/problems/median-of-two-sorted-arrays/
-[4s]: ./4.%20Median%20of%20Two%20Sorted%20Arrays
+[4s]: ./4/
 
 <!-- 5 -->
 [5]: https://leetcode.com/problems/longest-palindromic-substring/
-[5s]: ./5
+[5s]: ./5/
 
 <!-- 6 -->
 [6]: https://leetcode.com/problems/zigzag-conversion/
-[6s]: ./6.%20Zigzag%20Conversion
+[6s]: ./6/
 
 <!-- 7 -->
 [7]: https://leetcode.com/problems/reverse-integer/
-[7s]: ./7.%20Reverse%20Integer
+[7s]: ./7/
 
 <!-- 8 -->
 [8]: https://leetcode.com/problems/string-to-integer-atoi/
-[8s]: ./8.%20String%20to%20Integer%20(atoi)
+[8s]: ./8/
 
 <!-- 9 -->
 [9]: https://leetcode.com/problems/palindrome-number/
-[9s]: ./9.%20Palindrome%20Number
+[9s]: ./9/
 
 <!-- 10 -->
 [10]: https://leetcode.com/problems/regular-expression-matching/
-[10s]: ./10.%20Regular%20Expression%20Matching
+[10s]: ./10/
 
 <!-- 11 -->
 [11]: https://leetcode.com/problems/container-with-most-water/
