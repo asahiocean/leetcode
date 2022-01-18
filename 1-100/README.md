@@ -67,15 +67,15 @@
 
 <!-- 1 -->
 [1]: https://leetcode.com/problems/two-sum/
-[1s]: ./1.%20Two%20Sum
+[1s]: ./1/
 
 <!-- 2 -->
 [2]: https://leetcode.com/problems/add-two-numbers/
-[2s]: ./2.%20Add%20Two%20Numbers
+[2s]: ./2/
 
 <!-- 3 -->
 [3]: https://leetcode.com/problems/longest-substring-without-repeating-characters/
-[3s]: ./3
+[3s]: ./3/
 
 <!-- 4 -->
 [4]: https://leetcode.com/problems/median-of-two-sorted-arrays/
