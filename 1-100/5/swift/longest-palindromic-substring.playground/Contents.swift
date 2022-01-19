@@ -31,7 +31,7 @@ class Solution {
 
 // MARK: - Test cases -
 
-// Result: Executed 4 tests, with 0 failures (0 unexpected) in 0.012 (0.014) seconds
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.008 (0.010) seconds
 
 import XCTest
 
@@ -48,16 +48,6 @@ class Tests: XCTestCase {
     func test1() {
         let value = solution.longestPalindrome("cbbd")
         XCTAssertEqual(value, "bb")
-    }
-    
-    func test2() {
-        let value = solution.longestPalindrome("a")
-        XCTAssertEqual(value, "a")
-    }
-    
-    func test3() {
-        let value = solution.longestPalindrome("ac")
-        XCTAssertEqual(value, "a")
     }
 }
 
