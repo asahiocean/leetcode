@@ -54,7 +54,9 @@ class Solution {
 
 <h2>Description</h2>
 
-Given a string ```s```, return the longest palindromic substring in ```s```.
+<p>
+Given a string <code>s</code>, return the longest palindromic substring in <code>s</code>.
+</p>
 
 <h4>Example 1</h4>
 
@@ -87,9 +89,11 @@ Given a string ```s```, return the longest palindromic substring in ```s```.
 
 <h4>Constraints</h4>
 
-<code>1 <= s.length <= 1000</code>
-<code>s</code> consist of only digits and English letters (lower-case and/or upper-case)
+<ul>
+<li><code>1 <= s.length <= 1000</code></li>
+<li><code>s</code> consist of only digits and English letters (lower-case and/or upper-case)</li>
+</ul>
 
 <hr>
 
-**Source:** https://leetcode.com/problems/longest-palindromic-substring/
+<b>Source:</b> https://leetcode.com/problems/longest-palindromic-substring/
