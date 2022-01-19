@@ -35,14 +35,17 @@ class Tests: XCTestCase {
         let value = solution.lengthOfLongestSubstring("abcabcbb")
         XCTAssertEqual(value, 3)
     }
+    
     func test1() {
         let value = solution.lengthOfLongestSubstring("bbbbb")
         XCTAssertEqual(value, 1)
     }
+    
     func test2() {
         let value = solution.lengthOfLongestSubstring("pwwkew")
         XCTAssertEqual(value, 3)
     }
+    
     func test3() {
         let value = solution.lengthOfLongestSubstring("")
         XCTAssertEqual(value, 0)
