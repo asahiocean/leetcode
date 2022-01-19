@@ -24,7 +24,7 @@ class Tests: XCTestCase {
     
     private let solution = Solution()
     
-    /// 342 + 465 = 807.
+    // 342 + 465 = 807.
     func test0() {
         let node = solution.addTwoNumbers(ListNode([2,4,3]), ListNode([5,6,4]))
         let expected = ListNode([7,0,8])
