@@ -31,24 +31,23 @@ class Tests: XCTestCase {
     
     private let solution = Solution()
     
+    // The answer is "abc", with the length of 3.
     func test0() {
         let value = solution.lengthOfLongestSubstring("abcabcbb")
         XCTAssertEqual(value, 3)
     }
     
+    // The answer is "b", with the length of 1.
     func test1() {
         let value = solution.lengthOfLongestSubstring("bbbbb")
         XCTAssertEqual(value, 1)
     }
     
+    // The answer is "wke", with the length of 3.
+    // Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
     func test2() {
         let value = solution.lengthOfLongestSubstring("pwwkew")
         XCTAssertEqual(value, 3)
-    }
-    
-    func test3() {
-        let value = solution.lengthOfLongestSubstring("")
-        XCTAssertEqual(value, 0)
     }
 }
 
