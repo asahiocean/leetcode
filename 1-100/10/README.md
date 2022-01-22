@@ -106,11 +106,13 @@ The matching should cover the <b>entire</b> input string (not partial).
 
 <h4>Constraints</h4>
 
-<code>0 <= s.length <= 20</code>
-<code>0 <= p.length <= 30</code>
-<code>s</code> contains only lowercase English letters.
-<code>p</code> contains only lowercase English letters, <code>'.'</code>, and <code>'*'</code>.
-It is guaranteed for each appearance of the character <code>'*'</code>, there will be a previous valid character to match.
+<ul>
+<li><code>0 <= s.length <= 20</code></li>
+<li><code>0 <= p.length <= 30</code></li>
+<li><code>s</code> contains only lowercase English letters.</li>
+<li><code>p</code> contains only lowercase English letters, <code>'.'</code>, and <code>'*'</code>.</li>
+<li>It is guaranteed for each appearance of the character <code>'*'</code>, there will be a previous valid character to match.</li>
+</ul>
 
 <hr>
 
