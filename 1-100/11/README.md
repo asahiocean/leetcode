@@ -69,20 +69,6 @@ Given n non-negative integers <code>a1, a2, ..., an</code>, where each represent
 <b>Output:</b> 1
 </pre>
 
-<h4>Example 3</h4>
-
-<pre>
-<b>Input:</b> height = [4,3,2,1,4]
-<b>Output:</b> 16
-</pre>
-
-<h4>Example 4</h4>
-
-<pre>
-<b>Input:</b> height = [1,2,1]
-<b>Output:</b> 2
-</pre>
-
 <h4>Constraints</h4>
 
 <ul>
