@@ -1,6 +1,6 @@
 <h1>
 12. Integer to Roman
-<img src="https://tinyurl.com/2p967t48" align="right" alt="views badge">
+<img src="https://tinyurl.com/4jx7wbmr" align="right" alt="views badge">
 </h1>
 
 <details>
@@ -14,22 +14,22 @@
 ```swift
 class Solution {
     
-    private let decimals = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
-    private let numerals = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
+    private let values = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+    private let symbols = ["M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"]
     
     func intToRoman(_ num: Int) -> String {
-
-        var num = num
-        var result = ""
-
-        while num > 0 {
-            for (i, d) in decimals.enumerated() where num - d >= 0 {
-                num -= d
-                result += numerals[i]
+        
+        var int = num
+        var sym = ""
+        
+        while int > 0 {
+            for (i, d) in values.enumerated() where int - d >= 0 {
+                int -= d
+                sym += symbols[i]
                 break
             }
         }
-        return result
+        return sym
     }
 }
 ```
@@ -47,9 +47,10 @@ class Solution {
 
 <p align="center">• • •</p>
 
-## Description
+<h2>Description</h2>
 
-Roman numerals are represented by seven different symbols: ```I```, ```V```, ```X```, ```L```, ```C```, ```D``` and ```M```.
+<p>
+Roman numerals are represented by seven different symbols: <code>I</code>, <code>V</code>, <code>X</code>, <code>L</code>, <code>C</code>, <code>D</code> and <code>M</code>.
 
 <pre>
 Symbol       Value
@@ -62,38 +63,41 @@ D            500
 M            1000
 </pre>
 
-For example, ```2``` is written as ```II``` in Roman numeral, just two one's added together. ```12``` is written as ```XII```, which is simply ```X + II```. The number ```27``` is written as ```XXVII```, which is ```XX + V + II```.
+For example, <code>2</code> is written as <code>II</code> in Roman numeral, just two one's added together. <code>12</code> is written as <code>XII</code>, which is simply <code>X + II</code>. The number <code>27</code> is written as <code>XXVII</code>, which is <code>XX + V + II</code>.
 
-Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not ```IIII```. Instead, the number four is written as ```IV```. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as ```IX```. There are six instances where subtraction is used:
+Roman numerals are usually written largest to smallest from left to right. However, the numeral for four is not <code>IIII</code>. Instead, the number four is written as <code>IV</code>. Because the one is before the five we subtract it making four. The same principle applies to the number nine, which is written as <code>IX</code>. There are six instances where subtraction is used:
 
-* ```I``` can be placed before ```V``` (5) and ```X``` (10) to make 4 and 9. 
-* ```X``` can be placed before ```L``` (50) and ```C``` (100) to make 40 and 90. 
-* ```C``` can be placed before ```D``` (500) and ```M``` (1000) to make 400 and 900.
+<ul>
+<li><code>I</code> can be placed before <code>V</code> (5) and <code>X</code> (10) to make 4 and 9. </li>
+<li><code>X</code> can be placed before <code>L</code> (50) and <code>C</code> (100) to make 40 and 90. </li>
+<li><code>C</code> can be placed before <code>D</code> (500) and <code>M</code> (1000) to make 400 and 900.</li>
+</ul>
 
 Given an integer, convert it to a roman numeral.
+</p>
 
-#### Example 1
+<h4>Example 1</h4>
 
 <pre>
 <b>Input:</b> num = 3
 <b>Output:</b> "III"
 </pre>
 
-#### Example 2
+<h4>Example 2</h4>
 
 <pre>
 <b>Input:</b> num = 4
 <b>Output:</b> "IV"
 </pre>
 
-#### Example 3
+<h4>Example 3</h4>
 
 <pre>
 <b>Input:</b> num = 9
 <b>Output:</b> "IX"
 </pre>
 
-#### Example 4
+<h4>Example 4</h4>
 
 <pre>
 <b>Input:</b> num = 58
@@ -101,7 +105,7 @@ Given an integer, convert it to a roman numeral.
 <b>Explanation:</b> L = 50, V = 5, III = 3.
 </pre>
 
-#### Example 5
+<h4>Example 5</h4>
 
 <pre>
 <b>Input:</b> num = 1994
@@ -109,10 +113,12 @@ Given an integer, convert it to a roman numeral.
 <b>Explanation:</b> M = 1000, CM = 900, XC = 90 and IV = 4.
 </pre>
 
-#### Constraints
+<h4>Constraints</h4>
 
-* 1 <= num <= 3999
+<ul>
+<li>1 <= num <= 3999</li>
+</ul>
 
----
+<hr>
 
-**Source:** https://leetcode.com/problems/integer-to-roman/
+<b>Source:</b> https://leetcode.com/problems/integer-to-roman/
