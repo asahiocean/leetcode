@@ -11,18 +11,18 @@ class Solution {
         var value = 0
         
         for i in 0..<len {
-            while let height = stack.last, heights[height] >= heights[i] {
+            while let hgt = stack.last, heights[hgt] >= heights[i] {
                 stack.removeLast()
-                let width = (stack.last ?? -1)
-                value = max(value, heights[height] * (i - width - 1))
+                let wid = (stack.last ?? -1)
+                value = max(value, heights[hgt] * (i - wid - 1))
             }
             stack.append(i)
         }
         
         while !stack.isEmpty {
-            let height = stack.removeLast()
-            let width = stack.last ?? -1
-            value = max(value, heights[height] * (len - width - 1))
+            let hgt = stack.removeLast()
+            let wid = stack.last ?? -1
+            value = max(value, heights[hgt] * (len - wid - 1))
         }
         
         return value
