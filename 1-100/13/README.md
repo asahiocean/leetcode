@@ -100,7 +100,7 @@ Given a roman numeral, convert it to an integer.
 <ul>
 <li><code>1 <= s.length <= 15</code></li>
 <li><code>s</code> contains only the characters <code>('I', 'V', 'X', 'L', 'C', 'D', 'M')</code>.</li>
-<li>It is guaranteed that s is a valid roman numeral in the range [1, 3999].</li>
+<li>It is guaranteed that s is a valid roman numeral in the range <code>[1, 3999]</code>.</li>
 </ul>
 
 <hr>
