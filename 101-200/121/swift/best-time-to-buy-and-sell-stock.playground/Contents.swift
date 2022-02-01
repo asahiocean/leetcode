@@ -5,7 +5,6 @@ import Foundation
 
 class Solution {
     func maxProfit(_ prices: [Int]) -> Int {
-        
         guard prices.count > 0 else { return 0 }
         
         var buyDay = 0, profit = 0
@@ -14,7 +13,6 @@ class Solution {
             buyDay = max(0, buyDay + prices[i] - prices[i-1])
             profit = max(profit, buyDay)
         }
-        
         return profit
     }
 }
