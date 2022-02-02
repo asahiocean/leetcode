@@ -42,6 +42,8 @@ class Solution {
     }
 }
 
+// MARK: - Node -
+
 public class Node {
     public var val: Int
     public var next: Node?
