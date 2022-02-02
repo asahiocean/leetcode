@@ -3,9 +3,6 @@ import Foundation
 // 54. Spiral Matrix
 // https://leetcode.com/problems/spiral-matrix/
 
-// Runtime: 0 ms
-// Memory Usage: 14.3 MB
-
 class Solution {
     func spiralOrder(_ matrix: [[Int]]) -> [Int] {
         guard !(matrix.isEmpty) else { return [] }
