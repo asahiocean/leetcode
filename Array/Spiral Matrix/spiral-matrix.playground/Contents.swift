@@ -43,3 +43,26 @@ class Solution {
         return result
     }
 }
+
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
+
+import XCTest
+
+class Tests: XCTestCase {
+    
+    private let solution = Solution()
+    
+    func test0() {
+        let value = solution.spiralOrder([[1,2,3],[4,5,6],[7,8,9]])
+        XCTAssertEqual(value, [1,2,3,6,9,8,7,4,5])
+    }
+    
+    func test1() {
+        let value = solution.spiralOrder([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
+        XCTAssertEqual(value, [1,2,3,4,8,12,11,10,9,5,6,7])
+    }
+}
+
+Tests.defaultTestSuite.run()
