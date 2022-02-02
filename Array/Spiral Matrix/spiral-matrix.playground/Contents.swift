@@ -7,24 +7,24 @@ class Solution {
     func spiralOrder(_ matrix: [[Int]]) -> [Int] {
         guard !(matrix.isEmpty) else { return [] }
         
-        var result = [Int]()
+        var result: [Int] = []
         var rBegin = 0, rEnd = matrix.count - 1
         var cBegin = 0, cEnd = matrix[0].count - 1
         
         while rBegin <= rEnd && cBegin <= cEnd {
-            // MARK: Traverse right
+            // Traverse right
             for i in stride(from: cBegin, to: cEnd + 1, by: 1) {
                 result.append(matrix[rBegin][i])
             }
             rBegin += 1
             
-            // MARK: Traverse down
+            // Traverse down
             for i in stride(from: rBegin, to: rEnd + 1, by: 1) {
                 result.append(matrix[i][cEnd])
             }
             cEnd -= 1
             
-            // MARK: Traverse left
+            // Traverse left
             if rBegin <= rEnd {
                 for i in stride(from: cEnd, to: cBegin - 1, by: -1) {
                     result.append(matrix[rEnd][i])
@@ -32,7 +32,7 @@ class Solution {
             }
             rEnd -= 1
             
-            // MARK: Traverse up
+            // Traverse up
             if cBegin <= cEnd {
                 for i in stride(from: rEnd, to: rBegin - 1, by: -1) {
                     result.append(matrix[i][cBegin])
