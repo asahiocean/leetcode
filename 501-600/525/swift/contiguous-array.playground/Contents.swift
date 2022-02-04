@@ -13,7 +13,7 @@ class Solution {
         for i in 0..<nums.count {
             cnt += nums[i] == 1 ? 1 : -1
             if let idx = firstIndex[cnt] {
-                result = max(result, i  - idx)
+                result = max(result, i - idx)
             } else {
                 firstIndex[cnt] = i
             }
