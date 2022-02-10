@@ -1,0 +1,9 @@
+-- 180. Consecutive Numbers
+-- https://leetcode.com/problems/consecutive-numbers/
+
+SELECT DISTINCT L1.NUM CONSECUTIVENUMS
+
+FROM LOGS L1 JOIN LOGS L2 ON L1.ID+1=L2.ID
+JOIN LOGS L3 ON L2.ID+1=L3.ID
+WHERE L1.NUM=L2.NUM
+AND L2.NUM=L3.NUM
