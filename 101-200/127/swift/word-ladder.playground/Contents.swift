@@ -10,7 +10,7 @@ class Solution {
         
         var words = Set<String>(wordList)
         
-        var queue = [(beginWord, 1)]
+        var queue: [(String, Int)] = [(beginWord, 1)]
         
         while !queue.isEmpty {
             let (word, step) = queue.removeFirst()
@@ -18,12 +18,10 @@ class Solution {
             guard word != endWord else { return step }
             
             for i in 0..<word.count {
-                var arrWord = Array(word)
-                for ch in alphabet {
-                    guard ch != arrWord[i] else { continue }
-                    
-                    arrWord[i] = ch
-                    let transformWord = String(arrWord)
+                var chars = [Character](word)
+                for ch in alphabet where ch != chars[i] {
+                    chars[i] = ch
+                    let transformWord = String(chars)
                     
                     guard words.contains(transformWord) else { continue }
                     
@@ -38,7 +36,7 @@ class Solution {
 
 // MARK: - Test cases -
 
-// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.039 (0.041) seconds
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.019 (0.021) seconds
 
 import XCTest
 
@@ -48,15 +46,13 @@ class Tests: XCTestCase {
     
     // One shortest transformation sequence is "hit" -> "hot" -> "dot" -> "dog" -> cog", which is 5 words long.
     func test0() {
-        let beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log","cog"]
-        let value = solution.ladderLength(beginWord, endWord, wordList)
+        let value = solution.ladderLength("hit", "cog", ["hot","dot","dog","lot","log","cog"])
         XCTAssertEqual(value, 5)
     }
     
     // The endWord "cog" is not in wordList, therefore there is no valid transformation sequence.
     func test1() {
-        let beginWord = "hit", endWord = "cog", wordList = ["hot","dot","dog","lot","log"]
-        let value = solution.ladderLength(beginWord, endWord, wordList)
+        let value = solution.ladderLength("hit", "cog", ["hot","dot","dog","lot","log"])
         XCTAssertEqual(value, 0)
     }
 }
