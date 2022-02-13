@@ -1,6 +1,6 @@
 <h1>
 4. Median of Two Sorted Arrays
-<img src="https://tinyurl.com/mpumfakt" align="right" alt="views badge">
+<img src="https://tinyurl.com/bdfrx5rt" align="right" alt="views badge">
 </h1>
 
 <details>
