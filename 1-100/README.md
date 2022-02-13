@@ -119,7 +119,7 @@
 
 <!-- 14 -->
 [14]: https://leetcode.com/problems/longest-common-prefix/
-[14s]: ./14.%20Longest%20Common%20Prefix
+[14s]: ./14/
 
 <!-- 15 -->
 [15]: https://leetcode.com/problems/3sum/
