@@ -135,7 +135,7 @@
 
 <!-- 18 -->
 [18]: https://leetcode.com/problems/4sum/
-[18s]: ./18.%204Sum
+[18s]: ./18/
 
 <!-- 19 -->
 [19]: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
