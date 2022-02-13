@@ -127,7 +127,7 @@
 
 <!-- 16 -->
 [16]: https://leetcode.com/problems/3sum-closest/
-[16s]: ./16.%203Sum%20Closest
+[16s]: ./16/
 
 <!-- 17 -->
 [17]: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
