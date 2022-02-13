@@ -115,7 +115,7 @@
 
 <!-- 13 -->
 [13]: https://leetcode.com/problems/roman-to-integer/
-[13s]: ./13.%20Roman%20to%20Integer
+[13s]: ./13/
 
 <!-- 14 -->
 [14]: https://leetcode.com/problems/longest-common-prefix/
