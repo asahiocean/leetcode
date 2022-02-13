@@ -55,9 +55,9 @@ class Solution {
 <h2>Description</h2>
 
 <p>
-Given two sorted arrays `nums1` and `nums2` of size `m` and `n` respectively, return **the median** of the two sorted arrays.
+Given two sorted arrays <code>nums1</code> and <code>nums2</code> of size <code>m</code> and <code>n</code> respectively, return <b>the median</b> of the two sorted arrays.
 
-The overall run time complexity should be `O(log (m+n))`.
+The overall run time complexity should be <code>O(log (m+n))</code>.
 </p>
 
 <h4>Example 1</h4>
