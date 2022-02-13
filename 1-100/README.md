@@ -107,31 +107,31 @@
 
 <!-- 11 -->
 [11]: https://leetcode.com/problems/container-with-most-water/
-[11s]: ./11.%20Container%20With%20Most%20Water
+[11s]: ./11/
 
 <!-- 12 -->
 [12]: https://leetcode.com/problems/integer-to-roman/
-[12s]: ./12.%20Integer%20to%20Roman
+[12s]: ./12/
 
 <!-- 13 -->
 [13]: https://leetcode.com/problems/roman-to-integer/
-[13s]: ./13.%20Roman%20to%20Integer
+[13s]: ./13/
 
 <!-- 14 -->
 [14]: https://leetcode.com/problems/longest-common-prefix/
-[14s]: ./14.%20Longest%20Common%20Prefix
+[14s]: ./14/
 
 <!-- 15 -->
 [15]: https://leetcode.com/problems/3sum/
-[15s]: ./15.%203Sum
+[15s]: ./15/
 
 <!-- 16 -->
 [16]: https://leetcode.com/problems/3sum-closest/
-[16s]: ./16.%203Sum%20Closest
+[16s]: ./16/
 
 <!-- 17 -->
 [17]: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
-[17s]: ./17.%20Letter%20Combinations%20of%20a%20Phone%20Number
+[17s]: ./17/
 
 <!-- 18 -->
 [18]: https://leetcode.com/problems/4sum/
