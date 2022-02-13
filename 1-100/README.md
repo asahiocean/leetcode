@@ -123,7 +123,7 @@
 
 <!-- 15 -->
 [15]: https://leetcode.com/problems/3sum/
-[15s]: ./15.%203Sum
+[15s]: ./15/
 
 <!-- 16 -->
 [16]: https://leetcode.com/problems/3sum-closest/
