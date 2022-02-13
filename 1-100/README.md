@@ -131,7 +131,7 @@
 
 <!-- 17 -->
 [17]: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
-[17s]: ./17.%20Letter%20Combinations%20of%20a%20Phone%20Number
+[17s]: ./17/
 
 <!-- 18 -->
 [18]: https://leetcode.com/problems/4sum/
