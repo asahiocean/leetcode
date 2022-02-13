@@ -111,7 +111,7 @@
 
 <!-- 12 -->
 [12]: https://leetcode.com/problems/integer-to-roman/
-[12s]: ./12.%20Integer%20to%20Roman
+[12s]: ./12/
 
 <!-- 13 -->
 [13]: https://leetcode.com/problems/roman-to-integer/
