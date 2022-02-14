@@ -54,7 +54,7 @@
 | ![OK]  | [50. Pow(x, n)][50]                                               | [**OPEN**][50s] |
 | 🛠     | [51. N-Queens][51]                                                | SOON            |
 | ![OK]  | [52. N-Queens II][52]                                             | [**OPEN**][52s] |
-| 🛠     | [53. Maximum Subarray][53]                                        | SOON            |
+| ![OK]  | [53. Maximum Subarray][53]                                        | [**OPEN**][53s] |
 | 🛠     | [54. Spiral Matrix][54]                                           | SOON            |
 | 🛠     | [55. Jump Game][55]                                               | SOON            |
 | 🛠     | [56. Merge Intervals][56]                                         | SOON            |
@@ -284,6 +284,7 @@
 
 <!-- 53 -->
 [53]: https://leetcode.com/problems/maximum-subarray
+[53s]: ./53/
 
 <!-- 54 -->
 [54]: https://leetcode.com/problems/spiral-matrix
