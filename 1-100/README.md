@@ -70,6 +70,7 @@
 | 🛠     | [66. Plus One][66]                                                | SOON            |
 | 🛠     | [67. Add Binary][67]                                              | SOON            |
 | 🛠     | [68. Text Justification][68]                                      | SOON            |
+| 🛠     | [69. Sqrt(x)][69]                                                 | SOON            |
 
 <!-- URLs -->
 
@@ -326,6 +327,9 @@
 
 <!-- 68 -->
 [68]: https://leetcode.com/problems/text-justification
+
+<!-- 69 -->
+[69]: https://leetcode.com/problems/sqrtx
 
 <!-- HELPERS -->
 [OK]: ../.github/assets/images/svg/checkmarks/list.svg
