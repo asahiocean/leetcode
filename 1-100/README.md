@@ -68,6 +68,7 @@
 | 🛠     | [64. Minimum Path Sum][64]                                        | SOON            |
 | 🛠     | [65. Valid Number][65]                                            | SOON            |
 | 🛠     | [66. Plus One][66]                                                | SOON            |
+| 🛠     | [67. Add Binary][67]                                              | SOON            |
 
 <!-- URLs -->
 
@@ -318,6 +319,9 @@
 
 <!-- 66 -->
 [66]: https://leetcode.com/problems/plus-one
+
+<!-- 67 -->
+[67]: https://leetcode.com/problems/add-binary
 
 <!-- HELPERS -->
 [OK]: ../.github/assets/images/svg/checkmarks/list.svg
