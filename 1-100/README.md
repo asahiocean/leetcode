@@ -71,6 +71,7 @@
 | 🛠     | [67. Add Binary][67]                                              | SOON            |
 | 🛠     | [68. Text Justification][68]                                      | SOON            |
 | 🛠     | [69. Sqrt(x)][69]                                                 | SOON            |
+| 🛠     | [70. Climbing Stairs][70]                                         | SOON            |
 
 <!-- URLs -->
 
@@ -330,6 +331,9 @@
 
 <!-- 69 -->
 [69]: https://leetcode.com/problems/sqrtx
+
+<!-- 70 -->
+[70]: https://leetcode.com/problems/climbing-stairs
 
 <!-- HELPERS -->
 [OK]: ../.github/assets/images/svg/checkmarks/list.svg
