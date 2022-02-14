@@ -143,7 +143,7 @@
 
 <!-- 20 -->
 [20]: https://leetcode.com/problems/valid-parentheses/
-[20s]: ./20.%20Valid%20Parentheses
+[20s]: ./20/
 
 <!-- 21 -->
 [21]: https://leetcode.com/problems/merge-two-sorted-lists/
