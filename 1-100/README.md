@@ -147,7 +147,7 @@
 
 <!-- 21 -->
 [21]: https://leetcode.com/problems/merge-two-sorted-lists/
-[21s]: ./21.%20Merge%20Two%20Sorted%20Lists
+[21s]: ./21/
 
 <!-- 22 -->
 [22]: https://leetcode.com/problems/generate-parentheses/
