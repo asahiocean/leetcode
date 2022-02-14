@@ -64,6 +64,7 @@
 | 🛠     | [60. Permutation Sequence][60]                                    | SOON            |
 | 🛠     | [61. Rotate List][61]                                             | SOON            |
 | 🛠     | [62. Unique Paths][62]                                            | SOON            |
+| 🛠     | [63. Unique Paths II][63]                                         | SOON            |
 
 <!-- URLs -->
 
@@ -302,6 +303,9 @@
 
 <!-- 62 -->
 [62]: https://leetcode.com/problems/unique-paths
+
+<!-- 63 -->
+[63]: https://leetcode.com/problems/unique-paths-ii
 
 <!-- HELPERS -->
 [OK]: ../.github/assets/images/svg/checkmarks/list.svg
