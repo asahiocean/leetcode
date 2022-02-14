@@ -63,6 +63,7 @@
 | 🛠     | [59. Spiral Matrix II][59]                                        | SOON            |
 | 🛠     | [60. Permutation Sequence][60]                                    | SOON            |
 | 🛠     | [61. Rotate List][61]                                             | SOON            |
+| 🛠     | [62. Unique Paths][62]                                            | SOON            |
 
 <!-- URLs -->
 
@@ -298,6 +299,9 @@
 
 <!-- 61 -->
 [61]: https://leetcode.com/problems/rotate-list
+
+<!-- 62 -->
+[62]: https://leetcode.com/problems/unique-paths
 
 <!-- HELPERS -->
 [OK]: ../.github/assets/images/svg/checkmarks/list.svg
