@@ -65,6 +65,7 @@
 | 🛠     | [61. Rotate List][61]                                             | SOON            |
 | 🛠     | [62. Unique Paths][62]                                            | SOON            |
 | 🛠     | [63. Unique Paths II][63]                                         | SOON            |
+| 🛠     | [64. Minimum Path Sum][64]                                        | SOON            |
 
 <!-- URLs -->
 
@@ -306,6 +307,9 @@
 
 <!-- 63 -->
 [63]: https://leetcode.com/problems/unique-paths-ii
+
+<!-- 64 -->
+[64]: https://leetcode.com/problems/minimum-path-sum
 
 <!-- HELPERS -->
 [OK]: ../.github/assets/images/svg/checkmarks/list.svg
