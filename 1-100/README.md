@@ -62,6 +62,7 @@
 | 🛠     | [58. Length of Last Word][58]                                     | SOON            |
 | 🛠     | [59. Spiral Matrix II][59]                                        | SOON            |
 | 🛠     | [60. Permutation Sequence][60]                                    | SOON            |
+| 🛠     | [61. Rotate List][61]                                             | SOON            |
 
 <!-- URLs -->
 
@@ -294,6 +295,9 @@
 
 <!-- 60 -->
 [60]: https://leetcode.com/problems/permutation-sequence
+
+<!-- 61 -->
+[61]: https://leetcode.com/problems/rotate-list
 
 <!-- HELPERS -->
 [OK]: ../.github/assets/images/svg/checkmarks/list.svg
