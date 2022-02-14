@@ -5,8 +5,7 @@ import Foundation
 
 class Solution {
     func maxDepth(_ root: TreeNode?) -> Int {
-        guard let root = root else { return 0 }
-        return max(maxDepth(root.left), maxDepth(root.right)) + 1
+        return root == nil ? 0 : max(maxDepth(root!.left), maxDepth(root!.right)) + 1
     }
 }
 
