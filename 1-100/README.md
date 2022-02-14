@@ -66,6 +66,7 @@
 | 🛠     | [62. Unique Paths][62]                                            | SOON            |
 | 🛠     | [63. Unique Paths II][63]                                         | SOON            |
 | 🛠     | [64. Minimum Path Sum][64]                                        | SOON            |
+| 🛠     | [65. Valid Number][65]                                            | SOON            |
 
 <!-- URLs -->
 
@@ -310,6 +311,9 @@
 
 <!-- 64 -->
 [64]: https://leetcode.com/problems/minimum-path-sum
+
+<!-- 65 -->
+[65]: https://leetcode.com/problems/valid-number
 
 <!-- HELPERS -->
 [OK]: ../.github/assets/images/svg/checkmarks/list.svg
