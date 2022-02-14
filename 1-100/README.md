@@ -56,7 +56,7 @@
 | ![OK]  | [52. N-Queens II][52]                                             | [**OPEN**][52s] |
 | ![OK]  | [53. Maximum Subarray][53]                                        | [**OPEN**][53s] |
 | ![OK]  | [54. Spiral Matrix][54]                                           | [**OPEN**][54s] |
-| 🛠     | [55. Jump Game][55]                                               | SOON            |
+| ![OK]  | [55. Jump Game][55]                                               | [**OPEN**][55s] |
 | 🛠     | [56. Merge Intervals][56]                                         | SOON            |
 | 🛠     | [57. Insert Interval][57]                                         | SOON            |
 | 🛠     | [58. Length of Last Word][58]                                     | SOON            |
@@ -292,6 +292,7 @@
 
 <!-- 55 -->
 [55]: https://leetcode.com/problems/jump-game
+[55s]: ./55.%20Jump%20Game
 
 <!-- 56 -->
 [56]: https://leetcode.com/problems/merge-intervals
