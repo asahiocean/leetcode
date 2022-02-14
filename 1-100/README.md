@@ -55,7 +55,7 @@
 | 🛠     | [51. N-Queens][51]                                                | SOON            |
 | ![OK]  | [52. N-Queens II][52]                                             | [**OPEN**][52s] |
 | ![OK]  | [53. Maximum Subarray][53]                                        | [**OPEN**][53s] |
-| 🛠     | [54. Spiral Matrix][54]                                           | SOON            |
+| ![OK]  | [54. Spiral Matrix][54]                                           | [**OPEN**][54s] |
 | 🛠     | [55. Jump Game][55]                                               | SOON            |
 | 🛠     | [56. Merge Intervals][56]                                         | SOON            |
 | 🛠     | [57. Insert Interval][57]                                         | SOON            |
@@ -288,6 +288,7 @@
 
 <!-- 54 -->
 [54]: https://leetcode.com/problems/spiral-matrix
+[54s]: ./54/
 
 <!-- 55 -->
 [55]: https://leetcode.com/problems/jump-game
