@@ -139,7 +139,7 @@
 
 <!-- 19 -->
 [19]: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
-[19s]: ./19.%20Remove%20Nth%20Node%20From%20End%20of%20List
+[19s]: ./19/
 
 <!-- 20 -->
 [20]: https://leetcode.com/problems/valid-parentheses/
