@@ -69,6 +69,7 @@
 | 🛠     | [65. Valid Number][65]                                            | SOON            |
 | 🛠     | [66. Plus One][66]                                                | SOON            |
 | 🛠     | [67. Add Binary][67]                                              | SOON            |
+| 🛠     | [68. Text Justification][68]                                      | SOON            |
 
 <!-- URLs -->
 
@@ -322,6 +323,9 @@
 
 <!-- 67 -->
 [67]: https://leetcode.com/problems/add-binary
+
+<!-- 68 -->
+[68]: https://leetcode.com/problems/text-justification
 
 <!-- HELPERS -->
 [OK]: ../.github/assets/images/svg/checkmarks/list.svg
