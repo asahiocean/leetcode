@@ -169,7 +169,7 @@
 
 <!-- 24 -->
 [24]: https://leetcode.com/problems/swap-nodes-in-pairs/
-[24s]: ./24.%20Swap%20Nodes%20in%20Pairs
+[24s]: ./24/
 
 <!-- 25 -->
 [25]: https://leetcode.com/problems/reverse-nodes-in-k-group/
