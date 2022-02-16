@@ -165,7 +165,7 @@
 
 <!-- 23 -->
 [23]: https://leetcode.com/problems/merge-k-sorted-lists/
-[23s]: ./23.%20Merge%20k%20Sorted%20Lists
+[23s]: ./23/
 
 <!-- 24 -->
 [24]: https://leetcode.com/problems/swap-nodes-in-pairs/
