@@ -161,7 +161,7 @@
 
 <!-- 22 -->
 [22]: https://leetcode.com/problems/generate-parentheses/
-[22s]: ./22.%20Generate%20Parentheses
+[22s]: ./22/
 
 <!-- 23 -->
 [23]: https://leetcode.com/problems/merge-k-sorted-lists/
