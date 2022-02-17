@@ -7,15 +7,15 @@ class Solution {
     func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]] {
         var uniqs: [[Int]] = [], comb: [Int] = []
         let sorted = candidates.sorted()
-        dfs(&uniqs, &comb, sorted, target)
+        dfs(&uniqs, &comb, sorted, target, 0)
         return uniqs
     }
     
-    private func dfs(_ uniqs: inout [[Int]], _ comb: inout [Int], _ cands: [Int], _ targ: Int, _ idx: Int = 0) {
-        guard targ > 0 else { uniqs.append(comb); return }
+    private func dfs(_ uniq: inout [[Int]], _ comb: inout [Int], _ cands: [Int], _ targ: Int, _ idx: Int) {
+        if targ <= 0 { uniq.append(comb) }
         for i in idx..<cands.count where cands[i] <= targ {
             comb.append(cands[i])
-            dfs(&uniqs, &comb, cands, targ - cands[i], i)
+            dfs(&uniq, &comb, cands, targ - cands[i], i)
             comb.removeLast()
         }
     }
