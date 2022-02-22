@@ -9,9 +9,11 @@ class Solution {
     }
 }
 
-import XCTest
+// MARK: - Test cases -
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
+
+import XCTest
 
 class Tests: XCTestCase {
     private let solution = Solution()
