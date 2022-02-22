@@ -14,12 +14,16 @@ import XCTest
 // Executed 2 tests, with 0 failures (0 unexpected) in 0.005 (0.007) seconds
 
 class Tests: XCTestCase {
-    private let s = Solution()
+    private let solution = Solution()
+    
     func test0() {
-        XCTAssertEqual(s.mySqrt(4), 2)
+        let value = solution.mySqrt(4)
+        XCTAssertEqual(value, 2)
     }
+    
     func test1() {
-        XCTAssertEqual(s.mySqrt(8), 2)
+        let value = solution.mySqrt(8)
+        XCTAssertEqual(value, 2)
     }
 }
 
