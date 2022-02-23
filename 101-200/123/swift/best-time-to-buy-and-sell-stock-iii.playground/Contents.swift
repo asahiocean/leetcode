@@ -5,30 +5,32 @@ import Foundation
 
 class Solution {
     func maxProfit(_ prices: [Int]) -> Int {
-        guard !prices.isEmpty else { return 0 }
+        let len = prices.count
+        guard len > 1 else { return 0 }
         
-        var maxVal = 0
-        var profit = 0
-        var maxVals: [Int] = []
+        var profit = 0, maxVals: [Int] = []
         
-        var high = prices.last!
-        var low = prices.first!
+        var maxVal = 0 {
+            didSet { maxVals.append(maxVal) }
+        }
         
-        for p in prices {
-            maxVal = max(p - low, maxVal)
-            low = min(p, low)
-            maxVals.append(maxVal)
+        var first = prices.first!
+        
+        for price in prices {
+            maxVal = max(price - first, maxVal)
+            first = min(price, first)
         }
         
         maxVal = 0
         
-        for i in (0..<prices.count).reversed() {
+        var last = prices.last!
+        
+        for i in (0..<len).reversed() {
             let price = prices[i]
-            maxVal = max(high - price, maxVal)
-            high = max(price, high)
+            maxVal = max(last - price, maxVal)
+            last = max(price, last)
             profit = max(profit, maxVal + maxVals[i])
         }
-        
         return profit
     }
 }
