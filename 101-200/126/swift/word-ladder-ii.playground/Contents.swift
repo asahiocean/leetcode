@@ -6,16 +6,14 @@ import Foundation
 class Solution {
     func findLadders(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> [[String]] {
         
-        var map: [String: [String]] = [:] // all patterns
+        var result: [[String]] = []
+        var patterns: [String: [String]] = [:]
         
         for w in wordList {
             for i in 0..<w.count {
-                let pattern = String(template(w, i))
-                map[pattern, default: []].append(w)
+                patterns[template(w, i), default: []].append(w)
             }
         }
-        
-        var result: [[String]] = []
         
         var queue: [[String]] = []
         queue.append([beginWord])
@@ -23,21 +21,16 @@ class Solution {
         var visited: Set<String> = []
         
         while !queue.isEmpty {
-            
             var found = false
-            var level: Set<String> = [] // visited
-            
+            var visitLvl: Set<String> = []
             for _ in 0..<queue.count {
-                let path = queue.removeFirst()
-                let word = path.last!
+                let path = queue.removeFirst(), word = path.last!
                 
                 for i in 0..<word.count {
-                    let pattern = String(template(word, i))
-                    
-                    guard let arr = map[pattern] else { continue }
+                    guard let arr = patterns[template(word, i)] else { continue }
                     
                     for w in arr where !visited.contains(w) {
-                        level.insert(w)
+                        visitLvl.insert(w)
                         
                         let newPath = (path + [w])
                         queue.append(newPath)
@@ -49,15 +42,15 @@ class Solution {
                     }
                 }
             }
-            visited.formUnion(level)
+            visited.formUnion(visitLvl)
             if found { break }
         }
         return result
     }
-    private func template(_ s: String, _ i: Int) -> Array<Character> {
-        var pattern = Array(s)
-        pattern[i] = "*"
-        return pattern
+    private func template(_ s: String, _ i: Int) -> String {
+        var chars = Array(s)
+        chars[i] = "*"
+        return String(chars)
     }
 }
 
