@@ -9,20 +9,15 @@ class Solution {
         return dfs(node, &visited)
     }
     
-    private func dfs(_ node: Node?, _ visited: inout [Int: Node]) -> Node? {
+    private func dfs(_ node: Node?, _ visited: inout [Int:Node]) -> Node? {
         guard let node = node else { return nil }
         
         let new = Node(node.val)
         visited[node.val] = new
         
-        for nbr in node.neighbors {
-            guard let nbr = nbr else { continue }
-            
-            if let n = visited[nbr.val] {
-                new.neighbors.append(n)
-            } else if let n = dfs(nbr, &visited) {
-                new.neighbors.append(n)
-            }
+        for n in node.neighbors where n != nil {
+            guard let nbr = visited[n!.val] ?? dfs(n, &visited) else { break }
+            new.neighbors.append(nbr)
         }
         return new
     }
