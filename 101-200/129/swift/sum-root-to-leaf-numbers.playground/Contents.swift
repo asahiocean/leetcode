@@ -16,13 +16,11 @@ class Solution {
             let (node, val) = queue.removeFirst()
             let sum = ((10 * val) + node.val)
             
-            let (lhs,rhs) = (node.left,node.right)
+            let (left, right) = (node.left, node.right)
+            if left == nil && right == nil { result += sum }
             
-            if lhs == nil && rhs == nil { result += sum }
-            
-            if let left = lhs { queue.append((left, sum)) }
-            
-            if let right = rhs { queue.append((right, sum)) }
+            if let left = left { queue.append((left, sum)) }
+            if let right = right { queue.append((right, sum)) }
         }
         return result
     }

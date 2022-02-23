@@ -7,30 +7,28 @@ class Solution {
     func minCut(_ s: String) -> Int {
         guard !s.isEmpty else { return 0 }
         
-        let arr = Array(s), len = arr.count
+        let lenStr = s.count, arr = Array(s)
         
-        var palindromes = [[Bool]](repeating: [Bool](repeating: false, count: len), count: len)
+        var palindromes = [[Bool]](repeating: [Bool](repeating: false, count: lenStr), count: lenStr)
         
-        for n in 0..<len {
-            for i in 0...n where arr[i] == arr[n] && (n - i < 2 || palindromes[i + 1][n - 1]) {
+        for n in 0..<lenStr {
+            for i in 0...n where arr[i] == arr[n] && (n - i < 2 || palindromes[i+1][n-1]) {
                 palindromes[i][n] = true
             }
         }
         
-        var dp = [Int](repeating: 0, count: len)
+        var cuts = [Int](0..<lenStr)
         
-        for i in 0..<dp.count { dp[i] = i }
-        
-        for i in stride(from: 1, to: len, by: 1) {
-            if palindromes[0][i] {
-                dp[i] = 0
+        for a in stride(from: 1, to: lenStr, by: 1) {
+            if palindromes[0][a] {
+                cuts[a] = 0
             } else {
-                for j in 0..<i where palindromes[j + 1][i] {
-                    dp[i] = min(dp[j] + 1, dp[i])
+                for b in 0..<a where palindromes[b + 1][a] {
+                    cuts[a] = min(cuts[b] + 1, cuts[a])
                 }
             }
         }
-        return dp[len - 1]
+        return cuts[lenStr - 1]
     }
 }
 
