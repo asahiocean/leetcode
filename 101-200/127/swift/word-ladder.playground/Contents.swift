@@ -9,24 +9,20 @@ class Solution {
         guard beginWord.count == endWord.count else { return 0 }
         
         var words = Set<String>(wordList)
-        
         var queue: [(String, Int)] = [(beginWord, 1)]
         
         while !queue.isEmpty {
             let (word, step) = queue.removeFirst()
-            
             guard word != endWord else { return step }
             
             for i in 0..<word.count {
-                var chars = [Character](word)
+                var chars = Array(word)
                 for ch in alphabet where ch != chars[i] {
                     chars[i] = ch
-                    let transformWord = String(chars)
-                    
-                    guard words.contains(transformWord) else { continue }
-                    
-                    words.remove(transformWord)
-                    queue.append((transformWord, step + 1))
+                    let modified = String(chars)
+                    guard words.contains(modified) else { continue }
+                    words.remove(modified)
+                    queue.append((modified, step + 1))
                 }
             }
         }
