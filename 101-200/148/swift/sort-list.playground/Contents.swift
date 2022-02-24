@@ -5,12 +5,9 @@ import Foundation
 
 class Solution {
     func sortList(_ head: ListNode?) -> ListNode? {
-        guard  let head = head else { return nil }
-        guard head.next != nil else { return head }
+        guard head?.next != nil else { return head }
         
-        var slow: ListNode? = head
-        var fast: ListNode? = head
-        var prev: ListNode?
+        var prev: ListNode?, slow = head, fast = head
         
         while fast?.next != nil {
             prev = slow
@@ -19,14 +16,9 @@ class Solution {
         }
         prev?.next = nil
         
-        return merge(sortList(head), sortList(slow))
-    }
-    
-    private func merge(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-        var list1 = l1
-        var list2 = l2
-        let prevh = ListNode(-1)
-        var curr = prevh
+        var list1 = sortList(head), list2 = sortList(slow)
+        let node = ListNode(-1)
+        var curr = node
         
         while list1 != nil && list2 != nil {
             if list1!.val < list2!.val {
@@ -38,9 +30,8 @@ class Solution {
             }
             curr = curr.next!
         }
-        
         curr.next = (list1 != nil) ? list1 : list2
-        return prevh.next
+        return node.next
     }
 }
 
