@@ -26,7 +26,7 @@
 
 <!-- URL -->
 
-[study-plans]: ./Study%20Plans
+[study-plans]: ./study-plans
 [mock-assessments]: ./Mock%20Assessment
 
 <!-- Repo Details -->
