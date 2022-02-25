@@ -9,6 +9,7 @@ In mathematics and computer science, an algorithm is defined as a process or set
 <details>
 <summary>
 <img src="https://assets.leetcode.com/static_assets/others/algorithm_I.png" height="24" align="left">
+<img src="../.github/assets/images/svg/checkmarks/calendar.svg" height="24" align="right">
 <b>Algorithm I</b>
 </summary>
  
