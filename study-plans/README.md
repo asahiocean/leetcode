@@ -511,6 +511,16 @@ Dynamic programming is both a mathematical optimization method and a computer pr
 <b>Dynamic Programming I</b>
 </summary>
 
+<h2>Day 1</h2> <!-- Math, Dynamic Programming -->
+
+<ul>
+<li>
+<a href="../501-600/509/">Solution</a>
+– 
+<a href="https://leetcode.com/problems/fibonacci-number/">509. Fibonacci Number</a>
+</li>
+</ul>
+
 </details>
 
 <hr>
