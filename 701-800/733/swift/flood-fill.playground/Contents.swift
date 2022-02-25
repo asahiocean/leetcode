@@ -9,17 +9,21 @@ class Solution {
         dfs(&img, sr, sc, img[sr][sc], newColor)
         return img
     }
-    private func dfs(_ img: inout [[Int]], _ r: Int, _ c: Int, _ tc: Int, _ nc: Int) {
-        if r < 0 || r >= img.count || c < 0 || c >= (img.first?.count ?? 0) { return }
-        if img[r][c] != tc || img[r][c] == nc { return }
-        img[r][c] = nc
-        for d in [(0,1),(0,-1),(1,0),(-1,0)] { dfs(&img, r + d.0, c + d.1, tc, nc) }
+    private func dfs(_ image: inout [[Int]], _ sr: Int, _ sc: Int, _ pix: Int, _ newColor: Int) {
+        if (sr < 0 || sr >= image.count) { return }
+        if (sc < 0 || sc >= image[0].count) { return }
+        let pixOld = image[sr][sc]
+        if pixOld == newColor || pixOld != pix { return }
+        image[sr][sc] = newColor
+        for p in [(0,1),(0,-1),(1,0),(-1,0)] {
+            dfs(&image, (sr + p.0), (sc + p.1), pix, newColor)
+        }
     }
 }
 
 // MARK: - Test cases -
 
-// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.049 (0.050) seconds
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.027 (0.029) seconds
 
 import XCTest
 
