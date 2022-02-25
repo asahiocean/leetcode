@@ -257,6 +257,7 @@ During the computer programming process, identifying and using the appropriate d
 <details>
 <summary>
 <img src="https://assets.leetcode.com/static_assets/others/DS_I.png" height="24" align="left">
+<img src="../.github/assets/images/svg/checkmarks/calendar.svg" height="24" align="right">
 <b>Data Structure I</b>
 </summary>
 
