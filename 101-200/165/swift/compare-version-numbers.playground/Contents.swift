@@ -5,22 +5,20 @@ import Foundation
 
 class Solution {
     func compareVersion(_ version1: String, _ version2: String) -> Int {
-        let v1comp = verNum(version1), v2comp = verNum(version2)
-        let lnv1 = v1comp.count, lnv2 = v2comp.count
-        var i = 0
-        while i < lnv1 || i < lnv2 {
-            let comp1 = (i < lnv1) ? v1comp[i] : 0
-            let comp2 = (i < lnv2) ? v2comp[i] : 0
-            switch true {
-            case comp1 > comp2: return 1
-            case comp1 < comp2: return -1
-            default: i += 1
-            }
+        let arrV1 = arrVer(version1), arrV2 = arrVer(version2)
+        let lnV1 = arrV1.count, lnV2 = arrV2.count
+        var rvs = 0 // revisions
+        while rvs < lnV1 || rvs < lnV2 {
+            let comp1 = (rvs < lnV1) ? arrV1[rvs] : 0
+            let comp2 = (rvs < lnV2) ? arrV2[rvs] : 0
+            if comp1 > comp2 { return 1 }
+            if comp1 < comp2 { return -1 }
+            rvs += 1
         }
         return 0
     }
-    private func verNum(_ ver: String) -> [Int] {
-        return ver.split(separator: ".").compactMap({ Int($0) })
+    private func arrVer(_ v: String) -> [Int] {
+        return v.split(separator: ".").compactMap({Int($0)})
     }
 }
 
