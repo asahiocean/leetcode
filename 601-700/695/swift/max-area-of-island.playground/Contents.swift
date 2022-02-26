@@ -5,32 +5,29 @@ import Foundation
 
 class Solution {
     func maxAreaOfIsland(_ grid: [[Int]]) -> Int {
-        
-        var area = 0, grid = grid
-        for (i, row) in grid.enumerated() {
-            for j in 0..<row.count {
-                let btrack = backtrack(&grid, row: i, col: j)
-                area = max(btrack, area)
+        var value = 0, grid = grid
+        for (x, cols) in grid.enumerated() {
+            for y in 0..<cols.count {
+                value = max(backtrack(&grid, x, y), value)
             }
         }
-        return area
+        return value
     }
-    
-    private func backtrack(_ grid: inout [[Int]], row: Int, col: Int) -> Int {
-        if (row < 0 || col < 0) || (row == grid.count || col == grid[0].count) || (grid[row][col] != 1) { return 0 }
-        grid[row][col] = 0
-        var area = 1
-        for (i, j) in [(0, 1), (0, -1), (1, 0), (-1, 0)] {
-            let rowNext = row + i, colNext = col + j
-            area += backtrack(&grid, row: rowNext, col: colNext)
+    private func backtrack(_ grid: inout [[Int]], _ x: Int, _ y: Int) -> Int {
+        let rows = grid.count, cols = grid[0].count
+        if (x < 0 || y < 0) || (x == rows || y == cols) || (grid[x][y] != 1) { return 0 }
+        grid[x][y] = 0
+        var value = 1
+        for (a, b) in [(0, 1), (0, -1), (1, 0), (-1, 0)] {
+            value += backtrack(&grid, (x + a), (y + b))
         }
-        return area
+        return value
     }
 }
 
 // MARK: - Test cases -
 
-// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.032 (0.034) seconds
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.022 (0.024) seconds
 
 import XCTest
 
