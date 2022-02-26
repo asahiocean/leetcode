@@ -7,11 +7,11 @@ class Solution {
     func subtractProductAndSum(_ n: Int) -> Int {
         guard n >= 1 else { return 0 }
         
-        var cp = n, products: [Int] = []
+        var num = n, products: [Int] = []
         
-        while cp > 0 {
-            products.insert(cp % 10, at: 0)
-            cp /= 10
+        while num > 0 {
+            products.insert(num % 10, at: 0)
+            num /= 10
         }
         return products.reduce(1, *) - products.reduce(0, +)
     }
