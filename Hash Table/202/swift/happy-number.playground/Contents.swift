@@ -8,12 +8,12 @@ class Solution {
         var visited: Set<Int> = [], val = n
         while val != 1 && !visited.contains(val) {
             visited.insert(val)
-            var sum = 0
+            var sum = 0.0
             while val > 0 {
-                sum += Int(pow(Double((val % 10)), 2))
+                sum += pow(Double((val % 10)), 2)
                 val = val / 10
             }
-            val = sum
+            val = Int(sum)
         }
         return val == 1
     }
