@@ -5,8 +5,8 @@ import Foundation
 
 class Solution {
     func updateMatrix(_ mat: [[Int]]) -> [[Int]] {
-        let rows = mat.count, cols = mat[0].count
         var mat = mat
+        let rows = mat.count, cols = mat[0].count
         var queue: [(Int, Int)] = []
         
         for r in 0..<rows {
@@ -19,20 +19,15 @@ class Solution {
             }
         }
         
-        let directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]
+        typealias Coords = (x: Int, y: Int)
         var dist = 1
         
         while !queue.isEmpty {
             for _ in 0..<queue.count {
-                
-                let (f1,f2) = queue.removeFirst()
-                
-                for d in directions {
-                    let x = f1 + d.0
-                    let y = f2 + d.1
-                    if x < 0 || x >= rows || y < 0 || y >= cols || mat[x][y] != -1 {
-                        continue
-                    }
+                let (m,n) = queue.removeFirst()
+                for d: Coords in [(-1, 0), (1, 0), (0, -1), (0, 1)] {
+                    let x = (m + d.x), y = (n + d.y)
+                    if x < 0 || x >= rows || y < 0 || y >= cols || mat[x][y] != -1 { continue }
                     mat[x][y] = dist
                     queue.append((x, y))
                 }
