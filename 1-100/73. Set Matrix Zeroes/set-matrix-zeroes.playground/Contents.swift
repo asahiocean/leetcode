@@ -5,21 +5,21 @@ import Foundation
 
 class Solution {
     func setZeroes(_ matrix: inout [[Int]]) {
-        var setX: Set<Int> = [], setY: Set<Int> = []
+        var mat = matrix, arrX: [Int] = [], arrY: [Int] = []
+        let rows = mat.count, cols = mat[0].count
         
-        for i in 0..<matrix.count {
-            for j in 0..<matrix[0].count {
-                if matrix[i][j] == 0 {
-                    setX.insert(i)
-                    setY.insert(j)
-                }
+        for x in 0..<rows {
+            for y in 0..<cols where mat[x][y] == 0 {
+                arrX.append(x)
+                arrY.append(y)
             }
         }
-        setX.forEach({
-            for col in 0..<matrix[0].count { matrix[$0][col] = 0 }
-        })
-        setY.forEach({
-            for row in 0..<matrix.count { matrix[row][$0] = 0 }
-        })
+        for x in arrX {
+            for y in 0..<cols { mat[x][y] = 0 }
+        }
+        for y in arrY {
+            for x in 0..<rows { mat[x][y] = 0 }
+        }
+        matrix = mat
     }
 }
