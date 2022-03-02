@@ -5,16 +5,17 @@ import Foundation
 
 class Solution {
     func moveZeroes(_ nums: inout [Int]) {
-        var i = 0, zero = 0
-        while i < nums.count - zero {
-            if nums[i] == 0 {
+        var arr = nums, idx = 0, zero = 0
+        while idx < arr.count - zero {
+            if arr[idx] == 0 {
                 zero += 1
-                nums.append(0)
-                nums.remove(at: i)
+                arr.append(0)
+                arr.remove(at: idx)
             } else {
-                i += 1
+                idx += 1
             }
         }
+        nums = arr
     }
 }
 
@@ -29,15 +30,15 @@ class Tests: XCTestCase {
     private let solution = Solution()
     
     func test0() {
-        var array = [0,1,0,3,12]
-        solution.moveZeroes(&array)
-        XCTAssertEqual(array, [1,3,12,0,0])
+        var nums = [0,1,0,3,12]
+        solution.moveZeroes(&nums)
+        XCTAssertEqual(nums, [1,3,12,0,0])
     }
     
     func test1() {
-        var array = [0]
-        solution.moveZeroes(&array)
-        XCTAssertEqual(array, [0])
+        var nums = [0]
+        solution.moveZeroes(&nums)
+        XCTAssertEqual(nums, [0])
     }
 }
 
