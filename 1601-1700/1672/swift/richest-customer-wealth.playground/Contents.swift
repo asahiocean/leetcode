@@ -5,18 +5,13 @@ import Foundation
 
 class Solution {
     func maximumWealth(_ accounts: [[Int]]) -> Int {
-        var value = 0
-        for acc in accounts {
-            let wealth = acc.reduce(0, {$0 + $1})
-            value = max(value, wealth)
-        }
-        return value
+        return accounts.reduce(0, { max($0, $1.reduce(0, +)) })
     }
 }
 
 // MARK: - Test cases -
 
-// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.010 (0.012) seconds
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
 
 import XCTest
 
