@@ -8,22 +8,17 @@ class Solution {
         if s.isEmpty { return true }
         if t.isEmpty { return false }
         
-        var subArr = [Character](s)
-        let strArr = [Character](t)
+        var arrS = Array(s), arrT = Array(t)
         
-        let strSize = strArr.count
+        var cnt = 0
+        var less: Bool { cnt < t.count }
         
-        var val = 0
-        
-        while val < strSize && !subArr.isEmpty {
-            while val < strSize && strArr[val] != subArr[0] {
-                val += 1
-            }
-            if val < strSize { subArr.removeFirst() }
-            val += 1
+        while less && !arrS.isEmpty {
+            while less && arrT[cnt] != arrS[0] { cnt += 1 }
+            if less { arrS.removeFirst() }
+            cnt += 1
         }
-        
-        return subArr.isEmpty
+        return arrS.isEmpty
     }
 }
 
