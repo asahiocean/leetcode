@@ -7,14 +7,14 @@ class Solution {
     func canVisitAllRooms(_ rooms: [[Int]]) -> Bool {
         
         var visit: Set<Int> = []
-        var queue: [Int] = [0]
+        var queue: Set<Int> = [0]
         
         while !queue.isEmpty {
             for _ in 0..<queue.count {
                 let room = queue.removeFirst()
                 visit.insert(room)
                 for r in rooms[room] where !visit.contains(r) {
-                    queue.append(r)
+                    queue.insert(r)
                 }
             }
         }
