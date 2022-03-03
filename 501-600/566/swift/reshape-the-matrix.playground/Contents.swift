@@ -5,24 +5,22 @@ import Foundation
 
 class Solution {
     func matrixReshape(_ mat: [[Int]], _ r: Int, _ c: Int) -> [[Int]] {
+        guard (mat.count * mat[0].count) == (r * c) else { return mat }
         
-        guard !mat.isEmpty && (mat.count * mat[0].count) == (r * c) && r != mat.count else { return mat }
+        var reshaped = [[Int]](repeating: [Int](repeating: 0, count: c), count: r)
+        var one = 0, two = 0
         
-        var result = [[Int]](repeating: [Int](repeating: 0, count: c), count: r)
-        
-        var valM = 0, valN = 0
-        
-        for row in mat {
-            for val in row {
-                if valN == c {
-                    valM += 1
-                    valN = 0
+        for m in mat {
+            for n in m {
+                if two == c {
+                    one += 1
+                    two = 0
                 }
-                result[valM][valN] = val
-                valN += 1
+                reshaped[one][two] = n
+                two += 1
             }
         }
-        return result
+        return reshaped
     }
 }
 
