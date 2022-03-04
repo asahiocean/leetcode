@@ -6,14 +6,12 @@ import Foundation
 class Solution {
     func findTheDifference(_ s: String, _ t: String) -> Character {
         var dict: [Character:Int] = [:]
-        
         for ch in s { dict[ch, default: 0] += 1 }
-        
         for ch in t {
-            guard let num = dict[ch], num > 0 else { return ch }
-            dict[ch] = num - 1
+            guard let pos = dict[ch], pos > 0 else { return ch }
+            dict[ch] = pos - 1
         }
-        return "\0"
+        return "0"
     }
 }
 
