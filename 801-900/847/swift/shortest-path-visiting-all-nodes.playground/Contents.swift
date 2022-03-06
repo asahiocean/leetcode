@@ -6,37 +6,35 @@ import Foundation
 class Solution {
     func shortestPathLength(_ graph: [[Int]]) -> Int {
         struct State: Hashable {
-            let node: Int, visited: UInt16
+            let node: Int, vzit: UInt16
         }
-        let one: UInt16 = 1
-        let len = graph.count
         
-        let total: UInt16 = one << len - 1
+        let len = graph.count, one: UInt16 = 1, total = one << len - 1
         
-        var queue: [State] = []
-        var visited: Set<State> = []
+        var queue: [State] = [], setVzit: Set<State> = []
         
-        for node in 0..<len {
-            let state = State(node: node, visited: one << node)
+        for n in 0..<len {
+            let state = State(node: n, vzit: one << n)
             queue.append(state)
-            visited.insert(state)
+            setVzit.insert(state)
         }
         
         var level = 0
+        
         while !queue.isEmpty {
             level += 1
-            var nextLevel: [State] = []
+            var nextLvl: [State] = []
             for state in queue {
-                for node in graph[state.node] {
-                    let visit: UInt16 = state.visited | (one << node)
+                for n in graph[state.node] {
+                    let visit: UInt16 = state.vzit | (one << n)
                     guard visit != total else { return level }
-                    let next = State(node: node, visited: visit)
-                    guard !(visited.contains(next)) else { continue }
-                    visited.insert(next)
-                    nextLevel.append(next)
+                    let next = State(node: n, vzit: visit)
+                    guard !(setVzit.contains(next)) else { continue }
+                    setVzit.insert(next)
+                    nextLvl.append(next)
                 }
             }
-            queue = nextLevel
+            queue = nextLvl
         }
         return 0
     }
