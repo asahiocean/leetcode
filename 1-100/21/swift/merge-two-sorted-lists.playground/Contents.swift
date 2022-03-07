@@ -5,20 +5,20 @@ import Foundation
 
 class Solution {
     func mergeTwoLists(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-        guard let l1 = l1 else { return l2 }
-        guard let l2 = l2 else { return l1 }
-        guard l1.val < l2.val else {
-            l2.next = mergeTwoLists(l1, l2.next)
+        if l1 == nil || l2 == nil { return l1 == nil ? l2 : l1 }
+        if l1!.val < l2!.val {
+            l1?.next = mergeTwoLists(l1?.next, l2)
+            return l1
+        } else {
+            l2?.next = mergeTwoLists(l1, l2?.next)
             return l2
         }
-        l1.next = mergeTwoLists(l1.next, l2)
-        return l1
     }
 }
 
 // MARK: - Tests cases -
 
-// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.021 (0.023) seconds
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.014 (0.016) seconds
 
 import XCTest
 
@@ -28,17 +28,17 @@ class Tests: XCTestCase {
     
     func test0() {
         let value = solution.mergeTwoLists(ListNode([1,2,4]), ListNode([1,3,4]))
-        XCTAssertEqual(value, ListNode([1,1,2,3,4,4]))
+        XCTAssertEqual(value?.val, ListNode([1,1,2,3,4,4])?.val)
     }
     
     func test1() {
         let value = solution.mergeTwoLists(ListNode([]), ListNode([]))
-        XCTAssertEqual(value, ListNode([]))
+        XCTAssertEqual(value?.val, ListNode([])?.val)
     }
     
     func test2() {
         let value = solution.mergeTwoLists(ListNode([]), ListNode([0]))
-        XCTAssertEqual(value, ListNode([0]))
+        XCTAssertEqual(value?.val, ListNode([0])?.val)
     }
 }
 
@@ -53,21 +53,14 @@ public class ListNode {
     public init(_ val: Int) { self.val = val; self.next = nil; }
     public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }
     
-    // An additional initializer that can be used to implement nodes from an array
     public init?(_ array: [Int]) {
         guard !array.isEmpty else { return nil }
         self.val = array[0]
-        var prev: ListNode = self
+        var node = self
         for i in 1..<array.count {
-            let new = ListNode(array[i])
-            prev.next = new
-            prev = new
+            let next = ListNode(array[i])
+            node.next = next
+            node = next
         }
-    }
-}
-
-extension ListNode: Equatable {
-    public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
-        return lhs.val == rhs.val && lhs.next == rhs.next
     }
 }
