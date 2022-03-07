@@ -37,7 +37,7 @@ import XCTest
 class Tests: XCTestCase {
     
     private let myQueue = MyQueue()
-        
+    
     func test0() {
         myQueue.push(1)
         assert(myQueue.get() == [1])     // queue is: [1]
