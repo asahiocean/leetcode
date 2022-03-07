@@ -5,15 +5,13 @@ import Foundation
 
 class Solution {
     func isAnagram(_ s: String, _ t: String) -> Bool {
-        let dictS = Dictionary(s.map {($0, 1)}, uniquingKeysWith: +)
-        let dictT = Dictionary(t.map {($0, 1)}, uniquingKeysWith: +)
-        return dictS == dictT
+        return s.sorted() == t.sorted()
     }
 }
 
 // MARK: - Test cases -
 
-// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.014 (0.016) seconds
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
 
 import XCTest
 
