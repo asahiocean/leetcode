@@ -5,32 +5,32 @@ import Foundation
 
 class MyQueue {
     
-    private var array: [Int]
+    private var queue: [Int]
     
     init() {
-        self.array = []
+        self.queue = []
     }
     
     func push(_ x: Int) {
-        array.append(x)
+        queue.append(x)
     }
     
     func pop() -> Int {
-        return array.removeFirst()
+        return queue.removeFirst()
     }
     
     func peek() -> Int {
-        return array.first ?? 0
+        return queue.first ?? 0
     }
     
     func empty() -> Bool {
-        return array.isEmpty
+        return queue.isEmpty
     }
 }
 
 extension MyQueue {
-    final func get() -> [Int] {
-        return array
+    func get() -> [Int] {
+        return self.queue
     }
 }
 
@@ -42,13 +42,18 @@ import XCTest
 
 class Tests: XCTestCase {
     
+    private let myQueue = MyQueue()
+    
+    private var queue: [Int] = []
+    
     func test0() {
-        let myQueue = MyQueue()
-        myQueue.push(1)     // queue is: [1]
-        myQueue.push(2)     // queue is: [1, 2] (leftmost is front of the queue)
-        myQueue.peek()      // return 1
-        myQueue.pop()       // return 1, queue is [2]
-        myQueue.empty()     // return false
+        myQueue.push(1)
+        assert(myQueue.get() == [1])     // queue is: [1]
+        myQueue.push(2)
+        assert(myQueue.get() == [1, 2])  // queue is: [1, 2] (leftmost is front of the queue)
+        assert(myQueue.peek() == 1)      // return 1
+        assert(myQueue.pop() == 1)       // return 1, queue is [2]
+        assert(myQueue.empty() == false) // return false
         XCTAssert(myQueue.get() != [nil,nil,nil,1,1])
     }
 }
