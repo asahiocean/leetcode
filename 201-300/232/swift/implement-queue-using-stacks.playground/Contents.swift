@@ -28,12 +28,6 @@ class MyQueue {
     }
 }
 
-extension MyQueue {
-    func get() -> [Int] {
-        return self.queue
-    }
-}
-
 // MARK: - Test cases -
 
 // Result: Executed 1 test, with 0 failures (0 unexpected) in 0.007 (0.009) seconds
@@ -43,9 +37,7 @@ import XCTest
 class Tests: XCTestCase {
     
     private let myQueue = MyQueue()
-    
-    private var queue: [Int] = []
-    
+        
     func test0() {
         myQueue.push(1)
         assert(myQueue.get() == [1])     // queue is: [1]
@@ -59,3 +51,9 @@ class Tests: XCTestCase {
 }
 
 Tests.defaultTestSuite.run()
+
+extension MyQueue {
+    func get() -> [Int] {
+        return self.queue
+    }
+}
