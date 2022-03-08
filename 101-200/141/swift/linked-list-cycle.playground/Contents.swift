@@ -6,7 +6,6 @@ import Foundation
 class Solution {
     func hasCycle(_ head: ListNode?) -> Bool {
         guard head != nil else { return false }
-        
         var node = head, next = node?.next
         
         while node !== next {
