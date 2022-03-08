@@ -5,24 +5,23 @@ import Foundation
 
 class Solution {
     private let alphabet = "abcdefghijklmnopqrstuvwxyz"
-    func ladderLength(_ beginWord: String, _ endWord: String, _ wordList: [String]) -> Int {
-        guard beginWord.count == endWord.count else { return 0 }
+    func ladderLength(_ begin: String, _ end: String, _ list: [String]) -> Int {
+        guard begin.count == end.count else { return 0 }
         
-        var words = Set<String>(wordList)
-        var queue: [(String, Int)] = [(beginWord, 1)]
+        var words = Set(list), queue = [(begin, 1)]
         
         while !queue.isEmpty {
             let (word, step) = queue.removeFirst()
-            guard word != endWord else { return step }
+            guard word != end else { return step }
             
             for i in 0..<word.count {
                 var chars = Array(word)
                 for ch in alphabet where ch != chars[i] {
                     chars[i] = ch
-                    let modified = String(chars)
-                    guard words.contains(modified) else { continue }
-                    words.remove(modified)
-                    queue.append((modified, step + 1))
+                    let modStr = String(chars)
+                    guard words.contains(modStr) else { continue }
+                    words.remove(modStr)
+                    queue.append((modStr, step + 1))
                 }
             }
         }
