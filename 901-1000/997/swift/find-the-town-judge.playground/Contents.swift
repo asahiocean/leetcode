@@ -5,7 +5,6 @@ import Foundation
 
 class Solution {
     func findJudge(_ n: Int, _ trust: [[Int]]) -> Int {
-        
         guard !(trust.isEmpty) else { return n == 1 ? 1 : -1 }
         
         var map: [Int:Set<Int>] = [:] // trust hash
@@ -17,7 +16,6 @@ class Solution {
             nojudges.insert(arr[0])
             if map[arr[1]]!.count == n - 1 { judge = arr[1] }
         }
-        
         return !nojudges.contains(judge) ? judge : -1
     }
 }
