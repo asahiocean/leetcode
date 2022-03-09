@@ -5,9 +5,9 @@ import Foundation
 
 class Solution {
     func findSmallestSetOfVertices(_ n: Int, _ edges: [[Int]]) -> [Int] {
-        var set = Set<Int>(0..<n)
-        for e in edges { set.remove(e[1]) }
-        return [Int](set.sorted())
+        var set = Set(0..<n)
+        edges.forEach { set.remove($0[1]) }
+        return set.sorted()
     }
 }
 
