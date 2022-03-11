@@ -9,18 +9,7 @@ class Solution {
         
         var prev = head, post = head
         
-        var len: Int {
-            get {
-                var value = 0
-                var dummy = head
-                while let node = dummy {
-                    dummy = node.next
-                    value += 1
-                }
-                return value
-            }
-        }
-        
+        let len = lnCalc(head)
         var places = (k % len)
         
         while places > 0 {
@@ -32,12 +21,19 @@ class Solution {
             post = postnext
             prev = prev?.next
         }
-        
         post?.next = head
         post = prev?.next
         prev?.next = nil
-        
         return post
+    }
+    private func lnCalc(_ head: ListNode?) -> Int {
+        var val = 0
+        var dummy = head
+        while let node = dummy {
+            dummy = node.next
+            val += 1
+        }
+        return val
     }
 }
 
