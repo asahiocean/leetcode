@@ -5,7 +5,6 @@ import Foundation
 
 class Solution {
     func isValid(_ s: String) -> Bool {
-        
         guard s.count % 2 == 0 else { return false }
         
         var stack: [Character] = []
@@ -21,7 +20,6 @@ class Solution {
                 }
             }
         }
-        
         return stack.isEmpty
     }
 }
@@ -40,10 +38,12 @@ class Tests: XCTestCase {
         let value = solution.isValid("()")
         XCTAssertTrue(value)
     }
+    
     func test1() {
         let value = solution.isValid("()[]{}")
         XCTAssertTrue(value)
     }
+    
     func test2() {
         let value = solution.isValid("(]")
         XCTAssertFalse(value)
