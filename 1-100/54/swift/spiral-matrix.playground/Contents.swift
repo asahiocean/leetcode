@@ -12,19 +12,19 @@ class Solution {
         var cBegin = 0, cEnd = matrix[0].count - 1
         
         while rBegin <= rEnd && cBegin <= cEnd {
-            // Traverse right
+            // traverse right
             for i in stride(from: cBegin, to: cEnd + 1, by: 1) {
                 result.append(matrix[rBegin][i])
             }
             rBegin += 1
             
-            // Traverse down
+            // traverse down
             for i in stride(from: rBegin, to: rEnd + 1, by: 1) {
                 result.append(matrix[i][cEnd])
             }
             cEnd -= 1
             
-            // Traverse left
+            // traverse left
             if rBegin <= rEnd {
                 for i in stride(from: cEnd, to: cBegin - 1, by: -1) {
                     result.append(matrix[rEnd][i])
@@ -32,7 +32,7 @@ class Solution {
             }
             rEnd -= 1
             
-            // Traverse up
+            // traverse up
             if cBegin <= cEnd {
                 for i in stride(from: rEnd, to: rBegin - 1, by: -1) {
                     result.append(matrix[i][cBegin])
