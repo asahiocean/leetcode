@@ -4,21 +4,14 @@ import Foundation
 // https://leetcode.com/problems/k-closest-points-to-origin/
 
 class Solution {
-    func kClosest(_ points: [[Int]], _ K: Int) -> [[Int]] {
-        let values = points.sorted() { helper($0, $1) }
-        return Array(values[0..<K])
-    }
-    private func helper(_ a: [Int], _ b: [Int]) -> Bool {
-        let pwInt: (Int) -> Int = { Int(pow(Double($0), 2)) }
-        let mapA = a.map{pwInt($0)}.reduce(0, +)
-        let mapB = b.map{pwInt($0)}.reduce(0, +)
-        return mapA < mapB
+    func kClosest(_ p: [[Int]], _ k: Int) -> [[Int]] {
+        return Array(p.sorted { a,b in (a[0]*a[0] + a[1]*a[1]) < (b[0]*b[0] + b[1]*b[1])}[0..<k])
     }
 }
 
 // MARK: - Test cases -
 
-// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.015 (0.017) seconds
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.010 (0.012) seconds
 
 import XCTest
 
