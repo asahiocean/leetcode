@@ -5,21 +5,21 @@ import Foundation
 
 class Solution {
     func numOfMinutes(_ n: Int, _ headID: Int, _ manager: [Int], _ informTime: [Int]) -> Int {
-        var tree: [Int:[Int]] = [:], maxTime = Int.min
+        var tree: [Int:[Int]] = [:], maxTime = 0
         for i in 0..<n {
-            let mngr = manager[i]
-            if tree[mngr] == nil {
-                tree[mngr] = [i]
+            let mgr = manager[i]
+            if tree[mgr] == nil {
+                tree[mgr] = [i]
             } else {
-                tree[mngr]?.append(i)
+                tree[mgr]?.append(i)
             }
         }
-        func dfs(_ mngr: Int, _ t: Int) {
-            guard let ees = tree[mngr] else {
+        func dfs(_ m: Int, _ t: Int) {
+            guard let ees = tree[m] else {
                 maxTime = max(t, maxTime)
                 return
             }
-            for e in ees { dfs(e, (t + informTime[mngr])) }
+            for e in ees { dfs(e, (t + informTime[m])) }
         }
         dfs(headID, 0)
         return maxTime
