@@ -29,11 +29,9 @@ class Solution {
         }
         return result
     }
-    
     private func diff(_ a: Character, _ b: Character) -> Int {
         return Int(a.asciiValue! - b.asciiValue!)
     }
-    
     private func valid(_ lhs: [Int], _ rhs: [Int]) -> Bool {
         for i in lhs.indices where lhs[i] != rhs[i] { return false }
         return true
