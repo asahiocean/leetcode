@@ -7,32 +7,32 @@ class Solution {
     func copyRandomList(_ head: Node?) -> Node? {
         if head == nil { return nil }
         
-        var temp = head, idx = 0
+        var node = head, idx = 0
         
-        while let tmp = temp {
-            tmp.val = (tmp.val + 10000) | (idx << 32)
-            temp = tmp.next
+        while let nod = node {
+            nod.val = (nod.val + 10000) | (idx << 32)
+            node = nod.next
             idx += 1
         }
         
         var nodes: [Node?] = []
-        temp = head
+        node = head
         
-        while let tmp = temp {
-            let node = Node((tmp.val & Int(UInt32.max)) - 10000)
-            if !nodes.isEmpty { nodes[nodes.count - 1]?.next = node }
-            nodes.append(node)
-            temp = tmp.next
+        while let nod = node {
+            let new = Node((nod.val & Int(UInt32.max)) - 10000)
+            if !nodes.isEmpty { nodes[nodes.count - 1]?.next = new }
+            nodes.append(new)
+            node = nod.next
         }
         
-        temp = head
+        node = head
         idx = 0
         
-        while let tmp = temp {
-            if let rand = tmp.random {
+        while let nod = node {
+            if let rand = nod.random {
                 nodes[idx]?.random = nodes[rand.val >> 32]
             }
-            temp = temp?.next
+            node = node?.next
             idx += 1
         }
         return nodes[0]
