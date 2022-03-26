@@ -5,11 +5,11 @@ import Foundation
 
 class Solution {
     func search(_ nums: [Int], _ target: Int) -> Int {
-        var left = 0, right = nums.count - 1
-        while left <= right {
-            let mid = left + (right - left) / 2
+        var lhs = 0, rhs = nums.count - 1
+        while lhs <= rhs {
+            let mid = lhs + (rhs - lhs) / 2
             if nums[mid] == target { return mid }
-            nums[mid] > target ? (right = mid - 1) : (left = mid + 1)
+            nums[mid] > target ? (rhs = mid - 1) : (lhs = mid + 1)
         }
         return -1
     }
