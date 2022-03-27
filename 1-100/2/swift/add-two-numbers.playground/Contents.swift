@@ -4,12 +4,12 @@ import Foundation
 // https://leetcode.com/problems/add-two-numbers/
 
 class Solution {
-    private var digit = 0
+    private var dig = 0
     func addTwoNumbers(_ l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-        if l1 == nil && l2 == nil && digit == 0 { return nil }
-        let sum = (l1?.val ?? 0) + (l2?.val ?? 0) + digit
-        digit = sum / 10
-        return ListNode(sum % 10, addTwoNumbers(l1?.next, l2?.next))
+        if l1 == nil && l2 == nil && dig == 0 { return nil }
+        let sum = (l1?.val ?? 0) + (l2?.val ?? 0) + dig
+        dig = sum / 10
+        return .init(sum % 10, addTwoNumbers(l1?.next, l2?.next))
     }
 }
 
@@ -23,7 +23,7 @@ class Tests: XCTestCase {
     
     private let solution = Solution()
     
-    // 342 + 465 = 807.
+    // 342 + 465 = 807
     func test0() {
         let node = solution.addTwoNumbers(ListNode([2,4,3]), ListNode([5,6,4]))
         let expected = ListNode([7,0,8])
