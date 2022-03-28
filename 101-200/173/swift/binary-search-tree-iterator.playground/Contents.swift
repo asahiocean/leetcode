@@ -5,7 +5,7 @@ import Foundation
 
 class BSTIterator {
     
-    private var stack: [TreeNode]
+    private(set) var stack: [TreeNode]
     
     init(_ root: TreeNode?) {
         self.stack = []
@@ -24,9 +24,9 @@ class BSTIterator {
     
     private func loadAllLefts(_ root: TreeNode?) {
         var node = root
-        while let curr = node {
-            stack.append(curr)
-            node = curr.left
+        while let cur = node {
+            stack.append(cur)
+            node = cur.left
         }
     }
 }
