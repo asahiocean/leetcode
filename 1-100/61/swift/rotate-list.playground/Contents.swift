@@ -17,8 +17,8 @@ class Solution {
             places -= 1
         }
         
-        while let postnext = post?.next {
-            post = postnext
+        while let ptnext = post?.next {
+            post = ptnext
             prev = prev?.next
         }
         post?.next = head
@@ -27,10 +27,9 @@ class Solution {
         return post
     }
     private func lnCalc(_ head: ListNode?) -> Int {
-        var val = 0
-        var dummy = head
-        while let node = dummy {
-            dummy = node.next
+        var val = 0, tmp = head
+        while let node = tmp {
+            tmp = node.next
             val += 1
         }
         return val
