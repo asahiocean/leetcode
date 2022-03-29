@@ -5,24 +5,22 @@ import Foundation
 
 class Solution {
     func nextPermutation(_ nums: inout [Int]) {
-        var lhs = -1, rhs = -1, idx = nums.count - 2
+        let len = nums.count
+        var lhs = -1, rhs = -1, idx = len - 2
         while idx >= 0 {
             if nums[idx] < nums[idx + 1] { lhs = idx; break }
             idx -= 1
         }
-        guard lhs != -1 else {
-            nums = Array(nums.reversed())
-            return
-        }
+        guard lhs != -1 else { nums = nums.reversed(); return }
         
-        idx = nums.count - 1
+        idx = len - 1
         while idx > lhs {
-            if nums[idx] > nums[lhs] { rhs = idx; break }
+            rhs = idx
+            if nums[idx] > nums[lhs] { break }
             idx -= 1
         }
         nums.swapAt(lhs, rhs)
-        let arr = [Int](nums[lhs+1...nums.count - 1])
-        nums.replaceSubrange(lhs + 1..<nums.count, with: Array(arr.reversed()))
+        nums.replaceSubrange(lhs + 1..<len, with: nums[lhs + 1...len - 1].reversed())
     }
 }
 
