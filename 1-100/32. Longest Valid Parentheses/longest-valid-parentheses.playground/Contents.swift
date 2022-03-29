@@ -5,26 +5,25 @@ import Foundation
 
 class Solution {
     func longestValidParentheses(_ s: String) -> Int {
-        var value = 0, start = 0, stack = [Int]()
+        var val = 0, start = 0, stack: [Int] = []
         
         for (i,ch) in s.enumerated() {
-            switch ch == "(" {
-            case true:
+            if ch == "(" {
                 stack.append(i)
-            default:
+            } else {
                 if !stack.isEmpty {
                     stack.removeLast()
                     if let last = stack.last {
-                        value = max(value, i - last)
+                        val = max(val, i - last)
                     } else {
-                        value = max(value, i - start + 1)
+                        val = max(val, i - start + 1)
                     }
                 } else {
                     start = i + 1
                 }
             }
         }
-        return value
+        return val
     }
 }
 
@@ -33,17 +32,23 @@ import XCTest
 // Executed 3 tests, with 0 failures (0 unexpected) in 0.013 (0.015) seconds
 
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
+    // The longest valid parentheses substring is "()".
     func test0() {
-        let res = s.longestValidParentheses("(()")
+        let res = solution.longestValidParentheses("(()")
         XCTAssertEqual(res, 2)
     }
+    
+    // The longest valid parentheses substring is "()()".
     func test1() {
-        let res = s.longestValidParentheses(")()())")
+        let res = solution.longestValidParentheses(")()())")
         XCTAssertEqual(res, 4)
     }
+    
     func test2() {
-        let res = s.longestValidParentheses("")
+        let res = solution.longestValidParentheses("")
         XCTAssertEqual(res, 0)
     }
 }
