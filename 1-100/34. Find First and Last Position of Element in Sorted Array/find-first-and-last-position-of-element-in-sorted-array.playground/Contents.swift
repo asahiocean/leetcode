@@ -7,23 +7,23 @@ class Solution {
     func searchRange(_ nums: [Int], _ target: Int) -> [Int] {
         guard !nums.isEmpty else { return [-1, -1] }
         
-        var left = 0, right = nums.count - 1
+        var lhs = 0, rhs = nums.count - 1
         var result = [-1,-1]
         
-        while left < right {
-            let mid = left + (right - left) / 2
-            nums[mid] < target ? (left = mid + 1) : (right = mid)
+        while lhs < rhs {
+            let mid = lhs + (rhs - lhs) / 2
+            nums[mid] < target ? (lhs = mid + 1) : (rhs = mid)
         }
         
-        guard nums[left] == target else { return result }
-        result[0] = left
+        guard nums[lhs] == target else { return result }
+        result[0] = lhs
         
-        right = nums.count - 1
-        while left < right {
-            let mid = left + (right - left) / 2 + 1
-            target < nums[mid] ? (right = mid - 1) : (left = mid)
+        rhs = nums.count - 1
+        while lhs < rhs {
+            let mid = lhs + (rhs - lhs) / 2 + 1
+            target < nums[mid] ? (rhs = mid - 1) : (lhs = mid)
         }
-        result[1] = left
+        result[1] = lhs
         return result
     }
 }
@@ -42,10 +42,12 @@ class Tests: XCTestCase {
         let value = solution.searchRange([5,7,7,8,8,10], 8)
         XCTAssertEqual(value, [3,4])
     }
+    
     func test1() {
         let value = solution.searchRange([5,7,7,8,8,10], 6)
         XCTAssertEqual(value, [-1,-1])
     }
+    
     func test2() {
         let value = solution.searchRange([], 0)
         XCTAssertEqual(value, [-1,-1])
