@@ -6,16 +6,15 @@ import Foundation
 class Solution {
     func combinationSum(_ candidates: [Int], _ target: Int) -> [[Int]] {
         var uniqs: [[Int]] = [], comb: [Int] = []
-        let sorted = candidates.sorted()
-        dfs(&uniqs, &comb, sorted, target, 0)
+        dfs(&uniqs, &comb, candidates.sorted(), target, 0)
         return uniqs
     }
     
-    private func dfs(_ uniq: inout [[Int]], _ comb: inout [Int], _ cands: [Int], _ targ: Int, _ idx: Int) {
-        if targ <= 0 { uniq.append(comb) }
-        for i in idx..<cands.count where cands[i] <= targ {
+    private func dfs(_ uniq: inout [[Int]], _ comb: inout [Int], _ cands: [Int], _ tgt: Int, _ id: Int) {
+        if tgt <= 0 { uniq.append(comb) }
+        for i in id..<cands.count where cands[i] <= tgt {
             comb.append(cands[i])
-            dfs(&uniq, &comb, cands, targ - cands[i], i)
+            dfs(&uniq, &comb, cands, tgt - cands[i], i)
             comb.removeLast()
         }
     }
