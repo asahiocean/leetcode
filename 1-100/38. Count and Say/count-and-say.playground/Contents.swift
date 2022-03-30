@@ -9,33 +9,47 @@ class Solution {
         
         let prev = countAndSay(n - 1)
         var curr = prev.first!, count = 0, result = ""
+        func say() { result += "\(count)\(curr)" }
         
         prev.forEach {
             if $0 != curr {
-                result += "\(count)\(curr)"
+                say()
                 count = 1
                 curr = $0
             } else {
                 count += 1
             }
         }
-        result += "\(count)\(curr)"
+        say()
         return result
-        
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
+
 import XCTest
 
-// Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
+    // This is the base case.
     func test0() {
-        XCTAssertEqual(s.countAndSay(1), "1")
+        let value = solution.countAndSay(1)
+        XCTAssertEqual(value, "1")
     }
+    
+    /*
+    countAndSay(1) = "1"
+    countAndSay(2) = say "1" = one 1 = "11"
+    countAndSay(3) = say "11" = two 1's = "21"
+    countAndSay(4) = say "21" = one 2 + one 1 = "12" + "11" = "1211"
+    */
     func test1() {
-        XCTAssertEqual(s.countAndSay(4), "1211")
+        let value = solution.countAndSay(4)
+        XCTAssertEqual(value, "1211")
     }
 }
 
