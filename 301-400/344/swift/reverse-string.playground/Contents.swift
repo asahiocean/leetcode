@@ -18,17 +18,18 @@ import XCTest
 class Tests: XCTestCase {
     
     private let solution = Solution()
+    private typealias Ch = Character
     
     func test0() {
-        var array: [Character] = ["h","e","l","l","o"]
-        solution.reverseString(&array)
-        XCTAssertEqual(array, ["o","l","l","e","h"])
+        var arr = ["h","e","l","l","o"] as [Ch]
+        solution.reverseString(&arr)
+        XCTAssertEqual(arr, ["o","l","l","e","h"])
     }
     
     func test1() {
-        var array: [Character] = ["H","a","n","n","a","h"]
-        solution.reverseString(&array)
-        XCTAssertEqual(array, ["h","a","n","n","a","H"])
+        var arr = ["H","a","n","n","a","h"] as [Ch]
+        solution.reverseString(&arr)
+        XCTAssertEqual(arr, ["h","a","n","n","a","H"])
     }
 }
 
