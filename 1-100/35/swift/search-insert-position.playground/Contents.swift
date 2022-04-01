@@ -6,10 +6,10 @@ import Foundation
 class Solution {
     func searchInsert(_ nums: [Int], _ target: Int) -> Int {
         
-        var val = 0, idx = (nums.count - 1)
+        var val = 0, idx = nums.count - 1
         
         while val <= idx {
-            let num = val + ((idx - val) / 2)
+            let num = val + (idx - val) / 2
             if nums[num] < target {
                 val = num + 1
             } else if nums[num] > target {
