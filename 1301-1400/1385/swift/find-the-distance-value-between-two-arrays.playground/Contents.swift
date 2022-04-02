@@ -5,16 +5,16 @@ import Foundation
 
 class Solution {
     func findTheDistanceValue(_ arr1: [Int], _ arr2: [Int], _ d: Int) -> Int {
-        var res = 0, existed: [Int:Bool] = [:]
+        var val = 0, exist: [Int:Bool] = [:]
         for a in arr2 {
             for b in (a - d)...(a + d) {
-                existed[b] = false
+                exist[b] = false
             }
         }
-        for n in arr1 where existed[n] == nil {
-            res += 1
+        for n in arr1 where exist[n] == nil {
+            val += 1
         }
-        return res
+        return val
     }
 }
 
