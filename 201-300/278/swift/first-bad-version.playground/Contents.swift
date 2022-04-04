@@ -6,24 +6,23 @@ import Foundation
 class Solution : VersionControl {
     func firstBadVersion(_ n: Int) -> Int {
         guard n > 1 else { return n }
-        var start = 1, end = n
-        while start < end {
-            let mid = start + (end - start) / 2
-            isBadVersion(mid) ? (end = mid) : (start = mid + 1)
+        var lhs = 1, rhs = n
+        while lhs < rhs {
+            let mid = lhs + (rhs - lhs) / 2
+            isBadVersion(mid) ? (rhs = mid) : (lhs = mid + 1)
         }
-        return isBadVersion(start) ? start : -1
+        return isBadVersion(lhs) ? lhs : -1
     }
 }
 
+// MARK: - VersionControl -
+
 class VersionControl {
-    
-    private var versions: [Int]
-    
+    private var vers: [Int]
     init(_ vers: [Int]) {
-        self.versions = vers
+        self.vers = vers
     }
-    
-    func isBadVersion(_ version: Int) -> Bool {
-        return versions[version - 1] == 1
+    func isBadVersion(_ v: Int) -> Bool {
+        return vers[v - 1] == 1
     }
 }
