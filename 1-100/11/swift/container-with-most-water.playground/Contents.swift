@@ -4,19 +4,14 @@ import Foundation
 // https://leetcode.com/problems/container-with-most-water/
 
 class Solution {
-    func maxArea(_ height: [Int]) -> Int {
-        let len = height.count
-        guard len > 2 else { return min(height[0], height[1]) }
-        
-        var area = 0
-        var lhs = 0, rhs = len - 1
-        
+    func maxArea(_ h: [Int]) -> Int {
+        guard h.count > 2 else { return min(h[0], h[1]) }
+        var val = 0, lhs = 0, rhs = h.count - 1
         while lhs < rhs {
-            let lots = min(height[lhs], height[rhs]) * (rhs - lhs)
-            area = max(area, lots)
-            height[lhs] < height[rhs] ? (lhs += 1) : (rhs -= 1)
+            val = max(val, min(h[lhs], h[rhs]) * (rhs - lhs))
+            h[lhs] < h[rhs] ? (lhs += 1) : (rhs -= 1)
         }
-        return area
+        return val
     }
 }
 
