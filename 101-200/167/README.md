@@ -31,10 +31,10 @@ class Solution {
 ```
 
 <p>
-<a href="GITHUB_GIST_URL">
+<a href="https://gist.github.com/asahiocean/1196f597ffc0487bc47d708c6fb5b938">
 <img src="https://git.io/JDNlC" alt="GitHub Gist" height="18" align="center">
 </a>
-<a href="LEECODE_PROBLEM_DISCUSS_URL">
+<a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/discuss/1920253/">
 <img src="https://git.io/JDSVA" alt="LeetCode Discuss" height="28" align="right">
 </a>
 </p>
