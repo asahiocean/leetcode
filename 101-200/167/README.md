@@ -13,18 +13,16 @@
 
 ```swift
 class Solution {
-    func twoSum(_ numbers: [Int], _ target: Int) -> [Int] {
-        let len = numbers.count
-        guard len > 1 else { return [] }
-        var left = 0, right = len - 1
-        while left < right {
-            switch numbers[left] + numbers[right] {
-            case let val where val < target:
-                left += 1
-            case let val where val > target:
-                right -= 1
-            default:
-                return [left + 1, right + 1]
+    func twoSum(_ n: [Int], _ t: Int) -> [Int] {
+        var lhs = 0, rhs = n.count - 1
+        while lhs < rhs {
+            let sum = n[lhs] + n[rhs]
+            if sum < t {
+                lhs += 1
+            } else if sum > t {
+                rhs -= 1
+            } else {
+                return [lhs + 1, rhs + 1]
             }
         }
         return []
@@ -33,10 +31,10 @@ class Solution {
 ```
 
 <p>
-<a href="GITHUB_GIST_URL">
+<a href="https://gist.github.com/asahiocean/1196f597ffc0487bc47d708c6fb5b938">
 <img src="https://git.io/JDNlC" alt="GitHub Gist" height="18" align="center">
 </a>
-<a href="LEECODE_PROBLEM_DISCUSS_URL">
+<a href="https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/discuss/1920253/">
 <img src="https://git.io/JDSVA" alt="LeetCode Discuss" height="28" align="right">
 </a>
 </p>
