@@ -4,20 +4,19 @@ import Foundation
 // https://leetcode.com/problems/search-a-2d-matrix/
 
 class Solution {
-    func searchMatrix(_ matrix: [[Int]], _ target: Int) -> Bool {
-        guard !matrix.isEmpty else { return false }
-        
+    func searchMatrix(_ m: [[Int]], _ t: Int) -> Bool {
+        if m.isEmpty { return false }
         var nums: [Int] = []
-        matrix.forEach { nums.append(contentsOf: $0) }
+        m.forEach { nums.append(contentsOf: $0) }
         
         var lhs = 0, rhs = nums.count - 1
         
         while lhs < rhs {
             let mid = lhs + (rhs - lhs) >> 1
-            if nums[mid] == target { return true }
-            nums[mid] < target ? (lhs = mid + 1) : (rhs = mid)
+            if nums[mid] == t { return true }
+            nums[mid] < t ? (lhs = mid + 1) : (rhs = mid)
         }
-        return nums[lhs] == target
+        return nums[lhs] == t
     }
 }
 
