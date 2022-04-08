@@ -6,13 +6,13 @@ import Foundation
 class Solution {
     func kWeakestRows(_ mat: [[Int]], _ k: Int) -> [Int] {
         var dict: [Int:Int] = [:]
-        for i in mat.indices {
-            for j in 0..<mat[0].count {
-                dict[i, default: 0] += mat[i][j]
+        for r in mat.indices {
+            for c in 0..<mat[0].count {
+                dict[r, default: 0] += mat[r][c]
             }
         }
         let list = dict.sorted{$0.1 == $1.1 ? $0.0 < $1.0 : $0.1 < $1.1}
-        return [Int](list.map{$0.0}[0 ..< k])
+        return Array(list.map{$0.0}[0..<k])
     }
 }
 
