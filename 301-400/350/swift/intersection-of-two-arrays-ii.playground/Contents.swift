@@ -5,22 +5,21 @@ import Foundation
 
 class Solution {
     func intersect(_ nums1: [Int], _ nums2: [Int]) -> [Int] {
+
+        var res: [Int] = []
+        var map = Dictionary(nums1.map {($0, 1)}, uniquingKeysWith: +)
         
-        var map: [Int:Int] = [:], result: [Int] = []
-        
-        for n in nums1 { map[n, default: 0] += 1 }
-        
-        for n in nums2 where (map[n] ?? 0) > 0 {
-            result.append(n)
+        for n in nums2 where map[n, default: 0] > 0 {
+            res.append(n)
             map[n]! -= 1
         }
-        return result
+        return res
     }
 }
 
 // MARK: - Test cases -
 
-// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.023 (0.025) seconds
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.012 (0.014) seconds
 
 import XCTest
 
