@@ -5,15 +5,14 @@ import Foundation
 
 class Solution {
     func topKFrequent(_ nums: [Int], _ k: Int) -> [Int] {
-        let dictFreq: [Int:Int] = Dictionary(nums.map({($0, 1)}), uniquingKeysWith: +)
-        let sorted = dictFreq.keys.sorted { dictFreq[$0]! > dictFreq[$1]! }
-        return Array(sorted[0..<k])
+        let dict = Dictionary(nums.map({($0, 1)}), uniquingKeysWith: +)
+        return [Int](dict.keys.sorted { dict[$0]! > dict[$1]! }[0..<k])
     }
 }
 
 // MARK: - Test cases -
 
-// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.014 (0.016) seconds
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.010 (0.012) seconds
 
 import XCTest
 
