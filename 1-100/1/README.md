@@ -1,41 +1,9 @@
 <h1>
 1. Two Sum
-<img src="https://tinyurl.com/2p898fxp" align="right" alt="views badge">
+<img src="https://tinyurl.com/2p898fxp" align="right">
 </h1>
 
-<details>
-<summary>
-    <img src="https://git.io/JDE5D" height="24" align="left" alt="swift">
-    <b>Solution</b>
-</summary>
-
-<br/>
-
-```swift
-class Solution {
-    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        var dict: [Int:Int] = [:]
-        for (i, n) in nums.enumerated() {
-            if let last = dict[target - n] {
-                return [last, i]
-            }
-            dict[n] = i
-        }
-        return []
-    }
-}
-```
-
-<p>
-<a href="https://gist.github.com/asahiocean/5417d4f858b842d76876aabbe2932031">
-<img src="https://git.io/JDNlC" alt="GitHub Gist" height="18" align="center">
-</a>
-<a href="https://leetcode.com/problems/two-sum/discuss/1629845">
-<img src="https://git.io/JDSVA" alt="LeetCode Discuss" height="28" align="right">
-</a>
-</p>
-    
-</details>
+<img src="https://git.io/JDE5D" height="24" align="left"><b><a href="https://bit.ly/3xoIvAU">Solution</a> • <a href="https://bit.ly/37HoOcE">GitHub Gist</a> • <a href="https://bit.ly/3KyIspM">LeetCode Discuss</a></b>
 
 <p align="center">• • •</p>
 
