@@ -4,12 +4,10 @@ import Foundation
 // https://leetcode.com/problems/two-sum/
 
 class Solution {
-    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        var dict: [Int:Int] = [:]
-        for (i, n) in nums.enumerated() {
-            if let last = dict[target - n] {
-                return [last, i]
-            }
+    func twoSum(_ n: [Int], _ t: Int) -> [Int] {
+        var dict = [Int:Int]()
+        for (i, n) in n.enumerated() {
+            if let val = dict[t-n] { return [val, i] }
             dict[n] = i
         }
         return []
