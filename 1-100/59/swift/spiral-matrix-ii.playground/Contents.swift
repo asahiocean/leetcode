@@ -5,45 +5,43 @@ import Foundation
 
 class Solution {
     func generateMatrix(_ n: Int) -> [[Int]] {
-        
         let map = [Int](repeating: -1, count: n)
-        var result = [[Int]](repeating: map, count: n)
-        
+        var res = [[Int]](repeating: map, count: n)
         let grid = (n * n)
-        var top  = 0, btm = n - 1, lhs = 0, rhs = (n - 1)
-        var n = 1
+        var top = 0, btm = n - 1, lhs = 0, rhs = (n - 1)
+        var elm = 1
         
-        while n <= grid {
-            if lhs <= rhs && n <= grid { // left -> right
+        while elm <= grid {
+            if lhs <= rhs && elm <= grid { // left -> right
                 for i in lhs...rhs {
-                    result[top][i] = n
-                    n += 1
+                    res[top][i] = elm
+                    elm += 1
                 }
                 top += 1
             }
-            if top <= btm && n <= grid { // top -> bottom
+            if top <= btm && elm <= grid { // top -> bottom
                 for i in top...btm {
-                    result[i][rhs] =  n
-                    n += 1
+                    res[i][rhs] =  elm
+                    elm += 1
                 }
                 rhs -= 1
             }
-            if lhs <= rhs && n <= grid { // right -> left
+            if lhs <= rhs && elm <= grid { // right -> left
                 for i in (lhs...rhs).reversed() {
-                    result[btm][i] = n
-                    n +=  1
+                    res[btm][i] = elm
+                    elm +=  1
                 }
                 btm -= 1
             }
-            if top <= btm && n <= grid { // bottom -> top
+            if top <= btm && elm <= grid { // bottom -> top
                 for i in (top...btm).reversed() {
-                    result[i][lhs] = n
-                    n += 1
+                    res[i][lhs] = elm
+                    elm += 1
                 }
                 lhs += 1
             }
         }
-        return result
+        return res
     }
 }
 
