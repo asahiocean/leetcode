@@ -6,11 +6,7 @@ import Foundation
 class Solution {
     func searchBST(_ root: TreeNode?, _ val: Int) -> TreeNode? {
         guard let root = root else { return nil }
-        if val == root.val {
-            return root
-        } else {
-            return searchBST(val < root.val ? root.left : root.right, val)
-        }
+        return val == root.val ? root : searchBST(val < root.val ? root.left : root.right, val)
     }
 }
 
