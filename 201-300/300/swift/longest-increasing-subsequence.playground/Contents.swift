@@ -5,19 +5,17 @@ import Foundation
 
 class Solution {
     func lengthOfLIS(_ nums: [Int]) -> Int {
-        guard let first = nums.first else { return 0 }
-        
-        var ends: [Int] = [first]
+        guard !nums.isEmpty else { return 0 }
+        var ends = [nums[0]]
         
         for i in 1..<nums.count {
-            var lhs = 0, rhs = ends.count
+            var len = ends.count, lhs = 0, rhs = len
             let num = nums[i]
-            
             while lhs < rhs {
                 let mid = (rhs - lhs) / 2 + lhs
                 ends[mid] < num ? (lhs = mid + 1) : (rhs = mid)
             }
-            if rhs >= ends.count {
+            if rhs >= len {
                 ends.append(num)
             } else {
                 ends[rhs] = num
