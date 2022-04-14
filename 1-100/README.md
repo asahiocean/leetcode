@@ -173,27 +173,27 @@
 
 <!-- 25 -->
 [25]: https://leetcode.com/problems/reverse-nodes-in-k-group/
-[25s]: ./25.%20Reverse%20Nodes%20in%20k-Group
+[25s]: ./25/
 
 <!-- 26 -->
 [26]: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
-[26s]: ./26.%20Remove%20Duplicates%20from%20Sorted%20Array
+[26s]: ./26/
 
 <!-- 27 -->
 [27]: https://leetcode.com/problems/remove-element/
-[27s]: ./27.%20Remove%20Element
+[27s]: ./27/
 
 <!-- 28 -->
 [28]: https://leetcode.com/problems/implement-strstr/
-[28s]: ./28.%20Implement%20strStr
+[28s]: ./28/
 
 <!-- 29 -->
 [29]: https://leetcode.com/problems/divide-two-integers/
-[29s]: ./29.%20Divide%20Two%20Integers
+[29s]: ./29/
 
 <!-- 30 -->
 [30]: https://leetcode.com/problems/substring-with-concatenation-of-all-words/
-[30s]: ./30.%20Substring%20with%20Concatenation%20of%20All%20Words
+[30s]: ./30/
 
 <!-- 31 -->
 [31]: https://leetcode.com/problems/next-permutation
