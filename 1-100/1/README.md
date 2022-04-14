@@ -1,6 +1,6 @@
 <h1>
 1. Two Sum
-<img src="https://tinyurl.com/2p898fxp" align="right">
+<img src="https://bit.ly/3jK4nOQ" align="right">
 </h1>
 
 <img src="https://git.io/JDE5D" height="24" align="left"><b><a href="https://bit.ly/3xoIvAU">Solution</a> • <a href="https://bit.ly/37HoOcE">GitHub Gist</a> • <a href="https://bit.ly/3KyIspM">LeetCode Discuss</a></b>
