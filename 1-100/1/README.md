@@ -7,14 +7,12 @@
 
 <p align="center">• • •</p>
 
-<h2>Description</h2>
+## Description
 
-<p>
 Given an array of integers `nums` and an integer `target`, return _indices of the two numbers such that they add up to `target`_.
 You may assume that each input would have **_exactly_ one solution**, and you may not use the _same_ element twice.
-</p>
 
-<h4>Example 1</h4>
+#### Example 1
 
 <pre>
 <b>Input:</b> nums = [2,7,11,15], target = 9
@@ -22,21 +20,21 @@ You may assume that each input would have **_exactly_ one solution**, and you ma
 <b>Output:</b> Because nums[0] + nums[1] == 9, we return [0, 1].
 </pre>
 
-<h4>Example 2</h4>
+#### Example 2
 
 <pre>
 <b>Input:</b> nums = [3,2,4], target = 6
 <b>Output:</b> [1,2]
 </pre>
 
-<h4>Example 3</h4>
+#### Example 3
 
 <pre>
 <b>Input:</b> nums = [3,3], target = 6
 <b>Output:</b> [0,1]
 </pre>
 
-<h4>Constraints</h4>
+#### Constraints
 
 <ul>
 <li><code>2 <= nums.length <= 10<sup>4</sup></code></li>
