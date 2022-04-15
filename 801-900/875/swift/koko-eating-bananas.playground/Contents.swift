@@ -5,21 +5,21 @@ import Foundation
 
 class Solution {
     func minEatingSpeed(_ piles: [Int], _ h: Int) -> Int {
+        guard !piles.isEmpty else { return 0 }
+        let sorted = piles.sorted()
+        var lhs = 1, rhs = sorted.last!
         
-        let map = piles.map({$0 - 1})
-        var left = 1, right = piles.max()!
-        
+        let map = sorted.map({$0 - 1})
         func valid(_ b: Int) ->  Bool {
             var hours = 0
             for p in map { hours += (p / b) + 1 }
             return hours <= h
         }
-        
-        while left < right {
-            let mid = left + (right - left) >> 1
-            valid(mid) ? (right = mid) : (left = mid + 1)
+        while lhs < rhs {
+            let mid = lhs + (rhs - lhs) >> 1
+            valid(mid) ? (rhs = mid) : (lhs = mid + 1)
         }
-        return left
+        return lhs
     }
 }
 
