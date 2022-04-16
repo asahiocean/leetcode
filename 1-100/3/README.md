@@ -1,6 +1,6 @@
 <h1>
 3. Longest Substring Without Repeating Characters
-<img src="https://tinyurl.com/2p95nu4z" align="right" alt="views badge">
+<img src="https://bit.ly/3OgvRKb" align="right">
 </h1>
 
 <img src="https://git.io/JDE5D" height="24" align="left"><b><a href="https://bit.ly/3jIIwaT">Solution</a> • <a href="https://bit.ly/3xBYn2W">GitHub Gist</a> • <a href="https://bit.ly/3OguBGX">LeetCode Discuss</a></b>
