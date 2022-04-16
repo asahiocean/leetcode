@@ -3,7 +3,7 @@
 <img src="https://tinyurl.com/2p95nu4z" align="right" alt="views badge">
 </h1>
 
-<img src="https://git.io/JDE5D" height="24" align="left"><b><a href="">Solution</a> • <a href="https://bit.ly/3xBYn2W">GitHub Gist</a> • <a href="https://bit.ly/3OguBGX">LeetCode Discuss</a></b>
+<img src="https://git.io/JDE5D" height="24" align="left"><b><a href="https://bit.ly/3jIIwaT">Solution</a> • <a href="https://bit.ly/3xBYn2W">GitHub Gist</a> • <a href="https://bit.ly/3OguBGX">LeetCode Discuss</a></b>
 
 <p align="center">• • •</p>
 
