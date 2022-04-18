@@ -5,18 +5,16 @@ import Foundation
 
 class Solution {
     func kthSmallest(_ root: TreeNode?, _ k: Int) -> Int {
-        
-        var stack: [TreeNode] = [], currNode = root, valK = k
-        
-        while !stack.isEmpty || currNode != nil {
-            if let node = currNode {
+        var stack = [TreeNode](), cur = root, valK = k
+        while !stack.isEmpty || cur != nil {
+            if let node = cur {
                 stack.append(node)
-                currNode = node.left
+                cur = node.left
             } else {
                 let last = stack.removeLast()
                 valK -= 1
-                if valK == 0 { return last.val }
-                currNode = last.right
+                guard valK != 0 else { return last.val }
+                cur = last.right
             }
         }
         return -1
