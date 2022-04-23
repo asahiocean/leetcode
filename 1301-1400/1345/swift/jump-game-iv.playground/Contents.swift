@@ -4,47 +4,26 @@ import Foundation
 // https://leetcode.com/problems/jump-game-iv/
 
 class Solution {
-    func minJumps(_ arr: [Int]) -> Int {
-        let len = arr.count
-        guard len > 1 else { return 0 }
-        
-        var map: [Int:[Int]] = [:]
-        
-        for i in 0..<len {
-            map[arr[i], default: [0]].append(i)
+    func minJumps(_ a: [Int]) -> Int {
+        guard !a.isEmpty else { return 0 }
+        var map = [Int:[Int]](), vis = Set<Int>(), queue: Set<Int> = [0], steps = 0
+        for i in 0..<a.count {
+            map[a[i], default: [0]].append(i)
         }
-        
-        var queue: [Int] = []
-        queue.append(0)
-        
-        var visited: Set<Int> = []
-        var steps = 0
-        
         while !queue.isEmpty {
-            var jumps: [Int] = []
-            
+            var jmp = Set<Int>()
             for n in queue {
-                guard n != len - 1 else { return steps }
-                
-                for ch in (map[arr[n]] ?? []) where !visited.contains(ch) {
-                    visited.insert(ch)
-                    jumps.append(ch)
+                guard n != a.count - 1 else { return steps }
+                for i in map[a[n], default: []] where !vis.contains(i) {
+                    jmp.insert(i)
                 }
-                
-                map.removeValue(forKey: arr[n])
-                
-                if n + 1 < len, !visited.contains(n + 1) {
-                    visited.insert(n + 1)
-                    jumps.append(n + 1)
-                }
-                
-                if n - 1 >= 0, !visited.contains(n - 1) {
-                    visited.insert(n - 1)
-                    jumps.append(n - 1)
-                }
+                map[a[n]] = nil
+                let next = n + 1, prev = n - 1
+                if next < a.count, !vis.contains(next) { jmp.insert(next) }
+                if prev >= 0, !vis.contains(prev) { jmp.insert(prev) }
             }
-            
-            queue = jumps
+            queue = jmp
+            vis.formUnion(jmp)
             steps += 1
         }
         return -1
