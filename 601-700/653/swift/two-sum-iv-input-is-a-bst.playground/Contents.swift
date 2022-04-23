@@ -6,10 +6,7 @@ import Foundation
 class Solution {
     func findTarget(_ root: TreeNode?, _ k: Int) -> Bool {
         guard let root = root else { return false }
-        
-        var stack: [TreeNode] = []
-        var set: Set<Int> = []
-        
+        var stack = [TreeNode](), set = Set<Int>()
         var dummy: TreeNode? = root
         
         while !stack.isEmpty || dummy != nil {
@@ -18,9 +15,7 @@ class Solution {
                 dummy = dummy?.left
             }
             dummy = stack.removeLast()
-            if set.contains(k - dummy!.val) {
-                return true
-            }
+            guard !set.contains(k - dummy!.val) else { return true }
             set.insert(dummy!.val)
             dummy = dummy?.right
         }
