@@ -6,33 +6,29 @@ import Foundation
 class Solution {
     func findPairs(_ nums: [Int], _ k: Int) -> Int {
         guard k >= 0 else { return 0 }
-        
-        var set: Set<Int> = []
-        var exist: Set<Int> = []
-        var count = 0
-        
+        var res = 0, set = Set<Int>(), exist = Set<Int>()
         for n in nums {
             if k != 0 {
                 guard !set.contains(n) else { continue }
-                if set.contains(n + k) { count += 1 }
-                if set.contains(n - k) { count += 1 }
+                if set.contains(n + k) { res += 1 }
+                if set.contains(n - k) { res += 1 }
                 set.insert(n)
             } else {
                 if set.contains(n) {
-                    count += 1
                     set.remove(n)
                     exist.insert(n)
+                    res += 1
                 }
                 if !exist.contains(n) { set.insert(n) }
             }
         }
-        return count
+        return res
     }
 }
 
 // MARK: - Test cases -
 
-// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.008 (0.010) seconds
+// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
 
 import XCTest
 
