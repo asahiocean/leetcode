@@ -5,24 +5,16 @@ import Foundation
 
 class Solution {
     func longestPrefix(_ s: String) -> String {
-        let len = s.count
-        guard len > 1 else { return "" }
-        
-        let chars = [Character](s)
-        var next = [Int](repeating: -1, count: len)
-        
-        var num = -1
-        
-        for i in 1..<len {
-            let val = chars[i]
-            
-            while num != -1 && chars[num + 1] != val {
-                num = next[num]
-            }
-            if chars[num + 1] == val { num += 1 }
+        guard !s.isEmpty else { return "" }
+        let arr = Array(s)
+        var num = -1, next = [Int](repeating: -1, count: s.count)
+        for i in 1..<s.count {
+            let chr = arr[i]
+            while num != -1 && arr[num + 1] != chr { num = next[num] }
+            if arr[num + 1] == chr { num += 1 }
             next[i] = num
         }
-        return next[len-1] == -1 ? "" : String(chars[0...next[len-1]])
+        return next[s.count-1] == -1 ? "" : String(arr[0...next[s.count-1]])
     }
 }
 
