@@ -4,32 +4,19 @@ import Foundation
 // https://leetcode.com/problems/maximum-gap/
 
 class Solution {
-    func maximumGap(_ nums: [Int]) -> Int {
-        guard nums.count > 1 else { return 0 }
-        
-        let len = nums.count
-        let minEl = nums.min()!, maxEl = nums.max()!
-        
-        let d = max(1, (maxEl - minEl) / (len - 1))
-        var buckets = [[Int]](repeating: [-1,-1], count: (maxEl - minEl) / d + 1)
-        
-        for idx in 0..<len {
-            let bIdx = (nums[idx] - minEl) / d
-            buckets[bIdx] = buckets[bIdx][0] == -1 ? [nums[idx], nums[idx]] : [min(buckets[bIdx][0], nums[idx]), max(buckets[bIdx][1], nums[idx])]
+    func maximumGap(_ n: [Int]) -> Int {
+        guard n.count > 1 else { return 0 }
+        let low = n.min()!, dif = n.max()! - low, val = max(1, dif / n.count - 1)
+        var res = 0, prev = -1, bkts = [[Int]](repeating: [-1,-1], count: dif / val + 1)
+        for i in 0..<n.count {
+            let eln = n[i], idb = (n[i] - low) / val, elb = bkts[idb]
+            bkts[idb] = elb[0] == -1 ? [eln,eln] : [min(elb[0],eln), max(elb[1],eln)]
         }
-        
-        var prev = -1, result = 0
-        
-        for b in buckets where b[0] != -1 {
-            guard prev != -1 else {
-                prev = b[1]
-                continue
-            }
-            result = max(result, b[0] - prev)
+        for b in bkts where b[0] != -1 {
+            res = max(res, b[0] - (prev == -1 ? b[1] : prev))
             prev = b[1]
         }
-        
-        return result
+        return res
     }
 }
 
