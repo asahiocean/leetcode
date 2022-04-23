@@ -4,25 +4,22 @@ import Foundation
 // https://leetcode.com/problems/pascals-triangle/
 
 class Solution {
-    func generate(_ numRows: Int) -> [[Int]] {
-        
-        guard (1...30).contains(numRows) else { return [] }
-        
-        var result: [[Int]] = []
-                
-        for i in 1...numRows {
+    func generate(_ nr: Int) -> [[Int]] {
+        guard (1...30) ~= nr else { return [] }
+        var res = [[Int]]()
+        for i in 1...nr {
             var row = [Int](repeating: 1, count: i)
             if i <= 2 {
-                result.append(row)
-            } else if let rowLast = result.last {
+                res.append(row)
+            } else if let last = res.last {
                 for k in 1...(i / 2) {
-                    row[k] = rowLast[k-1] + rowLast[k]
+                    row[k] = last[k-1] + last[k]
                     row[i - k - 1] = row[k]
                 }
-                result.append(row)
+                res.append(row)
             }
         }
-        return result
+        return res
     }
 }
 
