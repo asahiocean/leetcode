@@ -4,33 +4,26 @@ import Foundation
 // https://leetcode.com/problems/coin-change/
 
 class Solution {
-    func coinChange(_ coins: [Int], _ amount: Int) -> Int {
-        guard amount > 0 else { return amount == 0 ? 0 : -1 }
+    func coinChange(_ coins: [Int], _ a: Int) -> Int {
+        guard a > 0 else { return a == 0 ? 0 : -1 }
         
-        var queue: [Int] = []
-        var visited: Set<Int> = []
-        
-        visited.insert(amount)
+        var depth = 0, queue = [Int](), vis = Set<Int>()
+        vis.insert(a)
         
         for c in coins {
-            guard amount != c else { return 1 }
-            if amount > c { queue.append(amount - c) }
+            guard a != c else { return 1 }
+            if a > c { queue.append(a - c) }
         }
-        
-        guard !queue.isEmpty else { return -1 }
-        
-        var depth = 0
-        
         while !queue.isEmpty {
             depth += 1
             for _ in 0..<queue.count {
-                let target = queue.removeFirst()
+                let tgt = queue.removeFirst()
                 for c in coins {
-                    let next = (target - c)
-                    guard next != 0 else { return depth + 1 }
-                    if next > 0 && !visited.contains(next) {
-                        visited.insert(next)
-                        queue.append(next)
+                    let nxt = (tgt - c)
+                    guard nxt != 0 else { return depth + 1 }
+                    if nxt > 0 && !vis.contains(nxt) {
+                        vis.insert(nxt)
+                        queue.append(nxt)
                     }
                 }
             }
