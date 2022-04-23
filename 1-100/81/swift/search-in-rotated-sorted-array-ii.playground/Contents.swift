@@ -5,9 +5,8 @@ import Foundation
 
 class Solution {
     func search(_ nums: [Int], _ t: Int) -> Bool {
-        let len = nums.count
-        guard len > 0 else { return false }
-        var lhs = 0, rhs = len - 1
+        guard !nums.isEmpty else { return false }
+        var lhs = 0, rhs = nums.count - 1
         
         while lhs < rhs {
             let mid = (lhs + rhs) / 2
@@ -15,10 +14,11 @@ class Solution {
             if nums[lhs] == nums[mid] {
                 lhs += 1
             } else {
-                let num = (L: nums[lhs], M: nums[mid], R: nums[rhs])
-                num.L < num.M ?
-                t < num.M && t >= num.L ? (rhs = mid - 1) : (lhs = mid + 1) :
-                t > num.M && t <= num.R ? (lhs = mid + 1) : (rhs = mid - 1)
+                func setR() { rhs = mid - 1 }
+                func setL() { lhs = mid + 1 }
+                nums[lhs] < nums[mid] ?
+                t < nums[mid] && t >= nums[lhs] ? setR() : setL() :
+                t > nums[mid] && t <= nums[rhs] ? setL() : setR()
             }
         }
         return nums[lhs] == t
