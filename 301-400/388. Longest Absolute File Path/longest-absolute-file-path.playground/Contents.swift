@@ -5,36 +5,22 @@ import Foundation
 
 class Solution {
     func lengthLongestPath(_ input: String) -> Int {
-        guard input.count > 0 else { return 0 }
+        guard !input.isEmpty else { return 0 }
+        var res = 0, stack = [0]
         
-        var stack: [Int] = []
-        stack.append(0)
-        
-        var lenTotal = 0
-        
-        for str in input.components(separatedBy: "\n") {
-            var level = 0
-            var subStr = str
-            
-            while subStr.hasPrefix("\t") {
-                level += 1
-                subStr = String(Array(subStr)[1..<subStr.count])
+        for var obj in input.components(separatedBy: "\n") {
+            var lvl = 0
+            while obj.hasPrefix("\t") {
+                lvl += 1
+                obj = String(Array(obj)[1..<obj.count])
             }
             
-            while level + 1 < stack.count {
-                stack.removeLast()
-            }
-            
-            let slashCount = subStr.contains(".") ? 0 : 1
-            let len = stack.last! + subStr.count + slashCount
-            
+            while lvl + 1 < stack.count { stack.removeLast() }
+            let len = stack.last! + obj.count + (obj.contains(".") ? 0 : 1)
             stack.append(len)
-            
-            if subStr.contains(".") {
-                lenTotal = max(lenTotal, len)
-            }
+            if obj.contains(".") { res = max(res, len) }
         }
-        return lenTotal
+        return res
     }
 }
 
