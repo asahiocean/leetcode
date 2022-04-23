@@ -4,23 +4,19 @@ import Foundation
 // https://leetcode.com/problems/word-break/
 
 class Solution {
-    func wordBreak(_ s: String, _ wordDict: [String]) -> Bool {
-        
-        let len = s.count, wdset = Set(wordDict)
-        
-        let maxw = wdset.reduce(0, { max($0, $1.count) })
-        let chrs = [Character](s)
+    func wordBreak(_ s: String, _ wd: [String]) -> Bool {
+        guard !s.isEmpty else { return false }
+        let len = s.count, wdset = Set(wd)
+        let arrS = Array(s), maxw = wdset.reduce(0, { max($0, $1.count) })
         
         var dp = [Bool](repeating: false, count: len + 1)
         dp[0] = true
         
-        for k in 0..<len where dp[k] {
-            let next = k + 1
-            for i in next...(min(len, next + maxw)) where wdset.contains(String(chrs[k..<i])) {
-                dp[i] = true
+        for a in 0..<len where dp[a] {
+            for b in a + 1...(min(len, a + 1 + maxw)) where wdset.contains(String(arrS[a..<b])) {
+                dp[b] = true
             }
         }
-        
         return dp[len]
     }
 }
@@ -47,6 +43,7 @@ class Tests: XCTestCase {
         let value = solution.wordBreak("applepenapple", ["apple","pen"])
         XCTAssertEqual(value, true)
     }
+    
     func test2() {
         let value = solution.wordBreak("catsandog", ["cats","dog","sand","and","cat"])
         XCTAssertEqual(value, false)
