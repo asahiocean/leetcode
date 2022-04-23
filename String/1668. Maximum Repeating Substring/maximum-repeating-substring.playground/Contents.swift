@@ -4,14 +4,14 @@ import Foundation
 // https://leetcode.com/problems/maximum-repeating-substring/
 
 class Solution {
-    func maxRepeating(_ sequence: String, _ word: String) -> Int {
-        let max = sequence.count / word.count
-        guard max > 0 else { return 0 }
-        var result = 0
-        for count in 1...max where sequence.contains(String(repeating: word, count: count)) {
-            result = count
+    func maxRepeating(_ sq: String, _ w: String) -> Int {
+        let quo = sq.count / w.count
+        guard quo > 0 else { return 0 }
+        var res = 0
+        for i in 1...quo where sq.contains(String(repeating: w, count: i)) {
+            res = i
         }
-        return result
+        return res
     }
 }
 
