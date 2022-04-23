@@ -20,17 +20,21 @@ import XCTest
 // Executed 3 tests, with 0 failures (0 unexpected) in 0.014 (0.016) seconds
 
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test0() {
-        let res = s.maxRepeating("ababc","ab")
+        let res = solution.maxRepeating("ababc","ab")
         XCTAssertEqual(res, 2)
     }
+    
     func test1() {
-        let res = s.maxRepeating("ababc","ba")
+        let res = solution.maxRepeating("ababc","ba")
         XCTAssertEqual(res, 1)
     }
+    
     func test2() {
-        let res = s.maxRepeating("ababc","ac")
+        let res = solution.maxRepeating("ababc","ac")
         XCTAssertEqual(res, 0)
     }
 }
