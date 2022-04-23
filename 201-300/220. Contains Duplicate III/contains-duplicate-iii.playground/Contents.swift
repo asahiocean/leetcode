@@ -5,13 +5,14 @@ import Foundation
 
 class Solution {
     func containsNearbyAlmostDuplicate(_ nums: [Int], _ k: Int, _ t: Int) -> Bool {
-        guard k > 0, nums.count > 1 else { return false }
-        let range = 0 ..< nums.count, ids = [Int](range).sorted{ nums[$0] < nums[$1] }
+        guard !nums.isEmpty else { return false }
+        let ids = [Int](0..<nums.count).sorted{ nums[$0] < nums[$1] }
         
-        for i in range {
-            for j in (i + 1) ..< nums.count {
-                if (nums[ids[j]] - nums[ids[i]]) > t { break }
-                if abs(ids[j] - ids[i]) <= k { return true }
+        for a in 0...ids.count - 1 {
+            for b in (a + 1)..<nums.count {
+                let lhs = ids[a], rhs = ids[b]
+                if nums[rhs] - nums[lhs] > t { break }
+                if abs(rhs - lhs) <= k { return true }
             }
         }
         return false
@@ -20,14 +21,16 @@ class Solution {
 
 // MARK: - Test Cases -
 
+// Result: Executed 1 test, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
+
 import XCTest
 
-// Executed 1 test, with 0 failures (0 unexpected) in 0.004 (0.005) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
+    
+    private let solution = Solution()
+    
     func test() {
-        XCTAssertEqual(s.containsNearbyAlmostDuplicate([1,2,3,1], 3, 0), true)
+        XCTAssertEqual(solution.containsNearbyAlmostDuplicate([1,2,3,1], 3, 0), true)
     }
 }
 
