@@ -8,25 +8,21 @@ class Solution {
         guard k <= n else { return [] }
         guard k != 1 else { return (1...n).map{[$0]} }
         guard k != n else { return [[Int](1...n)] }
-        
-        var current: [Int] = []
-        var visited: Set<Int> = []
-        var result: [[Int]] = []
-        
-        backtracking(&result, &current, &visited, 0, n, k)
-        return result
+        var res = [[Int]](), cur = [Int](), vis = Set<Int>()
+        backtracking(&res, &cur, &vis, 0, n, k)
+        return res
     }
-    private func backtracking(_ result: inout [[Int]], _ current: inout [Int], _ visited: inout Set<Int>,  _ last: Int, _ n: Int, _ k: Int) {
-        guard current.count != k else {
-            result.append(current)
+    private func backtracking(_ r: inout [[Int]], _ c: inout [Int], _ v: inout Set<Int>,  _ l: Int, _ n: Int, _ k: Int) {
+        guard c.count != k else {
+            r.append(c)
             return
         }
-        for num in max(1, last)...n where !visited.contains(num) {
-            current.append(num)
-            visited.insert(num)
-            backtracking(&result, &current, &visited, num, n, k)
-            current.removeLast()
-            visited.remove(num)
+        for i in max(1, l)...n where !v.contains(i) {
+            c.append(i)
+            v.insert(i)
+            backtracking(&r, &c, &v, i, n, k)
+            c.removeLast()
+            v.remove(i)
         }
     }
 }
