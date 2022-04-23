@@ -1,24 +1,32 @@
 import Foundation
 
+// 771. Jewels and Stones
 // https://leetcode.com/problems/jewels-and-stones/
 
 class Solution {
-    func numJewelsInStones(_ jewels: String, _ stones: String) -> Int {
-        return stones.filter({ jewels.contains($0) }).count
+    func numJewelsInStones(_ j: String, _ s: String) -> Int {
+        return s.filter({ j.contains($0) }).count
     }
 }
 
+// MARK: - Test cases -
+
+// Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
+
 import XCTest
 
-//     Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
-
 class Tests: XCTestCase {
-    private let s = Solution()
-    func testExample1() {
-        XCTAssertEqual(s.numJewelsInStones("aA", "aAAbbbb"), 3) // success
+
+    private let solution = Solution()
+
+    func test0() {
+        let value = solution.numJewelsInStones("aA", "aAAbbbb")
+        XCTAssertEqual(value, 3)
     }
-    func testExample2() {
-        XCTAssertEqual(s.numJewelsInStones("z", "ZZ"), 0) // success
+
+    func test1() {
+        let value = solution.numJewelsInStones("z", "ZZ")
+        XCTAssertEqual(value, 0)
     }
 }
 
