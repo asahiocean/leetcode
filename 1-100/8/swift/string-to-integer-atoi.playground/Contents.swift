@@ -5,9 +5,9 @@ import Foundation
 
 class Solution {
     func myAtoi(_ s: String) -> Int {
-        if s.contains("+ ") { return 0 }
-        let value = (s as NSString).integerValue
-        return value >= Int32.max ? Int(Int32.max) : max(Int(Int32.min), value)
+        guard !s.contains("+ ") else { return 0 }
+        let val = (s as NSString).integerValue
+        return val >= Int32.max ? Int(Int32.max) : max(Int(Int32.min), val)
     }
 }
 
