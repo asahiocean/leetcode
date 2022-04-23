@@ -5,25 +5,18 @@ import Foundation
 
 class Solution {
     func pseudoPalindromicPaths (_ root: TreeNode?) -> Int {
-        return calculate(root)
+        return calc(root)
     }
-    
-    private func calculate(_ node: TreeNode?, _ set: Set<Int> = []) -> Int {
+    private func calc(_ node: TreeNode?, _ nums: Set<Int> = []) -> Int {
         guard let node = node else { return 0 }
         let val = node.val
-        var setCopy = set
-        
-        if set.contains(val) { setCopy.remove(val) } else { setCopy.insert(val) }
-        
+        var set = nums
+        if nums.contains(val) { set.remove(val) } else { set.insert(val) }
         switch (node.left, node.right) {
-        case let (left?,right?):
-            return calculate(left, setCopy) + calculate(right, setCopy)
-        case let (left?, nil):
-            return calculate(left, setCopy)
-        case let (nil, right?):
-            return calculate(right, setCopy)
-        case (nil, nil):
-            return setCopy.count <= 1 ? 1 : 0
+        case let (lhs?,rhs?): return calc(lhs,set) + calc(rhs,set)
+        case let (lhs?,nil): return calc(lhs,set)
+        case let (nil,rhs?): return calc(rhs,set)
+        default: return set.count <= 1 ? 1 : 0
         }
     }
 }
