@@ -4,37 +4,30 @@ import Foundation
 // https://leetcode.com/problems/letter-tile-possibilities/
 
 class Solution {
-    func numTilePossibilities(_ tiles: String) -> Int {
+    func numTilePossibilities(_ t: String) -> Int {
+        guard !t.isEmpty else { return 0 }
+        var res = Set<String>(), vis = [Bool](repeating: false, count: t.count)
+        let arr = Array(t)
         
-        var result: Set<String> = []
-        let chars: [Character] = [Character](tiles)
-        let len = tiles.count
-        
-        func dfs(_ currStr: inout String, _ visited: inout [Bool]) {
-            if !currStr.isEmpty {
-                result.insert(currStr)
-            }
-            for i in 0..<len where !visited[i] {
-                currStr.append(chars[i])
-                visited[i] = true
-                dfs(&currStr, &visited)
-                currStr.removeLast()
-                visited[i] = false
+        for i in 0..<t.count {
+            var str = String(arr[i])
+            if !res.contains(str) {
+                vis[i] = true
+                dfs(&str, &vis)
+                vis[i] = false
             }
         }
-        
-        var visited = [Bool](repeating: false, count: len)
-        
-        for i in 0..<len {
-            var str = String(chars[i])
-            
-            if !result.contains(str) {
-                visited[i] = true
-                dfs(&str, &visited)
-                visited[i] = false
+        func dfs(_ cs: inout String, _ vis: inout [Bool]) {
+            if !cs.isEmpty { res.insert(cs) }
+            for i in 0..<t.count where !vis[i] {
+                cs.append(arr[i])
+                vis[i] = true
+                dfs(&cs, &vis)
+                cs.removeLast()
+                vis[i] = false
             }
         }
-        return result.count
+        return res.count
     }
 }
 
