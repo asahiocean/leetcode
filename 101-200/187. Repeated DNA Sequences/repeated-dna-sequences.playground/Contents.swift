@@ -4,35 +4,29 @@ import Foundation
 // https://leetcode.com/problems/repeated-dna-sequences/
 
 class Solution {
-    private let limit: Int = 10
     func findRepeatedDnaSequences(_ s: String) -> [String] {
+        guard s.count > 10 else { return [] }
+        let ssi = s.startIndex
+        var str = String(s[ssi...s.index(ssi, offsetBy: 10 - 1)].filter{ ["A","C","G","T"].contains($0) })
         
-        guard s.count > limit else { return [] }
+        var res = [String](), set = Set<String>()
+        set.insert(str)
         
-        let ssi = s.startIndex, valid: Set<Character> = ["A", "C", "G", "T"]
-        var str = String(s[ssi...s.index(ssi, offsetBy: limit - 1)].filter{ valid.contains($0) })
-        
-        var result: [String] = []
-        
-        var uniqset: Set<String> = []
-        uniqset.insert(str)
-        
-        let chars = [Character](s)
-        
-        for i in limit..<s.count {
+        let arrS = Array(s)
+        for i in 10..<s.count {
             str.removeFirst()
-            str.append(chars[i])
+            str.append(arrS[i])
             
-            if result.contains(str) { continue }
+            if res.contains(str) { continue }
             
-            if uniqset.contains(str) {
-                result.append(str)
-                uniqset.remove(str)
+            if set.contains(str) {
+                res.append(str)
+                set.remove(str)
                 continue
             }
-            uniqset.insert(str)
+            set.insert(str)
         }
-        return [String](result)
+        return res
     }
 }
 
