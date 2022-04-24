@@ -5,23 +5,23 @@ import Foundation
 
 class Solution {
     func findMin(_ nums: [Int]) -> Int {
-        var lhs = 0, mid = 0, rhs = nums.count - 1
-        var minVal = Int.max
+        guard !nums.isEmpty else { return 0 }
+        var val = Int.max, lhs = 0, rhs = nums.count - 1
         
         while lhs + 1 < rhs {
-            mid = (rhs - lhs) / 2 + lhs
+            let mid = (rhs - lhs) / 2 + lhs
             switch true {
             case nums[mid] > nums[lhs]:
-                minVal = min(nums[lhs], minVal)
+                val = min(nums[lhs], val)
                 lhs = mid + 1
             case nums[mid] < nums[lhs]:
-                minVal = min(nums[mid], minVal)
+                val = min(nums[mid], val)
                 rhs = mid - 1
             default:
                 lhs += 1
             }
         }
-        return min(minVal, nums[lhs], nums[rhs])
+        return min(val, nums[lhs], nums[rhs])
     }
 }
 
