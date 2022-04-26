@@ -1,54 +1,9 @@
 <h1>
 4. Median of Two Sorted Arrays
-<img src="https://tinyurl.com/bdfrx5rt" align="right" alt="views badge">
+<img src="https://bit.ly/3vO4Kh2" align="right">
 </h1>
 
-<details>
-<summary>
-    <img src="https://git.io/JDE5D" height="24" align="left" alt="swift">
-    <b>Solution</b>
-</summary>
-
-<br/>
-
-```swift
-class Solution {
-    func findMedianSortedArrays(_ nums1: [Int], _ nums2: [Int]) -> Double {
-        
-        let lenN1 = nums1.count, lenN2 = nums2.count
-        
-        var arr = [Int](repeating: 0, count: lenN1 + lenN2)
-        
-        var valA = lenN1 - 1,
-            valB = lenN2 - 1,
-            valC = lenN1 + lenN2 - 1
-        
-        while valC >= 0 {
-            if valB < 0 || valA >= 0 && nums1[valA] > nums2[valB] {
-                arr[valC] = nums1[valA]
-                valA = (valA - 1)
-            } else {
-                arr[valC] = nums2[valB]
-                valB = (valB - 1)
-            }
-            valC = valC - 1
-        }
-        let lenArr = arr.count, mid = (lenArr / 2)
-        return lenArr % 2 == 0 ? Double(arr[mid-1] + arr[mid]) / 2 : Double(arr[mid])
-    }
-}
-```
-
-<p>
-<a href="https://gist.github.com/asahiocean/5a9be64420276fa743455659ce530510">
-<img src="https://git.io/JDNlC" alt="GitHub Gist" height="18" align="center">
-</a>
-<a href="https://leetcode.com/problems/median-of-two-sorted-arrays/discuss/1134918">
-<img src="https://git.io/JDSVA" alt="LeetCode Discuss" height="28" align="right">
-</a>
-</p>
-    
-</details>
+<img src="https://git.io/JDE5D" height="24" align="left"><b><a href="https://bit.ly/3MvJWSq">Solution</a> • <a href="https://bit.ly/3vO4xug">GitHub Gist</a> • <a href="https://bit.ly/3kd4Mto">LeetCode Discuss</a></b>
 
 <p align="center">• • •</p>
 
