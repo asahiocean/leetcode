@@ -20,7 +20,6 @@
 ![][codefactor]
 ![][codeclimate]
 ![][codebeat]
-
 ![][codiga-score]
 ![][codiga-grade]
 
