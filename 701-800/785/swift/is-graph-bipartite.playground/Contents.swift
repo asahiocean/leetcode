@@ -4,21 +4,14 @@ import Foundation
 // https://leetcode.com/problems/is-graph-bipartite/
 
 class Solution {
-    func isBipartite(_ graph: [[Int]]) -> Bool {
-        guard !graph.isEmpty else { return false }
-        let len = graph.count
-        var colors = [Int](repeating: -1, count: len)
-        
-        func dfs(_ graph: [[Int]], _ color: Int, _ i: Int) -> Bool {
-            if colors[i] != -1 { return colors[i] == color }
-            colors[i] = color
-            for n in graph[i] where !dfs(graph, 1 - color, n) {
-                return false
-            }
-            return true
-        }
-        for i in 0..<len where colors[i] == -1 && !dfs(graph, 0, i) {
-            return false
+    func isBipartite(_ g: [[Int]]) -> Bool {
+        guard !g.isEmpty else { return false }
+        var clr = [Int](repeating: -1, count: g.count)
+        for i in 0..<g.count where clr[i] == -1 && !dfs(0, i) { return false }
+        func dfs(_ c: Int, _ i: Int) -> Bool {
+            guard clr[i] == -1 else { return clr[i] == c }
+            clr[i] = c
+            return g[i].first(where: { !dfs(1 - c, $0) }) == nil
         }
         return true
     }
