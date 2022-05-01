@@ -5,45 +5,32 @@ import Foundation
 
 class TopVotedCandidate {
     
-    typealias Result  = (time: Int, result: [Int:Int], win: Int)
-    var results: [Result] = []
+    private typealias Result  = (time: Int, result: [Int:Int], win: Int)
+    private var results: [Result] = []
     
     init(_ persons: [Int], _ times: [Int]) {
         for i in 0..<persons.count {
-            if var resultLast = results.last {
-                resultLast.time  = times[i]
-                
-                let res = resultLast.result[persons[i]]
-                resultLast.result.updateValue(res != nil ? (res! + 1) : 1, forKey: persons[i])
-                
-                if let lastWinCount = resultLast.result[resultLast.win], let new = resultLast.result[persons[i]], new >= lastWinCount {
-                    resultLast.win = persons[i]
-                    results.append(resultLast)
+            if var rlast = results.last {
+                rlast.time  = times[i]
+                let res = rlast.result[persons[i]]
+                rlast.result.updateValue(res != nil ? (res! + 1) : 1, forKey: persons[i])
+                if rlast.result[persons[i], default: 0] >= rlast.result[rlast.win, default: 0] {
+                    rlast.win = persons[i]
+                    results.append(rlast)
                 } else {
-                    results.append(resultLast)
+                    results.append(rlast)
                 }
             } else {
                 results.append((times[i], [persons[i]:1], persons[i]))
             }
         }
     }
-    
     func q(_ t: Int) -> Int {
-        var left = 0, right = results.count
-        while left < right {
-            let mid = left + (right - left) >> 1
-            if results[mid].time > t {
-                right = mid
-            } else {
-                left = mid + 1
-            }
+        var lhs = 0, rhs = results.count
+        while lhs < rhs {
+            let mid = lhs + (rhs - lhs) >> 1
+            if results[mid].time > t { rhs = mid } else { lhs = mid + 1 }
         }
-        return results[left - 1].win
+        return results[lhs - 1].win
     }
 }
-
-/**
- * Your TopVotedCandidate object will be instantiated and called as such:
- * let obj = TopVotedCandidate(persons, times)
- * let ret_1: Int = obj.q(t)
- */
