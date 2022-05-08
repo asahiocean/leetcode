@@ -5,25 +5,25 @@ import Foundation
 
 class NestedIterator {
     
-    private var stack: [NestedInteger]
+    private var list: [NestedInteger]
     
     init(_ nestedList: [NestedInteger]) {
-        self.stack = nestedList.reversed()
+        self.list = nestedList.reversed()
     }
     
     func next() -> Int {
-        return stack.removeLast().getInteger()
+        return list.removeLast().getInteger()
     }
     
     func hasNext() -> Bool {
-        while !stack.isEmpty {
-            var last = stack.removeLast()
+        while !list.isEmpty {
+            var last = list.removeLast()
             if last.isInteger() {
-                stack.append(last)
+                list.append(last)
                 return true
             } else {
                 last.getList().reversed().forEach {
-                    stack.append($0)
+                    list.append($0)
                 }
             }
         }
