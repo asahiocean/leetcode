@@ -4,31 +4,26 @@ import Foundation
 // https://leetcode.com/problems/letter-combinations-of-a-phone-number/
 
 class Solution {
-    private let matrix: [Character:[Character]] = ["2":["a","b","c"],
-                                                   "3":["d","e","f"],
-                                                   "4":["g","h","i"],
-                                                   "5":["j","k","l"],
-                                                   "6":["m","n","o"],
-                                                   "7":["p","q","r","s"],
-                                                   "8":["t","u","v"],
-                                                   "9":["w","x","y","z"]]
+    private let mat = ["2":["a","b","c"],
+                       "3":["d","e","f"],
+                       "4":["g","h","i"],
+                       "5":["j","k","l"],
+                       "6":["m","n","o"],
+                       "7":["p","q","r","s"],
+                       "8":["t","u","v"],
+                       "9":["w","x","y","z"]]
     func letterCombinations(_ digits: String) -> [String] {
-        var result: [String] = []
-        for ch in digits.map({ Character($0.lowercased()) }) {
-            guard let chars = matrix[ch] else { break }
-            guard !(result.isEmpty) else {
-                for ch in chars { result.append(String(ch)) }
+        var res = [String]()
+        for d in digits.map({ $0.lowercased() }) {
+            guard let keys = mat[d] else { break }
+            if res.isEmpty {
+                keys.forEach { res.append($0) }
                 continue
             }
-            
-            let current = result
-            result.removeAll()
-            
-            for ch in chars {
-                result.append(contentsOf: current.map({$0 + String(ch)}))
-            }
+            let arr = res.map { _ in res.removeFirst() }
+            for ch in keys { res += arr.map({$0 + ch}) }
         }
-        return result
+        return res
     }
 }
 
