@@ -4,10 +4,10 @@
 */
 
 var getTargetCopy = function(original, cloned, target) {
-    function dfs(orig, clon) {
+    function dfs(orig, copy) {
         if (!orig) return;
-        if (orig === target) return clon;
-        return dfs(orig.left, clon.left) || dfs(orig.right, clon.right);
+        if (orig === target) return copy;
+        return dfs(orig.left, copy.left) || dfs(orig.right, copy.right);
     }
     return dfs(original, cloned);
 };
