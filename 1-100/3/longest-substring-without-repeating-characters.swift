@@ -6,7 +6,7 @@ import Foundation
 class Solution {
     func lengthOfLongestSubstring(_ s: String) -> Int {
         guard !s.isEmpty else { return 0 }
-        var len = 0, chars: [Character] = []
+        var len = 0, chars = [Character]()
         for c in s {
             if let idx = chars.firstIndex(of: c) {
                 chars.removeSubrange(0...idx)
