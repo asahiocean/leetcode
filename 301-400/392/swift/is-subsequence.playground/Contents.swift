@@ -5,20 +5,9 @@ import Foundation
 
 class Solution {
     func isSubsequence(_ s: String, _ t: String) -> Bool {
-        if s.isEmpty { return true }
-        if t.isEmpty { return false }
-        
-        var arrS = Array(s), arrT = Array(t)
-        
-        var cnt = 0
-        var less: Bool { cnt < t.count }
-        
-        while less && !arrS.isEmpty {
-            while less && arrT[cnt] != arrS[0] { cnt += 1 }
-            if less { arrS.removeFirst() }
-            cnt += 1
-        }
-        return arrS.isEmpty
+        var ars = Array(s)
+        for c in t where c == ars.first { ars.removeFirst() }
+        return ars.isEmpty
     }
 }
 
@@ -26,21 +15,20 @@ class Solution {
 
 // Result: Executed 2 tests, with 0 failures (0 unexpected) in 0.006 (0.008) seconds
 
-import XCTest
-
-class Tests: XCTestCase {
+class Tests {
     
-    private let solution = Solution()
+    private typealias sol = Solution
     
-    func test0() {
-        let value = solution.isSubsequence("abc", "ahbgdc")
-        XCTAssertEqual(value, true)
+    static func test1() {
+        let val = sol().isSubsequence("abc", "ahbgdc")
+        print(val == true)
     }
     
-    func test1() {
-        let value = solution.isSubsequence("axc", "ahbgdc")
-        XCTAssertEqual(value, false)
+    static func test2() {
+        let val = sol().isSubsequence("axc", "ahbgdc")
+        print(val == false)
     }
 }
 
-Tests.defaultTestSuite.run()
+Tests.test1()
+Tests.test2()
