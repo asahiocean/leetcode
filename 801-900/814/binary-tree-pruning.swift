@@ -18,8 +18,6 @@ class Solution {
 
 // MARK: - Test cases -
 
-// Result: Executed 3 tests, with 0 failures (0 unexpected) in 0.020 (0.022) seconds
-
 class Tests {
     
     private typealias sol = Solution
@@ -27,25 +25,25 @@ class Tests {
     
     // Only the red nodes satisfy the property "every subtree not containing a 1".
     // The diagram on the right represents the answer.
-    static func test0() {
+    static func testExample1() {
         let val = sol().pruneTree(TN([1,nil,0,0,1]))
         print(val?.val == TN([1,nil,0,nil,1])?.val)
     }
     
-    static func test1() {
+    static func testExample2() {
         let val = sol().pruneTree(TN([1,0,1,0,0,0,1]))
         print(val?.val == TN([1,nil,1,nil,1])?.val)
     }
     
-    static func test2() {
+    static func testExample3() {
         let val = sol().pruneTree(TN([1,1,0,1,1,0,1,0]))
         print(val?.val == TN([1,1,0,1,1,nil,1])?.val)
     }
 }
 
-Tests.test0()
-Tests.test1()
-Tests.test2()
+Tests.testExample1()
+Tests.testExample2()
+Tests.testExample3()
 
 // MARK: - TreeNode -
 
