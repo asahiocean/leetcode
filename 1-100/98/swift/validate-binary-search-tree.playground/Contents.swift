@@ -5,13 +5,11 @@ import Foundation
 
 class Solution {
     func isValidBST(_ root: TreeNode?) -> Bool {
-        return helper(root)
-    }
-    private func helper(_ node: TreeNode?, _ min: Int? = nil, _ max: Int? = nil) -> Bool {
-        guard let node = node else { return true }
-        if let min = min, node.val <= min { return false }
-        if let max = max, node.val >= max { return false }
-        return helper(node.left, min, node.val) && helper(node.right, node.val, max)
+        func chk(_ n: TreeNode?, _ l: Int?, _ r: Int?) -> Bool {
+            guard let val = n?.val else { return true }
+            return val <= l ?? .min || val >= r ?? .max ? false : chk(n!.left, l, val) && chk(n!.right, val, r)
+        }
+        return chk(root, nil, nil)
     }
 }
 
