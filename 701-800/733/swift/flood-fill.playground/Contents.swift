@@ -6,18 +6,18 @@ import Foundation
 class Solution {
     func floodFill(_ image: [[Int]], _ sr: Int, _ sc: Int, _ newColor: Int) -> [[Int]] {
         var img = image
-        dfs(&img, sr, sc, img[sr][sc], newColor)
-        return img
-    }
-    private func dfs(_ image: inout [[Int]], _ sr: Int, _ sc: Int, _ pix: Int, _ newColor: Int) {
-        if (sr < 0 || sr >= image.count) { return }
-        if (sc < 0 || sc >= image[0].count) { return }
-        let pixOld = image[sr][sc]
-        if pixOld == newColor || pixOld != pix { return }
-        image[sr][sc] = newColor
-        for p in [(0,1),(0,-1),(1,0),(-1,0)] {
-            dfs(&image, (sr + p.0), (sc + p.1), pix, newColor)
+        func dfs(_ sr: Int, _ sc: Int, _ px: Int, _ col: Int) {
+            if (sr < 0 || sr >= img.count) { return }
+            if (sc < 0 || sc >= img[0].count) { return }
+            let pix = img[sr][sc]
+            if pix == col || pix != px { return }
+            img[sr][sc] = col
+            for p in [(0,1),(0,-1),(1,0),(-1,0)] {
+                dfs(sr + p.0, sc + p.1, px, col)
+            }
         }
+        dfs(sr, sc, img[sr][sc], newColor)
+        return img
     }
 }
 
